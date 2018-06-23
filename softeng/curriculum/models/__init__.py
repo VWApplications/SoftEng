@@ -11,3 +11,6 @@ from .free_module.mobility_and_exchange_activities import MobilityAndExchangeAct
 from .free_module.professional_practice_activities import ProfessionalPracticeActivities
 from .free_module.research_activities import ResearchActivities
 from .free_module.teaching_activities import TeachingActivities
+from .discipline import Discipline
+
+__all__ = ['Discipline']
