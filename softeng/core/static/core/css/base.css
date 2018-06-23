@@ -4,6 +4,11 @@ body {
 
 .fixed {
   margin-top: 56px;
+
+}
+
+.container {
+  margin-bottom: 20px;
 }
 
 .list-group {
