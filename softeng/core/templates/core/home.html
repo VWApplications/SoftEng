@@ -10,15 +10,22 @@
            <i class="fa fa-book"></i>
            SWEBOK v3
         </a>
-        <a href="#"
+        <a href="{% url 'curriculum:discipline-list' %}"
            class="list-group-item list-group-item-action bg-dark text-white">
            <i class="fa fa-graduation-cap"></i>
            Disciplines
         </a>
-        <a href="http://localhost:8001/openrdf-workbench/repositories/softeng/summary"
+        {% if user.is_authenticated and user.is_staff %}
+          <a href="http://localhost:8001/openrdf-workbench/"
+             class="list-group-item list-group-item-action bg-dark text-white">
+             <i class="fa fa-database"></i>
+             Sesame
+          </a>
+        {% endif %}
+        <a href="admin/"
            class="list-group-item list-group-item-action bg-dark text-white">
-           <i class="fa fa-database"></i>
-           Sesame
+           <i class="fa fa-group"></i>
+           Login
         </a>
         <a href="{% url 'query:sparql' %}"
            class="list-group-item list-group-item-action bg-dark text-white">

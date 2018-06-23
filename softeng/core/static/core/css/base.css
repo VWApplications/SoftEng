@@ -38,3 +38,7 @@ body {
 .card {
   margin-top: 20px;
 }
+
+.card-container {
+  box-shadow: -5px 5px 5px grey;
+}

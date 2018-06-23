@@ -2,12 +2,401 @@
 {% load static %}
 
 {% block base %}
-  <div class="card">
+  <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      HEADER
+      Software Engineering Disciplines
     </div>
     <div class="card-body">
-      BODY
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          1° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in first_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 1° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          2° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in second_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 2° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          3° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in third_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 3° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          4° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in fourth_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 4° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          5° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in fifth_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 5° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          6° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in sixth_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 6° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          7° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in seventh_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 7° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          8° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in eighth_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 8° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          9° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in ninth_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 9° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          10° Semester
+        </div>
+        <div class="card-body">
+          {% for discipline in tenth_semester %}
+            <div class="table-responsive-sm">
+              <table class="table table-borderless text-justify">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Institution</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{discipline.code}}</td>
+                    <td>
+                      <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                        {{discipline.title}}
+                      </a>
+                    </td>
+                    <td>{{discipline.institution}}</td>
+                    <td>{{discipline.classification}}</td>
+                    <td>{{discipline.credits}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          {% empty %}
+            <div class="alert alert-primary">
+              There aren't disciplines into 10° semester.
+            </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
