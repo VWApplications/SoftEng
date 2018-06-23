@@ -1,5 +1,6 @@
 from django.db import models
 from django.core import validators
+from knowledge.models import Subtopic
 
 
 class Discipline(models.Model):
@@ -82,6 +83,12 @@ class Discipline(models.Model):
         "self",
         symmetrical=False,
         related_name="is_required_in",
+        blank=True
+    )
+
+    program = models.ManyToManyField(
+        Subtopic,
+        related_name="disciplines",
         blank=True
     )
 

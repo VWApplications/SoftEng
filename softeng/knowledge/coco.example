@@ -1,0 +1,52 @@
+from django.db import migrations
+from knowledge.models import ComputingFoundations
+
+
+def abstraction_forwards(apps, schema_editor):
+    """
+    Create Abstraction subtopic instances into Content model.
+    """
+
+    Content = apps.get_model("knowledge", "")
+    db_alias = schema_editor.connection.alias
+
+    knowledge = ComputingFoundations()
+    topic = knowledge.get_topic(knowledge.ABSTRACTION)
+    subtopics = []
+
+    subtopics.append(topic.get_subtopic(topic.ALTERNATE_ABSTRACTIONS))
+    subtopics.append(topic.get_subtopic(topic.ENCAPSULATION))
+    subtopics.append(topic.get_subtopic(topic.HIERARCHY))
+    subtopics.append(topic.get_subtopic(topic.LEVELS_OF_ABSTRACTION))
+
+    for subtopic in subtopics:
+        Content.objects.using(db_alias).bulk_create([
+            Content(
+                title=subtopic.title,
+                description=subtopic.description,
+                slug=subtopic.title,
+                topic=topic.title,
+                knowledge=knowledge.title
+            )
+        ])
+
+
+def computing_foundations_reverse(apps, schema_editor):
+    """
+    Remove all instances of Content.
+    """
+
+    Content = apps.get_model("knowledge", "Content")
+    db_alias = schema_editor.connection.alias
+    Content.objects.using(db_alias).all().delete()
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('knowledge', '0001_initial'),
+    ]
+
+    operations = [
+        # migrations.RunPython(abstraction_forwards)
+    ]

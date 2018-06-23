@@ -39,6 +39,7 @@ class ComputingFoundations(object):
         result = self.get_information()
 
         self.title = result['title']['value']
+        self.description = ""
         self.curriculum = result['curriculum']['value']
 
     def get_information(self):

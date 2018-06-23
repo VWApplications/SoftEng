@@ -109,7 +109,4 @@ staticfiles
 
 # Migrations and DB
 db.sqlite3
-softeng/**/migrations/**
-softeng/!**/migrations
-softeng/!**/migrations/__init__.py
 ontology/RDF/catalog-v001.xml
