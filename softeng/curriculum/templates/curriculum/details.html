@@ -49,9 +49,14 @@
           <tr>
             <th>Program:</th>
             <td>
-              <a href="#" class="list-group-item list-group-item-action">
-                Content test.
-              </a>
+              {% for subtopic in discipline.program.all %}
+                <a href="{% url 'knowledge:swebok-detail' topic=subtopic.topic.slug %}"
+                   class="list-group-item list-group-item-action">
+                   {{subtopic.title}}
+                </a>
+              {% empty %}
+                <p>This discipline has not program content.</p>
+              {% endfor %}
             </td>
           </tr>
           <tr>

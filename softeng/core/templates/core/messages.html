@@ -1,0 +1,16 @@
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert {{ message.tags }} alert-dismissable message">
+      <!-- Close icon -->
+      <a href="#"
+         class="close"
+         data-dismiss="alert"
+         aria-label="close">
+        &times;
+      </a>
+
+      <!-- Message -->
+      <span>{{ message }}</span>
+    </div>
+  {% endfor %}
+{% endif %}

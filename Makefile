@@ -44,3 +44,7 @@ sesame:
 protege:
 	# Run the protege software
 	./ontology/protege-5.2.0/run.sh
+
+clean:
+	# Remove all __pycache__
+	find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf

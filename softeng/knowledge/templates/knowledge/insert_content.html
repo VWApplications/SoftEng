@@ -1,0 +1,89 @@
+{% extends 'core/home.html' %}
+{% load static %}
+
+{% block base %}
+  <div class="card card-container">
+    <div class="card-header bg-dark text-white">
+      Insert <b>{{subtopic}}</b> content into disciplines
+    </div>
+    <div class="card-body">
+      <form method="GET" accept-charset="utf-8">
+        <div class="input-group mt-3 mb-3">
+          <div class="input-group-prepend">
+            <button
+              type="button"
+              class="btn btn-outline-secondary dropdown-toggle"
+              data-toggle="dropdown">
+              Filter
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="?core=basic">Core Basic Content</a>
+              <a class="dropdown-item" href="?core=specific">Core Specific Content</a>
+              <a class="dropdown-item" href="?core=professional">Core Professional Content</a>
+              <a class="dropdown-item" href="?order=semester">Order by Semester</a>
+              <a class="dropdown-item" href="?order=classification">Order by Type</a>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search"
+            name="q"
+            value="{{request.GET.q}}"
+          />
+
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+      {% if disciplines %}
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Title</th>
+              <th>Core Content</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for discipline in disciplines %}
+              <tr>
+                <td>{{discipline.code}}</td>
+                <td>
+                  <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}">
+                    {{discipline.title}}
+                  </a>
+                </td>
+                <td>{{discipline.core_content}}</td>
+                <td>
+                  <form
+                    action="{% url 'knowledge:insert' topic=topic.slug subtopic=subtopic.slug discipline=discipline.slug %}"
+                    method="POST">
+                    {% csrf_token %}
+
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-toggle="tooltip"
+                      title="Insert into disciplines"
+                      type="submit">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </form>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <div class="alert alert-primary">
+          There aren't disciplines available.
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

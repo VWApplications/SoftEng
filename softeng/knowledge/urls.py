@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import swebok
+from .views import swebok, content
 
 app_name = 'knowledge'
 
@@ -10,16 +10,22 @@ urlpatterns = [
         swebok.SwebokListView.as_view(),
         name='swebok-list'
     ),
-    # swebok/<slug>/details/
+    # swebok/<topic>/details/
     path(
-        "swebok/<slug:slug>/details/",
+        "swebok/<slug:topic>/details/",
         swebok.SwebokDetailView.as_view(),
         name="swebok-detail"
     ),
-    # swebok/<slug>/<topic>/details/
+    # swebok/<topic>/details/
     path(
-        "swebok/<slug:slug>/<slug:topic>/details/",
-        swebok.TopicDetailView.as_view(),
-        name="topic-detail"
+        "swebok/<slug:topic>/<slug:subtopic>/insert/",
+        content.InsertContentListView.as_view(),
+        name="disciplines"
+    ),
+    # swebok/<topic>/<subtopic>/insert-content/
+    path(
+        "swebok/<slug:topic>/<slug:subtopic>/<slug:discipline>/insert/",
+        content.InsertContentView.as_view(),
+        name="insert"
     ),
 ]

@@ -1,5 +1,5 @@
 from django.db import models
-# from knowledge.models import Subtopic
+from knowledge.models import Subtopic
 from .curriculum import CoreContent
 
 
@@ -16,6 +16,7 @@ class Discipline(models.Model):
 
     code = models.PositiveIntegerField(
         'Code',
+        unique=True,
         help_text="Discipline code."
     )
 
@@ -89,14 +90,15 @@ class Discipline(models.Model):
         null=True
     )
 
-    # program = models.ManyToManyField(
-    #     Subtopic,
-    #     related_name="disciplines",
-    #     blank=True
-    # )
+    program = models.ManyToManyField(
+        Subtopic,
+        related_name="disciplines",
+        blank=True
+    )
 
     slug = models.SlugField(
         'Shortcut',
+        unique=True,
         help_text="URL string shortcut"
     )
 

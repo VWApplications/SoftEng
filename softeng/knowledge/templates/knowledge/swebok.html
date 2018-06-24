@@ -4,29 +4,29 @@
 {% block base %}
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      Swebok version 3.0
+      Knowledge Areas <span class="float-right">SWEBOK v3</span>
     </div>
     <div class="card-body">
-      {% for core_content in swebok %}
+      {% for knowledge in swebok %}
         <div class="card">
           <div class="card-header bg-dark text-white">
-            {{core_content.title}}
+            {{knowledge.title}}
           </div>
           <div class="card-body">
-            <p class="breakline">{{core_content.description}}</p>
+            <p class="breakline">{{knowledge.description}}</p>
 
             <div class="card">
               <div class="card-header">
-                Knowledge Areas
+                <b>Topics</b>
               </div>
               <div class="card-body">
-                {% for knowledge in core_content.knowledges.all %}
-                  <a href="{% url 'knowledge:swebok-detail' slug=knowledge.slug %}"
+                {% for topic in knowledge.topics.all %}
+                  <a href="{% url 'knowledge:swebok-detail' topic=topic.slug %}"
                      class="list-group-item list-group-item-action">
-                     {{knowledge.title}}
+                     {{topic}}
                   </a>
                 {% empty %}
-                  <span>There aren't knowledge areas available in this core content.</span>
+                  <span>There aren't topic available in this knowledge area.</span>
                 {% endfor %}
               </div>
             </div>
@@ -34,7 +34,7 @@
         </div>
       {% empty %}
         <div class="alert alert-primary">
-          There aren't core content available.
+          There aren't knowledge available.
         </div>
       {% endfor %}
     </div>

@@ -17,3 +17,4 @@ from softeng.config.middleware import MIDDLEWARE
 from softeng.config.security import SECRET_KEY
 from softeng.config.templates import TEMPLATES
 from softeng.config.password import AUTH_PASSWORD_VALIDATORS
+from softeng.config.messages import MESSAGE_TAGS

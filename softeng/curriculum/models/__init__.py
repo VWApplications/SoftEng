@@ -14,6 +14,6 @@ from .free_module.teaching_activities import TeachingActivities
 from .discipline import Discipline
 from .curriculum import CoreContent, Extension, Multidisciplinary
 
-__all__ = [
-    'Discipline', 'CoreContent', 'Extension', 'Multidisciplinary'
-]
+# __all__ = [
+#     'Discipline', 'CoreContent', 'Extension', 'Multidisciplinary'
+# ]

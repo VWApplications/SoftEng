@@ -4,28 +4,50 @@
 {% block base %}
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      {{knowledge}}
+      {{topic}}
     </div>
     <div class="card-body">
-      <p class="breakline">{{knowledge.description}}</p>
+      <p class="breakline">{{topic.description}}</p>
 
       <div class="card">
         <div class="card-header">
-          <b>Topics</b>
+          <b>Subtopics</b>
         </div>
         <div class="card-body">
-          {% for topic in knowledge.topics.all %}
-            <a href="{% url 'knowledge:topic-detail' slug=knowledge.slug topic=topic.slug %}"
-               class="list-group-item list-group-item-action">
-               {{topic}}
-            </a>
-          {% empty %}
-            <span>There aren't topic available in this knowledge area.</span>
-          {% endfor %}
+          <div id="accordion">
+            {% for subtopic in topic.subtopics.all %}
+              <div class="card">
+                <div class="card-header">
+                  {% if forloop.first %}
+                    <a class="card-link" data-toggle="collapse" href="#collapse{{subtopic.id}}">
+                      {{subtopic}}
+                    </a>
+                  {% else %}
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapse{{subtopic.id}}">
+                      {{subtopic}}
+                    </a>
+                  {% endif %}
+                  {% if user.is_authenticated and user.is_staff %}
+                    <a href="{% url 'knowledge:disciplines' topic=topic.slug subtopic=subtopic.slug %}"
+                       class="btn btn-primary btn-sm rounded-circle float-right"
+                       data-toggle="tooltip" title="Insert into disciplines"
+                       role="button">
+                       <i class="fa fa-graduation-cap"></i>
+                    </a>
+                  {% endif %}
+                </div>
+                <div id="collapse{{subtopic.id}}" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="breakline">{{subtopic.description}}</p>
+                  </div>
+                </div>
+              </div>
+            {% empty %}
+              <span>There aren't subtopic available in this topic.</span>
+            {% endfor %}
+          </div>
         </div>
       </div>
-      <a href="{% url 'knowledge:swebok-list' %}">Back</a>
-      <p class="float-right">{{knowledge.core_content}}</p>
     </div>
   </div>
 {% endblock %}

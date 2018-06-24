@@ -27,6 +27,8 @@ class DisciplineAdmin(admin.ModelAdmin):
         discipline semester.
         """
 
+        print(db_field)
+
         if getattr(self, 'obj', None):
             kwargs["queryset"] = Discipline.objects.filter(
                 semester__lte=self.obj.semester

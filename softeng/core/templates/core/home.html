@@ -27,18 +27,21 @@
         </a>
         {% if user.is_authenticated and user.is_staff %}
           <a href="http://localhost:8001/openrdf-workbench/"
-             class="list-group-item list-group-item-action bg-dark text-white">
+             class="list-group-item list-group-item-action bg-dark text-white"
+             target="_blank">
              <i class="fa fa-database"></i>
              Sesame
           </a>
         {% endif %}
         <a href="{% url 'admin:login' %}"
-           class="list-group-item list-group-item-action bg-dark text-white">
+           class="list-group-item list-group-item-action bg-dark text-white"
+           target="_blank">
            <i class="fa fa-group"></i>
            Admin
         </a>
         <a href="{% url 'query:sparql' %}"
-           class="list-group-item list-group-item-action bg-dark text-white">
+           class="list-group-item list-group-item-action bg-dark text-white"
+           target="_blank">
            <i class="fa fa-terminal"></i>
            SPARQL
         </a>
@@ -47,6 +50,7 @@
     </div>
     <div class="col-sm-10">
       <div class="container">
+        {% include 'core/messages.html' %}
         {% block base %}
           <div class="card">
             <div class="card-header bg-dark text-white">
