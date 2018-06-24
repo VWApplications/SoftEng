@@ -3,15 +3,15 @@ from django.utils.text import slugify
 from knowledge.models import ComputingFoundations
 
 
-def get_core_content(apps, knowledge):
+def get_core_content(apps, title):
     """
-    Insert core content into knowledges
+    Get core content of specific knowledge
     """
 
     CoreContent = apps.get_model('curriculum', 'CoreContent')
 
     try:
-        core_content = CoreContent.objects.get(title=knowledge.curriculum)
+        core_content = CoreContent.objects.get(title=title)
     except Exception:
         core_content = None
 
@@ -32,7 +32,7 @@ def knowledges_forwards(apps, schema_editor):
         Knowledge.objects.create(
             title=knowledge.title,
             description=knowledge.description,
-            core_content=get_core_content(apps, knowledge),
+            core_content=get_core_content(apps, knowledge.curriculum),
             slug=slugify(knowledge.title),
         )
 

@@ -21,6 +21,7 @@ class BasicUserHumanFactors(object):
         result = self.get_information()
 
         self.title = result['title']['value']
+        self.description = result['description']['value']
 
     def get_information(self):
         """
@@ -31,9 +32,10 @@ class BasicUserHumanFactors(object):
             PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?title
+            SELECT DISTINCT ?title ?description
             WHERE {
-              es:Basic_User_Human_Factors dc:title ?title
+              es:Basic_User_Human_Factors dc:title ?title ;
+              dc:description ?description
             }
         """
 

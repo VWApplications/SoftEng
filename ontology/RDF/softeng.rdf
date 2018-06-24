@@ -451,6 +451,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Algebraic_Structures">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mathematical_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Algebraic Structures</dc:title>
     </owl:Class>
     
@@ -490,6 +491,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Algorithms_and_Complexity">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Algorithms and Complexity</dc:title>
     </owl:Class>
     
@@ -509,6 +511,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Analysis_of_Models">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Models_and_Methods"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Analysis of Models</dc:title>
     </owl:Class>
     
@@ -648,6 +651,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Basic_Concept_of_a_System">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Basic Concept of a System</dc:title>
     </owl:Class>
     
@@ -657,6 +661,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Basic_Developer_Human_Factors">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Basic Developer Human Factors</dc:title>
     </owl:Class>
     
@@ -666,6 +671,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Basic_Logic">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mathematical_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Basic Logic</dc:title>
     </owl:Class>
     
@@ -685,6 +691,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Basic_User_Human_Factors">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Basic User Human Factors</dc:title>
     </owl:Class>
     
@@ -806,6 +813,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Closure">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Closure</dc:title>
     </owl:Class>
     
@@ -867,6 +875,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Communication_Skills">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Professional_Practice"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Communication Skills</dc:title>
     </owl:Class>
     
@@ -876,6 +885,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Compiler_Basics">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Compiler Basics</dc:title>
     </owl:Class>
     
@@ -915,6 +925,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computer_Organization">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Computer Organization</dc:title>
     </owl:Class>
     
@@ -940,6 +951,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Professional_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Computing Foundations</dc:title>
     </owl:Class>
     
@@ -1080,6 +1092,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Construction_Technologies">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Construction"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Construction Technologies</dc:title>
     </owl:Class>
     
@@ -1406,6 +1419,7 @@ The work consists of the development, by the student, of a study or engineering 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Data_Structure_and_Representation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Data Structure and Representation</dc:title>
     </owl:Class>
     
@@ -1415,6 +1429,7 @@ The work consists of the development, by the student, of a study or engineering 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Database_Basics_and_Data_Management">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Database Basics and Data Management</dc:title>
     </owl:Class>
     
@@ -1494,6 +1509,7 @@ The work consists of the development, by the student, of a study or engineering 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Debugging_Tools_and_Techniques">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Debugging Tools and Techniques</dc:title>
     </owl:Class>
     
@@ -1785,6 +1801,7 @@ The work consists of the development, by the student, of a study or engineering 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Economic_Analysis_Methods">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Economics"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Economic Analysis Methods</dc:title>
     </owl:Class>
     
@@ -1875,6 +1892,7 @@ The work consists of the development, by the student, of a study or engineering 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Empirical_Methods_and_Experimental_Techniques">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Empirical Methods and Experimental Techniques</dc:title>
     </owl:Class>
     
@@ -1904,6 +1922,7 @@ The work consists of the development, by the student, of a study or engineering 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Design">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Engineering Design</dc:title>
     </owl:Class>
     
@@ -1929,6 +1948,7 @@ The work consists of the development, by the student, of a study or engineering 
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Basic_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Engineering Foundations</dc:title>
     </owl:Class>
     
@@ -2251,6 +2271,7 @@ In addition to the subjects of free choice of the student, it also contemplates 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Grammars">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mathematical_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Grammars</dc:title>
     </owl:Class>
     
@@ -2271,6 +2292,7 @@ In addition to the subjects of free choice of the student, it also contemplates 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Graphs_and_Trees">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mathematical_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Graphs and Trees</dc:title>
     </owl:Class>
     
@@ -2291,6 +2313,7 @@ In addition to the subjects of free choice of the student, it also contemplates 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Group_Dynamics_and_Psychology">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Professional_Practice"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Group Dynamics and Psychology</dc:title>
     </owl:Class>
     
@@ -2415,6 +2438,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Initiation_and_Scope_Definition">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Initiation and Scope Definition</dc:title>
     </owl:Class>
     
@@ -2546,6 +2570,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Key_Issues_in_Software_Design">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Key Issues in Software Design</dc:title>
     </owl:Class>
     
@@ -2555,6 +2580,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Key_Issues_in_Software_Maintenance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Maintenance"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Key Issues in Software Maintenance</dc:title>
     </owl:Class>
     
@@ -2614,6 +2640,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Life_Cycle_Economics">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Economics"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Life Cycle Economics</dc:title>
     </owl:Class>
     
@@ -2674,6 +2701,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Maintenance_Process">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Maintenance"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Maintenance Process</dc:title>
     </owl:Class>
     
@@ -2713,6 +2741,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Management_of_the_SCM_Process">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Management of the SCM Process</dc:title>
     </owl:Class>
     
@@ -2722,6 +2751,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Managing_Construction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Construction"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Managing Construction</dc:title>
     </owl:Class>
     
@@ -2737,6 +2767,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Basic_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Mathematical Foundations</dc:title>
     </owl:Class>
     
@@ -2746,6 +2777,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Measurement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Measurement</dc:title>
     </owl:Class>
     
@@ -2875,6 +2907,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Modeling">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Models_and_Methods"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Modeling</dc:title>
     </owl:Class>
     
@@ -2904,6 +2937,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Modeling_Simulation_and_Prototyping">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Modeling, Simulation, and Prototyping</dc:title>
     </owl:Class>
     
@@ -2993,6 +3027,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Network_Communication_Basics">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Network Communication Basics</dc:title>
     </owl:Class>
     
@@ -3012,6 +3047,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Number_Theory">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mathematical_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Number Theory</dc:title>
     </owl:Class>
     
@@ -3092,6 +3128,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Operating_Systems_Basics">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Operating Systems Basics</dc:title>
     </owl:Class>
     
@@ -3171,6 +3208,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Parallel_and_Distributed_Computing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Parallel and Distributed Computing</dc:title>
     </owl:Class>
     
@@ -3311,6 +3349,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Considerations">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Economics"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Practical Considerations</dc:title>
     </owl:Class>
     
@@ -3320,6 +3359,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Considerations_Construction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Construction"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Practical Considerations</dc:title>
     </owl:Class>
     
@@ -3339,6 +3379,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Considerations_Quality">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Quality"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Practical Considerations</dc:title>
     </owl:Class>
     
@@ -3348,6 +3389,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Considerations_Requirements">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Practical Considerations</dc:title>
     </owl:Class>
     
@@ -3429,6 +3471,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Problem_Solving_Techniques">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Problem Solving Techniques</dc:title>
     </owl:Class>
     
@@ -3558,6 +3601,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professionalism">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Professional_Practice"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Professionalism</dc:title>
     </owl:Class>
     
@@ -3597,6 +3641,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Programming_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Programming Fundamentals</dc:title>
     </owl:Class>
     
@@ -3606,6 +3651,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Programming_Language_Basics">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Programming Language Basics</dc:title>
     </owl:Class>
     
@@ -3656,6 +3702,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Proof_Techniques">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mathematical_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Proof Techniques</dc:title>
     </owl:Class>
     
@@ -3865,6 +3912,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Requirements_Analysis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Requirements Analysis</dc:title>
     </owl:Class>
     
@@ -3894,6 +3942,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Requirements_Elicitation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Requirements Elicitation</dc:title>
     </owl:Class>
     
@@ -3913,6 +3962,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Requirements_Process">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Requirements Process</dc:title>
     </owl:Class>
     
@@ -3942,6 +3992,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Requirements_Specification">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Requirements Specification</dc:title>
     </owl:Class>
     
@@ -3961,6 +4012,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Requirements_Validation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Requirements Validation</dc:title>
     </owl:Class>
     
@@ -4050,6 +4102,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Review_and_Evaluation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Review and Evaluation</dc:title>
     </owl:Class>
     
@@ -4099,6 +4152,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Risk_and_Uncertainty">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Economics"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Risk and Uncertainty</dc:title>
     </owl:Class>
     
@@ -4108,6 +4162,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Root_Cause_Analysis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Root Cause Analysis</dc:title>
     </owl:Class>
     
@@ -4137,6 +4192,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Secure_Software_Development_and_Maintenance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Computing_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Secure Software Development and Maintenance</dc:title>
     </owl:Class>
     
@@ -4176,6 +4232,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Set_Relations_Functions">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mathematical_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Set, Relations, Functions</dc:title>
     </owl:Class>
     
@@ -4216,6 +4273,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Auditing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Configuration Auditing</dc:title>
     </owl:Class>
     
@@ -4225,6 +4283,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Control">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Configuration Control</dc:title>
     </owl:Class>
     
@@ -4234,6 +4293,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Identification">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Configuration Identification</dc:title>
     </owl:Class>
     
@@ -4249,6 +4309,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Configuration Management</dc:title>
     </owl:Class>
     
@@ -4268,6 +4329,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Status_Accounting">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Configuration Status Accounting</dc:title>
     </owl:Class>
     
@@ -4304,6 +4366,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Professional_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Construction</dc:title>
     </owl:Class>
     
@@ -4313,6 +4376,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Construction_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Construction"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Construction Fundamentals</dc:title>
     </owl:Class>
     
@@ -4332,6 +4396,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Construction_Tools">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Construction"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Construction Tools</dc:title>
     </owl:Class>
     
@@ -4347,6 +4412,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Design</dc:title>
     </owl:Class>
     
@@ -4356,6 +4422,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Design Fundamentals</dc:title>
     </owl:Class>
     
@@ -4365,6 +4432,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design_Notations">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Design Notations</dc:title>
     </owl:Class>
     
@@ -4394,6 +4462,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design_Quality_Analysis_and_Evaluation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Design Quality Analysis and Evaluation</dc:title>
     </owl:Class>
     
@@ -4413,6 +4482,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design_Strategies_and_Methods">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Design Strategies and Methods</dc:title>
     </owl:Class>
     
@@ -4458,6 +4528,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Basic_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Economics</dc:title>
     </owl:Class>
     
@@ -4467,6 +4538,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Economics_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Economics"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Economics Fundamentals</dc:title>
     </owl:Class>
     
@@ -4482,6 +4554,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Management</dc:title>
     </owl:Class>
     
@@ -4501,6 +4574,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Measurement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Measurement</dc:title>
     </owl:Class>
     
@@ -4510,6 +4584,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Methods">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Models_and_Methods"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Methods</dc:title>
     </owl:Class>
     
@@ -4525,6 +4600,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Models and Methods</dc:title>
     </owl:Class>
     
@@ -4540,6 +4616,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Process</dc:title>
     </owl:Class>
     
@@ -4565,6 +4642,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Basic_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Engineering Professional Practice</dc:title>
     </owl:Class>
     
@@ -4614,6 +4692,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Life_Cycles">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Process"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Life Cycles</dc:title>
     </owl:Class>
     
@@ -4629,6 +4708,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Professional_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Maintenance</dc:title>
     </owl:Class>
     
@@ -4638,6 +4718,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Maintenance_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Maintenance"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Maintenance Fundamentals</dc:title>
     </owl:Class>
     
@@ -4667,6 +4748,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Measurement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Process"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Measurement</dc:title>
     </owl:Class>
     
@@ -4716,6 +4798,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Process_Assessment_and_Improvement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Process"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Process Assessment and Improvement</dc:title>
     </owl:Class>
     
@@ -4725,6 +4808,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Process_Definition">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Process"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Process Definition</dc:title>
     </owl:Class>
     
@@ -4785,6 +4869,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Project_Enactment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Project Enactment</dc:title>
     </owl:Class>
     
@@ -4794,6 +4879,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Project_Planning">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Project Planning</dc:title>
     </owl:Class>
     
@@ -4809,6 +4895,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Quality</dc:title>
     </owl:Class>
     
@@ -4828,6 +4915,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Quality_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Quality"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Quality Fundamentals</dc:title>
     </owl:Class>
     
@@ -4847,6 +4935,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Quality_Management_Processes">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Quality"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Quality Management Processes</dc:title>
     </owl:Class>
     
@@ -4906,6 +4995,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Release_Management_and_Delivery">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Configuration_Management"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Release Management and Delivery</dc:title>
     </owl:Class>
     
@@ -4921,6 +5011,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Requirements</dc:title>
     </owl:Class>
     
@@ -4930,6 +5021,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Requirements"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Requirements Fundamentals</dc:title>
     </owl:Class>
     
@@ -4999,6 +5091,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Structure_and_Architecture">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Structure and Architecture</dc:title>
     </owl:Class>
     
@@ -5014,6 +5107,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Professional_Content"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Testing</dc:title>
     </owl:Class>
     
@@ -5023,6 +5117,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing_Fundamentals">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Testing Fundamentals</dc:title>
     </owl:Class>
     
@@ -5042,6 +5137,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing_Tools">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Software Testing Tools</dc:title>
     </owl:Class>
     
@@ -5051,7 +5147,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Standards">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Foundations"/>
-        <dc:description xml:lang="en">Description Here</dc:description>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Standards</dc:title>
     </owl:Class>
     
@@ -5081,6 +5177,7 @@ The Engineering Integrator Project disciplines are used in a way that complement
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Statistical_Analysis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Engineering_Foundations"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Statistical Analysis</dc:title>
     </owl:Class>
     
@@ -5292,6 +5389,7 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Techniques_for_Maintenance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Maintenance"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Techniques for Maintenance</dc:title>
     </owl:Class>
     
@@ -5331,6 +5429,7 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Test_Levels">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Test Levels</dc:title>
     </owl:Class>
     
@@ -5340,6 +5439,7 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Test_Process">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Test Process</dc:title>
     </owl:Class>
     
@@ -5349,6 +5449,7 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Test_Related_Measures">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Test-Related Measures</dc:title>
     </owl:Class>
     
@@ -5358,6 +5459,7 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Test_Techniques">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Testing"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Test Techniques</dc:title>
     </owl:Class>
     
@@ -5527,6 +5629,7 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Types_of_Models">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering_Models_and_Methods"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">Types of Models</dc:title>
     </owl:Class>
     
@@ -5586,6 +5689,7 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/User_Interface_Design">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Design"/>
+        <dc:description xml:lang="en">There isn&apos;t description</dc:description>
         <dc:title xml:lang="en">User Interface Design</dc:title>
     </owl:Class>
     

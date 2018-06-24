@@ -8,17 +8,9 @@ class SwebokListView(ListView):
     Page to list all core content of swebok.
     """
 
+    model = CoreContent
     template_name = "knowledge/swebok.html"
     context_object_name = "swebok"
-
-    def get_queryset(self):
-        """
-        Get the discipline queryset from model database.
-        """
-
-        queryset = CoreContent.objects.all()
-
-        return queryset
 
 
 class SwebokDetailView(DetailView):

@@ -11,19 +11,25 @@
 
       <div class="card">
         <div class="card-header">
-          Topics
+          <b>Topics</b>
         </div>
         <div class="card-body">
           {% for topic in knowledge.topics.all %}
             <a href="#"
                class="list-group-item list-group-item-action">
-               {{topic.title}}
+               {{topic}}
             </a>
           {% empty %}
             <span>There aren't topic available in this knowledge area.</span>
           {% endfor %}
         </div>
       </div>
+      <p>
+        <b>Core Content: </b>
+        <a href="{% url 'knowledge:swebok-list' %}">
+          {{knowledge.core_content}}
+        </a>
+      </p>
     </div>
   </div>
 {% endblock %}
