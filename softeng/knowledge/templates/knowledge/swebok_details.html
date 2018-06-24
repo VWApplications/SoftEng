@@ -15,7 +15,7 @@
         </div>
         <div class="card-body">
           {% for topic in knowledge.topics.all %}
-            <a href="#"
+            <a href="{% url 'knowledge:topic-detail' slug=knowledge.slug topic=topic.slug %}"
                class="list-group-item list-group-item-action">
                {{topic}}
             </a>
@@ -24,12 +24,8 @@
           {% endfor %}
         </div>
       </div>
-      <p>
-        <b>Core Content: </b>
-        <a href="{% url 'knowledge:swebok-list' %}">
-          {{knowledge.core_content}}
-        </a>
-      </p>
+      <a href="{% url 'knowledge:swebok-list' %}">Back</a>
+      <p class="float-right">{{knowledge.core_content}}</p>
     </div>
   </div>
 {% endblock %}

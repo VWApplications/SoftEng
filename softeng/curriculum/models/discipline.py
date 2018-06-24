@@ -1,5 +1,4 @@
 from django.db import models
-from django.core import validators
 # from knowledge.models import Subtopic
 from .curriculum import CoreContent
 
@@ -68,10 +67,6 @@ class Discipline(models.Model):
     credits = models.PositiveIntegerField(
         'Credits',
         help_text="Discipline credits",
-        validators=[
-            validators.MaxLengthValidator(10),
-            validators.MinLengthValidator(1)
-        ]
     )
 
     bibliografy = models.TextField(

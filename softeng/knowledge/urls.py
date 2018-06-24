@@ -16,4 +16,10 @@ urlpatterns = [
         swebok.SwebokDetailView.as_view(),
         name="swebok-detail"
     ),
+    # swebok/<slug>/<topic>/details/
+    path(
+        "swebok/<slug:slug>/<slug:topic>/details/",
+        swebok.TopicDetailView.as_view(),
+        name="topic-detail"
+    ),
 ]
