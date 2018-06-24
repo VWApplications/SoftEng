@@ -1,5 +1,5 @@
 from django.views.generic import ListView, DetailView
-from .models import Discipline
+from curriculum.models import Discipline
 
 
 class DisciplineListView(ListView):
@@ -7,6 +7,7 @@ class DisciplineListView(ListView):
     Page to list all disciplines into their flux.
     """
 
+    model = Discipline
     template_name = "curriculum/disciplines.html"
     context_object_name = "disciplines"
 
@@ -30,15 +31,6 @@ class DisciplineListView(ListView):
 
         return context
 
-    def get_queryset(self):
-        """
-        Get the discipline queryset from model database.
-        """
-
-        queryset = Discipline.objects.all()
-
-        return queryset
-
 
 class DisciplineDetailView(DetailView):
     """
@@ -47,3 +39,4 @@ class DisciplineDetailView(DetailView):
 
     model = Discipline
     template_name = "curriculum/details.html"
+    context_object_name = "discipline"

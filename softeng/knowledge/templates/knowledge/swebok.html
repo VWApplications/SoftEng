@@ -1,0 +1,42 @@
+{% extends 'core/home.html' %}
+{% load static %}
+
+{% block base %}
+  <div class="card card-container">
+    <div class="card-header bg-dark text-white">
+      Swebok version 3.0
+    </div>
+    <div class="card-body">
+      {% for core_content in swebok %}
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            {{core_content.title}}
+          </div>
+          <div class="card-body">
+            <p class="breakline">{{core_content.description}}</p>
+
+            <div class="card">
+              <div class="card-header">
+                Knowledge Areas
+              </div>
+              <div class="card-body">
+                {% for knowledge in core_content.knowledges.all %}
+                  <a href="{% url 'knowledge:swebok-detail' slug=knowledge.slug %}"
+                     class="list-group-item list-group-item-action">
+                     {{knowledge.title}}
+                  </a>
+                {% empty %}
+                  <span>There aren't knowledge areas available in this core content.</span>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% empty %}
+        <div class="alert alert-primary">
+          There aren't core content available.
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

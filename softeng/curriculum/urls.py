@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from .views import discipline, curriculum
 
 app_name = 'curriculum'
 
@@ -7,13 +7,25 @@ urlpatterns = [
     # disciplines/
     path(
         "disciplines/",
-        views.DisciplineListView.as_view(),
+        discipline.DisciplineListView.as_view(),
         name='discipline-list'
     ),
     # disciplines/<slug-code>/details/
     path(
         "disciplines/<slug:slug>/details/",
-        views.DisciplineDetailView.as_view(),
+        discipline.DisciplineDetailView.as_view(),
         name="discipline-detail"
+    ),
+    # extensions/
+    path(
+        "extensions/",
+        curriculum.ExtensionListView.as_view(),
+        name='extension-list'
+    ),
+    # multidisciplinary/
+    path(
+        "multidisciplinary",
+        curriculum.MultidisciplinaryListView.as_view(),
+        name="multidisciplinary-list"
     ),
 ]

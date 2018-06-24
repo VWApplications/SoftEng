@@ -12,7 +12,6 @@ def multidisciplinary_forwards(apps, schema_editor):
     """
 
     Multidisciplinary = apps.get_model("curriculum", "Multidisciplinary")
-    db_alias = schema_editor.connection.alias
 
     multidisciplinaries = []
     multidisciplinaries.append(CourseCompletionWork())
@@ -20,13 +19,11 @@ def multidisciplinary_forwards(apps, schema_editor):
     multidisciplinaries.append(SupervisedInternship())
 
     for multidisciplinary in multidisciplinaries:
-        Multidisciplinary.objects.using(db_alias).bulk_create([
-            Multidisciplinary(
-                title=multidisciplinary.title,
-                description=multidisciplinary.description,
-                slug=slugify(multidisciplinary.title),
-            )
-        ])
+        Multidisciplinary.objects.create(
+            title=multidisciplinary.title,
+            description=multidisciplinary.description,
+            slug=slugify(multidisciplinary.title),
+        )
 
 
 def multidisciplinary_reverse(apps, schema_editor):
@@ -35,8 +32,7 @@ def multidisciplinary_reverse(apps, schema_editor):
     """
 
     Multidisciplinary = apps.get_model("curriculum", "Multidisciplinary")
-    db_alias = schema_editor.connection.alias
-    Multidisciplinary.objects.using(db_alias).all().delete()
+    Multidisciplinary.objects.all().delete()
 
 
 class Migration(migrations.Migration):

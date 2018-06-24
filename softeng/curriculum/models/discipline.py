@@ -1,6 +1,7 @@
 from django.db import models
 from django.core import validators
-from knowledge.models import Subtopic
+# from knowledge.models import Subtopic
+from .curriculum import CoreContent
 
 
 class Discipline(models.Model):
@@ -86,11 +87,18 @@ class Discipline(models.Model):
         blank=True
     )
 
-    program = models.ManyToManyField(
-        Subtopic,
+    core_content = models.ForeignKey(
+        CoreContent,
         related_name="disciplines",
-        blank=True
+        on_delete=models.SET_NULL,
+        null=True
     )
+
+    # program = models.ManyToManyField(
+    #     Subtopic,
+    #     related_name="disciplines",
+    #     blank=True
+    # )
 
     slug = models.SlugField(
         'Shortcut',

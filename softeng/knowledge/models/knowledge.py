@@ -1,38 +1,18 @@
 from django.db import models
+from curriculum.models import CoreContent
+from .swebok import Swebok
 
 
-class Knowledge(models.Model):
+class Knowledge(Swebok):
     """
     Create Knowledge model.
     """
 
-    title = models.CharField(
-        'Title',
-        max_length=100,
-        help_text="Knowledge title."
-    )
-
-    description = models.TextField(
-        'Description',
-        help_text="Knowledge description.",
-        blank=True
-    )
-
-    slug = models.SlugField(
-        'Shortcut',
-        help_text="URL string shortcut"
-    )
-
-    created_at = models.DateTimeField(
-        'Created at',
-        help_text="Date that the knowledge is created.",
-        auto_now_add=True
-    )
-
-    updated_at = models.DateTimeField(
-        'Updated at',
-        help_text="Date that the knowledge is updated.",
-        auto_now=True
+    core_content = models.ForeignKey(
+        CoreContent,
+        on_delete=models.SET_NULL,
+        related_name="knowledges",
+        null=True
     )
 
     def __str__(self):

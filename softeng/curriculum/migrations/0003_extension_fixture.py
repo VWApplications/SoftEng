@@ -14,7 +14,6 @@ def extension_forwards(apps, schema_editor):
     """
 
     Extension = apps.get_model("curriculum", "Extension")
-    db_alias = schema_editor.connection.alias
 
     extensions = []
     extensions.append(ActivitiesOfSocialAction())
@@ -26,13 +25,11 @@ def extension_forwards(apps, schema_editor):
     extensions.append(TeachingActivities())
 
     for extension in extensions:
-        Extension.objects.using(db_alias).bulk_create([
-            Extension(
-                title=extension.title,
-                description=extension.description,
-                slug=slugify(extension.title),
-            )
-        ])
+        Extension.objects.create(
+            title=extension.title,
+            description=extension.description,
+            slug=slugify(extension.title),
+        )
 
 
 def extension_reverse(apps, schema_editor):
@@ -41,8 +38,7 @@ def extension_reverse(apps, schema_editor):
     """
 
     Extension = apps.get_model("curriculum", "Extension")
-    db_alias = schema_editor.connection.alias
-    Extension.objects.using(db_alias).all().delete()
+    Extension.objects.all().delete()
 
 
 class Migration(migrations.Migration):

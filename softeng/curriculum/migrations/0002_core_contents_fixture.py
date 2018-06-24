@@ -12,7 +12,6 @@ def core_content_forwards(apps, schema_editor):
     """
 
     CoreContent = apps.get_model("curriculum", "CoreContent")
-    db_alias = schema_editor.connection.alias
 
     core_contents = []
     core_contents.append(CoreBasicContent())
@@ -20,13 +19,11 @@ def core_content_forwards(apps, schema_editor):
     core_contents.append(CoreSpecificContent())
 
     for core in core_contents:
-        CoreContent.objects.using(db_alias).bulk_create([
-            CoreContent(
-                title=core.title,
-                description=core.description,
-                slug=slugify(core.title),
-            )
-        ])
+        CoreContent.objects.create(
+            title=core.title,
+            description=core.description,
+            slug=slugify(core.title),
+        )
 
 
 def core_content_reverse(apps, schema_editor):
@@ -35,8 +32,7 @@ def core_content_reverse(apps, schema_editor):
     """
 
     CoreContent = apps.get_model("curriculum", "CoreContent")
-    db_alias = schema_editor.connection.alias
-    CoreContent.objects.using(db_alias).all().delete()
+    CoreContent.objects.all().delete()
 
 
 class Migration(migrations.Migration):
