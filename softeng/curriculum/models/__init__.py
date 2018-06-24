@@ -1,6 +1,6 @@
-from .core_basic_content import CoreBasicContent
-from .core_professional_content import CoreProfessionalContent
-from .core_specific_content import CoreSpecificContent
+from .core_content.core_basic_content import CoreBasicContent
+from .core_content.core_professional_content import CoreProfessionalContent
+from .core_content.core_specific_content import CoreSpecificContent
 from .multidisciplinary.course_completion_work import CourseCompletionWork
 from .multidisciplinary.integrator_project import IntegratorProject
 from .multidisciplinary.supervised_internship import SupervisedInternship
@@ -12,5 +12,8 @@ from .free_module.professional_practice_activities import ProfessionalPracticeAc
 from .free_module.research_activities import ResearchActivities
 from .free_module.teaching_activities import TeachingActivities
 from .discipline import Discipline
+from .curriculum import CoreContent, Extension, Multidisciplinary
 
-__all__ = ['Discipline']
+__all__ = [
+    'Discipline', 'CoreContent', 'Extension', 'Multidisciplinary'
+]

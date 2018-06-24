@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Discipline
+from .models import (
+    Discipline, CoreContent, Extension, Multidisciplinary
+)
 
 
 @admin.register(Discipline)
@@ -37,3 +39,33 @@ class DisciplineAdmin(admin.ModelAdmin):
             ).exclude(id=self.obj.id)
 
         return super().formfield_for_manytomany(db_field, request, **kwargs)
+
+
+@admin.register(CoreContent)
+class CoreContentAdmin(admin.ModelAdmin):
+    """
+    Custom core content admin
+    """
+
+    list_display = ['title']
+    prepopulated_fields = {'slug': ('title',)}
+
+
+@admin.register(Extension)
+class ExtensionAdmin(admin.ModelAdmin):
+    """
+    Custom core content admin
+    """
+
+    list_display = ['title']
+    prepopulated_fields = {'slug': ('title',)}
+
+
+@admin.register(Multidisciplinary)
+class MultidisciplinaryAdmin(admin.ModelAdmin):
+    """
+    Custom core content admin
+    """
+
+    list_display = ['title']
+    prepopulated_fields = {'slug': ('title',)}

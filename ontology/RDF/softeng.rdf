@@ -1206,7 +1206,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <dc:description xml:lang="en">Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation in Computing).
 
 Content Core: Scientific and Technological Methodology, Communication and Expression, Graphic Expression, Mathematics, Physics, Production, Innovation, Administration, Economics, Environmental Sciences, Humanities, Social Sciences, Citizenship</dc:description>
-        <dc:title xml:lang="en">Core Basic Content (BC)</dc:title>
+        <dc:title xml:lang="en">Core Basic Content</dc:title>
     </owl:Class>
     
 
@@ -1338,7 +1338,7 @@ Content Core: Specific disciplines for software engineering</dc:description>
         <dc:description xml:lang="en">Completion of course work that can be done individually or in double, demonstrating the ability of both teamwork of participants, as well as synthesis, integration and deepening of the knowledge acquired throughout the course. The performance is verified through standardized document and public defense before an examining bank.
 
 The work consists of the development, by the student, of a study or engineering project that allows the integrated application of knowledge related to the course. In its development, the methodology, content of the topic, written documentation and oral presentation should be observed. The TCC aims to provide students with the ability to solve and (or) investigate problem (s) in Software Engineering in a global and objective way, implying in an improvement of their ability to prepare a technical document and its ability to express oral in public.</dc:description>
-        <dc:title xml:lang="en">Course Completion Work 1 and 2 (CBT)</dc:title>
+        <dc:title xml:lang="en">Course Completion Work</dc:title>
     </owl:Class>
     
 
