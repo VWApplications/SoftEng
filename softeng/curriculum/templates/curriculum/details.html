@@ -4,7 +4,12 @@
 {% block base %}
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      {{discipline}} <span class="float-right">{{discipline.credits}} Credits</span>
+      {{discipline}}
+      <span class="float-right">
+        {% if discipline.credits %}
+          {{discipline.credits}} Credits
+        {% endif %}
+      </span>
     </div>
     <div class="card-body">
       <div class="table-responsive-sm">
@@ -29,6 +34,18 @@
             <th>Type:</th>
             <td class="breakline">{{discipline.classification}}</td>
           </tr>
+          {% if discipline.core_content %}
+            <tr>
+              <th>Core Content:</th>
+              <td class="breakline">{{discipline.core_content}}</td>
+            </tr>
+          {% endif %}
+          {% if discipline.multidisciplinary %}
+            <tr>
+              <th>Multidisciplinary:</th>
+              <td class="breakline">{{discipline.multidisciplinary}}</td>
+            </tr>
+          {% endif %}
           <tr>
             <th>Required Disciplines:</th>
             <td>
@@ -44,7 +61,13 @@
           </tr>
           <tr>
             <th>Description</th>
-            <td class="breakline">{{discipline.description}}</td>
+            <td class="breakline">
+              {% if discipline.description %}
+                {{discipline.description}}
+              {% else %}
+                <p>Discipline hasn't description.</p>
+              {% endif %}
+            </td>
           </tr>
           <tr>
             <th>Program:</th>
@@ -61,7 +84,13 @@
           </tr>
           <tr>
             <th>Bibliografy</th>
-            <td class="breakline">{{discipline.bibliografy}}</td>
+            <td class="breakline">
+              {% if discipline.description %}
+                {{discipline.bibliografy}}
+              {% else %}
+                <p>Discipline hasn't bibliografy.</p>
+              {% endif %}
+            </td>
           </tr>
         </table>
       </div>

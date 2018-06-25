@@ -13,25 +13,38 @@ class DisciplineAdmin(admin.ModelAdmin):
     search_fields = ['title', 'code']
     prepopulated_fields = {'slug': ('code',)}
 
-    def get_object(self, request, object_id, from_field=None):
-        """
-        Get the object for use in formfield_for_manytomany
-        """
+    fieldsets = (
+        (None,
+            {'fields': ['code', 'title', 'slug']}
+        ),
+        ('Basic Information',
+            {'fields': ['institution', 'semester', 'classification', 'credits']}
+        ),
+        ('Adicional Information',
+            {'fields': ['description', 'bibliografy']}
+        ),
+        ('Related Information',
+            {'fields': ['core_content', 'multidisciplinary', 'required', 'program']}
+        )
+    )
 
-        self.obj = super(DisciplineAdmin, self).get_object(request, object_id)
-        return self.obj
+    # def get_object(self, request, object_id, from_field=None):
+    #     """
+    #     Get the object for use in formfield_for_manytomany
+    #     """
 
-    def formfield_for_manytomany(self, db_field, request, **kwargs):
-        """
-        Change ManyToMany to display only required disciplines with semester before the
-        discipline semester.
-        """
+    #     self.obj = super(DisciplineAdmin, self).get_object(request, object_id)
+    #     return self.obj
 
-        print(db_field)
+    # def formfield_for_manytomany(self, db_field, request, **kwargs):
+    #     """
+    #     Change ManyToMany to display only required disciplines
+    #     with semester before the discipline semester.
+    #     """
 
-        if getattr(self, 'obj', None):
-            kwargs["queryset"] = Discipline.objects.filter(
-                semester__lte=self.obj.semester
-            ).exclude(id=self.obj.id)
+    #     if getattr(self, 'obj', None):
+    #         kwargs["queryset"] = Discipline.objects.filter(
+    #             semester__lte=self.obj.semester
+    #         ).exclude(id=self.obj.id)
 
-        return super().formfield_for_manytomany(db_field, request, **kwargs)
+    #     return super().formfield_for_manytomany(db_field, request, **kwargs)

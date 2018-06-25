@@ -1,6 +1,6 @@
 from django.db import models
 from knowledge.models import Subtopic
-from .curriculum import CoreContent
+from .curriculum import CoreContent, Multidisciplinary
 
 
 class Discipline(models.Model):
@@ -23,8 +23,7 @@ class Discipline(models.Model):
     institution = models.CharField(
         'Institution',
         max_length=100,
-        help_text="Discipline institution",
-        blank=True
+        help_text="Discipline institution"
     )
 
     SEMESTERS = (
@@ -68,6 +67,7 @@ class Discipline(models.Model):
     credits = models.PositiveIntegerField(
         'Credits',
         help_text="Discipline credits",
+        blank=True,
     )
 
     bibliografy = models.TextField(
@@ -85,6 +85,13 @@ class Discipline(models.Model):
 
     core_content = models.ForeignKey(
         CoreContent,
+        related_name="disciplines",
+        on_delete=models.SET_NULL,
+        null=True
+    )
+
+    multidisciplinary = models.ForeignKey(
+        Multidisciplinary,
         related_name="disciplines",
         on_delete=models.SET_NULL,
         null=True

@@ -4,29 +4,29 @@
 {% block base %}
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      Multidisciplinary disciplines
+      Core Contents
     </div>
     <div class="card-body">
-      {% for multidisciplinary in multidisciplinary_disciplines %}
+      {% for core_content in core_contents %}
         <div class="card">
           <div class="card-header bg-dark text-white">
-            {{multidisciplinary.title}}
+            {{core_content.title}}
           </div>
           <div class="card-body">
-            <p class="breakline">{{multidisciplinary.description}}</p>
+            <p class="breakline">{{core_content.description}}</p>
 
             <div class="card">
               <div class="card-header">
                 <b>Disciplines</b>
               </div>
               <div class="card-body">
-                {% for discipline in core_multidisciplinary.disciplines.all %}
+                {% for discipline in core_content.disciplines.all %}
                   <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}"
                      class="list-group-item list-group-item-action">
                      {{discipline}}
                   </a>
                 {% empty %}
-                  <span>There aren't discipline available in this multidisciplinary.</span>
+                  <span>There aren't discipline available in this core content.</span>
                 {% endfor %}
               </div>
             </div>
@@ -34,7 +34,7 @@
         </div>
       {% empty %}
         <div class="alert alert-primary">
-          There aren't multidisciplinary discipline available.
+          There aren't core contents available.
         </div>
       {% endfor %}
     </div>

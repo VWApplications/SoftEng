@@ -24,8 +24,14 @@ urlpatterns = [
     ),
     # multidisciplinary/
     path(
-        "multidisciplinary",
+        "multidisciplinary/",
         curriculum.MultidisciplinaryListView.as_view(),
         name="multidisciplinary-list"
+    ),
+    # core_contents/
+    path(
+        "core_contents/",
+        curriculum.CoreContentListView.as_view(),
+        name="core-content-list"
     ),
 ]
