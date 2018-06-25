@@ -984,6 +984,9 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/System_Requirements_Specification"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Software_Functional_Configuration_Audit"/>
     </Declaration>
     <Declaration>
@@ -1033,9 +1036,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Architecture_Design_Decisions"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Group_Dynamics_and_Psychology"/>
@@ -1369,6 +1369,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Software_Configuration_Identification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Free_Module"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Software_Configuration_Auditing"/>
@@ -1746,11 +1749,11 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Activities_of_Student_Representations"/>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Addressing_Uncertainty"/>
@@ -1941,6 +1944,10 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Compiler_Basics"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+        <Class IRI="/Curriculum"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Component_Based_Design"/>
         <Class IRI="/Software_Design_Strategies_and_Methods"/>
     </SubClassOf>
@@ -2064,117 +2071,12 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Curriculum"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Core_Basic_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Engineering_Foundations"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Basic_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Mathematical_Foundations"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Basic_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Engineering_Economics"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Basic_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Engineering_Professional_Practice"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Core_Professional_Content"/>
         <Class IRI="/Curriculum"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Core_Professional_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Computing_Foundations"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Professional_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Construction"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Professional_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Maintenance"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Professional_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Testing"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Core_Specific_Content"/>
         <Class IRI="/Curriculum"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Specific_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Configuration_Management"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Specific_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Design"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Specific_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Engineering_Management"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Specific_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Engineering_Models_and_Methods"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Specific_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Engineering_Process"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Specific_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Quality"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Core_Specific_Content"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasKnowledgeArea"/>
-            <Class IRI="/Software_Requirements"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Cost_Benefit_Analysis"/>
@@ -2481,7 +2383,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Extension_Activities"/>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Families_of_Programs_and_Frameworks"/>
@@ -2520,7 +2422,7 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Problem_Solving_Techniques"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Free_Module"/>
         <Class IRI="/Curriculum"/>
     </SubClassOf>
     <SubClassOf>
@@ -2804,7 +2706,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Mobility_and_Exchange_Activities"/>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Model_Based_Testing_Techniques"/>
@@ -3088,7 +2990,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Professional_Practice_Activities"/>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Professionalism"/>
@@ -3260,7 +3162,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Research_Activities"/>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Resource_Allocation"/>
@@ -3840,7 +3742,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Teaching_Activities"/>
-        <Class IRI="/Free_Module_and_Complementary_and_Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Team_and_Group_Communication"/>
@@ -5544,6 +5446,16 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Complementary_and_Extension_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Complementary_and_Extension_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Complementary and Extension Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Component_Based_Design</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -6667,15 +6579,13 @@ The work consists of the development, by the student, of a study or engineering 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Free_Module_and_Complementary_and_Extension_Activities</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of ​​greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University&apos;s campuses.
-
-In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.</Literal>
+        <IRI>/Free_Module</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of ​​greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University&apos;s campuses.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Free_Module_and_Complementary_and_Extension_Activities</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Free Module (ML) and Complementary and Extension Activities (ACEx)</Literal>
+        <IRI>/Free_Module</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Free Module</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>

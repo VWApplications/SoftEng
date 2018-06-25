@@ -1,4 +1,9 @@
 from django.views.generic import ListView, DetailView
+from django.shortcuts import get_object_or_404
+from django.urls import reverse_lazy
+from django.contrib import messages
+from knowledge.models import Subtopic
+from core.generics import ObjectRedirectView
 from curriculum.models import Discipline
 
 
@@ -40,3 +45,60 @@ class DisciplineDetailView(DetailView):
     model = Discipline
     template_name = "curriculum/details.html"
     context_object_name = "discipline"
+
+
+class RemoveContentView(ObjectRedirectView):
+    """
+    Remove a content from discipline.
+    """
+
+    template_name = "curriculum/details.html"
+
+    def get_object(self):
+        """
+        Get the specific content.
+        """
+
+        discipline = get_object_or_404(
+            Discipline,
+            slug=self.kwargs.get('slug', '')
+        )
+
+        return discipline
+
+    def get_success_url(self):
+        """
+        Create a success url to redirect
+        """
+
+        discipline = self.get_object()
+
+        success_url = reverse_lazy(
+            'curriculum:discipline-detail',
+            kwargs={
+                'slug': discipline.slug
+            }
+        )
+
+        return success_url
+
+    def action(self, request, *args, **kwargs):
+        """
+        Remove content from discipline.
+        """
+
+        discipline = self.get_object()
+
+        subtopic = get_object_or_404(
+            Subtopic,
+            slug=self.kwargs.get('subtopic', '')
+        )
+
+        discipline.program.remove(subtopic)
+
+        messages.success(
+            self.request,
+            "Subtopic removed successfully"
+        )
+
+        return super(RemoveContentView, self).action(request, *args, **kwargs)

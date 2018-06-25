@@ -20,7 +20,7 @@
                 <b>Disciplines</b>
               </div>
               <div class="card-body">
-                {% for discipline in core_multidisciplinary.disciplines.all %}
+                {% for discipline in multidisciplinary.disciplines.all %}
                   <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}"
                      class="list-group-item list-group-item-action">
                      {{discipline}}

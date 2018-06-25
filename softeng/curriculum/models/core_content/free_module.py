@@ -1,14 +1,14 @@
 from core import Query, Sesame
 
 
-class CoreProfessionalContent(object):
+class FreeModule(object):
     """
-    Core professional content to software engineering curriculum.
+    Free module to software engineering curriculum.
     """
 
     def __init__(self):
         """
-        Create the core professional content model.
+        Create the free module model.
         """
 
         result = self.get_information()
@@ -27,7 +27,7 @@ class CoreProfessionalContent(object):
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Core_Professional_Content dc:title ?title ;
+              es:Free_Module dc:title ?title ;
               dc:description ?description
             }
         """

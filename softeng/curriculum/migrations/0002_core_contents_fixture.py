@@ -2,7 +2,7 @@ from django.db import migrations
 from django.utils.text import slugify
 from curriculum.models import (
     CoreBasicContent, CoreSpecificContent,
-    CoreProfessionalContent
+    CoreProfessionalContent, FreeModule
 )
 
 
@@ -17,6 +17,7 @@ def core_content_forwards(apps, schema_editor):
     core_contents.append(CoreBasicContent())
     core_contents.append(CoreProfessionalContent())
     core_contents.append(CoreSpecificContent())
+    core_contents.append(FreeModule())
 
     for core in core_contents:
         CoreContent.objects.create(

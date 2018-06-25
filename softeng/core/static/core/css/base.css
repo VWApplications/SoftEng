@@ -47,3 +47,7 @@ body {
 .message {
   margin-top: 10px;
 }
+
+.remove-button {
+  margin-bottom: 5px;
+}
