@@ -375,9 +375,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Empirical_Methods_and_Experimental_Techniques"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasKnowledgeArea"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Techniques_Based_on_the_Nature_of_the_Application"/>
     </Declaration>
     <Declaration>
@@ -1113,9 +1110,6 @@ The insertion of the Software Engineering professional can take place with the f
         <AnnotationProperty abbreviatedIRI="dc:identifier"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Process_Actors"/>
     </Declaration>
     <Declaration>
@@ -1641,13 +1635,13 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Security"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Modeling_Simulation_and_Prototyping"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Data_Structure_Overview"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Reuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Modeling_Simulation_and_Prototyping"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Debugging_Tools"/>
@@ -1966,13 +1960,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Computing_Foundations"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Computing_Foundations"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Professional_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Concepts_of_Correlation_and_Regression"/>
@@ -2331,13 +2318,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Knowledge_Area"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Engineering_Foundations"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Basic_Content"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Entity_and_Schema"/>
         <Class IRI="/Database_Basics_and_Data_Management"/>
     </SubClassOf>
@@ -2656,13 +2636,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Mathematical_Foundations"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Mathematical_Foundations"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Basic_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Measurement"/>
@@ -3277,13 +3250,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Knowledge_Area"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Software_Configuration_Management"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Specific_Content"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Software_Configuration_Management_Tools"/>
         <Class IRI="/Software_Configuration_Management"/>
     </SubClassOf>
@@ -3304,13 +3270,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Knowledge_Area"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Software_Construction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Professional_Content"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Software_Construction_Fundamentals"/>
         <Class IRI="/Software_Construction"/>
     </SubClassOf>
@@ -3325,13 +3284,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Software_Design"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Software_Design"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Specific_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Design_Fundamentals"/>
@@ -3378,26 +3330,12 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Knowledge_Area"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Software_Engineering_Economics"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Basic_Content"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Software_Engineering_Economics_Fundamentals"/>
         <Class IRI="/Software_Engineering_Economics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Engineering_Management"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Software_Engineering_Management"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Specific_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Engineering_Management_Tools"/>
@@ -3416,22 +3354,8 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Knowledge_Area"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Software_Engineering_Models_and_Methods"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Specific_Content"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Software_Engineering_Process"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Software_Engineering_Process"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Specific_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Engineering_Process_Tools"/>
@@ -3440,13 +3364,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Software_Engineering_Professional_Practice"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Software_Engineering_Professional_Practice"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Basic_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Functional_Configuration_Audit"/>
@@ -3471,13 +3388,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Software_Maintenance"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Software_Maintenance"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Professional_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Maintenance_Fundamentals"/>
@@ -3552,13 +3462,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Knowledge_Area"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Software_Quality"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Specific_Content"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Software_Quality_Assurance"/>
         <Class IRI="/Software_Quality_Management_Processes"/>
     </SubClassOf>
@@ -3603,13 +3506,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Knowledge_Area"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Software_Requirements"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Specific_Content"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Software_Requirements_Fundamentals"/>
         <Class IRI="/Software_Requirements"/>
     </SubClassOf>
@@ -3644,13 +3540,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Software_Testing"/>
         <Class IRI="/Knowledge_Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Software_Testing"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-            <Class IRI="/Core_Professional_Content"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Testing_Fundamentals"/>
@@ -3981,6 +3870,15 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Tradeoff_Analysis"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
+        <Class IRI="/Activities_of_Student_Representations"/>
+        <Class IRI="/Extension_Activities"/>
+        <Class IRI="/Mobility_and_Exchange_Activities"/>
+        <Class IRI="/Professional_Practice_Activities"/>
+        <Class IRI="/Research_Activities"/>
+        <Class IRI="/Teaching_Activities"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="/Addressing_Uncertainty"/>
         <Class IRI="/Decisions_under_Risk"/>
         <Class IRI="/Decisions_under_Uncertainty"/>
@@ -4177,6 +4075,14 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/The_Compilation_Process"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+        <Class IRI="/Core_Basic_Content"/>
+        <Class IRI="/Core_Professional_Content"/>
+        <Class IRI="/Core_Specific_Content"/>
+        <Class IRI="/Free_Module"/>
+        <Class IRI="/Multidisciplinary"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="/Component_Based_Design"/>
         <Class IRI="/Data_Structure_Centered_Design"/>
         <Class IRI="/Function_Oriented_Structured_Design"/>
@@ -4277,6 +4183,11 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Proposals"/>
         <Class IRI="/Replacement_and_Retirement_Decisions"/>
         <Class IRI="/Termination_Decisions"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Course_Completion_Work"/>
+        <Class IRI="/Integrator_Project"/>
+        <Class IRI="/Supervised_Internship"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="/Data_Management"/>
@@ -4619,14 +4530,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Test_Related_Measures"/>
         <Class IRI="/Test_Techniques"/>
     </DisjointClasses>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="/hasKnowledgeArea"/>
-        <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-    </InverseObjectProperties>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="/hasKnowledgeArea"/>
-        <ObjectProperty IRI="/isKnowledgeAreaOf"/>
-    </DisjointObjectProperties>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dc:contributor</AbbreviatedIRI>
@@ -5020,6 +4923,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Agile Methods</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Algebraic_Structures</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Algebraic_Structures</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Algebraic Structures</Literal>
@@ -5073,6 +4981,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Alternate_Abstractions</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alternate Abstractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Analysis_of_Models</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -5230,6 +5143,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Basic Developer Human Factors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Basic_Logic</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Basic_Logic</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Basic Logic</Literal>
@@ -5365,6 +5283,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Change Management</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Closure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Closure</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Closure</Literal>
@@ -5418,6 +5341,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Comments</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Comments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Communication_Skills</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -5493,6 +5421,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Computer_Organization_Overview</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Computer Organization Overview</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Computing_Foundations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -5628,6 +5561,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Construction_Quality</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Construction Quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Construction_Technologies</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -6238,6 +6176,11 @@ The work consists of the development, by the student, of a study or engineering 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Earned Value Management</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Economic_Analysis_Methods</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Economic_Analysis_Methods</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Economic Analysis Methods</Literal>
@@ -6323,6 +6266,11 @@ The work consists of the development, by the student, of a study or engineering 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emergent System Properties</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Empirical_Methods_and_Experimental_Techniques</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Empirical_Methods_and_Experimental_Techniques</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Empirical Methods and Experimental Techniques</Literal>
@@ -6348,6 +6296,11 @@ The work consists of the development, by the student, of a study or engineering 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Encapsulation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Engineering_Design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Engineering_Design</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Engineering Design</Literal>
@@ -6361,6 +6314,11 @@ The work consists of the development, by the student, of a study or engineering 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Engineering_Design_in_Engineering_Education</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Engineering Design in Engineering Education</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Engineering_Foundations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -6678,6 +6636,11 @@ The work consists of the development, by the student, of a study or engineering 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Grammar-Based Input Processing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Grammars</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Grammars</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Grammars</Literal>
@@ -6693,6 +6656,11 @@ The work consists of the development, by the student, of a study or engineering 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Graphs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Graphs_and_Trees</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Graphs_and_Trees</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Graphs and Trees</Literal>
@@ -6706,6 +6674,11 @@ The work consists of the development, by the student, of a study or engineering 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Group</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Group_Dynamics_and_Psychology</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -6825,6 +6798,11 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Information_Modeling</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information Modeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Initiation_and_Scope_Definition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -6954,9 +6932,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Key Issues</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Key_Issues_in_Software_Design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Key_Issues_in_Software_Design</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Key Issues in Software Design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Key_Issues_in_Software_Maintenance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -7014,6 +7002,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Levels (Scales) of Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Life_Cycle_Economics</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Life_Cycle_Economics</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Life Cycle Economics</Literal>
@@ -7069,6 +7062,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maintenance Cost Estimation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Maintenance_Process</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Maintenance_Process</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maintenance Process</Literal>
@@ -7104,9 +7102,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Management Issues</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Management_of_the_SCM_Process</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Management_of_the_SCM_Process</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Management of the SCM Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Managing_Construction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -7114,9 +7122,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Managing Construction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Mathematical_Foundations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Mathematical_Foundations</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mathematical Foundations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Measurement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -7244,6 +7262,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Model Validation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Modeling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Modeling</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Modeling</Literal>
@@ -7267,6 +7290,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Modeling_Principles</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Modeling Principles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Modeling_Simulation_and_Prototyping</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -7372,6 +7400,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Networking_Protocols_and_Standards</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Networking Protocols and Standards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Number_Theory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -7669,9 +7702,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Portfolio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Practical_Considerations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Practical_Considerations</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Considerations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Practical_Considerations_Construction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -7689,9 +7732,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Considerations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Practical_Considerations_Quality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Practical_Considerations_Quality</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Considerations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Practical_Considerations_Requirements</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -7899,6 +7952,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professional practice activities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Professionalism</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Professionalism</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professionalism</Literal>
@@ -7992,6 +8050,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Project_Life_Cycle</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Project Life Cycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Proof_Techniques</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8199,6 +8262,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requesting, Evaluating, and Approving Software Changes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Requirements_Analysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Requirements_Analysis</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements Analysis</Literal>
@@ -8224,6 +8292,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements Classification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Requirements_Elicitation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Requirements_Elicitation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements Elicitation</Literal>
@@ -8237,6 +8310,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Requirements_Negotiation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements Negotiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Requirements_Process</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8264,6 +8342,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements Sources</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Requirements_Specification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Requirements_Specification</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements Specification</Literal>
@@ -8277,6 +8360,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Requirements_Tracing</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requirements Tracing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Requirements_Validation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8364,6 +8452,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reverse Engineering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Review_and_Evaluation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Review_and_Evaluation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Review and Evaluation</Literal>
@@ -8409,9 +8502,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Risk Management</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Risk_and_Uncertainty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Risk_and_Uncertainty</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Risk and Uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Root_Cause_Analysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8479,6 +8582,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Set Operations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Set_Relations_Functions</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Set_Relations_Functions</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Set, Relations, Functions</Literal>
@@ -8514,9 +8622,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Building</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Configuration_Auditing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Configuration_Auditing</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Configuration Auditing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Configuration_Control</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8524,9 +8642,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Configuration Control</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Configuration_Identification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Configuration_Identification</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Configuration Identification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Configuration_Management</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8542,6 +8670,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Configuration_Management_Tools</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Configuration Management Tools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Configuration_Status_Accounting</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8569,9 +8702,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Configuration Status Reporting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Construction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Construction</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Construction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Construction_Fundamentals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8589,9 +8732,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Construction Security</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Construction_Tools</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Construction_Tools</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Construction Tools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8599,9 +8752,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Design_Fundamentals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Design_Fundamentals</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Design Fundamentals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Design_Notations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8629,6 +8792,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Design Process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Design_Quality_Analysis_and_Evaluation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Design_Quality_Analysis_and_Evaluation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Design Quality Analysis and Evaluation</Literal>
@@ -8642,6 +8810,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Design_Security</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Design Security</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Design_Strategies_and_Methods</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8679,14 +8852,29 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Culture and Ethics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Economics</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Engineering_Economics</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Economics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Economics_Fundamentals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Engineering_Economics_Fundamentals</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Economics Fundamentals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Management</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8704,9 +8892,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Management Tools</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Measurement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Engineering_Measurement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Methods</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8714,9 +8912,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Methods</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Models_and_Methods</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Engineering_Models_and_Methods</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Models and Methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Process</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8732,6 +8940,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Engineering_Process_Tools</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering Process Tools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Engineering_Professional_Practice</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8779,14 +8992,29 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Life Cycle Models</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Life_Cycles</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Life_Cycles</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Life Cycles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Maintenance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Maintenance</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Maintenance_Fundamentals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8812,6 +9040,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Maintenance_Tools</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Maintenance Tools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Measurement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8859,9 +9092,19 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Process Assessment Models</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Process_Assessment_and_Improvement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Process_Assessment_and_Improvement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Process Assessment and Improvement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Process_Definition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8919,14 +9162,29 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Process and Product Measurement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Project_Enactment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Project_Enactment</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Project Enactment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Project_Planning</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Project_Planning</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Project Planning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Quality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -8944,6 +9202,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Quality Assurance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Quality_Fundamentals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Quality_Fundamentals</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Quality Fundamentals</Literal>
@@ -8957,6 +9220,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Quality_Improvement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Quality Improvement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Quality_Management_Processes</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -9014,14 +9282,29 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Release Management</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Release_Management_and_Delivery</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Release_Management_and_Delivery</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Release Management and Delivery</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Requirements</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Requirements</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Requirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Requirements_Fundamentals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -9089,14 +9372,29 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Security Guidelines</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Structure_and_Architecture</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Structure_and_Architecture</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Structure and Architecture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Testing</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Testing_Fundamentals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -9112,6 +9410,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Software_Testing_Security</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Testing Security</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Software_Testing_Tools</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -9147,6 +9450,11 @@ The Engineering Integrator Project disciplines are used in a way that complement
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/State_Based_and_Table_Driven_Construction_Techniques</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State-Based and Table-Driven Construction Techniques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Statistical_Analysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -9356,6 +9664,11 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Techniques for Conducting Root Cause Analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Techniques_for_Maintenance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Techniques_for_Maintenance</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Techniques for Maintenance</Literal>
@@ -9391,9 +9704,19 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Test-First Programming</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Test_Levels</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Test_Levels</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Test Levels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Test_Process</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -9401,9 +9724,19 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Test Process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Test_Related_Measures</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Test_Related_Measures</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Test-Related Measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Test_Techniques</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -9571,6 +9904,11 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Types of Errors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Types_of_Models</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Types_of_Models</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Types of Models</Literal>
@@ -9624,6 +9962,11 @@ Supervised Internship is a compulsory activity in the course. In order to achiev
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/User_Input_and_Output</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Input and Output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/User_Interface_Design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
