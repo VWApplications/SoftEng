@@ -87,14 +87,16 @@ class Discipline(models.Model):
         CoreContent,
         related_name="disciplines",
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        blank=True
     )
 
     multidisciplinary = models.ForeignKey(
         Multidisciplinary,
         related_name="disciplines",
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        blank=True
     )
 
     program = models.ManyToManyField(
