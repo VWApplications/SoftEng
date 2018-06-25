@@ -40,7 +40,6 @@ class ComputingFoundations(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
-        self.curriculum = result['curriculum']['value']
 
     def get_information(self):
         """
@@ -51,14 +50,10 @@ class ComputingFoundations(object):
             PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?title ?description ?curriculum
+            SELECT DISTINCT ?title ?description
             WHERE {
-              es:Computing_Foundations dc:title ?title .
-              es:Computing_Foundations dc:description ?description .
-              es:Computing_Foundations rdfs:subClassOf ?restriction .
-              ?restriction owl:onProperty es:isKnowledgeAreaOf .
-              ?restriction owl:someValuesFrom ?curriculum_url .
-              ?curriculum_url dc:title ?curriculum
+              es:Computing_Foundations dc:title ?title ;
+              dc:description ?description
             }
         """
 
