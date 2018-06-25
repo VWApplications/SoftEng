@@ -50,9 +50,8 @@
             <th>Required Disciplines:</th>
             <td>
               {% for required in discipline.required.all %}
-                <a href="{% url 'curriculum:discipline-detail' slug=required.slug %}"
-                   class="list-group-item list-group-item-action">
-                   {{required}}
+                <a href="{% url 'curriculum:discipline-detail' slug=required.slug %}">
+                  <p>{{required}}</p>
                 </a>
               {% empty %}
                 <p>This discipline has not required disciplines.</p>
@@ -61,9 +60,9 @@
           </tr>
           <tr>
             <th>Description</th>
-            <td class="breakline">
+            <td>
               {% if discipline.description %}
-                {{discipline.description}}
+                <p class="breakline">{{discipline.description}}</p>
               {% else %}
                 <p>Discipline hasn't description.</p>
               {% endif %}
@@ -73,9 +72,8 @@
             <th>Program:</th>
             <td>
               {% for subtopic in discipline.program.all %}
-                <a href="{% url 'knowledge:swebok-detail' topic=subtopic.topic.slug %}"
-                   class="list-group-item list-group-item-action">
-                   {{subtopic.title}}
+                <a href="{% url 'knowledge:swebok-detail' topic=subtopic.topic.slug %}">
+                  <p>{{subtopic.title}}</p>
                 </a>
               {% empty %}
                 <p>This discipline has not program content.</p>
@@ -84,9 +82,9 @@
           </tr>
           <tr>
             <th>Bibliografy</th>
-            <td class="breakline">
+            <td>
               {% if discipline.description %}
-                {{discipline.bibliografy}}
+                <p class="breakline">{{discipline.bibliografy}}</p>
               {% else %}
                 <p>Discipline hasn't bibliografy.</p>
               {% endif %}

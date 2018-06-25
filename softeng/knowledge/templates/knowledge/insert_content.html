@@ -84,6 +84,7 @@
           There aren't disciplines available.
         </div>
       {% endif %}
+      <a href="{% url 'knowledge:swebok-detail' topic=topic.slug %}">Back</a>
     </div>
   </div>
 {% endblock %}
