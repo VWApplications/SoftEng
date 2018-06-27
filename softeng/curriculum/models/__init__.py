@@ -2,9 +2,6 @@ from .core_content.core_basic_content import CoreBasicContent
 from .core_content.core_professional_content import CoreProfessionalContent
 from .core_content.core_specific_content import CoreSpecificContent
 from .core_content.free_module import FreeModule
-from .multidisciplinary.course_completion_work import CourseCompletionWork
-from .multidisciplinary.integrator_project import IntegratorProject
-from .multidisciplinary.supervised_internship import SupervisedInternship
 from .extension.activities_of_social_action import ActivitiesOfSocialAction
 from .extension.activities_of_student_representations import ActivitiesOfStudentRepresentations
 from .extension.extension_activities import ExtensionActivities

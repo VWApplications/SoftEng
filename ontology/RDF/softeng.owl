@@ -112,16 +112,10 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Modeling_Principles"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Extension_Credits"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Divisibility"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Software_Configuration_Management_Tools"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Categories_of_Software_Processes"/>
@@ -137,9 +131,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Management_of_the_SCM_Process"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Honorary_Doctorate"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Structural_Descriptions_Static_View"/>
@@ -259,6 +250,9 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Offshoring_and_Outsourcing"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/hasCampus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/The_Compilation_Process"/>
     </Declaration>
     <Declaration>
@@ -275,9 +269,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Direct_and_Derived_Measures"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/areCreditsOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Types_of_Data_Structure"/>
@@ -322,9 +313,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Component_Based_Design"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Professional_Certificates"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Process_Support_and_Management"/>
     </Declaration>
     <Declaration>
@@ -343,9 +331,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Structure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Study_Credits"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Fifth_Semester"/>
     </Declaration>
     <Declaration>
@@ -356,6 +341,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Maintenance_Cost_Estimation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FGA"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isTopicOf"/>
@@ -380,6 +368,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Investment_Decisions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/UnB"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Memory_System_Organization"/>
@@ -407,9 +398,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Construction_with_Reuse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Teaching_activities"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Metaphors_and_Conceptual_Models"/>
@@ -472,9 +460,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Data_Structure_Centered_Design"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Practical_Credits"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Software_Quality_Fundamentals"/>
     </Declaration>
     <Declaration>
@@ -518,6 +503,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/academicObjectProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Finance"/>
@@ -568,9 +556,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Resource_Allocation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Theoretical_Credits"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/General_Strategies"/>
     </Declaration>
     <Declaration>
@@ -590,6 +575,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Software_Process_and_Product_Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Calculo_1"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Proof_Techniques"/>
@@ -659,12 +647,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Software_Requirements_Security"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Undergraduate_Degrees"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Supervised_internship"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Communication_Skills"/>
@@ -743,9 +725,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Grammars"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Credits"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Distribution_of_Components"/>
@@ -835,13 +814,13 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Types_of_Network"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Debugging_Techniques"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/hasSubtopic"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="/professional_profile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Debugging_Techniques"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Process_for_the_Review_and_Revision_of_Requirements"/>
@@ -935,6 +914,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Teaching_Activities"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Software_Testing"/>
@@ -1045,13 +1027,13 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Operating_Systems_Basics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Morning_Period"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Bachelor_Degree"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Perform_the_Measurement_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Morning_Period"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Migration"/>
@@ -1147,9 +1129,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Entity_and_Schema"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Research_Doctorate"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Definitions_and_Terminology"/>
     </Declaration>
     <Declaration>
@@ -1174,6 +1153,9 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Software_Process_Management"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/Extension_Credits"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Analyzing_for_Correctness"/>
     </Declaration>
     <Declaration>
@@ -1190,9 +1172,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Construction_Methods_for_Distributed_Software"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Professional_Degree"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Fourth_Semester"/>
@@ -1351,9 +1330,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Tasks_of_DBMS_Packages"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Transfer_Degree"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Writing"/>
     </Declaration>
     <Declaration>
@@ -1399,6 +1375,9 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Categories_of_Tools"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Knowledge_Domain"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Retirement"/>
     </Declaration>
     <Declaration>
@@ -1418,6 +1397,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Software_Physical_Configuration_Audit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/Practical_Credits"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Multidisciplinary"/>
@@ -1465,13 +1447,7 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Comments"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Course_Completion_Work"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Practical_Considerations_Requirements"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Higher_Doctorate"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Project_Life_Cycle"/>
@@ -1535,9 +1511,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Predicate_Logic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Associate_Degree"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Architectural_Styles"/>
@@ -1648,6 +1621,9 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Software_Measurement"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Research_Activities"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Software_Design_Security"/>
     </Declaration>
     <Declaration>
@@ -1732,9 +1708,6 @@ The insertion of the Software Engineering professional can take place with the f
         <AnnotationProperty IRI="/performance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Integrator_Project"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Measures"/>
     </Declaration>
     <Declaration>
@@ -1769,9 +1742,6 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Friction_Free_Economy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Professional_Doctorate"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Academic_Campus"/>
@@ -1885,13 +1855,7 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Cost_Effectiveness_Analysis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Research_activities"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Designed_Experiment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Specialist_Degree"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Prime_Number_GCD"/>
@@ -1907,6 +1871,9 @@ The insertion of the Software Engineering professional can take place with the f
     </Declaration>
     <Declaration>
         <Class IRI="/Simulation_Engineering"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/Theoretical_Credits"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Discrete_Probability"/>
@@ -2010,13 +1977,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Academic_Degree"/>
         <Class IRI="/Course_Domain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Academic_Degree"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf"/>
-            <Class IRI="/Course"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Academic_Institution"/>
@@ -2368,10 +2328,6 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Associate_Degree"/>
-        <Class IRI="/Academic_Degree"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Attributes_of_Algorithms"/>
         <Class IRI="/Subtopic"/>
     </SubClassOf>
@@ -2385,6 +2341,13 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Bachelor_Degree"/>
         <Class IRI="/Academic_Degree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Bachelor_Degree"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf"/>
+            <Class IRI="/Software_Engineering"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Based_on_the_Software_Engineers_Intuition_and_Experience"/>
@@ -2589,6 +2552,45 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Calculo_1"/>
+        <Class IRI="/Discipline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Calculo_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+            <Class IRI="/Required"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Calculo_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+            <Class IRI="/First_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Calculo_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+            <Class IRI="/Core_Basic_Content"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Calculo_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasContent"/>
+            <Class IRI="/Algorithmic_Analysis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Calculo_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasContent"/>
+            <Class IRI="/Algorithmic_Analysis_Strategies"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Cash_Flow"/>
         <Class IRI="/Subtopic"/>
     </SubClassOf>
@@ -2645,7 +2647,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Classification"/>
-        <Class IRI="/Discipline_Domain"/>
+        <Class IRI="/Curriculum_Contents"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Closure"/>
@@ -2812,13 +2814,6 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Complementary_and_Extension_Activities"/>
         <Class IRI="/University_Domain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Complementary_and_Extension_Activities"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
-            <Class IRI="/Academic_Institution"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Component_Based_Design"/>
@@ -3480,10 +3475,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Course_Domain"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Course_Completion_Work"/>
-        <Class IRI="/Multidisciplinary"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Course_Domain"/>
         <Class IRI="/University_Domain"/>
     </SubClassOf>
@@ -3492,19 +3483,8 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Curricular_Structure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Credits"/>
-        <Class IRI="/Discipline_Domain"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Curricular_Structure"/>
         <Class IRI="/Course_Domain"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Curricular_Structure"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
-            <Class IRI="/Course"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Curriculum_Contents"/>
@@ -4006,29 +3986,8 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Discipline_Domain"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Discipline"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite"/>
-            <Class IRI="/Discipline"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Discipline"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf"/>
-            <Class IRI="/Discipline"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Discipline"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/hasContent"/>
-            <Class IRI="/Topic"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Discipline_Domain"/>
-        <Class IRI="/University_Domain"/>
+        <Class IRI="/Course_Domain"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Discrete_Probability"/>
@@ -4568,8 +4527,15 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Extension_Credits"/>
-        <Class IRI="/Credits"/>
+        <Class IRI="/FGA"/>
+        <Class IRI="/Academic_Campus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FGA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+            <Class IRI="/Academic_Institution"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Families_of_Programs_and_Frameworks"/>
@@ -4700,6 +4666,13 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Full_Time"/>
         <Class IRI="/Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Full_Time"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
+            <Class IRI="/Software_Engineering"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Function_Oriented_Structured_Design"/>
@@ -4945,14 +4918,6 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Higher_Doctorate"/>
-        <Class IRI="/Doctoral_Degree"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Honorary_Doctorate"/>
-        <Class IRI="/Doctoral_Degree"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Identifying_Items_to_Be_Controlled"/>
         <Class IRI="/Subtopic"/>
     </SubClassOf>
@@ -5104,10 +5069,6 @@ The insertion of the Software Engineering professional can take place with the f
             <ObjectProperty IRI="/isSubtopicOf"/>
             <Class IRI="/Practical_Considerations_Construction"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Integrator_Project"/>
-        <Class IRI="/Multidisciplinary"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Interacting_with_Stakeholders"/>
@@ -5298,7 +5259,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Knowledge_Area"/>
-        <Class IRI="/Software_Engineering"/>
+        <Class IRI="/Knowledge_Domain"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Language_Recognition"/>
@@ -6501,13 +6462,6 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Course_Domain"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Period"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
-            <Class IRI="/Course"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Plan_Management"/>
         <Class IRI="/Subtopic"/>
     </SubClassOf>
@@ -6787,10 +6741,6 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Practical_Credits"/>
-        <Class IRI="/Credits"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Preconditions_Postconditions_and_Invariants"/>
         <Class IRI="/Subtopic"/>
     </SubClassOf>
@@ -7022,18 +6972,6 @@ The insertion of the Software Engineering professional can take place with the f
             <ObjectProperty IRI="/isSubtopicOf"/>
             <Class IRI="/Software_Engineering_Economics_Fundamentals"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Professional_Certificates"/>
-        <Class IRI="/Academic_Degree"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Professional_Degree"/>
-        <Class IRI="/Academic_Degree"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Professional_Doctorate"/>
-        <Class IRI="/Doctoral_Degree"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Professional_Practice_Activities"/>
@@ -7751,11 +7689,7 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Research_Doctorate"/>
-        <Class IRI="/Doctoral_Degree"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Research_activities"/>
+        <Class IRI="/Research_Activities"/>
         <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
@@ -8083,6 +8017,13 @@ The insertion of the Software Engineering professional can take place with the f
     <SubClassOf>
         <Class IRI="/Semi_Serial"/>
         <Class IRI="/Curricular_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Semi_Serial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
+            <Class IRI="/Software_Engineering"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Serial_System"/>
@@ -8799,7 +8740,35 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Engineering"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="/Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Software_Engineering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+            <Class IRI="/UnB"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Software_Engineering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasAcademicDegree"/>
+            <Class IRI="/Bachelor_Degree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Software_Engineering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+            <Class IRI="/Full_Time"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Software_Engineering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+            <Class IRI="/Semi_Serial"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Software_Engineering_Culture_and_Ethics"/>
@@ -10378,10 +10347,6 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Specialist_Degree"/>
-        <Class IRI="/Academic_Degree"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Standards"/>
         <Class IRI="/Topic"/>
     </SubClassOf>
@@ -10484,16 +10449,8 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Study_Credits"/>
-        <Class IRI="/Credits"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Subtopic"/>
-        <Class IRI="/Software_Engineering"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Supervised_internship"/>
-        <Class IRI="/Multidisciplinary"/>
+        <Class IRI="/Knowledge_Domain"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Surveillance_of_Software_Configuration_Management"/>
@@ -10606,7 +10563,7 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Teaching_activities"/>
+        <Class IRI="/Teaching_Activities"/>
         <Class IRI="/Complementary_and_Extension_Activities"/>
     </SubClassOf>
     <SubClassOf>
@@ -11005,10 +10962,6 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Theoretical_Credits"/>
-        <Class IRI="/Credits"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Third_Semester"/>
         <Class IRI="/Semester"/>
     </SubClassOf>
@@ -11025,7 +10978,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Topic"/>
-        <Class IRI="/Software_Engineering"/>
+        <Class IRI="/Knowledge_Domain"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Traceability"/>
@@ -11048,10 +11001,6 @@ The insertion of the Software Engineering professional can take place with the f
             <ObjectProperty IRI="/isSubtopicOf"/>
             <Class IRI="/Professionalism"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Transfer_Degree"/>
-        <Class IRI="/Academic_Degree"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Trees"/>
@@ -11130,8 +11079,71 @@ The insertion of the Software Engineering professional can take place with the f
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Undergraduate_Degrees"/>
-        <Class IRI="/Academic_Degree"/>
+        <Class IRI="/UnB"/>
+        <Class IRI="/Academic_Institution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse"/>
+            <Class IRI="/Software_Engineering"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+            <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+            <Class IRI="/Activities_of_Student_Representations"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+            <Class IRI="/Extension_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+            <Class IRI="/Mobility_and_Exchange_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+            <Class IRI="/Professional_Practice_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+            <Class IRI="/Research_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+            <Class IRI="/Teaching_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/UnB"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCampus"/>
+            <Class IRI="/FGA"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Unit_Testing_Tools"/>
@@ -12018,8 +12030,76 @@ The insertion of the Software Engineering professional can take place with the f
         <Class IRI="/Test_Techniques"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasAcademicDegree"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasCampus"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasContent"/>
-        <ObjectProperty IRI="/softwareEngineeringObjectProperty"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasSubtopic"/>
@@ -12031,7 +12111,7 @@ The insertion of the Software Engineering professional can take place with the f
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isContentOf"/>
-        <ObjectProperty IRI="/softwareEngineeringObjectProperty"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isSubtopicOf"/>
@@ -12040,6 +12120,10 @@ The insertion of the Software Engineering professional can take place with the f
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isTopicOf"/>
         <ObjectProperty IRI="/softwareEngineeringObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/softwareEngineeringObjectProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="/hasContent"/>
@@ -12376,6 +12460,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abstraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Academic_Campus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Academic Campus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Academic_Degree</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An academic degree is a degree normally conferred by a higher education institution in official recognition by the successful completion of all the requirements of a course, cycle or stage of higher studies. Graduation is the act of receiving an academic degree.</Literal>
@@ -12647,16 +12736,6 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Associate_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associate degrees are two-year undergraduate degrees awarded by community colleges, vocational schools, and small number of four-year colleges and universities. A few schools offer accelerated associate degree programs that can be completed in less time. There are several benefits to earning an associate degree before earning a bachelor&apos;s degree. One of the biggest benefits is the lower cost of credits. Many students will complete an associate degree and then apply their credits toward the completion of a bachelor&apos;s degree, whereby lowering their overall cost of earning a bachelor&apos;s degree. As long as the associate degree is awarded by a regionally accredited community college, the credits should transfer to a four-year college or university.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Associate_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associate Degree</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Attributes_of_Algorithms</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -12796,6 +12875,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Business Case</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Calculo_1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cálculo 01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Cash_Flow</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
@@ -12844,6 +12928,16 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Change_Management</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Change Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Classification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The course is composed of disciplines, classified in the required and optional types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Classification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discipline Type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -13227,6 +13321,52 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Basic_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation in Computing).
+
+Content Core: Scientific and Technological Methodology, Communication and Expression, Graphic Expression, Mathematics, Physics, Production, Innovation, Administration, Economics, Environmental Sciences, Humanities, Social Sciences, Citizenship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Basic_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Basic Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core content of pedagogical project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Professional_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disciplines with basic vocational content that allow to reach the basic elements of the professional profile of the egress.
+
+Content Core: Programming Logic, Algorithms and Data Structure, Digital Circuits, Computing, Programming Language, Database.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Professional_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Professional Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Specific_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process
+
+Content Core: Specific disciplines for software engineering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Specific_Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Specific Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Cost_Benefit_Analysis</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -13269,6 +13409,16 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Credit_System</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Credit System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Curriculum_Contents</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Curriculum contents to specific course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Curriculum_Contents</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Curriculum Contents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -13642,6 +13792,16 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discipline designate a particular branch of knowledge.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Discrete_Probability</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -13769,6 +13929,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Effort_Schedule_and_Cost_Estimation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Effort, Schedule, and Cost Estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Eighth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Eighth Semester</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -13987,6 +14152,26 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Extension_Credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extension activities, generally carried out externally; credits not counted in the total hours of the course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Extension_Credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extension Credits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/FGA</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Faculty of Engineering of Gama - UnB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/FGA</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FGA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Families_of_Programs_and_Frameworks</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -14016,6 +14201,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Feasibility Analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Fifth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fifth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Finance</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
@@ -14034,6 +14224,11 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Finite_State_Machines</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Finite State Machines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/First_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">First Semester</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -14074,6 +14269,21 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Formulating_the_Real_Problem</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Formulating the Real Problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Fourth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fourth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Free_Module</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of ​​greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University&apos;s campuses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Free_Module</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Free Module</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -14263,26 +14473,6 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/High_Level_Programming_Languages</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">High-Level Programming Languages</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Higher_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The higher doctorate is less common than either the professional doctorate or research doctorate. In fact, this doctorate is not common in the United States. The higher doctorate is a tiered research degree common in countries including the United Kingdom, France and Ireland, among others.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Higher_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Higher Doctorate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Honorary_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The honorary doctorate degree is awarded to honor or recognize individuals that have demonstrated superior achievement or contribution within particular field or discipline. Honorary doctorates are only offered by a few universities in the United States.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Honorary_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Honorary Doctorate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -14891,6 +15081,16 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Multidisciplinary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Multidisciplinary Projects, that is, there is the participation of other courses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Multidisciplinary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Multidisciplinary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Multiple_Attribute_Evaluation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -14958,6 +15158,11 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Networking_Protocols_and_Standards</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Networking Protocols and Standards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Ninth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ninth Semester</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -15096,6 +15301,16 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Optional</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The optional disciplines are those students&apos; free choice to compose their curriculum in order to attend a more personalized training of the professional being graduated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Optional</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Organizational_Context_for_SCM</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -15193,6 +15408,11 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Performance_Measurement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performance Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Period</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Period</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -15313,6 +15533,11 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Practical_Considerations_Testing</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Considerations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Practical_Credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Credits</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -15493,36 +15718,6 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Productivity</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Productivity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Professional_Certificates</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Earning a college degree isn&apos;t always the answer. Sometimes a professional certificate makes a lot more sense – especially if your decision to pursue a higher education is based on economics. Career success can often be obtained as easily with a professional certification as it can with a traditional college degree – especially in highly technical fields where employers are more concerned with your skill set than your college credential. Earning a professional certification is also a lot less expensive.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Professional_Certificates</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professional Certificates</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Professional_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Another common graduate degree is the professional degree. A professional degree is a graduate degree that is a prerequisite to becoming licensed to work in specific field. The most common examples of professional degrees include medical degrees required to become a medical doctor and law degrees which are required to practice law. Professional degrees are also offered in several other fields, including psychology, finance, business and engineering. A bachelor&apos;s degree is the standard prerequisite to entry into most professional degree programs. A few professional degree programs require a master&apos;s degree. Professional degrees are also known as &quot;First Professional Degrees&quot;.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Professional_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professional Degree</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Professional_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The professional doctorate is designed to help students gain advanced skill and knowledge in preparation for a specific profession. The Doctor of Business Administration (DBA), for example, is a popular professional doctorate degree designed to prepare students for careers in business.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Professional_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professional Doctorate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -15846,6 +16041,16 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Required</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The required disciplines are those, as the name says, that are essential to be taken by the students to obtain the bachelor&apos;s degree.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Required</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Required</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Requirements_Analysis</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description.</Literal>
     </AnnotationAssertion>
@@ -15956,23 +16161,13 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Research_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">As its name suggests, the research doctorate focuses on research. Students who earn a research doctorate typically go on to perform research in academia, for government, or in the private sector. The Ph.D. and Doctor of Philosophy are the two most popular research doctorates.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Research_Doctorate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Research Doctorate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Research_activities</IRI>
+        <IRI>/Research_Activities</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Participation in research centers or projects of scientific initiation Institutional Program of Scientific Initiation Grants (PIBIC), publication of works, participation in seminars and scientific initiation events related to graduation;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Research_activities</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Research activities</Literal>
+        <IRI>/Research_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Research Activities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -16135,6 +16330,11 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SCM Plan</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Second_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Second Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Secure_Software_Development_and_Maintenance</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">There isn&apos;t description</Literal>
@@ -16163,6 +16363,16 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Selecting_and_Combining_Techniques</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Selecting and Combining Techniques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Period of time in which a course is assigned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Semester</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -16207,6 +16417,11 @@ This system allows great flexibility in the construction of a study plan by the 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Set, Relations, Functions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Seventh_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Seventh Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Simulation_Engineering</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
@@ -16215,6 +16430,11 @@ This system allows great flexibility in the construction of a study plan by the 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Simulation_Engineering</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Sixth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sixth Semester</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -17038,16 +17258,6 @@ This system allows great flexibility in the construction of a study plan by the 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Specialist_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specialist degree is a graduate degree that professionals pursue after completing a master&apos;s degree. Specialist degrees serve two purposes. They allows professionals to obtain additional expertise and knowledge in a specific discipline. They also provide professionals with industry level certification required for state licensure. In the public school system, a principal is often required to obtain an Ed.S. degree in order to practice. An Ed.S. degree is an example of a specialist degree.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Specialist_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specialist Degree</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Standards</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
     </AnnotationAssertion>
@@ -17233,13 +17443,13 @@ This system allows great flexibility in the construction of a study plan by the 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Teaching_activities</IRI>
+        <IRI>/Teaching_Activities</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monitoring of course subjects, technical course teacher, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Teaching_activities</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Teaching activities</Literal>
+        <IRI>/Teaching_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Teaching Activities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -17290,6 +17500,11 @@ This system allows great flexibility in the construction of a study plan by the 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Techniques_for_Maintenance</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Techniques for Maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Tenth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tenth Semester</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -17462,6 +17677,16 @@ This system allows great flexibility in the construction of a study plan by the 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Target of the Test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Theoretical_Credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Theoretical Credits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Third_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Third Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>/Time_Value_of_Money</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description Here</Literal>
@@ -17495,16 +17720,6 @@ This system allows great flexibility in the construction of a study plan by the 
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/Tradeoff_Analysis</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tradeoff Analysis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Transfer_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Students often pursue an associate degree for one of two reasons. First, to prepare for a career. Second, to prepare to attend a four-year college where they can earn a bachelor&apos;s degree. An associate degree that is used as a stepping stone into a bachelor&apos;s degree program is often referred to as a transfer degree.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Transfer_Degree</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Transfer Degree</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -17558,13 +17773,13 @@ This system allows great flexibility in the construction of a study plan by the 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>/Undergraduate_Degrees</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Undergraduate degrees are also referred to as post-secondary degrees. That is, they are degrees earned after completedly a secondary education (ie., high school diploma or GED) but before a graduate degree. Undergraduate degrees – bachelor&apos;s degrees in particular – usually have a general education, elective and core (major) component. General education curriculum focuses on a breadth of higher education subjects and skills including writing, mathemathics, history and science. Core curriculum includes major coursework required to become proficient in a specific area of study. Elective curriculum, while in line with a student&apos;s major, is chosen independently by each student. Undergraduate students attending the same college, regardless of their major, are typically required to complete the same general education courses. Major courses are determined by individual departments and academic colleges. Elective courses are chosen by each student under the guidance of their major department and an academic advisor.</Literal>
+        <IRI>/UnB</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">University of Brasilia - UnB</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/Undergraduate_Degrees</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Undergraduate Degrees</Literal>
+        <IRI>/UnB</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">University of Brasilia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>

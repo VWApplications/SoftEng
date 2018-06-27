@@ -329,118 +329,152 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/areCreditsOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/areCreditsOf"/>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasAcademicDegree -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasAcademicDegree"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasAcademicDegree">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasCampus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasCampus">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasContent -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasContent">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/softwareEngineeringObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/isContentOf"/>
     </owl:ObjectProperty>
     
@@ -467,7 +501,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/isContentOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/isContentOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/softwareEngineeringObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/academicObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -490,7 +524,45 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/softwareEngineeringObjectProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/softwareEngineeringObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/softwareEngineeringObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Extension_Credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Extension_Credits">
+        <dc:description xml:lang="en">Extension activities, generally carried out externally; credits not counted in the total hours of the course</dc:description>
+        <dc:title xml:lang="en">Extension Credits</dc:title>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Credits">
+        <dc:title xml:lang="en">Practical Credits</dc:title>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Theoretical_Credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Theoretical_Credits">
+        <dc:title xml:lang="en">Theoretical Credits</dc:title>
+    </owl:DatatypeProperty>
     
 
 
@@ -502,109 +574,6 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Degree -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Degree"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasContent"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Topic"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Credits"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Credits"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Study_Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Study_Credits"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Credits"/>
     
 
 
@@ -670,12 +639,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Campus">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/University_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Academic Campus</dc:title>
     </owl:Class>
     
 
@@ -684,12 +648,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">An academic degree is a degree normally conferred by a higher education institution in official recognition by the successful completion of all the requirements of a course, cycle or stage of higher studies. Graduation is the act of receiving an academic degree.</dc:description>
+        <dc:title xml:lang="en">Academic Degree</dc:title>
     </owl:Class>
     
 
@@ -698,18 +658,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Institution">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/University_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Institution is an organ of multidisciplinary higher education and training of professional staff of higher level, research, extension and mastery and cultivation of human knowledge.</dc:description>
+        <dc:title xml:lang="en">Institution</dc:title>
     </owl:Class>
     
 
@@ -766,6 +716,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Activities_of_Social_Action_Citizenship_and_Environment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Participation in programs or NGOs related to social action, exercise of citizenship and defense of the environment.</dc:description>
+        <dc:title xml:lang="en">Activities of Social Action, Citizenship and Environment</dc:title>
     </owl:Class>
     
 
@@ -774,6 +726,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Activities_of_Student_Representations">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Effective participation in the Academic Center and Engineering Academic Directory, student representation in collegiate bodies.</dc:description>
+        <dc:title xml:lang="en">Activities of student representations</dc:title>
     </owl:Class>
     
 
@@ -1170,14 +1124,6 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Associate_Degree -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Associate_Degree">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Attributes_of_Algorithms -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Attributes_of_Algorithms">
@@ -1198,6 +1144,14 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Bachelor_Degree">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isAcademicDegreeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Nine times out of ten when someone says they&apos;re going to earn a &quot;college&quot; degree, they&apos;re talking about a four-year bachelor&apos;s degree. The bachelor&apos;s degree is an undergraduate degree awarded at four-year colleges and universities. It is the degree of choice among employers seeking college educated applicants to fill entry-level positions and the most popular of undergraduate degrees.</dc:description>
+        <dc:title xml:lang="en">Bachelor Degree</dc:title>
     </owl:Class>
     
 
@@ -1455,6 +1409,45 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Calculo_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Calculo_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Required"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/First_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Basic_Content"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasContent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Algorithmic_Analysis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasContent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Algorithmic_Analysis_Strategies"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Cálculo 01</dc:title>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Cash_Flow -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Cash_Flow">
@@ -1539,13 +1532,9 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Classification -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Classification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curriculum_Contents"/>
+        <dc:description xml:lang="en">The course is composed of disciplines, classified in the required and optional types</dc:description>
+        <dc:title xml:lang="en">Discipline Type</dc:title>
     </owl:Class>
     
 
@@ -1754,12 +1743,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/University_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.</dc:description>
+        <dc:title xml:lang="en">Complementary and Extension Activities</dc:title>
     </owl:Class>
     
 
@@ -2479,6 +2464,10 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Basic_Content">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Content"/>
+        <dc:description xml:lang="en">Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation in Computing).
+
+Content Core: Scientific and Technological Methodology, Communication and Expression, Graphic Expression, Mathematics, Physics, Production, Innovation, Administration, Economics, Environmental Sciences, Humanities, Social Sciences, Citizenship</dc:description>
+        <dc:title xml:lang="en">Core Basic Content</dc:title>
     </owl:Class>
     
 
@@ -2487,12 +2476,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Content">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curriculum_Contents"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Core content of pedagogical project</dc:description>
+        <dc:title xml:lang="en">Core Content</dc:title>
     </owl:Class>
     
 
@@ -2501,6 +2486,10 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Professional_Content">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Content"/>
+        <dc:description xml:lang="en">Disciplines with basic vocational content that allow to reach the basic elements of the professional profile of the egress.
+
+Content Core: Programming Logic, Algorithms and Data Structure, Digital Circuits, Computing, Programming Language, Database.</dc:description>
+        <dc:title xml:lang="en">Core Professional Content</dc:title>
     </owl:Class>
     
 
@@ -2509,6 +2498,10 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Specific_Content">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Core_Content"/>
+        <dc:description xml:lang="en">Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process
+
+Content Core: Specific disciplines for software engineering</dc:description>
+        <dc:title xml:lang="en">Core Specific Content</dc:title>
     </owl:Class>
     
 
@@ -2565,44 +2558,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasAcademicDegree"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Degree"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course_Completion_Work -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course_Completion_Work">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Multidisciplinary"/>
+        <dc:title xml:lang="en">Course</dc:title>
     </owl:Class>
     
 
@@ -2619,20 +2575,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Credit_System">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curricular_Structure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Credits">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/areCreditsOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">The students can study subjects at any time, observing the prerequisites.</dc:description>
+        <dc:title xml:lang="en">Credit System</dc:title>
     </owl:Class>
     
 
@@ -2641,12 +2585,6 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curricular_Structure">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2655,6 +2593,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curriculum_Contents">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline_Domain"/>
+        <dc:description xml:lang="en">Curriculum contents to specific course</dc:description>
+        <dc:title xml:lang="en">Curriculum Contents</dc:title>
     </owl:Class>
     
 
@@ -3328,95 +3268,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Credits"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Credits"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Study_Credits"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Credits"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasContent"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Topic"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCredits"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Credits"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Credits"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Study_Credits"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Credits"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Discipline designate a particular branch of knowledge.</dc:description>
+        <dc:title xml:lang="en">Discipline</dc:title>
     </owl:Class>
     
 
@@ -3424,7 +3277,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline_Domain -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline_Domain">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/University_Domain"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course_Domain"/>
     </owl:Class>
     
 
@@ -3482,6 +3335,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Doctoral_Degree">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
+        <dc:description xml:lang="en">A doctoral degree is a graduate degree, somewhat similar to a master&apos;s degree. However, where most master&apos;s degree take two years to complete, a doctoral degree may take anywhere from two to six years to complete. The prerequiste for most doctoral programs is a master&apos;s degree. There are a few doctoral programs that will also accept students with a bachelor&apos;s degree as long as they meet other admission criteria. A doctoral degree is referred to as a &quot;terminal degree&quot; when it is the highest degree that can be earned within a particular field of study. Most doctoral programs are challenging, rigorous, and require a full-time commitment. Historically, doctoral degrees have been academic and research focused. Today, most doctoral programs focus on helping students acquired advanced skills sets and knowledge to prepare them for a specific occupation or specialty.</dc:description>
+        <dc:title xml:lang="en">Doctoral Degree</dc:title>
     </owl:Class>
     
 
@@ -3694,6 +3549,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Eighth_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Eighth Semester</dc:title>
     </owl:Class>
     
 
@@ -4082,6 +3938,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Evening_Period">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Period"/>
+        <dc:title xml:lang="en">Evening Period</dc:title>
     </owl:Class>
     
 
@@ -4122,14 +3979,24 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Extension_Activities">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Courses in the technical or business management area, foreign language courses, extension projects with the community Institutional Program of Extension Scholarships (PIBEX), Continuous Action Extension Projects (PEAC), participation in Engineering Week;</dc:description>
+        <dc:title xml:lang="en">Extension Activities</dc:title>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Extension_Credits -->
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/FGA -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Extension_Credits">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Credits"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/FGA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Campus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Institution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Faculty of Engineering of Gama - UnB</dc:description>
+        <dc:title xml:lang="en">FGA</dc:title>
     </owl:Class>
     
 
@@ -4186,6 +4053,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Fifth_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Fifth Semester</dc:title>
     </owl:Class>
     
 
@@ -4226,6 +4094,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/First_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">First Semester</dc:title>
     </owl:Class>
     
 
@@ -4298,6 +4167,7 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Fourth_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Fourth Semester</dc:title>
     </owl:Class>
     
 
@@ -4306,12 +4176,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Free_Module">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curriculum_Contents"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of ​​greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University&apos;s campuses.</dc:description>
+        <dc:title xml:lang="en">Free Module</dc:title>
     </owl:Class>
     
 
@@ -4336,6 +4202,13 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Full_Time">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Period"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Full Time</dc:title>
     </owl:Class>
     
 
@@ -4456,6 +4329,8 @@ Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Graduate_Degree">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
+        <dc:description xml:lang="en">A graduate degree is an advanced degree that focuses on a specific academic field of study or professional discipline (ie., Law, Medicine, Business, etc.) The general prerequisite for most graduate degree programs is a bachelor&apos;s degree – often in a related field of study. Historically, graduate degrees were academic in nature, and research oriented. Today, most graduate degrees focus on applied sciences and are professional in scope and nature. Many graduate degrees have a split focus between academia and industry. A graduate degree can take as many as eight years to complete, or as little as two.</dc:description>
+        <dc:title xml:lang="en">Graduate Degree</dc:title>
     </owl:Class>
     
 
@@ -4660,22 +4535,6 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         </rdfs:subClassOf>
         <dc:description xml:lang="en">Description Here</dc:description>
         <dc:title xml:lang="en">High-Level Programming Languages</dc:title>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Higher_Doctorate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Higher_Doctorate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Doctoral_Degree"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Honorary_Doctorate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Honorary_Doctorate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Doctoral_Degree"/>
     </owl:Class>
     
 
@@ -4887,14 +4746,6 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         </rdfs:subClassOf>
         <dc:description xml:lang="en">Description Here</dc:description>
         <dc:title xml:lang="en">Integration</dc:title>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Integrator_Project -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Integrator_Project">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Multidisciplinary"/>
     </owl:Class>
     
 
@@ -5128,10 +4979,16 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Knowledge_Area -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Knowledge_Area">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Knowledge_Domain"/>
         <dc:description xml:lang="en">Description Here</dc:description>
         <dc:title xml:lang="en">Knowledge Area</dc:title>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Knowledge_Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Knowledge_Domain"/>
     
 
 
@@ -5546,6 +5403,8 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Master_Degree">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
+        <dc:description xml:lang="en">A master&apos;s degree is a graduate degree students often pursue following the completion of a bachelor&apos;s degree. Even though a master&apos;s degree is more rigorous than a bachelor&apos;s degree, it typically only takes two years to complete, compared to the four years required to complete a bachelor&apos;s degree. A master&apos;s degree focuses on a specific discipline or area of study and does not have a general education requirement. Most master&apos;s degrees are professional in nature, designed to help students develop advanced skills that will help them in their career. More and more employers now seek applicants with a master&apos;s degree.</dc:description>
+        <dc:title xml:lang="en">Master Degree</dc:title>
     </owl:Class>
     
 
@@ -5836,6 +5695,8 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mobility_and_Exchange_Activities">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Permanent exchange with national and international institutions and companies;</dc:description>
+        <dc:title xml:lang="en">Mobility and Exchange Activities</dc:title>
     </owl:Class>
     
 
@@ -6014,6 +5875,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Morning_Period">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Period"/>
+        <dc:title xml:lang="en">Morning Period</dc:title>
     </owl:Class>
     
 
@@ -6022,12 +5884,8 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Multidisciplinary">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curriculum_Contents"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Multidisciplinary Projects, that is, there is the participation of other courses.</dc:description>
+        <dc:title xml:lang="en">Multidisciplinary</dc:title>
     </owl:Class>
     
 
@@ -6184,6 +6042,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Ninth_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Ninth Semester</dc:title>
     </owl:Class>
     
 
@@ -6192,6 +6051,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Nocturnal_Period">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Period"/>
+        <dc:title xml:lang="en">Nocturnal Period</dc:title>
     </owl:Class>
     
 
@@ -6445,6 +6305,8 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Optional">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Classification"/>
+        <dc:description xml:lang="en">The optional disciplines are those students&apos; free choice to compose their curriculum in order to attend a more personalized training of the professional being graduated.</dc:description>
+        <dc:title xml:lang="en">Optional</dc:title>
     </owl:Class>
     
 
@@ -6637,12 +6499,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Period">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Period</dc:title>
     </owl:Class>
     
 
@@ -6966,14 +6823,6 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Practical_Credits">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Credits"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Preconditions_Postconditions_and_Invariants -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Preconditions_Postconditions_and_Invariants">
@@ -7293,34 +7142,12 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Certificates -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Certificates">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Degree -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Degree">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Doctorate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Doctorate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Doctoral_Degree"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Practice_Activities -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Practice_Activities">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Participation in the Executive Board of the Junior Engineering Company (EJEL), participation in projects carried out by EJEL, extracurricular internships in the technical area, technological development projects in companies.</dc:description>
+        <dc:title xml:lang="en">Professional Practice Activities</dc:title>
     </owl:Class>
     
 
@@ -7928,6 +7755,8 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Required">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Classification"/>
+        <dc:description xml:lang="en">The required disciplines are those, as the name says, that are essential to be taken by the students to obtain the bachelor&apos;s degree.</dc:description>
+        <dc:title xml:lang="en">Required</dc:title>
     </owl:Class>
     
 
@@ -8216,18 +8045,12 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Research_Doctorate -->
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Research_Activities -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Research_Doctorate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Doctoral_Degree"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Research_activities -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Research_activities">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Research_Activities">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Participation in research centers or projects of scientific initiation Institutional Program of Scientific Initiation Grants (PIBIC), publication of works, participation in seminars and scientific initiation events related to graduation;</dc:description>
+        <dc:title xml:lang="en">Research Activities</dc:title>
     </owl:Class>
     
 
@@ -8546,6 +8369,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Second_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Second Semester</dc:title>
     </owl:Class>
     
 
@@ -8638,12 +8462,8 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Discipline_Domain"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Period of time in which a course is assigned</dc:description>
+        <dc:title xml:lang="en">Semester</dc:title>
     </owl:Class>
     
 
@@ -8652,6 +8472,16 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semi_Serial">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curricular_Structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">The semi-serial system is an academic structure that combines characteristics of the serial system and the credit system.
+
+This system allows great flexibility in the construction of a study plan by the students, but creates a difficulty of managing vacancies. In the semi-serial system, the flexibility of the credit system is contemplated, but the formative trajectory is oriented around a reference flow chart, by means of preference of places: the student who fully fulfills the disciplines for a semester have their job preferably processed in the subjects of the following semester.</dc:description>
+        <dc:title xml:lang="en">Semi Serial</dc:title>
     </owl:Class>
     
 
@@ -8660,6 +8490,8 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Serial_System">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Curricular_Structure"/>
+        <dc:description xml:lang="en">Students follow pre-determined lists of disciplines per semester or school year.</dc:description>
+        <dc:title xml:lang="en">Serial System</dc:title>
     </owl:Class>
     
 
@@ -8718,6 +8550,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Seventh_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Seventh Semester</dc:title>
     </owl:Class>
     
 
@@ -8742,6 +8575,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Sixth_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Sixth Semester</dc:title>
     </owl:Class>
     
 
@@ -9472,7 +9306,31 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/UnB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasAcademicDegree"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Bachelor_Degree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Full_Time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semi_Serial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dc:description xml:lang="en">Software Engineering is an area of computing focused on the specification, development, maintenance and creation of software systems, applying technologies and practices of project management and other disciplines, aiming at organization, productivity and quality. Currently, these technologies and practices encompass programming languages, database, tools, platforms, libraries, standards, processes and the quality of software issue.</dc:description>
         <dc:title xml:lang="en">Software Engineering</dc:title>
     </owl:Class>
@@ -11256,14 +11114,6 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Specialist_Degree -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Specialist_Degree">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Standards -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Standards">
@@ -11404,27 +11254,11 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Study_Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Study_Credits">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Credits"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Subtopic -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Subtopic">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Knowledge_Domain"/>
         <dc:title xml:lang="en">Subtopic</dc:title>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Supervised_internship -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Supervised_internship">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Multidisciplinary"/>
     </owl:Class>
     
 
@@ -11589,10 +11423,12 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Teaching_activities -->
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Teaching_Activities -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Teaching_activities">
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Teaching_Activities">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Monitoring of course subjects, technical course teacher, etc.</dc:description>
+        <dc:title xml:lang="en">Teaching Activities</dc:title>
     </owl:Class>
     
 
@@ -11711,6 +11547,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Tenth_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Tenth Semester</dc:title>
     </owl:Class>
     
 
@@ -12090,18 +11927,11 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Theoretical_Credits -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Theoretical_Credits">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Credits"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Third_Semester -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Third_Semester">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Semester"/>
+        <dc:title xml:lang="en">Third Semester</dc:title>
     </owl:Class>
     
 
@@ -12125,13 +11955,7 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Topic -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Topic">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/isContentOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Knowledge_Domain"/>
         <dc:title xml:lang="en">Topic</dc:title>
     </owl:Class>
     
@@ -12165,14 +11989,6 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
         </rdfs:subClassOf>
         <dc:description xml:lang="en">Description Here</dc:description>
         <dc:title xml:lang="en">Tradeoff Analysis</dc:title>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Transfer_Degree -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Transfer_Degree">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
     </owl:Class>
     
 
@@ -12275,10 +12091,66 @@ A hierarchy often forms naturally in task decomposition. Often, a task analysis 
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/Undergraduate_Degrees -->
+    <!-- http://www.semanticweb.org/ontologies/2018/Software_Engineering/UnB -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Undergraduate_Degrees">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Degree"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Software_Engineering/UnB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Academic_Institution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Software_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Activities_of_Social_Action_Citizenship_and_Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Activities_of_Student_Representations"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Extension_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Mobility_and_Exchange_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Professional_Practice_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Research_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/Teaching_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/hasCampus"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Software_Engineering/FGA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">University of Brasilia - UnB</dc:description>
+        <dc:title xml:lang="en">University of Brasilia</dc:title>
     </owl:Class>
     
 
