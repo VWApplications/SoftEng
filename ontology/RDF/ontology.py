@@ -2,11 +2,7 @@ from rdflib import Graph
 from knowledge import Knowledge
 
 graph = Graph()
-
 Knowledge(graph)
-
-
-# Escrever o arquivo graph.rdf com as triplas inseridas
 graph.serialize("ontology/RDF/softeng.rdf")
 
 
