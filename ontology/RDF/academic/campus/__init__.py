@@ -1,1 +1,1 @@
-from .FGA import FGA
+from .academic_campus import AcademicCampus

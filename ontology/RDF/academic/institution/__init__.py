@@ -1,1 +1,1 @@
-from .UnB import UnB
+from .academic_institution import AcademicInstitution

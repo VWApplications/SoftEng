@@ -1,4 +1,5 @@
 from rdflib import URIRef, Literal
+from .software_engineering import SoftwareEngineering
 
 # PREFIX
 dc = "http://purl.org/dc/elements/1.1/"
@@ -6,9 +7,9 @@ rdfs = "http://www.w3.org/2000/01/rdf-schema#"
 es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
-class TenthSemester(object):
+class Course(object):
     """
-    Tenth Semester
+    Course
     """
 
     def __init__(self, graph):
@@ -17,12 +18,23 @@ class TenthSemester(object):
         """
 
         graph.add((
-            URIRef(es + 'Tenth_Semester'),
+            URIRef(es + 'Course'),
             URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Semester'),
+            URIRef(es + 'Course_Domain'),
         ))
         graph.add((
-            URIRef(es + 'Tenth_Semester'),
+            URIRef(es + 'Course'),
             URIRef(dc + 'title'),
-            Literal('Tenth Semester', lang='en')
+            Literal('Course', lang='en')
         ))
+
+        self.graph = graph
+
+        self.create()
+
+    def create(self):
+        """
+        Insert subclasses
+        """
+
+        SoftwareEngineering(self.graph)

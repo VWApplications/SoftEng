@@ -1,8 +1,8 @@
 from rdflib import URIRef, Literal
-from .campus import AcademicCampus
-from .institution import AcademicInstitution
-from .extension import ComplementaryAndExtensionActivities
-from .course import CourseDomain
+from .course import Course
+from .curricular_structure import CurricularStructure
+from .discipline import DisciplineDomain
+from .period import Period
 
 # PREFIX
 dc = "http://purl.org/dc/elements/1.1/"
@@ -10,9 +10,9 @@ rdfs = "http://www.w3.org/2000/01/rdf-schema#"
 es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
-class AcademicDomain(object):
+class CourseDomain(object):
     """
-    Academic Domain
+    Couse Domain
     """
 
     def __init__(self, graph):
@@ -21,9 +21,14 @@ class AcademicDomain(object):
         """
 
         graph.add((
+            URIRef(es + 'Course_Domain'),
+            URIRef(rdfs + 'subClassOf'),
             URIRef(es + 'Academic_Domain'),
+        ))
+        graph.add((
+            URIRef(es + 'Course_Domain'),
             URIRef(dc + 'title'),
-            Literal('Academic Domain', lang='en')
+            Literal('Course Domain', lang='en')
         ))
 
         self.graph = graph
@@ -35,7 +40,7 @@ class AcademicDomain(object):
         Insert subclasses
         """
 
-        AcademicCampus(self.graph)
-        AcademicInstitution(self.graph)
-        ComplementaryAndExtensionActivities(self.graph)
-        CourseDomain(self.graph)
+        Course(self.graph)
+        CurricularStructure(self.graph)
+        DisciplineDomain(self.graph)
+        Period(self.graph)

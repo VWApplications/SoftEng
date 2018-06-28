@@ -33,6 +33,10 @@ populate:
 	# Populate the sesame triplestore with RDF file
 	python3 ontology/populate.py
 
+rdf:
+	# Create RDF file
+	python3 ontology/RDF/ontology.py
+
 query:
 	# Query to triplify the rdf protege to rdf triplestore
 	python3 ontology/query.py
@@ -40,10 +44,6 @@ query:
 sesame:
 	# Run the sesame triplestore container
 	sudo docker-compose up -d
-
-protege:
-	# Run the protege software
-	./ontology/protege-5.2.0/run.sh
 
 clean:
 	# Remove all __pycache__

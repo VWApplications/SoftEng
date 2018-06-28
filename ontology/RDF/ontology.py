@@ -1,8 +1,10 @@
 from rdflib import Graph
 from knowledge import Knowledge
+# from academic import AcademicDomain
 
 graph = Graph()
 Knowledge(graph)
+# AcademicDomain(graph)
 graph.serialize("ontology/RDF/softeng.rdf")
 
 

@@ -1,0 +1,1 @@
+from .curricular_structure import CurricularStructure
