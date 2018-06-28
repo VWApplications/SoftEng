@@ -1,9 +1,20 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
 
 # PREFIX
 dc = "http://purl.org/dc/elements/1.1/"
 rdfs = "http://www.w3.org/2000/01/rdf-schema#"
 es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+
+description = """
+Software Engineering is an area of computing focused on the
+specification, development, maintenance and creation of
+software systems, applying technologies and practices of
+project management and other disciplines, aiming at
+organization, productivity and quality. Currently, these
+technologies and practices encompass programming languages,
+database, tools, platforms, libraries, standards, processes and
+the quality of software issue.
+"""
 
 
 class SoftwareEngineering(object):
@@ -44,14 +55,5 @@ class SoftwareEngineering(object):
         graph.add((
             URIRef(es + 'Software_Engineering'),
             URIRef(dc + 'description'),
-            Literal("""
-                Software Engineering is an area of computing focused on the
-                specification, development, maintenance and creation of
-                software systems, applying technologies and practices of
-                project management and other disciplines, aiming at
-                organization, productivity and quality. Currently, these
-                technologies and practices encompass programming languages,
-                database, tools, platforms, libraries, standards, processes and
-                the quality of software issue.
-            """, lang='en')
+            Literal(description, datatype=XSD.string)
         ))
