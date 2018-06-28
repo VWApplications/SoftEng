@@ -25,7 +25,7 @@ class CoreBasicContent(object):
             PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?title ?description
+            SELECT DISTINCT ?uri ?title ?description
             WHERE {
               es:Core_Basic_Content dc:title ?title ;
               dc:description ?description

@@ -34,7 +34,7 @@ populate:
 	python3 ontology/populate.py
 
 query:
-	# Query to teste the triplestore
+	# Query to triplify the rdf protege to rdf triplestore
 	python3 ontology/query.py
 
 sesame:

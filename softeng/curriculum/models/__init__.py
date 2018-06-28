@@ -9,5 +9,3 @@ from .extension.mobility_and_exchange_activities import MobilityAndExchangeActiv
 from .extension.professional_practice_activities import ProfessionalPracticeActivities
 from .extension.research_activities import ResearchActivities
 from .extension.teaching_activities import TeachingActivities
-from .discipline import Discipline
-from .curriculum import CoreContent, Extension, Multidisciplinary
