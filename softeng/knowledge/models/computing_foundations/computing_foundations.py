@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 from .problem_solving_techniques import ProblemSolvingTechniques
 from .abstraction import Abstraction
 from .programming_fundamentals import ProgrammingFundamentals
@@ -40,6 +41,7 @@ class ComputingFoundations(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -47,12 +49,12 @@ class ComputingFoundations(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Computing_Foundations dc:title ?title ;
+              knowledge:Computing_Foundations dc:title ?title ;
               dc:description ?description
             }
         """
@@ -61,7 +63,7 @@ class ComputingFoundations(object):
 
         return result[0]
 
-    def get_topic(self, topic):
+    def get_topic(self, topic=None):
         """
         Get a specific topic
         """
@@ -81,4 +83,12 @@ class ComputingFoundations(object):
         elif topic == self.PROGRAMMING_FUNDAMENTALS:
             return ProgrammingFundamentals()
         else:
-            return None
+            return [
+                Abstraction(),
+                AlgorithmsAndComplexity(),
+                BasicConceptOfASystem(),
+                BasicDeveloperHumanFactors(),
+                BasicUserHumanFactors(),
+                ProblemSolvingTechniques(),
+                ProgrammingFundamentals()
+            ]

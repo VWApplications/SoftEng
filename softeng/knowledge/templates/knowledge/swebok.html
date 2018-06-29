@@ -13,17 +13,17 @@
             {{knowledge.title}}
           </div>
           <div class="card-body">
-            <p class="breakline">{{knowledge.description}}</p>
+            <p class="breakline text-justify">{{knowledge.description}}</p>
 
             <div class="card">
               <div class="card-header">
                 <b>Topics</b>
               </div>
               <div class="card-body">
-                {% for topic in knowledge.topics.all %}
+                {% for topic in knowledge.get_topic %}
                   <a href="{% url 'knowledge:swebok-detail' topic=topic.slug %}"
                      class="list-group-item list-group-item-action">
-                     {{topic}}
+                     {{topic.title}}
                   </a>
                 {% empty %}
                   <span>There aren't topic available in this knowledge area.</span>

@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 from .alternate_abstractions import AlternateAbstractions
 from .encapsulation import Encapsulation
 from .hierarchy import Hierarchy
@@ -24,6 +25,7 @@ class Abstraction(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -31,12 +33,12 @@ class Abstraction(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Abstraction dc:title ?title ;
+              knowledge:Abstraction dc:title ?title ;
               dc:description ?description
             }
         """
@@ -45,7 +47,7 @@ class Abstraction(object):
 
         return result[0]
 
-    def get_subtopic(self, subtopic):
+    def get_subtopic(self, subtopic=None):
         """
         Get a specific subtopic.
         """
@@ -59,4 +61,9 @@ class Abstraction(object):
         elif subtopic == self.LEVELS_OF_ABSTRACTION:
             return LevelsOfAbstraction()
         else:
-            return None
+            return [
+                AlternateAbstractions(),
+                Encapsulation(),
+                Hierarchy(),
+                LevelsOfAbstraction()
+            ]

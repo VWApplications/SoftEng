@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 from .emergent_system_properties import EmergentSystemProperties
 from .overview_of_a_computer_system import OverviewOfAComputerSystem
 from .systems_engineering import SystemsEngineering
@@ -22,6 +23,7 @@ class BasicConceptOfASystem(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -29,12 +31,12 @@ class BasicConceptOfASystem(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Basic_Concept_of_a_System dc:title ?title ;
+              knowledge:Basic_Concept_of_a_System dc:title ?title ;
               dc:description ?description
             }
         """
@@ -43,7 +45,7 @@ class BasicConceptOfASystem(object):
 
         return result[0]
 
-    def get_subtopic(self, subtopic):
+    def get_subtopic(self, subtopic=None):
         """
         Get a specific subtopic.
         """
@@ -55,4 +57,8 @@ class BasicConceptOfASystem(object):
         elif subtopic == self.SYSTEMS_ENGINEERING:
             return SystemsEngineering()
         else:
-            return None
+            return [
+                EmergentSystemProperties(),
+                OverviewOfAComputerSystem(),
+                SystemsEngineering()
+            ]

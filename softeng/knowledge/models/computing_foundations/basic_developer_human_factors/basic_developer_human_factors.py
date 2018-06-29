@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 from .comments import Comments
 from .structure import Structure
 
@@ -20,6 +21,7 @@ class BasicDeveloperHumanFactors(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -27,12 +29,12 @@ class BasicDeveloperHumanFactors(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Basic_Developer_Human_Factors dc:title ?title ;
+              knowledge:Basic_Developer_Human_Factors dc:title ?title ;
               dc:description ?description
             }
         """
@@ -41,7 +43,7 @@ class BasicDeveloperHumanFactors(object):
 
         return result[0]
 
-    def get_subtopic(self, subtopic):
+    def get_subtopic(self, subtopic=None):
         """
         Get a specific subtopic.
         """
@@ -51,4 +53,7 @@ class BasicDeveloperHumanFactors(object):
         elif subtopic == self.STRUCTURE:
             return Structure()
         else:
-            return None
+            return [
+                Comments(),
+                Structure()
+            ]

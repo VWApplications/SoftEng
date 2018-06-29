@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 from .definition_of_problem_solving import DefinitionOfProblemSolving
 from .formulating_the_real_problem import FormulatingTheRealProblem
 from .analyze_the_problem import AnalyzeTheProblem
@@ -26,6 +27,7 @@ class ProblemSolvingTechniques(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -33,12 +35,12 @@ class ProblemSolvingTechniques(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Problem_Solving_Techniques dc:title ?title ;
+              knowledge:Problem_Solving_Techniques dc:title ?title ;
               dc:description ?description
             }
         """
@@ -47,7 +49,7 @@ class ProblemSolvingTechniques(object):
 
         return result[0]
 
-    def get_subtopic(self, subtopic):
+    def get_subtopic(self, subtopic=None):
         """
         Get a specific subtopic.
         """
@@ -63,4 +65,10 @@ class ProblemSolvingTechniques(object):
         elif subtopic == self.PROBLEM_SOLVING_USING_PROGRAMS:
             return ProblemSolvingUsingPrograms()
         else:
-            return None
+            return [
+                AnalyzeTheProblem(),
+                DefinitionOfProblemSolving(),
+                DesignASolutionSearchStrategy(),
+                FormulatingTheRealProblem(),
+                ProblemSolvingUsingPrograms()
+            ]

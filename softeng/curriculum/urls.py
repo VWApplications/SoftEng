@@ -4,12 +4,12 @@ from .views import discipline, curriculum
 app_name = 'curriculum'
 
 urlpatterns = [
-    # # disciplines/
-    # path(
-    #     "disciplines/",
-    #     discipline.DisciplineListView.as_view(),
-    #     name='discipline-list'
-    # ),
+    # disciplines/
+    path(
+        "disciplines/",
+        discipline.DisciplineListView.as_view(),
+        name='discipline-list'
+    ),
     # # disciplines/<slug>/details/
     # path(
     #     "disciplines/<slug:slug>/details/",

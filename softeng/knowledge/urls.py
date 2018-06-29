@@ -4,18 +4,18 @@ from .views import swebok, content
 app_name = 'knowledge'
 
 urlpatterns = [
-    # # swebok/
-    # path(
-    #     "swebok/",
-    #     swebok.SwebokListView.as_view(),
-    #     name='swebok-list'
-    # ),
-    # # swebok/<topic>/details/
-    # path(
-    #     "swebok/<slug:topic>/details/",
-    #     swebok.SwebokDetailView.as_view(),
-    #     name="swebok-detail"
-    # ),
+    # swebok/
+    path(
+        "swebok/",
+        swebok.SwebokListView.as_view(),
+        name='swebok-list'
+    ),
+    # swebok/<topic>/details/
+    path(
+        "swebok/<slug:topic>/details/",
+        swebok.SwebokDetailView.as_view(),
+        name="swebok-detail"
+    ),
     # # swebok/<topic>/details/
     # path(
     #     "swebok/<slug:topic>/<slug:subtopic>/insert/",

@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 
 
 class LevelsOfAbstraction(object):
@@ -15,6 +16,7 @@ class LevelsOfAbstraction(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -22,12 +24,12 @@ class LevelsOfAbstraction(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Levels_of_Abstraction dc:title ?title ;
+              knowledge:Levels_of_Abstraction dc:title ?title ;
               dc:description ?description
             }
         """

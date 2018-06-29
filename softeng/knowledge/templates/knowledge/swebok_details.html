@@ -4,10 +4,10 @@
 {% block base %}
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      {{topic}}
+      {{topic.title}}
     </div>
     <div class="card-body">
-      <p class="breakline">{{topic.description}}</p>
+      <p class="breakline text-justify">{{topic.description}}</p>
 
       <div class="card">
         <div class="card-header">
@@ -15,20 +15,20 @@
         </div>
         <div class="card-body">
           <div id="accordion">
-            {% for subtopic in topic.subtopics.all %}
+            {% for subtopic in topic.get_subtopic %}
               <div class="card">
                 <div class="card-header">
                   {% if forloop.first %}
-                    <a class="card-link" data-toggle="collapse" href="#collapse{{subtopic.id}}">
-                      {{subtopic}}
+                    <a class="card-link" data-toggle="collapse" href="#collapse{{subtopic.slug}}">
+                      {{subtopic.title}}
                     </a>
                   {% else %}
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapse{{subtopic.id}}">
-                      {{subtopic}}
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapse{{subtopic.slug}}">
+                      {{subtopic.title}}
                     </a>
                   {% endif %}
                   {% if user.is_authenticated and user.is_staff %}
-                    <a href="{% url 'knowledge:disciplines' topic=topic.slug subtopic=subtopic.slug %}"
+                    <a href="#"
                        class="btn btn-primary btn-sm rounded-circle float-right"
                        data-toggle="tooltip" title="Insert into disciplines"
                        role="button">
@@ -36,9 +36,9 @@
                     </a>
                   {% endif %}
                 </div>
-                <div id="collapse{{subtopic.id}}" class="collapse" data-parent="#accordion">
+                <div id="collapse{{subtopic.slug}}" class="collapse" data-parent="#accordion">
                   <div class="card-body">
-                    <p class="breakline">{{subtopic.description}}</p>
+                    <p class="breakline text-justify">{{subtopic.description}}</p>
                   </div>
                 </div>
               </div>

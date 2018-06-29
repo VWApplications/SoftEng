@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 from .programming_paradigms import ProgrammingParadigms
 from .the_programming_process import TheProgrammingProcess
 
@@ -20,6 +21,7 @@ class ProgrammingFundamentals(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -27,12 +29,12 @@ class ProgrammingFundamentals(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Programming_Fundamentals dc:title ?title ;
+              knowledge:Programming_Fundamentals dc:title ?title ;
               dc:description ?description
             }
         """
@@ -41,7 +43,7 @@ class ProgrammingFundamentals(object):
 
         return result[0]
 
-    def get_subtopic(self, subtopic):
+    def get_subtopic(self, subtopic=None):
         """
         Get a specific subtopic.
         """
@@ -51,4 +53,7 @@ class ProgrammingFundamentals(object):
         elif subtopic == self.THE_PROGRAMMING_PROCESS:
             return TheProgrammingProcess()
         else:
-            return None
+            return [
+                ProgrammingParadigms(),
+                TheProgrammingProcess()
+            ]

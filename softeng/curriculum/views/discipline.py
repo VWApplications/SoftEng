@@ -1,40 +1,48 @@
-# from django.views.generic import ListView, DetailView
-# from django.shortcuts import get_object_or_404
-# from django.urls import reverse_lazy
-# from django.contrib import messages
+from django.views.generic import ListView, DetailView
+from django.urls import reverse_lazy
+from django.contrib import messages
 # from knowledge.models import Subtopic
-# from core.generics import ObjectRedirectView
-# from curriculum.models import Discipline
+from curriculum.models import Disciplines
 
 
-# class DisciplineListView(ListView):
-#     """
-#     Page to list all disciplines into their flux.
-#     """
+class DisciplineListView(ListView):
+    """
+    Page to list all disciplines into their flux.
+    """
 
-#     model = Discipline
-#     template_name = "curriculum/disciplines.html"
-#     context_object_name = "disciplines"
+    template_name = "curriculum/disciplines.html"
+    context_object_name = "disciplines"
 
-#     def get_context_data(self, **kwargs):
-#         """
-#         Get discipline to specific semestes.
-#         """
+    def get_queryset(self):
+        """
+        Get all disciplines.
+        """
 
-#         context = super(DisciplineListView, self).get_context_data(**kwargs)
+        disciplines = Disciplines()
 
-#         context['first_semester'] = Discipline.objects.filter(semester=1)
-#         context['second_semester'] = Discipline.objects.filter(semester=2)
-#         context['third_semester'] = Discipline.objects.filter(semester=3)
-#         context['fourth_semester'] = Discipline.objects.filter(semester=4)
-#         context['fifth_semester'] = Discipline.objects.filter(semester=5)
-#         context['sixth_semester'] = Discipline.objects.filter(semester=6)
-#         context['seventh_semester'] = Discipline.objects.filter(semester=7)
-#         context['eighth_semester'] = Discipline.objects.filter(semester=8)
-#         context['ninth_semester'] = Discipline.objects.filter(semester=9)
-#         context['tenth_semester'] = Discipline.objects.filter(semester=10)
+        return disciplines.all
 
-#         return context
+    def get_context_data(self, **kwargs):
+        """
+        Get discipline to specific semestes.
+        """
+
+        disciplines = Disciplines()
+
+        context = super(DisciplineListView, self).get_context_data(**kwargs)
+
+        context['first_semester'] = disciplines.first_semester
+        context['second_semester'] = disciplines.second_semester
+        context['third_semester'] = disciplines.third_semester
+        context['fourth_semester'] = disciplines.fourth_semester
+        context['fifth_semester'] = disciplines.fifth_semester
+        context['sixth_semester'] = disciplines.sixth_semester
+        context['seventh_semester'] = disciplines.seventh_semester
+        context['eighth_semester'] = disciplines.eighth_semester
+        context['ninth_semester'] = disciplines.ninth_semester
+        context['tenth_semester'] = disciplines.tenth_semester
+
+        return context
 
 
 # class DisciplineDetailView(DetailView):

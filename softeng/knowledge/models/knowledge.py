@@ -1,15 +1,18 @@
-from core import Query, Sesame
 from django.template.defaultfilters import slugify
+from core import Query, Sesame
+from .computing_foundations import ComputingFoundations
 
 
-class TheProgrammingProcess(object):
+class Knowledge(object):
     """
-    Subtopic: The Programming Process
+    Knowledge area
     """
+
+    COMPUTING_FOUNDATIONS = 0
 
     def __init__(self):
         """
-        Create a subtopic.
+        Create a knowledge area.
         """
 
         result = self.get_information()
@@ -20,7 +23,7 @@ class TheProgrammingProcess(object):
 
     def get_information(self):
         """
-        Get the data from triple store
+        Get the information from triple store
         """
 
         query = """
@@ -29,7 +32,7 @@ class TheProgrammingProcess(object):
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              knowledge:The_Programming_Process dc:title ?title ;
+              knowledge:Knowledge_Area dc:title ?title ;
               dc:description ?description
             }
         """
@@ -37,3 +40,15 @@ class TheProgrammingProcess(object):
         result = Query.run(Sesame.endpoint, query)
 
         return result[0]
+
+    def get_instance(self, instance=None):
+        """
+        Get core content.
+        """
+
+        if instance == self.COMPUTING_FOUNDATIONS:
+            return ComputingFoundations()
+        else:
+            return [
+                ComputingFoundations(),
+            ]

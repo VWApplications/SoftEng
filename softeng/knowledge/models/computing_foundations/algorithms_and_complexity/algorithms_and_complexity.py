@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 from .algorithmic_analysis import AlgorithmicAnalysis
 from .algorithmic_analysis_strategies import AlgorithmicAnalysisStrategies
 from .algorithmic_design_strategies import AlgorithmicDesignStrategies
@@ -26,6 +27,7 @@ class AlgorithmsAndComplexity(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -33,12 +35,12 @@ class AlgorithmsAndComplexity(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Algorithms_and_Complexity dc:title ?title ;
+              knowledge:Algorithms_and_Complexity dc:title ?title ;
               dc:description ?description
             }
         """
@@ -47,7 +49,7 @@ class AlgorithmsAndComplexity(object):
 
         return result[0]
 
-    def get_subtopic(self, subtopic):
+    def get_subtopic(self, subtopic=None):
         """
         Get a specific subtopic.
         """
@@ -63,4 +65,10 @@ class AlgorithmsAndComplexity(object):
         elif subtopic == self.OVERVIEW_OF_ALGORITHMS:
             return OverviewOfAlgorithms()
         else:
-            return None
+            return [
+                AlgorithmicAnalysis(),
+                AlgorithmicAnalysisStrategies(),
+                AlgorithmicDesignStrategies(),
+                AttributesOfAlgorithms(),
+                OverviewOfAlgorithms()
+            ]

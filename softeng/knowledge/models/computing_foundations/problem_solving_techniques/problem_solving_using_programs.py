@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 
 
 class ProblemSolvingUsingPrograms(object):
@@ -15,6 +16,7 @@ class ProblemSolvingUsingPrograms(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -22,12 +24,12 @@ class ProblemSolvingUsingPrograms(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Problem_Solving_Using_Programs dc:title ?title ;
+              knowledge:Problem_Solving_Using_Programs dc:title ?title ;
               dc:description ?description
             }
         """
