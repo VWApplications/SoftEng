@@ -4,8 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Effective participation in the Academic Center and Engineering Academic
-Directory, student representation in collegiate bodies.
+Effective participation in the Academic Center and Engineering Academic Directory, student representation in collegiate bodies.
 """
 
 

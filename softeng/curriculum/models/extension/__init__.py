@@ -1,0 +1,7 @@
+from .activities_of_social_action import ActivitiesOfSocialAction
+from .activities_of_student_representations import ActivitiesOfStudentRepresentations
+from .extension_activities import ExtensionActivities
+from .mobility_and_exchange_activities import MobilityAndExchangeActivities
+from .professional_practice_activities import ProfessionalPracticeActivities
+from .research_activities import ResearchActivities
+from .teaching_activities import TeachingActivities

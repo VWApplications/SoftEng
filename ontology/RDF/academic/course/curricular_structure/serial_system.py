@@ -4,8 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Students follow pre-determined lists of disciplines per semester or school
-year.
+Students follow pre-determined lists of disciplines per semester or school year.
 """
 
 

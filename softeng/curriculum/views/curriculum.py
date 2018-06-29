@@ -1,5 +1,5 @@
 from django.views.generic import ListView
-from curriculum.models import Extension, Multidisciplinary, CoreContent
+from curriculum.models import CoreContent, Extension
 
 
 class ExtensionListView(ListView):
@@ -7,19 +7,17 @@ class ExtensionListView(ListView):
     Page to list all extension activities.
     """
 
-    model = Extension
     template_name = "curriculum/extensions.html"
     context_object_name = "extensions"
 
+    def get_queryset(self):
+        """
+        Get all the extensions.
+        """
 
-class MultidisciplinaryListView(ListView):
-    """
-    Page to list all multidisciplinary activities.
-    """
+        extensions = Extension().get_instance()
 
-    model = Multidisciplinary
-    template_name = "curriculum/multidisciplinary.html"
-    context_object_name = "multidisciplinary_disciplines"
+        return extensions
 
 
 class CoreContentListView(ListView):
@@ -27,6 +25,14 @@ class CoreContentListView(ListView):
     Page to list all core contents.
     """
 
-    model = CoreContent
     template_name = "curriculum/core_content.html"
     context_object_name = "core_contents"
+
+    def get_queryset(self):
+        """
+        Get the multidisciplinary model.
+        """
+
+        core_contents = CoreContent().get_instance()
+
+        return core_contents

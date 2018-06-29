@@ -4,15 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import knowledge
 
 text = """
-The attributes of algorithms are many and often include modularity,
-correctness, maintainability, functionality, robustness, user-friendliness
-(i.e. easy to be understood by people), programmer time, simplicity, and
-extensibility. A commonly emphasized attribute is “performance” or “efficiency”
-by which we mean both time and resource-usage efficiency while generally
-emphasizing the time axis.  To some degree, efficiency determines if an
-algorithm is feasible or impractical. For example, an algorithm that takes one
-hundred years to terminate is virtually useless and is even considered
-incorrect.
+The attributes of algorithms are many and often include modularity, correctness, maintainability, functionality, robustness, user-friendliness (i.e. easy to be understood by people), programmer time, simplicity, and extensibility. A commonly emphasized attribute is “performance” or “efficiency” by which we mean both time and resource-usage efficiency while generally emphasizing the time axis.  To some degree, efficiency determines if an algorithm is feasible or impractical. For example, an algorithm that takes one hundred years to terminate is virtually useless and is even considered incorrect.
 """
 
 

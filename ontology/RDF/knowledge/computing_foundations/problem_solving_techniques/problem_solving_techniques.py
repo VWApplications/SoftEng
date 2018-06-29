@@ -9,8 +9,7 @@ from .design_a_solution_search_strategy import DesignASolutionSearchStrategy
 from .problem_solving_using_programs import ProblemSolvingUsingPrograms
 
 text = """
-The concepts, notions, and terminology introduced here form an underlying basis
-for understanding the role and scope of problem solving techniques.
+The concepts, notions, and terminology introduced here form an underlying basis for understanding the role and scope of problem solving techniques.
 """
 
 

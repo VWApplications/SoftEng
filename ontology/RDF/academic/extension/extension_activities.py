@@ -4,10 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Courses in the technical or business management area, foreign language courses,
-extension projects with the community Institutional Program of Extension
-Scholarships (PIBEX), Continuous Action Extension Projects (PEAC),
-participation in Engineering Week.
+Courses in the technical or business management area, foreign language courses, extension projects with the community Institutional Program of Extension Scholarships (PIBEX), Continuous Action Extension Projects (PEAC), participation in Engineering Week.
 """
 
 

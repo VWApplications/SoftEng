@@ -7,13 +7,7 @@ from .software_robustness import SoftwareRobustness
 from .user_input_and_output import UserInputAndOutput
 
 text = """
-Software is developed to meet human desires or needs. Thus, all software design
-and development must take into consideration human-user factors such as how
-people use software, how people view software, and what humans expect from
-software. There are numerous factors in the human-machine interaction, and ISO
-9241 document series define all the detailed standards of such interactions.
-But the basic human-user factors considered here include input/output, the
-handling of error messages, and the robustness of the software in general.
+Software is developed to meet human desires or needs. Thus, all software design and development must take into consideration human-user factors such as how people use software, how people view software, and what humans expect from software. There are numerous factors in the human-machine interaction, and ISO 9241 document series define all the detailed standards of such interactions.  But the basic human-user factors considered here include input/output, the handling of error messages, and the robustness of the software in general.
 """
 
 

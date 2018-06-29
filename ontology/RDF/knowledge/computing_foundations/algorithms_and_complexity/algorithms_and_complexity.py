@@ -9,11 +9,7 @@ from .attributes_of_algorithms import AttributesOfAlgorithms
 from .overview_of_algorithms import OverviewOfAlgorithms
 
 text = """
-Programs are not random pieces of code: they are meticulously written to
-perform user-expected actions. The guide one uses to compose programs are
-algorithms, which organize various functions into a series of steps and take
-into consideration the application domain, the solution strategy, and the data
-structures being used. An algorithm can be very simple or very complex.
+Programs are not random pieces of code: they are meticulously written to perform user-expected actions. The guide one uses to compose programs are algorithms, which organize various functions into a series of steps and take into consideration the application domain, the solution strategy, and the data structures being used. An algorithm can be very simple or very complex.
 """
 
 

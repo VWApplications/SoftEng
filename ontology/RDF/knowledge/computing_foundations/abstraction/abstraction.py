@@ -8,18 +8,7 @@ from .hierarchy import Hierarchy
 from .levels_of_abstraction import LevelsOfAbstraction
 
 text = """
-Abstraction is an indispensible technique associated with problem solving. It
-refers to both the process and result of generalization by reducing the
-information of a concept, a problem, or an observable phenomenon so that one
-can focus on the “big picture.” One of the most important skills in any
-engineering undertaking is framing the levels of abstraction appropriately.
-“Through abstraction,” according to Voland, “we view the problem and its
-possible solution paths from a higher level of conceptual understanding.  As a
-result, we may become better prepared to recognize possible relationships
-between different aspects of the problem and thereby generate more creative
-design solutions”. This is particularly true in computer science in general
-(such as hardware vs.  software) and in software engineering in particular
-(data structure vs. data flow, and so forth).
+Abstraction is an indispensible technique associated with problem solving. It refers to both the process and result of generalization by reducing the information of a concept, a problem, or an observable phenomenon so that one can focus on the “big picture.” One of the most important skills in any engineering undertaking is framing the levels of abstraction appropriately.  “Through abstraction,” according to Voland, “we view the problem and its possible solution paths from a higher level of conceptual understanding.  As a result, we may become better prepared to recognize possible relationships between different aspects of the problem and thereby generate more creative design solutions”. This is particularly true in computer science in general (such as hardware vs.  software) and in software engineering in particular (data structure vs. data flow, and so forth).
 """
 
 

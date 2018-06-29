@@ -11,11 +11,7 @@ from .research_activities import ResearchActivities
 from .teaching_activities import TeachingActivities
 
 text = """
-In addition to the subjects of free choice of the student, it also contemplates
-the completion of complementary and extension activities such as: scientific
-initiation, multidisciplinary projects, participation in events, participation
-in a junior company, etc. All these programs provide for paid scholarships;
-proof of participation as a volunteer, in addition to credits in free module.
+In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.
 """
 
 

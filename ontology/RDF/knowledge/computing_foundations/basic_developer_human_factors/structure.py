@@ -4,12 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import knowledge
 
 text = """
-Well-structured programs are easier to understand and modify.  If a program is
-poorly structured, then no amount of explanation or comments is sufficient to
-make it understandable. The ways to organize a program are numerous and range
-from the proper use of white space, indentation, and parentheses to nice
-arrangements of groupings, blank lines, and braces. Whatever style one chooses,
-it should be consistent across the entire program.
+Well-structured programs are easier to understand and modify.  If a program is poorly structured, then no amount of explanation or comments is sufficient to make it understandable. The ways to organize a program are numerous and range from the proper use of white space, indentation, and parentheses to nice arrangements of groupings, blank lines, and braces. Whatever style one chooses, it should be consistent across the entire program.
 """
 
 

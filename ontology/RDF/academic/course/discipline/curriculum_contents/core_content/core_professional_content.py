@@ -5,11 +5,9 @@ from RDF.prefix import pp
 
 
 text = """
-Disciplines with basic vocational content that allow to reach the basic
-elements of the professional profile of the egress.
+Disciplines with basic vocational content that allow to reach the basic elements of the professional profile of the egress.
 
-Example: Programming Logic, Algorithms and Data Structure, Digital Circuits,
-Computing, Programming Language, Database.
+Example: Programming Logic, Algorithms and Data Structure, Digital Circuits, Computing, Programming Language, Database.
 """
 
 

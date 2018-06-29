@@ -6,15 +6,7 @@ from .programming_paradigms import ProgrammingParadigms
 from .the_programming_process import TheProgrammingProcess
 
 text = """
-Programming is composed of the methodologies or activities for creating
-computer programs that perform a desired function. It is an indispensible part
-in software construction. In general, programming can be considered as the
-process of designing, writing, testing, debugging, and maintaining the source
-code.  This source code is written in a programming language. The process of
-writing source code often requires expertise in many different subject areas
-including knowledge of the application domain, appropriate data structures,
-specialized algorithms, various language constructs, good programming
-techniques, and software engineering.
+Programming is composed of the methodologies or activities for creating computer programs that perform a desired function. It is an indispensible part in software construction. In general, programming can be considered as the process of designing, writing, testing, debugging, and maintaining the source code.  This source code is written in a programming language. The process of writing source code often requires expertise in many different subject areas including knowledge of the application domain, appropriate data structures, specialized algorithms, various language constructs, good programming techniques, and software engineering.
 """
 
 

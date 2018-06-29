@@ -1,1 +1,1 @@
-from .swebok import SwebokListView, SwebokDetailView
+# from .swebok import SwebokListView, SwebokDetailView

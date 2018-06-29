@@ -1,0 +1,5 @@
+from .core_basic_content import CoreBasicContent
+from .core_professional_content import CoreProfessionalContent
+from .core_specific_content import CoreSpecificContent
+from .free_module import FreeModule
+from .multidisciplinary import Multidisciplinary

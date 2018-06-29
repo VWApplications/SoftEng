@@ -7,16 +7,7 @@ from .overview_of_a_computer_system import OverviewOfAComputerSystem
 from .systems_engineering import SystemsEngineering
 
 text = """
-Ian Sommerville writes, “a system is a purposeful collection of interrelated
-components that work together to achieve some objective”.  A system can be very
-simple and include only a few components, like an ink pen, or rather complex,
-like an aircraft. Depending on whether humans are part of the system, systems
-can be divided into technical computer-based systems and sociotechnical
-systems.  A technical computer-based system functions without human
-involvement, such as televisions, mobile phones, thermostat, and some software;
-a sociotechnical system will not function without human involvement.  Examples
-of such system include manned space vehicles, chips embedded inside a human,
-and so forth.
+Ian Sommerville writes, “a system is a purposeful collection of interrelated components that work together to achieve some objective”.  A system can be very simple and include only a few components, like an ink pen, or rather complex, like an aircraft. Depending on whether humans are part of the system, systems can be divided into technical computer-based systems and sociotechnical systems.  A technical computer-based system functions without human involvement, such as televisions, mobile phones, thermostat, and some software; a sociotechnical system will not function without human involvement.  Examples of such system include manned space vehicles, chips embedded inside a human, and so forth.
 """
 
 

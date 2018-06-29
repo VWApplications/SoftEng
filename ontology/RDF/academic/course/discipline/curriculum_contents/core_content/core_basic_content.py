@@ -4,13 +4,9 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation
-in Computing).
+Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation in Computing).
 
-Example: Scientific and Technological Methodology, Communication and
-Expression, Graphic Expression, Mathematics, Physics, Production, Innovation,
-Administration, Economics, Environmental Sciences, Humanities, Social Sciences,
-Citizenship.
+Example: Scientific and Technological Methodology, Communication and Expression, Graphic Expression, Mathematics, Physics, Production, Innovation, Administration, Economics, Environmental Sciences, Humanities, Social Sciences, Citizenship.
 """
 
 

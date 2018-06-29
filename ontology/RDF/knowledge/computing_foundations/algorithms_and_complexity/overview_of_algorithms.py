@@ -4,17 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import knowledge
 
 text = """
-Abstractly speaking, algorithms guide the operations of computers and consist
-of a sequence of actions composed to solve a problem. Alternative definitions
-include but are not limited to: An algorithm is any well-defined computational
-procedure that takes some value or set of values as input and produces some
-value or set of values as output; An algorithm is a sequence of computational
-steps that transform the input into the output; An algorithm is a tool for
-solving a wellspecified computation problem. Of course, different definitions
-are favored by different people. Though there is no universally accepted
-definition, some agreement exists that an algorithm needs to be correct, finite
-(in other words, terminate eventually or one must be able to write it in a
-finite number of steps), and unambiguous.
+Abstractly speaking, algorithms guide the operations of computers and consist of a sequence of actions composed to solve a problem. Alternative definitions include but are not limited to: An algorithm is any well-defined computational procedure that takes some value or set of values as input and produces some value or set of values as output; An algorithm is a sequence of computational steps that transform the input into the output; An algorithm is a tool for solving a wellspecified computation problem. Of course, different definitions are favored by different people. Though there is no universally accepted definition, some agreement exists that an algorithm needs to be correct, finite (in other words, terminate eventually or one must be able to write it in a finite number of steps), and unambiguous.
 """
 
 

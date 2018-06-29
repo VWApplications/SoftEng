@@ -20,10 +20,10 @@
                 <b>Disciplines</b>
               </div>
               <div class="card-body">
-                {% for discipline in core_content.disciplines.all %}
-                  <a href="{% url 'curriculum:discipline-detail' slug=discipline.slug %}"
+                {% for discipline in core_content.disciplines %}
+                  <a href="#"
                      class="list-group-item list-group-item-action">
-                     {{discipline}}
+                     {{discipline.title}}
                   </a>
                 {% empty %}
                   <span>There aren't discipline available in this core content.</span>

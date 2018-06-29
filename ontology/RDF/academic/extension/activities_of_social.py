@@ -4,8 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Participation in programs or NGOs related to social action, exercise of
-citizenship and defense of the environment.
+Participation in programs or NGOs related to social action, exercise of citizenship and defense of the environment.
 """
 
 

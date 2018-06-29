@@ -6,16 +6,7 @@ from .comments import Comments
 from .structure import Structure
 
 text = """
-Developer human factors refer to the considerations of human factors taken when
-developing software. Software is developed by humans, read by humans, and
-maintained by humans. If anything is wrong, humans are responsible for
-correcting those wrongs. Thus, it is essential to write software in a way that
-is easily understandable by humans or, at the very least, by other software
-developers. A program that is easy to read and understand exhibits readability.
-The means to ensure that software meet this objective are numerous and range
-from proper architecture at the macro level to the particular coding style and
-variable usage at the micro level. But the two prominent factors are structure
-(or program layouts) and comments(documentation).
+Developer human factors refer to the considerations of human factors taken when developing software. Software is developed by humans, read by humans, and maintained by humans. If anything is wrong, humans are responsible for correcting those wrongs. Thus, it is essential to write software in a way that is easily understandable by humans or, at the very least, by other software developers. A program that is easy to read and understand exhibits readability.  The means to ensure that software meet this objective are numerous and range from proper architecture at the macro level to the particular coding style and variable usage at the micro level. But the two prominent factors are structure (or program layouts) and comments(documentation).
 """
 
 

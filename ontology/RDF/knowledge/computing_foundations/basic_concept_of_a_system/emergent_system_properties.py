@@ -4,17 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import knowledge
 
 text = """
-A system is more than simply the sum of its parts.  Thus, the properties of a
-system are not simply the sum of the properties of its components. Instead, a
-system often exhibits properties that are properties of the system as a whole.
-These properties are called emergent properties because they develop only after
-the integration of constituent parts in the system.  Emergent system properties
-can be either functional or nonfunctional. Functional properties describe the
-things that a system does. For example, an aircraft’s functional properties
-include flotation on air, carrying people or cargo, and use as a weapon of mass
-destruction. Nonfunctional properties describe how the system behaves in its
-operational environment. These can include such qualities as consistency,
-capacity, weight, security, etc.
+A system is more than simply the sum of its parts.  Thus, the properties of a system are not simply the sum of the properties of its components. Instead, a system often exhibits properties that are properties of the system as a whole.  These properties are called emergent properties because they develop only after the integration of constituent parts in the system.  Emergent system properties can be either functional or nonfunctional. Functional properties describe the things that a system does. For example, an aircraft’s functional properties include flotation on air, carrying people or cargo, and use as a weapon of mass destruction. Nonfunctional properties describe how the system behaves in its operational environment. These can include such qualities as consistency, capacity, weight, security, etc.
 """
 
 

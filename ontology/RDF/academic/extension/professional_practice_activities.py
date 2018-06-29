@@ -4,9 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Participation in the Executive Board of the Junior Engineering Company (EJEL),
-participation in projects carried out by EJEL, extracurricular internships in
-the technical area, technological development projects in companies.
+Participation in the Executive Board of the Junior Engineering Company (EJEL), participation in projects carried out by EJEL, extracurricular internships in the technical area, technological development projects in companies.
 """
 
 

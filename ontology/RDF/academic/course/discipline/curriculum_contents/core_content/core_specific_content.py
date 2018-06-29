@@ -4,10 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Courses addressing the fundamentals and specific topics of Software
-Engineering, as well as other specific contents aimed at the development of
-specific or complementary skills and abilities in the area of programming,
-product and software process.
+Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process.
 
 Example: Specific disciplines for software engineering
 """

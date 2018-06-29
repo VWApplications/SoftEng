@@ -7,14 +7,7 @@ from RDF.object_property import (
 )
 
 text = """
-Software Engineering is an area of computing focused on the
-specification, development, maintenance and creation of
-software systems, applying technologies and practices of
-project management and other disciplines, aiming at
-organization, productivity and quality. Currently, these
-technologies and practices encompass programming languages,
-database, tools, platforms, libraries, standards, processes and
-the quality of software issue.
+Software Engineering is an area of computing focused on the specification, development, maintenance and creation of software systems, applying technologies and practices of project management and other disciplines, aiming at organization, productivity and quality. Currently, these technologies and practices encompass programming languages, database, tools, platforms, libraries, standards, processes and the quality of software issue.
 """
 
 
@@ -51,7 +44,7 @@ class SoftwareEngineering(object):
         graph.add((
             URIRef(pp + 'Software_Engineering'),
             title,
-            Literal('Software Enginnering', lang='en')
+            Literal('Software Engineering', lang='en')
         ))
         graph.add((
             URIRef(pp + 'Software_Engineering'),

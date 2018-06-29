@@ -4,8 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Multidisciplinary Projects, that is, there is the participation of other
-courses.
+Multidisciplinary Projects, that is, there is the participation of other courses.
 """
 
 

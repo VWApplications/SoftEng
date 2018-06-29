@@ -4,10 +4,7 @@ from RDF.object_property import subClassOf
 from RDF.prefix import pp
 
 text = """
-Participation in research centers or projects of scientific initiation
-Institutional Program of Scientific Initiation Grants (PIBIC), publication of
-works, participation in seminars and scientific initiation events related to
-graduation.
+Participation in research centers or projects of scientific initiation Institutional Program of Scientific Initiation Grants (PIBIC), publication of works, participation in seminars and scientific initiation events related to graduation.
 """
 
 

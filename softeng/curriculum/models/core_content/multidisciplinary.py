@@ -2,21 +2,21 @@ from core import Query, Sesame
 from django.template.defaultfilters import slugify
 
 
-class FreeModule(object):
+class Multidisciplinary(object):
     """
-    Free module to software engineering curriculum.
+    Multidisciplinary disciplines to software engineering curriculum.
     """
 
     def __init__(self):
         """
-        Create the free module model.
+        Create the multidisciplinary model.
         """
 
         result = self.get_information()
 
         self.title = result['title']['value']
         self.description = result['description']['value']
-        self.disciplines = self.get_disciplines()
+        # self.disciplines = self.get_disciplines()
         self.slug = slugify(self.title)
 
     def get_information(self):
@@ -30,7 +30,7 @@ class FreeModule(object):
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              pp:Free_Module dc:title ?title ;
+              pp:Multidisciplinary dc:title ?title ;
               dc:description ?description
             }
         """
@@ -41,7 +41,7 @@ class FreeModule(object):
 
     def get_disciplines(self):
         """
-        Get all discipline of free module content.
+        Get all discipline of multidisciplinary content.
         """
 
         query = """
@@ -50,7 +50,7 @@ class FreeModule(object):
 
             SELECT DISTINCT ?title
             WHERE {
-              ?disciplines pp:isPartOf pp:Free_Module ;
+              ?disciplines pp:isPartOf pp:Multidisciplinary ;
               dc:title ?title
             }
         """

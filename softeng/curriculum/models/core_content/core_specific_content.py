@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from django.template.defaultfilters import slugify
 
 
 class CoreSpecificContent(object):
@@ -15,6 +16,8 @@ class CoreSpecificContent(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
+        self.disciplines = self.get_disciplines()
+        self.slug = slugify(self.title)
 
     def get_information(self):
         """
@@ -22,12 +25,12 @@ class CoreSpecificContent(object):
         """
 
         query = """
-            PREFIX es: <http://www.semanticweb.org/ontologies/2018/Software_Engineering/>
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
             SELECT DISTINCT ?title ?description
             WHERE {
-              es:Core_Specific_Content dc:title ?title ;
+              pp:Core_Specific_Content dc:title ?title ;
               dc:description ?description
             }
         """
@@ -35,3 +38,27 @@ class CoreSpecificContent(object):
         result = Query.run(Sesame.endpoint, query)
 
         return result[0]
+
+    def get_disciplines(self):
+        """
+        Get all discipline of core specific content.
+        """
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            SELECT DISTINCT ?title
+            WHERE {
+              ?disciplines pp:isPartOf pp:Core_Specific_Content ;
+              dc:title ?title
+            }
+        """
+
+        result = Query.run(Sesame.endpoint, query)
+
+        disciplines = []
+        for discipline in result:
+            disciplines.append(discipline['title']['value'])
+
+        return disciplines
