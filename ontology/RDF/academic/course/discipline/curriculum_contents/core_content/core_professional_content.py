@@ -1,9 +1,16 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+
+text = """
+Disciplines with basic vocational content that allow to reach the basic
+elements of the professional profile of the egress.
+
+Example: Programming Logic, Algorithms and Data Structure, Digital Circuits,
+Computing, Programming Language, Database.
+"""
 
 
 class CoreProfessionalContent(object):
@@ -17,23 +24,17 @@ class CoreProfessionalContent(object):
         """
 
         graph.add((
-            URIRef(es + 'Core_Professional_Content'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Core_Content'),
+            URIRef(pp + 'Core_Professional_Content'),
+            subClassOf,
+            URIRef(pp + 'Core_Content'),
         ))
         graph.add((
-            URIRef(es + 'Core_Professional_Content'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Core_Professional_Content'),
+            title,
             Literal('Core Professional Content', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Core_Professional_Content'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Disciplines with basic vocational content that allow to reach
-                the basic elements of the professional profile of the egress.
-
-                Example: Programming Logic, Algorithms and Data Structure,
-                Digital Circuits, Computing, Programming Language, Database.
-            """, lang='en')
+            URIRef(pp + 'Core_Professional_Content'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Input and output are the interfaces between users and software.  Software is
 useless without input and output. Humans design software to process some input
 and produce desirable output.  All software engineers must consider input and
@@ -38,16 +36,16 @@ class UserInputAndOutput(object):
 
         graph.add((
             URIRef(knowledge + 'User_Input_and_Output'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Basic_User_Human_Factors'),
         ))
         graph.add((
             URIRef(knowledge + 'User_Input_and_Output'),
-            URIRef(dc + 'title'),
+            title,
             Literal('User Input and Output', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'User_Input_and_Output'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

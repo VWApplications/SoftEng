@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 “Systems engineering is the interdisciplinary approach governing the total
 technical and managerial effort required to transform a set of customer needs,
 expectations, and constraints into a solution and to support that solution
@@ -33,16 +31,16 @@ class SystemsEngineering(object):
 
         graph.add((
             URIRef(knowledge + 'Systems_Engineering'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Basic_Concept_of_a_System'),
         ))
         graph.add((
             URIRef(knowledge + 'Systems_Engineering'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Systems Engineering', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Systems_Engineering'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

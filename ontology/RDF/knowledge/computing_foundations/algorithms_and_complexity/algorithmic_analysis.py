@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Analysis of algorithms is the theoretical study of computer-program performance
 and resource usage; to some extent it determines the goodness of an algorithm.
 Such analysis usually abstracts away the particular details of a specific
@@ -34,16 +32,16 @@ class AlgorithmicAnalysis(object):
 
         graph.add((
             URIRef(knowledge + 'Algorithmic_Analysis'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Algorithms_and_Complexity'),
         ))
         graph.add((
             URIRef(knowledge + 'Algorithmic_Analysis'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Algorithmic Analysis', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Algorithmic_Analysis'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

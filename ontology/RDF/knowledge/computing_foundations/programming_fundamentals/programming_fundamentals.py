@@ -1,13 +1,11 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .programming_paradigms import ProgrammingParadigms
 from .the_programming_process import TheProgrammingProcess
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Programming is composed of the methodologies or activities for creating
 computer programs that perform a desired function. It is an indispensible part
 in software construction. In general, programming can be considered as the
@@ -32,18 +30,18 @@ class ProgrammingFundamentals(object):
 
         graph.add((
             URIRef(knowledge + 'Programming_Fundamentals'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Computing_Foundations'),
         ))
         graph.add((
             URIRef(knowledge + 'Programming_Fundamentals'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Programming Fundamentals', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Programming_Fundamentals'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

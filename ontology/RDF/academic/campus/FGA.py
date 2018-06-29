@@ -1,9 +1,7 @@
-from rdflib import URIRef, Literal
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf, belongsTo
+from RDF.prefix import pp
 
 
 class FGA(object):
@@ -17,22 +15,22 @@ class FGA(object):
         """
 
         graph.add((
-            URIRef(es + 'FGA'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Academic_Campus'),
+            URIRef(pp + 'FGA'),
+            subClassOf,
+            URIRef(pp + 'Academic_Campus'),
         ))
         graph.add((
-            URIRef(es + 'FGA'),
-            URIRef(es + 'belongsTo'),
-            URIRef(es + 'UnB'),
+            URIRef(pp + 'FGA'),
+            belongsTo,
+            URIRef(pp + 'UnB'),
         ))
         graph.add((
-            URIRef(es + 'FGA'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'FGA'),
+            title,
             Literal('Faculty of Engineering of Gama', lang='en')
         ))
         graph.add((
-            URIRef(es + 'FGA'),
-            URIRef(dc + 'description'),
-            Literal("Faculty of Engineering of Gama - FGA", lang='en')
+            URIRef(pp + 'FGA'),
+            description,
+            Literal("Faculty of Engineering of Gama - FGA", datatype=XSD.string)
         ))

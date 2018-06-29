@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Once the problem analysis is complete, we can focus on structuring a search
 strategy to find the solution. In order to find the “best” solution (here,
 “best” could mean different things to different people, such as faster,
@@ -29,16 +27,16 @@ class DesignASolutionSearchStrategy(object):
 
         graph.add((
             URIRef(knowledge + 'Design_a_Solution_Search_Strategy'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Problem_Solving_Techniques'),
         ))
         graph.add((
             URIRef(knowledge + 'Design_a_Solution_Search_Strategy'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Design a Solution Search Strategy', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Design_a_Solution_Search_Strategy'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

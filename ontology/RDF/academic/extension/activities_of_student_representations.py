@@ -1,9 +1,12 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+Effective participation in the Academic Center and Engineering Academic
+Directory, student representation in collegiate bodies.
+"""
 
 
 class ActivitiesOfStudentRepresentations(object):
@@ -17,21 +20,17 @@ class ActivitiesOfStudentRepresentations(object):
         """
 
         graph.add((
-            URIRef(es + 'Activities_of_Student_Representations'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Complementary_and_Extension_Activities'),
+            URIRef(pp + 'Activities_of_Student_Representations'),
+            subClassOf,
+            URIRef(pp + 'Complementary_and_Extension_Activities'),
         ))
         graph.add((
-            URIRef(es + 'Activities_of_Student_Representations'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Activities_of_Student_Representations'),
+            title,
             Literal('Activities of Student Representations', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Activities_of_Student_Representations'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Effective participation in the Academic Center and Engineering
-                Academic Directory, student representation in collegiate
-                bodies.
-            """, lang='en')
+            URIRef(pp + 'Activities_of_Student_Representations'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

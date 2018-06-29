@@ -1,9 +1,7 @@
 from rdflib import URIRef, Literal
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+from RDF.data_property import title
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
 
 class TenthSemester(object):
@@ -17,12 +15,12 @@ class TenthSemester(object):
         """
 
         graph.add((
-            URIRef(es + 'Tenth_Semester'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Semester'),
+            URIRef(pp + 'Tenth_Semester'),
+            subClassOf,
+            URIRef(pp + 'Semester'),
         ))
         graph.add((
-            URIRef(es + 'Tenth_Semester'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Tenth_Semester'),
+            title,
             Literal('Tenth Semester', lang='en')
         ))

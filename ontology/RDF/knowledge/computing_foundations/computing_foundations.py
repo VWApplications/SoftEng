@@ -1,4 +1,7 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .abstraction import Abstraction
 from .algorithms_and_complexity import AlgorithmsAndComplexity
 from .basic_concept_of_a_system import BasicConceptOfASystem
@@ -7,12 +10,7 @@ from .basic_user_human_factors import BasicUserHumanFactors
 from .problem_solving_techniques import ProblemSolvingTechniques
 from .programming_fundamentals import ProgrammingFundamentals
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 The scope of the Computing Foundations knowledge area (KA) encompasses the
 development and operational environment in which software evolves and executes.
 Because no software can exist in a vacuum or run without a computer, the core
@@ -40,18 +38,18 @@ class ComputingFoundations(object):
 
         graph.add((
             URIRef(knowledge + 'Computing_Foundations'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Knowledge_Area'),
         ))
         graph.add((
             URIRef(knowledge + 'Computing_Foundations'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Computing Foundations', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Computing_Foundations'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

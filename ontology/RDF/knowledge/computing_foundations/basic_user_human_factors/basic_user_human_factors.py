@@ -1,14 +1,12 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .error_messages import ErrorMessages
 from .software_robustness import SoftwareRobustness
 from .user_input_and_output import UserInputAndOutput
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Software is developed to meet human desires or needs. Thus, all software design
 and development must take into consideration human-user factors such as how
 people use software, how people view software, and what humans expect from
@@ -31,18 +29,18 @@ class BasicUserHumanFactors(object):
 
         graph.add((
             URIRef(knowledge + 'Basic_User_Human_Factors'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Computing_Foundations'),
         ))
         graph.add((
             URIRef(knowledge + 'Basic_User_Human_Factors'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Basic User Human Factors', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Basic_User_Human_Factors'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Programming is highly creative and thus somewhat personal.  Different people
 often write different programs for the same requirements. This diversity of
 programming causes much difficulty in the construction and maintenance of large
@@ -40,16 +38,16 @@ class ProgrammingParadigms(object):
 
         graph.add((
             URIRef(knowledge + 'Programming_Paradigms'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Programming_Fundamentals'),
         ))
         graph.add((
             URIRef(knowledge + 'Programming_Paradigms'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Programming Paradigms', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Programming_Paradigms'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

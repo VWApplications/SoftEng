@@ -1,12 +1,10 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .computing_foundations import ComputingFoundations
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 A body of knowledge or Knowledge area is the complete set of concepts, terms
 and activities that make up a professional domain, as defined by the relevant
 learned society or professional association. It is a type of knowledge
@@ -22,18 +20,18 @@ class Knowledge(object):
     def __init__(self, graph):
         graph.add((
             URIRef(knowledge + 'Knowledge_Area'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Knowledge_Domain')
         ))
         graph.add((
             URIRef(knowledge + 'Knowledge_Area'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Knowledge Area', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Knowledge_Area'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

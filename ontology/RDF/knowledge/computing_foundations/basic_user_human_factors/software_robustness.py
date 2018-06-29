@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Software robustness refers to the ability of software to tolerate erroneous
 inputs. Software is said to be robust if it continues to function even when
 erroneous inputs are given.  Thus, it is unacceptable for software to simply
@@ -36,16 +34,16 @@ class SoftwareRobustness(object):
 
         graph.add((
             URIRef(knowledge + 'Software_Robustness'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Basic_User_Human_Factors'),
         ))
         graph.add((
             URIRef(knowledge + 'Software_Robustness'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Software Robustness', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Software_Robustness'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

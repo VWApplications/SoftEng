@@ -1,9 +1,12 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+Multidisciplinary Projects, that is, there is the participation of other
+courses.
+"""
 
 
 class Multidisciplinary(object):
@@ -17,20 +20,17 @@ class Multidisciplinary(object):
         """
 
         graph.add((
-            URIRef(es + 'Multidisciplinary'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Curriculum_Contents'),
+            URIRef(pp + 'Multidisciplinary'),
+            subClassOf,
+            URIRef(pp + 'Curriculum_Contents'),
         ))
         graph.add((
-            URIRef(es + 'Multidisciplinary'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Multidisciplinary'),
+            title,
             Literal('Multidisciplinary', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Multidisciplinary'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Multidisciplinary Projects, that is, there is the participation
-                of other courses.
-            """, lang='en')
+            URIRef(pp + 'Multidisciplinary'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

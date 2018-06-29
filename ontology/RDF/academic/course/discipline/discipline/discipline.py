@@ -1,10 +1,8 @@
 from rdflib import URIRef, Literal
+from RDF.data_property import title
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 from .calculo_1 import Calculo1
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
 class Discipline(object):
@@ -18,21 +16,14 @@ class Discipline(object):
         """
 
         graph.add((
-            URIRef(es + 'Discipline'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Discipline_Domain'),
+            URIRef(pp + 'Discipline'),
+            subClassOf,
+            URIRef(pp + 'Discipline_Domain'),
         ))
         graph.add((
-            URIRef(es + 'Discipline'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Discipline'),
+            title,
             Literal('Discipline', lang='en')
-        ))
-        graph.add((
-            URIRef(es + 'Discipline'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Discipline designate a particular branch of knowledge.
-            """, lang='en')
         ))
 
         self.graph = graph

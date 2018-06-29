@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Gerard Voland writes, “It is important to recognize that a specific problem
 should be formulated if one is to develop a specific solution”. This
 formulation is called the problem statement, which explicitly specifies what
@@ -30,16 +28,16 @@ class FormulatingTheRealProblem(object):
 
         graph.add((
             URIRef(knowledge + 'Formulating_the_Real_Problem'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Problem_Solving_Techniques'),
         ))
         graph.add((
             URIRef(knowledge + 'Formulating_the_Real_Problem'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Formulating the Real Problem', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Formulating_the_Real_Problem'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

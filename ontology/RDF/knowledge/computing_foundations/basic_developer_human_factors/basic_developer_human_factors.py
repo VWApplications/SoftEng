@@ -1,13 +1,11 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .comments import Comments
 from .structure import Structure
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Developer human factors refer to the considerations of human factors taken when
 developing software. Software is developed by humans, read by humans, and
 maintained by humans. If anything is wrong, humans are responsible for
@@ -33,18 +31,18 @@ class BasicDeveloperHumanFactors(object):
 
         graph.add((
             URIRef(knowledge + 'Basic_Developer_Human_Factors'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Computing_Foundations'),
         ))
         graph.add((
             URIRef(knowledge + 'Basic_Developer_Human_Factors'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Basic Developer Human Factors', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Basic_Developer_Human_Factors'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

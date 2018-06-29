@@ -1,9 +1,17 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation
+in Computing).
+
+Example: Scientific and Technological Methodology, Communication and
+Expression, Graphic Expression, Mathematics, Physics, Production, Innovation,
+Administration, Economics, Environmental Sciences, Humanities, Social Sciences,
+Citizenship.
+"""
 
 
 class CoreBasicContent(object):
@@ -17,26 +25,17 @@ class CoreBasicContent(object):
         """
 
         graph.add((
-            URIRef(es + 'Core_Basic_Content'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Core_Content'),
+            URIRef(pp + 'Core_Basic_Content'),
+            subClassOf,
+            URIRef(pp + 'Core_Content'),
         ))
         graph.add((
-            URIRef(es + 'Core_Basic_Content'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Core_Basic_Content'),
+            title,
             Literal('Core Basic Content', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Core_Basic_Content'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Required by opinion CNE / CES 136 of 2012 (Curricular
-                Guidelines for Graduation in Computing).
-
-                Example: Scientific and Technological Methodology,
-                Communication and Expression, Graphic Expression, Mathematics,
-                Physics, Production, Innovation, Administration, Economics,
-                Environmental Sciences, Humanities, Social Sciences,
-                Citizenship
-            """, lang='en')
+            URIRef(pp + 'Core_Basic_Content'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

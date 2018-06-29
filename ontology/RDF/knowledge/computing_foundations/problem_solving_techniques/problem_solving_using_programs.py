@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 The uniqueness of computer software gives problem solving a flavor that is
 distinct from general engineering problem solving. To solve a problem using
 computers, we must answer the following questions. How do we figure out what to
@@ -41,16 +39,16 @@ class ProblemSolvingUsingPrograms(object):
 
         graph.add((
             URIRef(knowledge + 'Problem_Solving_Using_Programs'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Problem_Solving_Techniques'),
         ))
         graph.add((
             URIRef(knowledge + 'Problem_Solving_Using_Programs'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Problem Solving Using Programs', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Problem_Solving_Using_Programs'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

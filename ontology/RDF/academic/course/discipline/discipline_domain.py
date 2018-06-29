@@ -1,13 +1,11 @@
 from rdflib import URIRef, Literal
+from RDF.data_property import title
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 from .classification import Classification
 from .curriculum_contents import CurriculumContents
 from .discipline import Discipline
 from .semester import Semester
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
 class DisciplineDomain(object):
@@ -21,13 +19,13 @@ class DisciplineDomain(object):
         """
 
         graph.add((
-            URIRef(es + 'Discipline_Domain'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Course_Domain'),
+            URIRef(pp + 'Discipline_Domain'),
+            subClassOf,
+            URIRef(pp + 'Course_Domain'),
         ))
         graph.add((
-            URIRef(es + 'Discipline_Domain'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Discipline_Domain'),
+            title,
             Literal('Discipline Domain', lang='en')
         ))
 

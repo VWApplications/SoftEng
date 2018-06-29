@@ -1,13 +1,11 @@
 from rdflib import URIRef, Literal
+from RDF.data_property import title
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 from .optional import Optional
 from .practical import Practical
 from .required import Required
 from .theoretical import Theoretical
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
 class Classification(object):
@@ -21,22 +19,14 @@ class Classification(object):
         """
 
         graph.add((
-            URIRef(es + 'Classification'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Discipline_Domain'),
+            URIRef(pp + 'Classification'),
+            subClassOf,
+            URIRef(pp + 'Discipline_Domain'),
         ))
         graph.add((
-            URIRef(es + 'Classification'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Classification'),
+            title,
             Literal('Classification', lang='en')
-        ))
-        graph.add((
-            URIRef(es + 'Classification'),
-            URIRef(dc + 'description'),
-            Literal("""
-                The course is composed of disciplines, classified in the
-                required or optional and Practical or Theoretical types
-            """, lang='en')
         ))
 
         self.graph = graph

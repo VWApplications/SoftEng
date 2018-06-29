@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Once the problem statement is available, the next step is to analyze the
 problem statement or situation to help structure our search for a solution.
 Four types of analysis include situation analysis, in which the most urgent or
@@ -30,16 +28,16 @@ class AnalyzeTheProblem(object):
 
         graph.add((
             URIRef(knowledge + 'Analyze_the_Problem'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Problem_Solving_Techniques'),
         ))
         graph.add((
             URIRef(knowledge + 'Analyze_the_Problem'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Analyze the Problem', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Analyze_the_Problem'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

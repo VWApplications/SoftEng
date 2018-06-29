@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Encapsulation is a mechanism used to implement abstraction.  When we are
 dealing with one level of abstraction, the information concerning the levels
 below and above that level is encapsulated. This information can be the
@@ -30,16 +28,16 @@ class Encapsulation(object):
 
         graph.add((
             URIRef(knowledge + 'Encapsulation'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Abstraction'),
         ))
         graph.add((
             URIRef(knowledge + 'Encapsulation'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Encapsulation', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Encapsulation'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

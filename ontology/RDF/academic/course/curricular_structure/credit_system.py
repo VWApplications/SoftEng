@@ -1,9 +1,11 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+The students can study subjects at any time, observing the prerequisites.
+"""
 
 
 class CreditSystem(object):
@@ -17,20 +19,17 @@ class CreditSystem(object):
         """
 
         graph.add((
-            URIRef(es + 'Credit_System'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Curricular_Structure'),
+            URIRef(pp + 'Credit_System'),
+            subClassOf,
+            URIRef(pp + 'Curricular_Structure'),
         ))
         graph.add((
-            URIRef(es + 'Credit_System'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Credit_System'),
+            title,
             Literal('Credit System', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Credit_System'),
-            URIRef(dc + 'description'),
-            Literal("""
-                The students can study subjects at any time,
-                observing the prerequisites.
-            """, lang='en')
+            URIRef(pp + 'Credit_System'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

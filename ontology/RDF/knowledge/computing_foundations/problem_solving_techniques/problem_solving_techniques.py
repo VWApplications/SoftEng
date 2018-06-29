@@ -1,16 +1,14 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .definition_of_problem_solving import DefinitionOfProblemSolving
 from .formulating_the_real_problem import FormulatingTheRealProblem
 from .analyze_the_problem import AnalyzeTheProblem
 from .design_a_solution_search_strategy import DesignASolutionSearchStrategy
 from .problem_solving_using_programs import ProblemSolvingUsingPrograms
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 The concepts, notions, and terminology introduced here form an underlying basis
 for understanding the role and scope of problem solving techniques.
 """
@@ -28,18 +26,18 @@ class ProblemSolvingTechniques(object):
 
         graph.add((
             URIRef(knowledge + 'Problem_Solving_Techniques'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Computing_Foundations'),
         ))
         graph.add((
             URIRef(knowledge + 'Problem_Solving_Techniques'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Problem Solving Techniques', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Problem_Solving_Techniques'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

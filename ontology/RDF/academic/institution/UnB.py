@@ -1,9 +1,10 @@
-from rdflib import URIRef, Literal
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.prefix import pp
+from RDF.object_property import (
+    subClassOf, hasCampus, hasCourse,
+    hasExtensionActivitie
+)
 
 
 class UnB(object):
@@ -17,62 +18,62 @@ class UnB(object):
         """
 
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Academic_Institution'),
+            URIRef(pp + 'UnB'),
+            subClassOf,
+            URIRef(pp + 'Academic_Institution')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasCampus'),
-            URIRef(es + 'FGA'),
+            URIRef(pp + 'UnB'),
+            hasCampus,
+            URIRef(pp + 'FGA')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasCourse'),
-            URIRef(es + 'Software_Engineering'),
+            URIRef(pp + 'UnB'),
+            hasCourse,
+            URIRef(pp + 'Software_Engineering')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasExtensionActivitie'),
-            URIRef(es + 'Activities_of_Social'),
+            URIRef(pp + 'UnB'),
+            hasExtensionActivitie,
+            URIRef(pp + 'Activities_of_Social')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasExtensionActivitie'),
-            URIRef(es + 'Activities_of_Student_Representations'),
+            URIRef(pp + 'UnB'),
+            hasExtensionActivitie,
+            URIRef(pp + 'Activities_of_Student_Representations')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasExtensionActivitie'),
-            URIRef(es + 'Extension_Activities'),
+            URIRef(pp + 'UnB'),
+            hasExtensionActivitie,
+            URIRef(pp + 'Extension_Activities')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasExtensionActivitie'),
-            URIRef(es + 'Mobility_and_Exchange_Activities'),
+            URIRef(pp + 'UnB'),
+            hasExtensionActivitie,
+            URIRef(pp + 'Mobility_and_Exchange_Activities')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasExtensionActivitie'),
-            URIRef(es + 'Professional_Practice_Activities'),
+            URIRef(pp + 'UnB'),
+            hasExtensionActivitie,
+            URIRef(pp + 'Professional_Practice_Activities')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasExtensionActivitie'),
-            URIRef(es + 'Research_Activities'),
+            URIRef(pp + 'UnB'),
+            hasExtensionActivitie,
+            URIRef(pp + 'Research_Activities')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(es + 'hasExtensionActivitie'),
-            URIRef(es + 'Teaching_Activities'),
+            URIRef(pp + 'UnB'),
+            hasExtensionActivitie,
+            URIRef(pp + 'Teaching_Activities')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'UnB'),
+            title,
             Literal('University of Brasilia', lang='en')
         ))
         graph.add((
-            URIRef(es + 'UnB'),
-            URIRef(dc + 'description'),
-            Literal("University of Brasilia - UnB", lang='en')
+            URIRef(pp + 'UnB'),
+            description,
+            Literal("University of Brasilia - UnB", datatype=XSD.string)
         ))

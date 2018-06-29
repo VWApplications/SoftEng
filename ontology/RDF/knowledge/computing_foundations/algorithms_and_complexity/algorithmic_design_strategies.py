@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 The design of algorithms generally follows one of the following strategies:
 brute force, divide and conquer, dynamic programming, and greedy selection.
 The brute force strategy is actually a no-strategy. It exhaustively tries
@@ -35,16 +33,16 @@ class AlgorithmicDesignStrategies(object):
 
         graph.add((
             URIRef(knowledge + 'Algorithmic_Design_Strategies'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Algorithms_and_Complexity'),
         ))
         graph.add((
             URIRef(knowledge + 'Algorithmic_Design_Strategies'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Algorithmic Design Strategies', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Algorithmic_Design_Strategies'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

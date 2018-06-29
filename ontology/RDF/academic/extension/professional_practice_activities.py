@@ -1,9 +1,13 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+Participation in the Executive Board of the Junior Engineering Company (EJEL),
+participation in projects carried out by EJEL, extracurricular internships in
+the technical area, technological development projects in companies.
+"""
 
 
 class ProfessionalPracticeActivities(object):
@@ -17,22 +21,17 @@ class ProfessionalPracticeActivities(object):
         """
 
         graph.add((
-            URIRef(es + 'Professional_Practice_Activities'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Complementary_and_Extension_Activities'),
+            URIRef(pp + 'Professional_Practice_Activities'),
+            subClassOf,
+            URIRef(pp + 'Complementary_and_Extension_Activities'),
         ))
         graph.add((
-            URIRef(es + 'Professional_Practice_Activities'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Professional_Practice_Activities'),
+            title,
             Literal('Professional Practice Activities', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Professional_Practice_Activities'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Participation in the Executive Board of the Junior Engineering
-                Company (EJEL), participation in projects carried out by EJEL,
-                extracurricular internships in the technical area,
-                technological development projects in companies.
-            """, lang='en')
+            URIRef(pp + 'Professional_Practice_Activities'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

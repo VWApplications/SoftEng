@@ -1,6 +1,6 @@
 from rdflib import Graph
 from .knowledge import Knowledge
-# from academic import AcademicDomain
+from .academic import AcademicDomain
 
 
 def create_rdf():
@@ -10,5 +10,5 @@ def create_rdf():
 
     graph = Graph()
     Knowledge(graph)
-    # AcademicDomain(graph)
+    AcademicDomain(graph)
     graph.serialize("ontology/RDF/softeng.rdf")

@@ -1,14 +1,12 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .emergent_system_properties import EmergentSystemProperties
 from .overview_of_a_computer_system import OverviewOfAComputerSystem
 from .systems_engineering import SystemsEngineering
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Ian Sommerville writes, “a system is a purposeful collection of interrelated
 components that work together to achieve some objective”.  A system can be very
 simple and include only a few components, like an ink pen, or rather complex,
@@ -34,18 +32,18 @@ class BasicConceptOfASystem(object):
 
         graph.add((
             URIRef(knowledge + 'Basic_Concept_of_a_System'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Computing_Foundations'),
         ))
         graph.add((
             URIRef(knowledge + 'Basic_Concept_of_a_System'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Basic Concept of a System', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Basic_Concept_of_a_System'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

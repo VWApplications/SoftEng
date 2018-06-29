@@ -1,15 +1,13 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .alternate_abstractions import AlternateAbstractions
 from .encapsulation import Encapsulation
 from .hierarchy import Hierarchy
 from .levels_of_abstraction import LevelsOfAbstraction
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Abstraction is an indispensible technique associated with problem solving. It
 refers to both the process and result of generalization by reducing the
 information of a concept, a problem, or an observable phenomenon so that one
@@ -37,18 +35,18 @@ class Abstraction(object):
 
         graph.add((
             URIRef(knowledge + 'Abstraction'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Computing_Foundations'),
         ))
         graph.add((
             URIRef(knowledge + 'Abstraction'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Abstraction', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Abstraction'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

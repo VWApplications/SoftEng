@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 The analysis strategies of algorithms include basic counting analysis, in which
 one actually counts the number of steps an algorithm takes to complete its
 task; asymptotic analysis, in which one only considers the order of magnitude
@@ -33,16 +31,16 @@ class AlgorithmicAnalysisStrategies(object):
 
         graph.add((
             URIRef(knowledge + 'Algorithmic_Analysis_Strategies'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Algorithms_and_Complexity'),
         ))
         graph.add((
             URIRef(knowledge + 'Algorithmic_Analysis_Strategies'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Algorithmic Analysis Strategies', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Algorithmic_Analysis_Strategies'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

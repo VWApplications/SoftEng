@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Problem solving refers to the thinking and activities conducted to answer or
 derive a solution to a problem. There are many ways to approach a problem, and
 each way employs different tools and uses different processes. These different
@@ -33,16 +31,16 @@ class DefinitionOfProblemSolving(object):
 
         graph.add((
             URIRef(knowledge + 'Definition_of_Problem_Solving'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Problem_Solving_Techniques'),
         ))
         graph.add((
             URIRef(knowledge + 'Definition_of_Problem_Solving'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Definition of Problem Solving', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Definition_of_Problem_Solving'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Abstractly speaking, algorithms guide the operations of computers and consist
 of a sequence of actions composed to solve a problem. Alternative definitions
 include but are not limited to: An algorithm is any well-defined computational
@@ -32,16 +30,16 @@ class OverviewOfAlgorithms(object):
 
         graph.add((
             URIRef(knowledge + 'Overview_of_Algorithms'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Algorithms_and_Complexity'),
         ))
         graph.add((
             URIRef(knowledge + 'Overview_of_Algorithms'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Overview of Algorithms', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Overview_of_Algorithms'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

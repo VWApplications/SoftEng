@@ -1,9 +1,12 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+Students follow pre-determined lists of disciplines per semester or school
+year.
+"""
 
 
 class SerialSystem(object):
@@ -17,20 +20,17 @@ class SerialSystem(object):
         """
 
         graph.add((
-            URIRef(es + 'Serial_System'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Curricular_Structure'),
+            URIRef(pp + 'Serial_System'),
+            subClassOf,
+            URIRef(pp + 'Curricular_Structure'),
         ))
         graph.add((
-            URIRef(es + 'Serial_System'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Serial_System'),
+            title,
             Literal('Serial System', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Serial_System'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Students follow pre-determined lists of disciplines per
-                semester or school year.
-            """, lang='en')
+            URIRef(pp + 'Serial_System'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

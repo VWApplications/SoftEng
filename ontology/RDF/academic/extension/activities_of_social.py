@@ -1,9 +1,12 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+Participation in programs or NGOs related to social action, exercise of
+citizenship and defense of the environment.
+"""
 
 
 class ActivitiesOfSocial(object):
@@ -17,21 +20,17 @@ class ActivitiesOfSocial(object):
         """
 
         graph.add((
-            URIRef(es + 'Activities_of_Social'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Complementary_and_Extension_Activities'),
+            URIRef(pp + 'Activities_of_Social'),
+            subClassOf,
+            URIRef(pp + 'Complementary_and_Extension_Activities'),
         ))
         graph.add((
-            URIRef(es + 'Activities_of_Social'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Activities_of_Social'),
+            title,
             Literal('Activities of Social Action, Citizenship and Environment', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Activities_of_Social'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Participation in programs or NGOs related to social
-                action, exercise of citizenship and defense of the
-                environment.
-            """, lang='en')
+            URIRef(pp + 'Activities_of_Social'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

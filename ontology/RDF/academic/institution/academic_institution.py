@@ -1,10 +1,8 @@
 from rdflib import URIRef, Literal
+from RDF.data_property import title
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 from .UnB import UnB
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
 class AcademicInstitution(object):
@@ -18,13 +16,13 @@ class AcademicInstitution(object):
         """
 
         graph.add((
-            URIRef(es + 'Academic_Institution'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Academic_Domain'),
+            URIRef(pp + 'Academic_Institution'),
+            subClassOf,
+            URIRef(pp + 'Academic_Domain'),
         ))
         graph.add((
-            URIRef(es + 'Academic_Institution'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Academic_Institution'),
+            title,
             Literal('Academic Institution', lang='en')
         ))
 

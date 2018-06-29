@@ -1,9 +1,14 @@
-from rdflib import URIRef, Literal
+from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+text = """
+Participation in research centers or projects of scientific initiation
+Institutional Program of Scientific Initiation Grants (PIBIC), publication of
+works, participation in seminars and scientific initiation events related to
+graduation.
+"""
 
 
 class ResearchActivities(object):
@@ -17,22 +22,17 @@ class ResearchActivities(object):
         """
 
         graph.add((
-            URIRef(es + 'Research_Activities'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Complementary_and_Extension_Activities'),
+            URIRef(pp + 'Research_Activities'),
+            subClassOf,
+            URIRef(pp + 'Complementary_and_Extension_Activities'),
         ))
         graph.add((
-            URIRef(es + 'Research_Activities'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Research_Activities'),
+            title,
             Literal('Research Activities', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Research_Activities'),
-            URIRef(dc + 'description'),
-            Literal("""
-                Participation in research centers or projects of scientific
-                initiation Institutional Program of Scientific Initiation
-                Grants (PIBIC), publication of works, participation in seminars
-                and scientific initiation events related to graduation;
-            """, lang='en')
+            URIRef(pp + 'Research_Activities'),
+            description,
+            Literal(text, datatype=XSD.string)
         ))

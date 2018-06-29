@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 It is understandable that most software contains faults and fails from time to
 time. But users should be notified if there is anything that impedes the smooth
 execution of the program.  Nothing is more frustrating than an unexpected
@@ -40,16 +38,16 @@ class ErrorMessages(object):
 
         graph.add((
             URIRef(knowledge + 'Error_Messages'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Basic_User_Human_Factors'),
         ))
         graph.add((
             URIRef(knowledge + 'Error_Messages'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Error Messages', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Error_Messages'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

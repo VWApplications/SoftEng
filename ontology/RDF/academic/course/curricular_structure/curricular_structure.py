@@ -1,12 +1,10 @@
 from rdflib import URIRef, Literal
+from RDF.data_property import title
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 from .credit_system import CreditSystem
 from .semi_serial import SemiSerial
 from .serial_system import SerialSystem
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
 class CurricularStructure(object):
@@ -20,13 +18,13 @@ class CurricularStructure(object):
         """
 
         graph.add((
-            URIRef(es + 'Curricular_Structure'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Course_Domain'),
+            URIRef(pp + 'Curricular_Structure'),
+            subClassOf,
+            URIRef(pp + 'Course_Domain'),
         ))
         graph.add((
-            URIRef(es + 'Curricular_Structure'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Curricular_Structure'),
+            title,
             Literal('Curricular Structure', lang='en')
         ))
 

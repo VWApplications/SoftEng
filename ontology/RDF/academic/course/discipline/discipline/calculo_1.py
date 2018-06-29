@@ -1,9 +1,10 @@
 from rdflib import URIRef, Literal, XSD
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+from RDF.data_property import title, description, code
+from RDF.object_property import (
+    subClassOf, hasContent, isInTheFlowOf,
+    isPartOf, hasType,
+)
+from RDF.prefix import pp, knowledge
 
 
 class Calculo1(object):
@@ -17,42 +18,47 @@ class Calculo1(object):
         """
 
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Discipline'),
+            URIRef(pp + 'Calculo_1'),
+            subClassOf,
+            URIRef(pp + 'Discipline'),
         ))
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(es + 'hasType'),
-            URIRef(es + 'Required'),
+            URIRef(pp + 'Calculo_1'),
+            hasType,
+            URIRef(pp + 'Required'),
         ))
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(es + 'isInTheFlowOf'),
-            URIRef(es + 'First_Semester'),
+            URIRef(pp + 'Calculo_1'),
+            isInTheFlowOf,
+            URIRef(pp + 'First_Semester'),
         ))
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(es + 'isPartOf'),
-            URIRef(es + 'Core_Basic_Content'),
+            URIRef(pp + 'Calculo_1'),
+            isPartOf,
+            URIRef(pp + 'Core_Basic_Content'),
         ))
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(dc + 'code'),
+            URIRef(pp + 'Calculo_1'),
+            code,
             Literal('123456', datatype=XSD.integer)
         ))
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Calculo_1'),
+            title,
             Literal('Calculo 01', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(es + 'hasContent'),
-            URIRef(es + 'Algorithmic_Analysis'),
+            URIRef(pp + 'Calculo_1'),
+            description,
+            Literal('Disciplina voltada para calculo diferencial e integrais', lang='en')
         ))
         graph.add((
-            URIRef(es + 'Calculo_1'),
-            URIRef(es + 'hasContent'),
-            URIRef(es + 'Analyze_the_Problem'),
+            URIRef(pp + 'Calculo_1'),
+            hasContent,
+            URIRef(knowledge + 'Algorithmic_Analysis'),
+        ))
+        graph.add((
+            URIRef(pp + 'Calculo_1'),
+            hasContent,
+            URIRef(knowledge + 'Analyze_the_Problem'),
         ))

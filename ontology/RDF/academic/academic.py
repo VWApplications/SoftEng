@@ -3,11 +3,8 @@ from .campus import AcademicCampus
 from .institution import AcademicInstitution
 from .extension import ComplementaryAndExtensionActivities
 from .course import CourseDomain
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+from RDF.data_property import title
+from RDF.prefix import pp
 
 
 class AcademicDomain(object):
@@ -21,8 +18,8 @@ class AcademicDomain(object):
         """
 
         graph.add((
-            URIRef(es + 'Academic_Domain'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Academic_Domain'),
+            title,
             Literal('Academic Domain', lang='en')
         ))
 

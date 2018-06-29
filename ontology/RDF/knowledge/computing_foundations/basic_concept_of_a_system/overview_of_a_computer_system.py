@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Among all the systems, one that is obviously relevant to the software
 engineering community is the computer system. A computer is a machine that
 executes programs or software. It consists of a purposeful collection of
@@ -41,16 +39,16 @@ class OverviewOfAComputerSystem(object):
 
         graph.add((
             URIRef(knowledge + 'Overview_of_a_Computer_System'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Basic_Concept_of_a_System'),
         ))
         graph.add((
             URIRef(knowledge + 'Overview_of_a_Computer_System'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Overview of a Computer System', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Overview_of_a_Computer_System'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

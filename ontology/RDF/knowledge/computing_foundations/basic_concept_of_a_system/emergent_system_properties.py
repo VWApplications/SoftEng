@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 A system is more than simply the sum of its parts.  Thus, the properties of a
 system are not simply the sum of the properties of its components. Instead, a
 system often exhibits properties that are properties of the system as a whole.
@@ -32,16 +30,16 @@ class EmergentSystemProperties(object):
 
         graph.add((
             URIRef(knowledge + 'Emergent_System_Properties'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Basic_Concept_of_a_System'),
         ))
         graph.add((
             URIRef(knowledge + 'Emergent_System_Properties'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Emergent System Properties', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Emergent_System_Properties'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

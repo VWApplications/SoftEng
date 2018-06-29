@@ -1,16 +1,14 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 from .algorithmic_analysis import AlgorithmicAnalysis
 from .algorithmic_analysis_strategies import AlgorithmicAnalysisStrategies
 from .algorithmic_design_strategies import AlgorithmicDesignStrategies
 from .attributes_of_algorithms import AttributesOfAlgorithms
 from .overview_of_algorithms import OverviewOfAlgorithms
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 Programs are not random pieces of code: they are meticulously written to
 perform user-expected actions. The guide one uses to compose programs are
 algorithms, which organize various functions into a series of steps and take
@@ -31,18 +29,18 @@ class AlgorithmsAndComplexity(object):
 
         graph.add((
             URIRef(knowledge + 'Algorithms_and_Complexity'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Computing_Foundations'),
         ))
         graph.add((
             URIRef(knowledge + 'Algorithms_and_Complexity'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Algorithms and Complexity', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Algorithms_and_Complexity'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))
 
         self.graph = graph

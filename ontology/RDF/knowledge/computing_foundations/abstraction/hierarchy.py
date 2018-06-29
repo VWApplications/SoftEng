@@ -1,11 +1,9 @@
 from rdflib import URIRef, Literal, XSD
+from RDF.data_property import title, description
+from RDF.object_property import subClassOf
+from RDF.prefix import knowledge
 
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-knowledge = "http://www.semanticweb.org/ontologies/2018/Knowledge/"
-
-description = """
+text = """
 When we use abstraction in our problem formulation and solution, we may use
 different abstractions at different times in other words, we work on different
 levels of abstraction as the situation calls. Most of the time, these different
@@ -36,16 +34,16 @@ class Hierarchy(object):
 
         graph.add((
             URIRef(knowledge + 'Hierarchy'),
-            URIRef(rdfs + 'subClassOf'),
+            subClassOf,
             URIRef(knowledge + 'Abstraction'),
         ))
         graph.add((
             URIRef(knowledge + 'Hierarchy'),
-            URIRef(dc + 'title'),
+            title,
             Literal('Hierarchy', lang='en')
         ))
         graph.add((
             URIRef(knowledge + 'Hierarchy'),
-            URIRef(dc + 'description'),
-            Literal(description, datatype=XSD.string)
+            description,
+            Literal(text, datatype=XSD.string)
         ))

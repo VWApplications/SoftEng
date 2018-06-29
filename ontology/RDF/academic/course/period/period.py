@@ -1,13 +1,11 @@
 from rdflib import URIRef, Literal
+from RDF.data_property import title
+from RDF.object_property import subClassOf
+from RDF.prefix import pp
 from .evening import Evening
 from .full_time import FullTime
 from .morning import Morning
 from .nocturnal import Nocturnal
-
-# PREFIX
-dc = "http://purl.org/dc/elements/1.1/"
-rdfs = "http://www.w3.org/2000/01/rdf-schema#"
-es = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
 
 
 class Period(object):
@@ -21,13 +19,13 @@ class Period(object):
         """
 
         graph.add((
-            URIRef(es + 'Period'),
-            URIRef(rdfs + 'subClassOf'),
-            URIRef(es + 'Course_Domain'),
+            URIRef(pp + 'Period'),
+            subClassOf,
+            URIRef(pp + 'Course_Domain'),
         ))
         graph.add((
-            URIRef(es + 'Period'),
-            URIRef(dc + 'title'),
+            URIRef(pp + 'Period'),
+            title,
             Literal('Course Period', lang='en')
         ))
 
