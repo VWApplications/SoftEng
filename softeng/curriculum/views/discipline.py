@@ -1,8 +1,9 @@
 from django.views.generic import ListView, DetailView
-from django.urls import reverse_lazy
-from django.contrib import messages
+from django.template.defaultfilters import slugify
+# from django.urls import reverse_lazy
+# from django.contrib import messages
 # from knowledge.models import Subtopic
-from curriculum.models import Disciplines
+from curriculum.models import Disciplines, Discipline
 
 
 class DisciplineListView(ListView):
@@ -45,14 +46,45 @@ class DisciplineListView(ListView):
         return context
 
 
-# class DisciplineDetailView(DetailView):
-#     """
-#     View to show a specific discipline.
-#     """
+class DisciplineDetailView(DetailView):
+    """
+    View to show a specific discipline.
+    """
 
-#     model = Discipline
-#     template_name = "curriculum/details.html"
-#     context_object_name = "discipline"
+    template_name = "curriculum/details.html"
+    context_object_name = "discipline"
+
+    def get_object(self):
+        """
+        Get the specific discipline.
+        """
+
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
+
+        slug = self.kwargs.get('slug', '')
+
+        for discipline in disciplines:
+            if discipline['slug'] == slug:
+                return discipline
+
+        return None
+
+    def get_context_data(self, **kwargs):
+        """
+        Get discipline to specific semestes.
+        """
+
+        context = super(DisciplineDetailView, self).get_context_data(**kwargs)
+
+        discipline = self.get_object()
+
+        context['are_requireds_of'] = Disciplines.get_is_required_of(discipline['uri'])
+
+        context['requireds'] = Disciplines.get_requireds(discipline['uri'])
+
+        context['program'] = Disciplines.get_contents(discipline['uri'])
+
+        return context
 
 
 # class RemoveContentView(ObjectRedirectView):

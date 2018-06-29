@@ -10,12 +10,12 @@ urlpatterns = [
         discipline.DisciplineListView.as_view(),
         name='discipline-list'
     ),
-    # # disciplines/<slug>/details/
-    # path(
-    #     "disciplines/<slug:slug>/details/",
-    #     discipline.DisciplineDetailView.as_view(),
-    #     name="discipline-detail"
-    # ),
+    # disciplines/<slug>/details/
+    path(
+        "disciplines/<slug:slug>/details/",
+        discipline.DisciplineDetailView.as_view(),
+        name="discipline-detail"
+    ),
     # # disciplines/<slug>/<subtopic>/details/
     # path(
     #     "disciplines/<slug:slug>/<slug:subtopic>/remove/",

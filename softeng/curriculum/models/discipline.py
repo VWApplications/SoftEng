@@ -44,21 +44,133 @@ class Disciplines(object):
               OPTIONAL {?disciplines pp:isInTheFlowOf ?semester_uri .}
               OPTIONAL {?semester_uri dc:title ?semester .}
               OPTIONAL {?disciplines pp:isPartOf ?core_content_uri}
-              OPTIONAL {?core_content_uri dc:title ?core_content .}
+              OPTIONAL {?core_content_uri dc:title ?core_content}
             }
         """ % (predicate, obj)
 
         result = Query.run(Sesame.endpoint, query)
+        print(result)
 
         disciplines = []
         for discipline in result:
             disciplines.append({
                 'uri': discipline['disciplines']['value'],
                 'title': discipline['title']['value'],
+                'code': discipline['code']['value'],
                 'description': discipline['description']['value'],
                 'type': discipline['type']['value'],
+                'semester': discipline['semester']['value'],
                 'core_content': discipline['core_content']['value'],
                 'slug': slugify(discipline['title']['value']),
             })
 
         return disciplines
+
+    @classmethod
+    def get_is_required_of(cls, discipline_uri):
+        """
+        Get required that the disciplines is required from triple store.
+        """
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            SELECT DISTINCT ?is_required_of
+            WHERE {
+              <%s> pp:isRequiredOf ?is_required_of_uri .
+              ?is_required_of_uri dc:title ?is_required_of
+            }
+        """ % (discipline_uri)
+
+        result = Query.run(Sesame.endpoint, query)
+
+        disciplines = []
+        for discipline in result:
+            discipline = Discipline(discipline['is_required_of']['value'])
+            disciplines.append(discipline)
+
+        return disciplines
+
+    @classmethod
+    def get_requireds(cls, discipline_uri):
+        """
+        Get required disciplines from triple store.
+        """
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            SELECT DISTINCT ?required
+            WHERE {
+              <%s> pp:hasRequired ?required_uri .
+              ?required_uri dc:title ?required
+            }
+        """ % (discipline_uri)
+
+        result = Query.run(Sesame.endpoint, query)
+
+        disciplines = []
+        for discipline in result:
+            discipline = Discipline(discipline['required']['value'])
+            disciplines.append(discipline)
+
+        return disciplines
+
+    @classmethod
+    def get_contents(cls, discipline_uri):
+        """
+        Get content disciplines from triple store.
+        """
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            SELECT DISTINCT ?content ?topic
+            WHERE {
+              <%s> pp:hasContent ?content_uri .
+              ?content_uri dc:title ?content .
+              ?content_uri rdfs:subClassOf ?topic_uri .
+              ?topic_uri dc:title ?topic
+            }
+        """ % (discipline_uri)
+
+        result = Query.run(Sesame.endpoint, query)
+
+        contents = []
+        for content in result:
+            subtopic = Subtopic(content['content']['value'], content['topic']['value'])
+            contents.append(subtopic)
+
+        return contents
+
+
+class Discipline(object):
+    """
+    Create a discipline.
+    """
+
+    def __init__(self, title):
+        """
+        Constructor
+        """
+
+        self.title = title
+        self.slug = slugify(title)
+
+
+class Subtopic(object):
+    """
+    Create a subtopic
+    """
+
+    def __init__(self, title, topic):
+        """
+        Constructor
+        """
+
+        self.title = title
+        self.slug = slugify(title)
+        self.topic = slugify(topic)

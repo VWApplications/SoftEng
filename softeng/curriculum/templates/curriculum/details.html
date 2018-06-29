@@ -15,10 +15,6 @@
       <div class="table-responsive-sm">
         <table class="table table-borderless text-justify">
           <tr>
-            <th>Institution:</th>
-            <td>{{discipline.institution}}</td>
-          </tr>
-          <tr>
             <th>Code:</th>
             <td>{{discipline.code}}</td>
           </tr>
@@ -28,11 +24,11 @@
           </tr>
           <tr>
             <th>Semester:</th>
-            <td>{{discipline.semester}}° Semester</td>
+            <td>{{discipline.semester}}</td>
           </tr>
           <tr>
             <th>Type:</th>
-            <td>{{discipline.classification}}</td>
+            <td>{{discipline.type}}</td>
           </tr>
           {% if discipline.core_content %}
             <tr>
@@ -44,22 +40,12 @@
               </td>
             </tr>
           {% endif %}
-          {% if discipline.multidisciplinary %}
-            <tr>
-              <th>Multidisciplinary:</th>
-              <td>
-                <a href="{% url 'curriculum:multidisciplinary-list' %}">
-                  {{discipline.multidisciplinary}}
-                </a>
-              </td>
-            </tr>
-          {% endif %}
           <tr>
             <th>Required Disciplines:</th>
             <td>
-              {% for required in discipline.required.all %}
+              {% for required in requireds %}
                 <a href="{% url 'curriculum:discipline-detail' slug=required.slug %}">
-                  <p>{{required}}</p>
+                  <p>{{required.title}}</p>
                 </a>
               {% empty %}
                 <p>This discipline has not required disciplines.</p>
@@ -69,9 +55,9 @@
           <tr>
             <th>Is requirement of:</th>
             <td>
-              {% for required in discipline.is_required_in.all %}
+              {% for required in are_requireds_of %}
                 <a href="{% url 'curriculum:discipline-detail' slug=required.slug %}">
-                  <p>{{required}}</p>
+                  <p>{{required.title}}</p>
                 </a>
               {% empty %}
                 <p>This discipline hasn't required in any other discipline.</p>
@@ -91,17 +77,17 @@
           <tr>
             <th>Program:</th>
             <td>
-              {% for subtopic in discipline.program.all %}
+              {% for subtopic in program %}
                 <div class="row">
                   <div class="col-sm-10">
-                    <a href="{% url 'knowledge:swebok-detail' topic=subtopic.topic.slug %}">
+                    <a href="{% url 'knowledge:swebok-detail' topic=subtopic.topic %}">
                       {{subtopic.title}}
                     </a>
                   </div>
                   <div class="col-sm-2">
                     {% if user.is_authenticated and user.is_staff %}
                       <form
-                        action="{% url 'curriculum:remove' slug=discipline.slug subtopic=subtopic.slug %}"
+                        action="#"
                         method="POST">
                         {% csrf_token %}
 
@@ -117,16 +103,6 @@
               {% empty %}
                 <p>This discipline has not program content.</p>
               {% endfor %}
-            </td>
-          </tr>
-          <tr>
-            <th>Bibliografy</th>
-            <td>
-              {% if discipline.description %}
-                <p class="breakline">{{discipline.bibliografy}}</p>
-              {% else %}
-                <p>Discipline hasn't bibliografy.</p>
-              {% endif %}
             </td>
           </tr>
         </table>

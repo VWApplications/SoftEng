@@ -1,6 +1,6 @@
 from rdflib import URIRef
-from .prefix import dc
+from .prefix import dc, pp
 
 title = URIRef(dc + 'title')
 description = URIRef(dc + 'description')
-code = URIRef(dc + 'code')
+code = URIRef(pp + 'code')
