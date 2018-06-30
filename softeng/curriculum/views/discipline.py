@@ -1,9 +1,8 @@
 from django.views.generic import ListView, DetailView
-from django.template.defaultfilters import slugify
-# from django.urls import reverse_lazy
-# from django.contrib import messages
-# from knowledge.models import Subtopic
-from curriculum.models import Disciplines, Discipline
+from core.generics import ObjectRedirectView
+from django.urls import reverse_lazy
+from django.contrib import messages
+from curriculum.models import Disciplines
 
 
 class DisciplineListView(ListView):
@@ -64,7 +63,7 @@ class DisciplineDetailView(DetailView):
         slug = self.kwargs.get('slug', '')
 
         for discipline in disciplines:
-            if discipline['slug'] == slug:
+            if discipline.slug == slug:
                 return discipline
 
         return None
@@ -77,12 +76,13 @@ class DisciplineDetailView(DetailView):
         context = super(DisciplineDetailView, self).get_context_data(**kwargs)
 
         discipline = self.get_object()
+        print(discipline)
 
-        context['are_requireds_of'] = Disciplines.get_is_required_of(discipline['uri'])
+        context['are_requireds_of'] = Disciplines.get_is_required_of(discipline.uri)
 
-        context['requireds'] = Disciplines.get_requireds(discipline['uri'])
+        context['requireds'] = Disciplines.get_requireds(discipline.uri)
 
-        context['program'] = Disciplines.get_contents(discipline['uri'])
+        context['program'] = Disciplines.get_contents(discipline.uri)
 
         return context
 

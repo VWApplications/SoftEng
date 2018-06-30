@@ -1,4 +1,5 @@
 from core import Query, Sesame
+from knowledge.models import Subtopic
 from django.template.defaultfilters import slugify
 
 
@@ -53,16 +54,16 @@ class Disciplines(object):
 
         disciplines = []
         for discipline in result:
-            disciplines.append({
-                'uri': discipline['disciplines']['value'],
-                'title': discipline['title']['value'],
-                'code': discipline['code']['value'],
-                'description': discipline['description']['value'],
-                'type': discipline['type']['value'],
-                'semester': discipline['semester']['value'],
-                'core_content': discipline['core_content']['value'],
-                'slug': slugify(discipline['title']['value']),
-            })
+            obj = Discipline(
+                uri=discipline['disciplines']['value'],
+                title=discipline['title']['value'],
+                code=discipline['code']['value'],
+                description=discipline['description']['value'],
+                classification=discipline['type']['value'],
+                semester=discipline['semester']['value'],
+                core_content=discipline['core_content']['value']
+            )
+            disciplines.append(obj)
 
         return disciplines
 
@@ -152,25 +153,23 @@ class Discipline(object):
     Create a discipline.
     """
 
-    def __init__(self, title):
+    def __init__(self,
+                 title,
+                 uri=None,
+                 code=None,
+                 description=None,
+                 classification=None,
+                 semester=None,
+                 core_content=None):
         """
         Constructor
         """
 
         self.title = title
         self.slug = slugify(title)
-
-
-class Subtopic(object):
-    """
-    Create a subtopic
-    """
-
-    def __init__(self, title, topic):
-        """
-        Constructor
-        """
-
-        self.title = title
-        self.slug = slugify(title)
-        self.topic = slugify(topic)
+        self.uri = uri
+        self.code = code
+        self.description = description
+        self.classification = classification
+        self.semester = semester
+        self.core_content = core_content

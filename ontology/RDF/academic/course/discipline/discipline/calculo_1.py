@@ -44,11 +44,6 @@ class Calculo1(object):
         ))
         graph.add((
             URIRef(pp + 'Calculo_1'),
-            code,
-            Literal('123456', datatype=XSD.integer)
-        ))
-        graph.add((
-            URIRef(pp + 'Calculo_1'),
             title,
             Literal('Calculo 01', lang='en')
         ))

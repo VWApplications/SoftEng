@@ -1,5 +1,6 @@
 from core import Query, Sesame
 from django.template.defaultfilters import slugify
+from curriculum.models.discipline import Discipline
 
 
 class CoreBasicContent(object):
@@ -59,6 +60,7 @@ class CoreBasicContent(object):
 
         disciplines = []
         for discipline in result:
-            disciplines.append(discipline['title']['value'])
+            discipline = Discipline(discipline['title']['value'])
+            disciplines.append(discipline)
 
         return disciplines
