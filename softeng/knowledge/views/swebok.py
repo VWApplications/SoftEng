@@ -41,22 +41,13 @@ class SwebokDetailView(DetailView):
         context['knowledge'] = self.get_knowledge()
         return context
 
-    def get_knowledges(self):
-        """
-        Get all knowledges.
-        """
-
-        knowledge = Knowledge()
-        knowledges = knowledge.get_instance()
-
-        return knowledges
-
     def get_knowledge(self):
         """
         Get the specific knowledge.
         """
 
-        knowledges = self.get_knowledges()
+        knowledge = Knowledge()
+        knowledges = knowledge.get_instance()
         knowledge_slug = self.kwargs.get('knowledge', '')
 
         for knowledge in knowledges:

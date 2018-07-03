@@ -131,11 +131,11 @@ class Disciplines(object):
             SELECT DISTINCT ?content_uri ?title ?topic ?knowledge
             WHERE {
               <%s> pp:hasContent ?content_uri .
-              ?content_uri rdfs:subClassOf ?knowledge_uri .
-              ?knowledge_uri dc:title ?knowledge .
               ?content_uri dc:title ?title .
               ?content_uri rdfs:subClassOf ?topic_uri .
-              ?topic_uri dc:title ?topic
+              ?topic_uri dc:title ?topic .
+              ?topic_uri rdfs:subClassOf ?knowledge_uri .
+              ?knowledge_uri dc:title ?knowledge
             }
         """ % (discipline_uri)
 
@@ -143,11 +143,12 @@ class Disciplines(object):
 
         contents = []
         for content in result:
+            print(content)
             subtopic = Subtopic(
-                content['content_uri']['value'],
-                content['title']['value'],
-                content['topic']['value'],
-                content['knowledge']['value']
+                uri=content['content_uri']['value'],
+                title=content['title']['value'],
+                topic=content['topic']['value'],
+                knowledge=content['knowledge']['value']
             )
             contents.append(subtopic)
 
