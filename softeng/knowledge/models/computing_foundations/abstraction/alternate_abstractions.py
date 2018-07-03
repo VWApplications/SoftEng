@@ -36,6 +36,5 @@ class AlternateAbstractions(object):
         """
 
         result = Query.run(Sesame.endpoint, query)
-        print(result)
 
         return result[0]
