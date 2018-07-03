@@ -14,6 +14,7 @@ class ProgrammingParadigms(object):
 
         result = self.get_information()
 
+        self.uri = "http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Paradigms"
         self.title = result['title']['value']
         self.description = result['description']['value']
         self.slug = slugify(self.title)

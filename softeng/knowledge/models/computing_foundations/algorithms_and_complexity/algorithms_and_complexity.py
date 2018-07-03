@@ -25,6 +25,7 @@ class AlgorithmsAndComplexity(object):
 
         result = self.get_information()
 
+        self.uri = "http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"
         self.title = result['title']['value']
         self.description = result['description']['value']
         self.slug = slugify(self.title)

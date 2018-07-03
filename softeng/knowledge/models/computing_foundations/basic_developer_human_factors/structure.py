@@ -14,6 +14,7 @@ class Structure(object):
 
         result = self.get_information()
 
+        self.uri = "http://www.semanticweb.org/ontologies/2018/Knowledge/Structure"
         self.title = result['title']['value']
         self.description = result['description']['value']
         self.slug = slugify(self.title)
