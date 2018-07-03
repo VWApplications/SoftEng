@@ -1,5 +1,6 @@
 from core import Query, Sesame
 from django.template.defaultfilters import slugify
+from curriculum.models.discipline import Discipline
 
 
 class FreeModule(object):
@@ -17,6 +18,7 @@ class FreeModule(object):
         self.title = result['title']['value']
         self.description = result['description']['value']
         self.disciplines = self.get_disciplines()
+        print(self.disciplines)
         self.slug = slugify(self.title)
 
     def get_information(self):
@@ -59,6 +61,7 @@ class FreeModule(object):
 
         disciplines = []
         for discipline in result:
-            disciplines.append(discipline['title']['value'])
+            discipline = Discipline(discipline['title']['value'])
+            disciplines.append(discipline)
 
         return disciplines

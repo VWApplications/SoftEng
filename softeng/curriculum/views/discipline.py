@@ -1,9 +1,13 @@
 from core.query import Query
-from django.views.generic import ListView, DetailView
+from django.views.generic import (
+    ListView, DetailView, FormView
+)
 from core.generics import ObjectRedirectView
+from core.utils import create_uri
 from django.urls import reverse_lazy
 from django.contrib import messages
 from curriculum.models import Disciplines
+from curriculum.forms import DisciplineForm
 
 
 class DisciplineListView(ListView):
@@ -85,6 +89,85 @@ class DisciplineDetailView(DetailView):
         context['program'] = Disciplines.get_contents(discipline.uri)
 
         return context
+
+
+class DisciplineCreateView(FormView):
+    """
+    Create a new discipline.
+    """
+
+    template_name = "curriculum/form.html"
+    form_class = DisciplineForm
+    success_url = reverse_lazy('curriculum:discipline-list')
+
+    def form_valid(self, form):
+        """
+        Receive the form already validated to create a discipline.
+        """
+
+        title = form.cleaned_data['title']
+        uri = create_uri(title)
+        code = form.cleaned_data['code']
+        description = form.cleaned_data['description']
+        classification = form.cleaned_data['classification']
+        flow = form.cleaned_data['flow']
+        core = form.cleaned_data['core']
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            INSERT {
+                pp:%s rdfs:subClassOf pp:Discipline ;
+                pp:belongsTo pp:Software_Engineering ;
+                pp:hasType pp:%s ;
+                pp:isInTheFlowOf pp:%s ;
+                pp:isPartOf pp:%s ;
+                dc:title "%s" ;
+                pp:code "%s" ;
+                dc:description "%s"
+            } WHERE {}
+        """ % (
+            uri,
+            classification,
+            flow,
+            core,
+            title,
+            code,
+            description
+        )
+
+        response = Query.update(query)
+
+        if response == 204:
+            messages.success(
+                self.request,
+                "Discipline created successfully"
+            )
+        else:
+            messages.success(
+                self.request,
+                "There was a server error"
+            )
+
+        return super(DisciplineCreateView, self).form_valid(form)
+
+
+class DisciplineUpdateView(FormView):
+    """
+    Update a specific discipline.
+    """
+
+    pass
+
+
+class DisciplineRemoveView(ObjectRedirectView):
+    """
+    Remove a specific discipline
+    """
+
+    pass
 
 
 class RemoveContentView(ObjectRedirectView):

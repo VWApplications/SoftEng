@@ -1,0 +1,86 @@
+{% extends 'core/home.html' %}
+{% load static %}
+
+{% block base %}
+  <div class="card card-container">
+    <div class="card-header bg-dark text-white">
+      Create Discipline
+    </div>
+    <div class="card-body">
+      <form action="#" method="POST" novalidate>
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="{{form.title.id_for_label}}">Title:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="{{form.title.id_for_label}}"
+            name="{{form.title.name}}"
+          />
+        </div>
+        <div class="form-group">
+          <label for="{{form.code.id_for_label}}">Code</label>
+          <input
+            type="number"
+            class="form-control"
+            id="{{form.code.id_for_label}}"
+            name="{{form.code.name}}"
+          />
+        </div>
+        <div class="form-group">
+          <label for="{{form.description.id_for_label}}">Description</label>
+          <textarea
+            type="text"
+            rows="5"
+            class="form-control"
+            id="{{form.description.id_for_label}}"
+            name="{{form.description.name}}">
+          </textarea>
+        </div>
+        <div class="form-group">
+          <label for="{{form.classification.id_for_label}}">Classification:</label>
+          <select
+            class="form-control"
+            id="{{form.classification.id_for_label}}"
+            name="{{form.classification.name}}">
+            <option value="Required">Required</option>
+            <option value="Optional">Optional</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="{{form.flow.id_for_label}}">Flow:</label>
+          <select
+            class="form-control"
+            id="{{form.flow.id_for_label}}"
+            name="{{form.flow.name}}">
+            <option value="First_Semester">First Semester</option>
+            <option value="Second_Semester">Second Semester</option>
+            <option value="Third_Semester">Third Semester</option>
+            <option value="Fourth_Semester">Fourth Semester</option>
+            <option value="Fifth_Semester">Fifth Semester</option>
+            <option value="Sixth_Semester">Sixth Semester</option>
+            <option value="Seventh_Semester">Seventh Semester</option>
+            <option value="Eighth_Semester">Eighth Semester</option>
+            <option value="Ninth_Semester">Ninth Semester</option>
+            <option value="Tenth_Semester">Tenth Semester</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="{{form.core.id_for_label}}">Core Content:</label>
+          <select
+            class="form-control"
+            id="{{form.core.id_for_label}}"
+            name="{{form.core.name}}">
+            <option value="Core_Basic_Content">Core Basic Content</option>
+            <option value="Core_Professional_Content">Core Professional Content</option>
+            <option value="Core_Specific_Content">Core Specific Content</option>
+            <option value="Free_Module">Free Module</option>
+            <option value="Multidisciplinary">Multidisciplinary</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}

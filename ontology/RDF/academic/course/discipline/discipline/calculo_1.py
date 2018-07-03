@@ -45,12 +45,12 @@ class Calculo1(object):
         graph.add((
             URIRef(pp + 'Calculo_1'),
             title,
-            Literal('Calculo 01', lang='en')
+            Literal('Calculo 01')
         ))
         graph.add((
             URIRef(pp + 'Calculo_1'),
             code,
-            Literal('113034', lang='en')
+            Literal('113034')
         ))
         graph.add((
             URIRef(pp + 'Calculo_1'),

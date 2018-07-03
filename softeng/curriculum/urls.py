@@ -10,6 +10,12 @@ urlpatterns = [
         discipline.DisciplineListView.as_view(),
         name='discipline-list'
     ),
+    # disciplines/create/
+    path(
+        "disciplines/create/",
+        discipline.DisciplineCreateView.as_view(),
+        name='discipline-create'
+    ),
     # disciplines/<slug>/details/
     path(
         "disciplines/<slug:slug>/details/",
