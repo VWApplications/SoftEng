@@ -6,7 +6,7 @@ class Subtopic(object):
     Create a subtopic
     """
 
-    def __init__(self, uri, title, topic, description=None):
+    def __init__(self, uri, title, topic, knowledge, description=None):
         """
         Constructor
         """
@@ -16,3 +16,4 @@ class Subtopic(object):
         self.slug = slugify(title)
         self.description = description
         self.topic = slugify(topic)
+        self.knowledge = slugify(knowledge)

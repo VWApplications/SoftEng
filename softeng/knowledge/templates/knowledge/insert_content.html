@@ -4,7 +4,9 @@
 {% block base %}
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      Insert <b>{{subtopic}}</b> content into disciplines
+      Insert <b>{{subtopic.title}}</b> content into disciplines<br />
+      <small><b>Knowledge</b>: {{knowledge.title}}</small><br />
+      <small><b>Topic</b>: {{topic.title}}</small>
     </div>
     <div class="card-body">
       <form method="GET" accept-charset="utf-8">
@@ -59,10 +61,14 @@
                     {{discipline.title}}
                   </a>
                 </td>
-                <td>{{discipline.core_content}}</td>
+                <td>
+                  <a href="{% url 'curriculum:core-content-list' %}">
+                    {{discipline.core_content}}
+                  </a>
+                </td>
                 <td>
                   <form
-                    action="{% url 'knowledge:insert' topic=topic.slug subtopic=subtopic.slug discipline=discipline.slug %}"
+                    action="{% url 'knowledge:insert' knowledge.slug topic.slug subtopic.slug discipline.slug %}"
                     method="POST">
                     {% csrf_token %}
 
@@ -84,7 +90,7 @@
           There aren't disciplines available.
         </div>
       {% endif %}
-      <a href="{% url 'knowledge:swebok-detail' topic=topic.slug %}">Back</a>
+      <a href="{% url 'knowledge:swebok-detail' knowledge=knowledge.slug topic=topic.slug %}">Back</a>
     </div>
   </div>
 {% endblock %}

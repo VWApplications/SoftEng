@@ -128,10 +128,12 @@ class Disciplines(object):
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?content_uri ?content ?topic
+            SELECT DISTINCT ?content_uri ?title ?topic ?knowledge
             WHERE {
               <%s> pp:hasContent ?content_uri .
-              ?content_uri dc:title ?content .
+              ?content_uri rdfs:subClassOf ?knowledge_uri .
+              ?knowledge_uri dc:title ?knowledge .
+              ?content_uri dc:title ?title .
               ?content_uri rdfs:subClassOf ?topic_uri .
               ?topic_uri dc:title ?topic
             }
@@ -143,8 +145,9 @@ class Disciplines(object):
         for content in result:
             subtopic = Subtopic(
                 content['content_uri']['value'],
-                content['content']['value'],
-                content['topic']['value']
+                content['title']['value'],
+                content['topic']['value'],
+                content['knowledge']['value']
             )
             contents.append(subtopic)
 

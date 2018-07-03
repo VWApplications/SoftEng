@@ -27,14 +27,12 @@
                       {{subtopic.title}}
                     </a>
                   {% endif %}
-                  {% if user.is_authenticated and user.is_staff %}
-                    <a href="#"
-                       class="btn btn-primary btn-sm rounded-circle float-right"
-                       data-toggle="tooltip" title="Insert into disciplines"
-                       role="button">
-                       <i class="fa fa-graduation-cap"></i>
-                    </a>
-                  {% endif %}
+                  <a href="{% url 'knowledge:disciplines' knowledge.slug topic.slug subtopic.slug %}"
+                     class="btn btn-primary btn-sm rounded-circle float-right"
+                     data-toggle="tooltip" title="Insert into disciplines"
+                     role="button">
+                     <i class="fa fa-graduation-cap"></i>
+                  </a>
                 </div>
                 <div id="collapse{{subtopic.slug}}" class="collapse" data-parent="#accordion">
                   <div class="card-body">

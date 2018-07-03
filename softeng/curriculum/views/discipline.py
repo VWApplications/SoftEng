@@ -154,7 +154,6 @@ class RemoveContentView(ObjectRedirectView):
         """ % (discipline.uri, subtopic.uri)
 
         response = Query.update(query)
-        print("Response Remove: %d" % response)
 
         if response == 204:
             messages.success(

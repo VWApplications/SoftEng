@@ -17,6 +17,7 @@ class Knowledge(object):
 
         result = self.get_information()
 
+        self.uri = "http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Area"
         self.title = result['title']['value']
         self.description = result['description']['value']
         self.slug = slugify(self.title)

@@ -75,7 +75,7 @@
               {% for subtopic in program %}
                 <div class="row">
                   <div class="col-sm-10">
-                    <a href="{% url 'knowledge:swebok-detail' topic=subtopic.topic %}">
+                    <a href="{% url 'knowledge:swebok-detail' knowledge=subtopic.knowledge topic=subtopic.topic %}">
                       {{subtopic.title}}
                     </a>
                   </div>

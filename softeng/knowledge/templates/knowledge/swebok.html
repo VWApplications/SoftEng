@@ -21,7 +21,7 @@
               </div>
               <div class="card-body">
                 {% for topic in knowledge.get_topic %}
-                  <a href="{% url 'knowledge:swebok-detail' topic=topic.slug %}"
+                  <a href="{% url 'knowledge:swebok-detail' knowledge=knowledge.slug topic=topic.slug %}"
                      class="list-group-item list-group-item-action">
                      {{topic.title}}
                   </a>

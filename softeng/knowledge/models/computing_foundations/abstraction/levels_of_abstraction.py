@@ -14,6 +14,7 @@ class LevelsOfAbstraction(object):
 
         result = self.get_information()
 
+        self.uri = "http://www.semanticweb.org/ontologies/2018/Knowledge/Levels_of_Abstraction"
         self.title = result['title']['value']
         self.description = result['description']['value']
         self.slug = slugify(self.title)

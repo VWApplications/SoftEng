@@ -1,9 +1,7 @@
 from django.views.generic import ListView, DetailView
-from django.urls import reverse_lazy
 from django.shortcuts import redirect
 from django.contrib import messages
 from knowledge.models import Knowledge
-from knowledge.models.computing_foundations import ComputingFoundations
 
 
 class SwebokListView(ListView):
@@ -34,17 +32,47 @@ class SwebokDetailView(DetailView):
     context_object_name = "topic"
     slug_url_kwarg = "topic"
 
+    def get_context_data(self, **kwargs):
+        """
+        Get the subtopic and list of disciplines.
+        """
+
+        context = super(SwebokDetailView, self).get_context_data(**kwargs)
+        context['knowledge'] = self.get_knowledge()
+        return context
+
+    def get_knowledges(self):
+        """
+        Get all knowledges.
+        """
+
+        knowledge = Knowledge()
+        knowledges = knowledge.get_instance()
+
+        return knowledges
+
+    def get_knowledge(self):
+        """
+        Get the specific knowledge.
+        """
+
+        knowledges = self.get_knowledges()
+        knowledge_slug = self.kwargs.get('knowledge', '')
+
+        for knowledge in knowledges:
+            if knowledge.slug == knowledge_slug:
+                return knowledge
+
     def get_object(self):
         """
         Get the specific topic.
         """
 
-        computing_foundations = ComputingFoundations()
+        knowledge = self.get_knowledge()
 
         topic_slug = self.kwargs.get('topic', '')
-        print(topic_slug)
 
-        for topic in computing_foundations.get_topic():
+        for topic in knowledge.get_topic():
             if topic_slug == topic.slug:
                 return topic
 
