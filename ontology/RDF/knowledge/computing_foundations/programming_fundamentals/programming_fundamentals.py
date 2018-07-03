@@ -1,6 +1,6 @@
 from rdflib import URIRef, Literal, XSD
 from RDF.data_property import title, description
-from RDF.object_property import subClassOf
+from RDF.object_property import subClassOf, typeOf
 from RDF.prefix import knowledge
 from .programming_paradigms import ProgrammingParadigms
 from .the_programming_process import TheProgrammingProcess
@@ -20,6 +20,11 @@ class ProgrammingFundamentals(object):
         Create topic
         """
 
+        graph.add((
+            URIRef(knowledge + 'Programming_Fundamentals'),
+            typeOf,
+            URIRef(knowledge + 'Topic'),
+        ))
         graph.add((
             URIRef(knowledge + 'Programming_Fundamentals'),
             subClassOf,

@@ -1,6 +1,6 @@
 from rdflib import URIRef, Literal, XSD
 from RDF.data_property import title, description
-from RDF.object_property import subClassOf
+from RDF.object_property import subClassOf, typeOf
 from RDF.prefix import knowledge
 from .definition_of_problem_solving import DefinitionOfProblemSolving
 from .formulating_the_real_problem import FormulatingTheRealProblem
@@ -23,6 +23,11 @@ class ProblemSolvingTechniques(object):
         Create topic
         """
 
+        graph.add((
+            URIRef(knowledge + 'Problem_Solving_Techniques'),
+            typeOf,
+            URIRef(knowledge + 'Topic'),
+        ))
         graph.add((
             URIRef(knowledge + 'Problem_Solving_Techniques'),
             subClassOf,

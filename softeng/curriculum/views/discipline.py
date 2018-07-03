@@ -1,3 +1,4 @@
+from core.query import Query
 from django.views.generic import ListView, DetailView
 from core.generics import ObjectRedirectView
 from django.urls import reverse_lazy
@@ -76,7 +77,6 @@ class DisciplineDetailView(DetailView):
         context = super(DisciplineDetailView, self).get_context_data(**kwargs)
 
         discipline = self.get_object()
-        print(discipline)
 
         context['are_requireds_of'] = Disciplines.get_is_required_of(discipline.uri)
 
@@ -87,58 +87,84 @@ class DisciplineDetailView(DetailView):
         return context
 
 
-# class RemoveContentView(ObjectRedirectView):
-#     """
-#     Remove a content from discipline.
-#     """
+class RemoveContentView(ObjectRedirectView):
+    """
+    Remove a content from discipline.
+    """
 
-#     template_name = "curriculum/details.html"
+    template_name = "curriculum/details.html"
 
-#     def get_object(self):
-#         """
-#         Get the specific content.
-#         """
+    def get_object(self):
+        """
+        Get the specific discipline
+        """
 
-#         discipline = get_object_or_404(
-#             Discipline,
-#             slug=self.kwargs.get('slug', '')
-#         )
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
 
-#         return discipline
+        slug = self.kwargs.get('slug', '')
 
-#     def get_success_url(self):
-#         """
-#         Create a success url to redirect
-#         """
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return discipline
 
-#         discipline = self.get_object()
+        return None
 
-#         success_url = reverse_lazy(
-#             'curriculum:discipline-detail',
-#             kwargs={
-#                 'slug': discipline.slug
-#             }
-#         )
+    def get_subtopic(self):
+        """
+        Get the specific subtopic of discipline.
+        """
 
-#         return success_url
+        discipline = self.get_object()
 
-#     def action(self, request, *args, **kwargs):
-#         """
-#         Remove content from discipline.
-#         """
+        subtopics = Disciplines.get_contents(discipline.uri)
 
-#         discipline = self.get_object()
+        slug = self.kwargs.get('subtopic', '')
 
-#         subtopic = get_object_or_404(
-#             Subtopic,
-#             slug=self.kwargs.get('subtopic', '')
-#         )
+        for subtopic in subtopics:
+            if subtopic.slug == slug:
+                return subtopic
 
-#         discipline.program.remove(subtopic)
+        return None
 
-#         messages.success(
-#             self.request,
-#             "Subtopic removed successfully"
-#         )
+    def get_success_url(self):
+        """
+        Get success url.
+        """
 
-#         return super(RemoveContentView, self).action(request, *args, **kwargs)
+        discipline = self.get_object()
+
+        success_url = reverse_lazy(
+            'curriculum:discipline-detail',
+            kwargs={'slug': discipline.slug}
+        )
+
+        return success_url
+
+    def action(self, request, *args, **kwargs):
+        """
+        Remove the triple from triple store.
+        """
+
+        discipline = self.get_object()
+        subtopic = self.get_subtopic()
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            DELETE {<%s> pp:hasContent <%s>} WHERE {}
+        """ % (discipline.uri, subtopic.uri)
+
+        response = Query.update(query)
+        print("Response Remove: %d" % response)
+
+        if response == 204:
+            messages.success(
+                self.request,
+                "Subtopic removed successfully"
+            )
+        else:
+            messages.success(
+                self.request,
+                "There was a server error"
+            )
+
+        return super(RemoveContentView, self).action(request, *args, **kwargs)

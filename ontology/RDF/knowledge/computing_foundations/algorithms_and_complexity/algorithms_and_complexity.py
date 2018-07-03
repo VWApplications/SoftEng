@@ -1,6 +1,6 @@
 from rdflib import URIRef, Literal, XSD
 from RDF.data_property import title, description
-from RDF.object_property import subClassOf
+from RDF.object_property import subClassOf, typeOf
 from RDF.prefix import knowledge
 from .algorithmic_analysis import AlgorithmicAnalysis
 from .algorithmic_analysis_strategies import AlgorithmicAnalysisStrategies
@@ -23,6 +23,11 @@ class AlgorithmsAndComplexity(object):
         Create topic
         """
 
+        graph.add((
+            URIRef(knowledge + 'Algorithms_and_Complexity'),
+            typeOf,
+            URIRef(knowledge + 'Topic'),
+        ))
         graph.add((
             URIRef(knowledge + 'Algorithms_and_Complexity'),
             subClassOf,

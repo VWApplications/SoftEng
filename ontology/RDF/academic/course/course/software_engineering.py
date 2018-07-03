@@ -28,13 +28,13 @@ class SoftwareEngineering(object):
         ))
         graph.add((
             URIRef(pp + 'Software_Engineering'),
-            belongsTo,
-            URIRef(pp + 'UnB'),
+            hasPeriod,
+            URIRef(pp + 'Full_Time'),
         ))
         graph.add((
             URIRef(pp + 'Software_Engineering'),
-            hasPeriod,
-            URIRef(pp + 'Full_Time'),
+            title,
+            Literal('Software Engineering', lang='en')
         ))
         graph.add((
             URIRef(pp + 'Software_Engineering'),
@@ -43,8 +43,8 @@ class SoftwareEngineering(object):
         ))
         graph.add((
             URIRef(pp + 'Software_Engineering'),
-            title,
-            Literal('Software Engineering', lang='en')
+            belongsTo,
+            URIRef(pp + 'UnB'),
         ))
         graph.add((
             URIRef(pp + 'Software_Engineering'),

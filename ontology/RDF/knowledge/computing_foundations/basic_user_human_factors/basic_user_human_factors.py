@@ -1,6 +1,6 @@
 from rdflib import URIRef, Literal, XSD
 from RDF.data_property import title, description
-from RDF.object_property import subClassOf
+from RDF.object_property import subClassOf, typeOf
 from RDF.prefix import knowledge
 from .error_messages import ErrorMessages
 from .software_robustness import SoftwareRobustness
@@ -21,6 +21,11 @@ class BasicUserHumanFactors(object):
         Create topic
         """
 
+        graph.add((
+            URIRef(knowledge + 'Basic_User_Human_Factors'),
+            typeOf,
+            URIRef(knowledge + 'Topic'),
+        ))
         graph.add((
             URIRef(knowledge + 'Basic_User_Human_Factors'),
             subClassOf,

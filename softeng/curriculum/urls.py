@@ -16,12 +16,12 @@ urlpatterns = [
         discipline.DisciplineDetailView.as_view(),
         name="discipline-detail"
     ),
-    # # disciplines/<slug>/<subtopic>/details/
-    # path(
-    #     "disciplines/<slug:slug>/<slug:subtopic>/remove/",
-    #     discipline.RemoveContentView.as_view(),
-    #     name="remove"
-    # ),
+    # disciplines/<slug>/<subtopic>/details/
+    path(
+        "disciplines/<slug:slug>/<slug:subtopic>/remove/",
+        discipline.RemoveContentView.as_view(),
+        name="remove"
+    ),
     # extensions/
     path(
         "extensions/",

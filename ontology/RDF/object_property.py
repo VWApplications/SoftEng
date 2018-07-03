@@ -1,7 +1,8 @@
 from rdflib import URIRef
-from .prefix import rdfs, pp
+from .prefix import rdfs, pp, rdf
 
 subClassOf = URIRef(rdfs + 'subClassOf')
+typeOf = URIRef(rdf + 'type')
 hasCampus = URIRef(pp + 'hasCampus')
 hasCourse = URIRef(pp + 'hasCourse')
 hasExtensionActivitie = URIRef(pp + 'hasExtensionActivitie')

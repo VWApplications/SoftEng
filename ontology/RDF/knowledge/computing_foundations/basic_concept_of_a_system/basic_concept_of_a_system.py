@@ -1,6 +1,6 @@
 from rdflib import URIRef, Literal, XSD
 from RDF.data_property import title, description
-from RDF.object_property import subClassOf
+from RDF.object_property import subClassOf, typeOf
 from RDF.prefix import knowledge
 from .emergent_system_properties import EmergentSystemProperties
 from .overview_of_a_computer_system import OverviewOfAComputerSystem
@@ -21,6 +21,11 @@ class BasicConceptOfASystem(object):
         Create topic
         """
 
+        graph.add((
+            URIRef(knowledge + 'Basic_Concept_of_a_System'),
+            typeOf,
+            URIRef(knowledge + 'Topic'),
+        ))
         graph.add((
             URIRef(knowledge + 'Basic_Concept_of_a_System'),
             subClassOf,

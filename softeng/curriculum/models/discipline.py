@@ -50,7 +50,6 @@ class Disciplines(object):
         """ % (predicate, obj)
 
         result = Query.run(Sesame.endpoint, query)
-        print(result)
 
         disciplines = []
         for discipline in result:
@@ -129,7 +128,7 @@ class Disciplines(object):
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?content ?topic
+            SELECT DISTINCT ?content_uri ?content ?topic
             WHERE {
               <%s> pp:hasContent ?content_uri .
               ?content_uri dc:title ?content .
@@ -142,7 +141,11 @@ class Disciplines(object):
 
         contents = []
         for content in result:
-            subtopic = Subtopic(content['content']['value'], content['topic']['value'])
+            subtopic = Subtopic(
+                content['content_uri']['value'],
+                content['content']['value'],
+                content['topic']['value']
+            )
             contents.append(subtopic)
 
         return contents

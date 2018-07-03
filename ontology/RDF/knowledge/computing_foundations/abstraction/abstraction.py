@@ -1,6 +1,6 @@
 from rdflib import URIRef, Literal, XSD
 from RDF.data_property import title, description
-from RDF.object_property import subClassOf
+from RDF.object_property import subClassOf, typeOf
 from RDF.prefix import knowledge
 from .alternate_abstractions import AlternateAbstractions
 from .encapsulation import Encapsulation
@@ -22,6 +22,11 @@ class Abstraction(object):
         Create the Abstraction Topic of Computing Foundations.
         """
 
+        graph.add((
+            URIRef(knowledge + 'Abstraction'),
+            typeOf,
+            URIRef(knowledge + 'Topic'),
+        ))
         graph.add((
             URIRef(knowledge + 'Abstraction'),
             subClassOf,

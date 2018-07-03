@@ -5,11 +5,6 @@
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
       {{discipline.title}}
-      <span class="float-right">
-        {% if discipline.credits %}
-          {{discipline.credits}} Credits
-        {% endif %}
-      </span>
     </div>
     <div class="card-body">
       <div class="table-responsive-sm">
@@ -85,19 +80,17 @@
                     </a>
                   </div>
                   <div class="col-sm-2">
-                    {% if user.is_authenticated and user.is_staff %}
-                      <form
-                        action="#"
-                        method="POST">
-                        {% csrf_token %}
+                    <form
+                      action="{% url 'curriculum:remove' slug=discipline.slug subtopic=subtopic.slug %}"
+                      method="POST">
+                      {% csrf_token %}
 
-                        <button type="submit"
-                          data-toggle="tooltip" title="Remove content from discipline."
-                          class="btn btn-danger btn-sm rounded-circle float-right remove-button">
-                          <i class="fa fa-minus"></i>
-                        </button>
-                      </form>
-                    {% endif %}
+                      <button type="submit"
+                        data-toggle="tooltip" title="Remove content from discipline."
+                        class="btn btn-danger btn-sm rounded-circle float-right remove-button">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                    </form>
                   </div>
                 </div>
               {% empty %}

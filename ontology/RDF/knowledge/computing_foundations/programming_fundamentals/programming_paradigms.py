@@ -1,6 +1,6 @@
 from rdflib import URIRef, Literal, XSD
 from RDF.data_property import title, description
-from RDF.object_property import subClassOf
+from RDF.object_property import subClassOf, typeOf
 from RDF.prefix import knowledge
 
 text = """
@@ -18,6 +18,11 @@ class ProgrammingParadigms(object):
         Create a subtopic.
         """
 
+        graph.add((
+            URIRef(knowledge + 'Programming_Paradigms'),
+            typeOf,
+            URIRef(knowledge + 'Subtopic'),
+        ))
         graph.add((
             URIRef(knowledge + 'Programming_Paradigms'),
             subClassOf,
