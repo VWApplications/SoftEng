@@ -101,7 +101,7 @@ class DisciplineCreateView(FormView):
     form_class = DisciplineForm
     success_url = reverse_lazy('curriculum:discipline-list')
 
-    def discipline_exists(self, slug):
+    def discipline_exists(self, title):
         """
         Verify if exists the discipline into triple store
         """
@@ -109,7 +109,7 @@ class DisciplineCreateView(FormView):
         disciplines = Disciplines()
 
         for discipline in disciplines.all:
-            if discipline.slug == slug:
+            if discipline.slug == slugify(title):
                 return True
 
         return False
@@ -152,7 +152,7 @@ class DisciplineCreateView(FormView):
             description
         )
 
-        if self.discipline_exists(slugify(title)):
+        if self.discipline_exists(title):
             messages.success(
                 self.request,
                 "This discipline already exists"
@@ -205,19 +205,31 @@ class DisciplineRemoveView(ObjectRedirectView):
 
         return success_url
 
+    def remove_subtopics(self):
+        """
+        Remove all subtopics from discipline.
+        """
+        discipline = self.get_object()
+
+        subtopics = Disciplines.get_contents(discipline.uri)
+
+        if subtopics:
+            for subtopic in subtopics:
+                query = """
+                    PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+                    DELETE {<%s> pp:hasContent <%s>} WHERE {}
+                """ % (discipline.uri, subtopic.uri)
+
+                Query.update(query)
+
     def action(self, request, *args, **kwargs):
         """
         Remove the discipline triples from triple store.
         """
 
         discipline = self.get_object()
-        print(discipline.uri)
-        print(create_uri(discipline.classification))
-        print(create_uri(discipline.semester))
-        print(create_uri(discipline.core_content))
-        print(discipline.title)
-        print(discipline.code)
-        print(discipline.description)
+
+        self.remove_subtopics()
 
         query = """
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
