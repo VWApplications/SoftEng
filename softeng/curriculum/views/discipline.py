@@ -1,4 +1,5 @@
 from core.query import Query
+from django.template.defaultfilters import slugify
 from django.views.generic import (
     ListView, DetailView, FormView
 )
@@ -100,6 +101,19 @@ class DisciplineCreateView(FormView):
     form_class = DisciplineForm
     success_url = reverse_lazy('curriculum:discipline-list')
 
+    def discipline_exists(self, slug):
+        """
+        Verify if exists the discipline into triple store
+        """
+
+        disciplines = Disciplines()
+
+        for discipline in disciplines.all:
+            if discipline.slug == slug:
+                return True
+
+        return False
+
     def form_valid(self, form):
         """
         Receive the form already validated to create a discipline.
@@ -109,9 +123,9 @@ class DisciplineCreateView(FormView):
         uri = create_uri(title)
         code = form.cleaned_data['code']
         description = form.cleaned_data['description']
-        classification = form.cleaned_data['classification']
-        flow = form.cleaned_data['flow']
-        core = form.cleaned_data['core']
+        classification = create_uri(form.cleaned_data['classification'])
+        flow = create_uri(form.cleaned_data['flow'])
+        core = create_uri(form.cleaned_data['core'])
 
         query = """
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
@@ -138,28 +152,26 @@ class DisciplineCreateView(FormView):
             description
         )
 
-        response = Query.update(query)
-
-        if response == 204:
+        if self.discipline_exists(slugify(title)):
             messages.success(
                 self.request,
-                "Discipline created successfully"
+                "This discipline already exists"
             )
         else:
-            messages.success(
-                self.request,
-                "There was a server error"
-            )
+            response = Query.update(query)
+
+            if response == 204:
+                messages.success(
+                    self.request,
+                    "Discipline created successfully"
+                )
+            else:
+                messages.success(
+                    self.request,
+                    "There was a server error"
+                )
 
         return super(DisciplineCreateView, self).form_valid(form)
-
-
-class DisciplineUpdateView(FormView):
-    """
-    Update a specific discipline.
-    """
-
-    pass
 
 
 class DisciplineRemoveView(ObjectRedirectView):
@@ -167,7 +179,85 @@ class DisciplineRemoveView(ObjectRedirectView):
     Remove a specific discipline
     """
 
-    pass
+    template_name = "curriculum/details.html"
+
+    def get_object(self):
+        """
+        Get the specific discipline.
+        """
+
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
+
+        slug = self.kwargs.get('discipline', '')
+
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return discipline
+
+        return None
+
+    def get_success_url(self):
+        """
+        Get success url.
+        """
+
+        success_url = reverse_lazy('curriculum:discipline-list')
+
+        return success_url
+
+    def action(self, request, *args, **kwargs):
+        """
+        Remove the discipline triples from triple store.
+        """
+
+        discipline = self.get_object()
+        print(discipline.uri)
+        print(create_uri(discipline.classification))
+        print(create_uri(discipline.semester))
+        print(create_uri(discipline.core_content))
+        print(discipline.title)
+        print(discipline.code)
+        print(discipline.description)
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            DELETE {
+                <%s> rdfs:subClassOf pp:Discipline ;
+                pp:belongsTo pp:Software_Engineering ;
+                pp:hasType pp:%s ;
+                pp:isInTheFlowOf pp:%s ;
+                pp:isPartOf pp:%s ;
+                dc:title "%s" ;
+                pp:code "%s" ;
+                dc:description "%s"
+            } WHERE {}
+        """ % (
+            discipline.uri,
+            create_uri(discipline.classification),
+            create_uri(discipline.semester),
+            create_uri(discipline.core_content),
+            discipline.title,
+            discipline.code,
+            discipline.description
+        )
+
+        response = Query.update(query)
+
+        if response == 204:
+            messages.success(
+                self.request,
+                "Discipline removed successfully"
+            )
+        else:
+            messages.success(
+                self.request,
+                "There was a server error"
+            )
+
+        return super(DisciplineRemoveView, self).action(request, *args, **kwargs)
 
 
 class RemoveContentView(ObjectRedirectView):

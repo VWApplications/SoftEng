@@ -1,12 +1,12 @@
-def create_uri(self, title):
+def create_uri(text):
     """
-    Clean title to URI format.
+    Clean text to URI format.
     """
 
     # Capitalize
-    title = title.title()
+    text = text.title()
 
     # Replace space to underline
-    uri = title.replace(" ", "_")
+    uri = text.replace(" ", "_")
 
     return uri
