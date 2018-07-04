@@ -1,545 +1,545 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/"
-   xmlns:ns2="http://purl.org/dc/elements/1.1/"
-   xmlns:ns3="https://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ns1="https://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:ns2="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/"
+   xmlns:ns3="http://purl.org/dc/elements/1.1/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The scope of the Computing Foundations knowledge area (KA) encompasses the development and operational environment in which software evolves and executes.  Because no software can exist in a vacuum or run without a computer, the core of such an environment is the computer and its various components.  Knowledge about the computer and its underlying principles of hardware and software serves as a framework on which software engineering is anchored.  Thus, all software engineers must have good understanding of the Computing Foundations KA. It is generally accepted that software engineering builds on top of computer science.  For example, Software Engineering 2004: Curriculum Guidelines for Undergraduate Degree Programs in Software Engineering clearly states, One particularly important aspect is that software engineering builds on computer science and mathematics (italics added).
-</ns2:description>
-    <ns2:title xml:lang="en">Computing Foundations</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Area"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Professional_Practice_Activities">
-    <ns2:title xml:lang="en">Professional Practice Activities</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Participation in the Executive Board of the Junior Engineering Company (EJEL), participation in projects carried out by EJEL, extracurricular internships in the technical area, technological development projects in companies.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University's campuses.
-</ns2:description>
-    <ns2:title xml:lang="en">Free Module</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Software_Engineering">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Software Engineering is an area of computing focused on the specification, development, maintenance and creation of software systems, applying technologies and practices of project management and other disciplines, aiming at organization, productivity and quality. Currently, these technologies and practices encompass programming languages, database, tools, platforms, libraries, standards, processes and the quality of software issue.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
-    <ns1:hasStructureCurricular rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial"/>
-    <ns1:hasPeriod rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time"/>
-    <ns1:belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB"/>
-    <ns2:title xml:lang="en">Software Engineering</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
-    <ns2:title xml:lang="en">Basic Concept of a System</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Ian Sommerville writes, “a system is a purposeful collection of interrelated components that work together to achieve some objective”.  A system can be very simple and include only a few components, like an ink pen, or rather complex, like an aircraft. Depending on whether humans are part of the system, systems can be divided into technical computer-based systems and sociotechnical systems.  A technical computer-based system functions without human involvement, such as televisions, mobile phones, thermostat, and some software; a sociotechnical system will not function without human involvement.  Examples of such system include manned space vehicles, chips embedded inside a human, and so forth.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Overview_of_a_Computer_System">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Among all the systems, one that is obviously relevant to the software engineering community is the computer system. A computer is a machine that executes programs or software. It consists of a purposeful collection of mechanical, electrical, and electronic components with each component performing a preset function. Jointly, these components are able to execute the instructions that are given by the program. Abstractly speaking, a computer receives some input, stores and manipulates some data, and provides some output. The most distinct feature of a computer is its ability to store and execute sequences of instructions called programs. An interesting phenomenon concerning the computer is the universal equivalence in functionality.  According to Turing, all computers with a certain minimum capability are equivalent in their ability to perform computation tasks. In other words, given enough time and memory, all computers ranging from a netbook to a supercomputer are capable of computing exactly the same things, irrespective of speed, size, cost, or anything else. Most computer systems have a structure that is known as the “von Neumann model,” which consists of five components: a memory for storing instructions and data, a central processing unit for performing arithmetic and logical operations, a control unit for sequencing and interpreting instructions, input for getting external information into the memory, and output for producing results for the user.
-</ns2:description>
-    <ns2:title xml:lang="en">Overview of a Computer System</ns2:title>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Programs are not random pieces of code: they are meticulously written to perform user-expected actions. The guide one uses to compose programs are algorithms, which organize various functions into a series of steps and take into consideration the application domain, the solution strategy, and the data structures being used. An algorithm can be very simple or very complex.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
-    <ns2:title xml:lang="en">Algorithms and Complexity</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Attributes_of_Algorithms">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The attributes of algorithms are many and often include modularity, correctness, maintainability, functionality, robustness, user-friendliness (i.e. easy to be understood by people), programmer time, simplicity, and extensibility. A commonly emphasized attribute is “performance” or “efficiency” by which we mean both time and resource-usage efficiency while generally emphasizing the time axis.  To some degree, efficiency determines if an algorithm is feasible or impractical. For example, an algorithm that takes one hundred years to terminate is virtually useless and is even considered incorrect.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
-    <ns2:title xml:lang="en">Attributes of Algorithms</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Analyze_the_Problem">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:title xml:lang="en">Analyze the Problem</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Once the problem statement is available, the next step is to analyze the problem statement or situation to help structure our search for a solution.  Four types of analysis include situation analysis, in which the most urgent or critical aspects of a situation are identified first; problem analysis, in which the cause of the problem must be determined; decision analysis, in which the action(s) needed to correct the problem or eliminate its cause must be determined; and potential problem analysis, in which the action(s) needed to prevent any reoccurrences of the problem or the development of new problems must be determined.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Developer_Human_Factors">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Developer human factors refer to the considerations of human factors taken when developing software. Software is developed by humans, read by humans, and maintained by humans. If anything is wrong, humans are responsible for correcting those wrongs. Thus, it is essential to write software in a way that is easily understandable by humans or, at the very least, by other software developers. A program that is easy to read and understand exhibits readability.  The means to ensure that software meet this objective are numerous and range from proper architecture at the macro level to the particular coding style and variable usage at the micro level. But the two prominent factors are structure (or program layouts) and comments(documentation).
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
-    <ns2:title xml:lang="en">Basic Developer Human Factors</ns2:title>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Fundamentals">
-    <ns2:title xml:lang="en">Programming Fundamentals</ns2:title>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Programming is composed of the methodologies or activities for creating computer programs that perform a desired function. It is an indispensible part in software construction. In general, programming can be considered as the process of designing, writing, testing, debugging, and maintaining the source code.  This source code is written in a programming language. The process of writing source code often requires expertise in many different subject areas including knowledge of the application domain, appropriate data structures, specialized algorithms, various language constructs, good programming techniques, and software engineering.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithmic_Design_Strategies">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:title xml:lang="en">Algorithmic Design Strategies</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The design of algorithms generally follows one of the following strategies: brute force, divide and conquer, dynamic programming, and greedy selection.  The brute force strategy is actually a no-strategy. It exhaustively tries every possible way to tackle a problem. If a problem has a solution, this strategy is guaranteed to find it; however, the time expense may be too high.  The divide and conquer strategy improves on the brute force strategy by dividing a big problem into smaller, homogeneous problems. It solves the big problem by recursively solving the smaller problems and combing the solutions to the smaller problems to form the solution to the big problem.  The underlying assumption for divide and conquer is that smaller problems are easier to solve. The dynamic programming strategy improves on the divide and conquer strategy by recognizing that some of the sub-problems produced by division may be the same and thus avoids solving the same problems again and again.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Error_Messages">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-It is understandable that most software contains faults and fails from time to time. But users should be notified if there is anything that impedes the smooth execution of the program.  Nothing is more frustrating than an unexpected termination or behavioral deviation of software without any warning or explanation. To be user friendly, the software should report all error conditions to the users or upper-level applications so that some measure can be taken to rectify the situation or to exit gracefully. There are several guidelines that define what constitutes a good error message: error messages should be clear, to the point, and timely. First, error messages should clearly explain what is happening so that users know what is going on in the software.  Second, error messages should pinpoint the cause of the error, if at all possible, so that proper actions can be taken. Third, error messages should be displayed right when the error condition occurs. According to Jakob Nielsen, “Good error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution”. Fourth, error messages should not overload the users with too much information and cause them to ignore the messages all together. However, messages relating to security access errors should not provide extra information that would help unauthorized persons break in.
-</ns2:description>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:title xml:lang="en">Error Messages</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/The_Programming_Process">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Fundamentals"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:title xml:lang="en">The Programming Process</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Programming involves design, writing, testing, debugging, and maintenance.  Design is the conception or invention of a scheme for turning a customer requirement for computer software into operational software. It is the activity that links application requirements to coding and debugging. Writing is the actual coding of the design in an appropriate programming language.  Testing is the activity to verify that the code one writes actually does what it is supposed to do. Debugging is the activity to find and fix bugs (faults) in the source code (or design). Maintenance is the activity to update, correct, and enhance existing programs.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Content">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
-    <ns2:title xml:lang="en">Core Professional Content</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Disciplines with basic vocational content that allow to reach the basic elements of the professional profile of the egress.
-
-Example: Programming Logic, Algorithms and Data Structure, Digital Circuits, Computing, Programming Language, Database.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Eighth_Semester">
-    <ns2:title xml:lang="en">Eighth Semester</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Sixth_Semester">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-    <ns2:title xml:lang="en">Sixth Semester</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.
-</ns2:description>
-    <ns2:title xml:lang="en">Complementary and Extension Activities</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain">
-    <ns2:title xml:lang="en">Discipline Domain</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB">
-    <ns1:hasCourse rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Software_Engineering"/>
-    <ns1:hasCampus rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/FGA"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution"/>
-    <ns2:title xml:lang="en">University of Brasilia</ns2:title>
-    <ns1:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Activities"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Brasilia - UnB</ns2:description>
-    <ns1:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Mobility_and_Exchange_Activities"/>
-    <ns1:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Student_Representations"/>
-    <ns1:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Social"/>
-    <ns1:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Professional_Practice_Activities"/>
-    <ns1:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Teaching_Activities"/>
-    <ns1:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Research_Activities"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Software_Robustness">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Software robustness refers to the ability of software to tolerate erroneous inputs. Software is said to be robust if it continues to function even when erroneous inputs are given.  Thus, it is unacceptable for software to simply crash when encountering an input problem as this may cause unexpected consequences, such as the loss of valuable data. Software that exhibits such behavior is considered to lack robustness.  Nielsen gives a simpler description of software robustness: “The software should have a low error rate, so that users make few errors during the use of the system and so that if they do make errors they can easily recover from them. Further, catastrophic errors must not occur”. There are many ways to evaluate the robustness of software and just as many ways to make software more robust. For example, to improve robustness, one should always check the validity of the inputs and return values before progressing further; one should always throw an exception when something unexpected occurs, and one should never quit a program without first giving users/applications a chance to correct the condition.
-</ns2:description>
-    <ns2:title xml:lang="en">Software Robustness</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Overview_of_Algorithms">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Abstractly speaking, algorithms guide the operations of computers and consist of a sequence of actions composed to solve a problem. Alternative definitions include but are not limited to: An algorithm is any well-defined computational procedure that takes some value or set of values as input and produces some value or set of values as output; An algorithm is a sequence of computational steps that transform the input into the output; An algorithm is a tool for solving a wellspecified computation problem. Of course, different definitions are favored by different people. Though there is no universally accepted definition, some agreement exists that an algorithm needs to be correct, finite (in other words, terminate eventually or one must be able to write it in a finite number of steps), and unambiguous.
-</ns2:description>
-    <ns2:title xml:lang="en">Overview of Algorithms</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/First_Semester">
-    <ns2:title xml:lang="en">First Semester</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithmic_Analysis">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Analysis of algorithms is the theoretical study of computer-program performance and resource usage; to some extent it determines the goodness of an algorithm.  Such analysis usually abstracts away the particular details of a specific computer and focuses on the asymptotic, machine-independent analysis. There are three basic types of analysis.  In worst-case analysis, one determines the maximum time or resources required by the algorithm on any input of size n. In average-case analysis, one determines the expected time or resources required by the algorithm over all inputs of size n; in performing average-case analysis, one often needs to make assumptions on the statistical distribution of inputs. The third type of analysis is the best-case analysis, in which one determines the minimum time or resources required by the algorithm on any input of size n.  Among the three types of analysis, average-case analysis is the most relevant but also the most difficult to perform.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
-    <ns2:title xml:lang="en">Algorithmic Analysis</ns2:title>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Nocturnal">
-    <ns2:title xml:lang="en">Nocturnal</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Paradigms">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:title xml:lang="en">Programming Paradigms</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Fundamentals"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Programming is highly creative and thus somewhat personal.  Different people often write different programs for the same requirements. This diversity of programming causes much difficulty in the construction and maintenance of large complex software. Various programming paradigms have been developed over the years to put some standardization into this highly creative and personal activity. When one programs, he or she can use one of several programming paradigms to write the code.  Unstructured Programming: In unstructured programming, a programmer follows his/her hunch to write the code in whatever way he/she likes as long as the function is operational. Often, the practice is to write code to fulfill a specific utility without regard to anything else.  Programs written this way exhibit no particular structure thus the name “unstructured programming.” Unstructured programming is also sometimes called ad hoc programming. Structured/Procedural/ Imperative Programming: A hallmark of structured programming is the use of well-defined control structures, including procedures (and/or functions) with each procedure (or function) performing a specific task. Object-Oriented Programming: While procedural programming organizes programs around procedures, object-oriented programming (OOP) organize a program around objects, which are abstract data structures that combine both data and methods used to access or manipulate the data.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content">
-    <ns2:title xml:lang="en">Core Content</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core content of pedagogical project</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical">
-    <ns2:title xml:lang="en">Required</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The students can study subjects at any time, observing the prerequisites.
-</ns2:description>
-    <ns2:title xml:lang="en">Credit System</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithmic_Analysis_Strategies">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The analysis strategies of algorithms include basic counting analysis, in which one actually counts the number of steps an algorithm takes to complete its task; asymptotic analysis, in which one only considers the order of magnitude of the number of steps an algorithm takes to complete its task; probabilistic analysis, in which one makes use of probabilities in analyzing the average performance of an algorithm; amortized analysis, in which one uses the methods of aggregation, potential, and accounting to analyze the worst performance of an algorithm on a sequence of operations; and competitive analysis, in which one uses methods such as potential and accounting to analyze the relative performance of an algorithm to the optimal algorithm. For complex problems and algorithms, one may need to use a combination of the aforementioned analysis strategies.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
-    <ns2:title xml:lang="en">Algorithmic Analysis Strategies</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The concepts, notions, and terminology introduced here form an underlying basis for understanding the role and scope of problem solving techniques.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
-    <ns2:title xml:lang="en">Problem Solving Techniques</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Mobility_and_Exchange_Activities">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Permanent exchange with national and international institutions and companies.
-</ns2:description>
-    <ns2:title xml:lang="en">Mobility and Exchange Activities</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time">
-    <ns2:title xml:lang="en">Full Time</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Third_Semester">
-    <ns2:title xml:lang="en">Third Semester</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Tenth_Semester">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-    <ns2:title xml:lang="en">Tenth Semester</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Research_Activities">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Participation in research centers or projects of scientific initiation Institutional Program of Scientific Initiation Grants (PIBIC), publication of works, participation in seminars and scientific initiation events related to graduation.
-</ns2:description>
-    <ns2:title xml:lang="en">Research Activities</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction">
-    <ns2:title xml:lang="en">Abstraction</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Abstraction is an indispensible technique associated with problem solving. It refers to both the process and result of generalization by reducing the information of a concept, a problem, or an observable phenomenon so that one can focus on the “big picture.” One of the most important skills in any engineering undertaking is framing the levels of abstraction appropriately.  “Through abstraction,” according to Voland, “we view the problem and its possible solution paths from a higher level of conceptual understanding.  As a result, we may become better prepared to recognize possible relationships between different aspects of the problem and thereby generate more creative design solutions”. This is particularly true in computer science in general (such as hardware vs.  software) and in software engineering in particular (data structure vs. data flow, and so forth).
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
-    <ns2:title xml:lang="en">Theoretical</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Systems_Engineering">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-“Systems engineering is the interdisciplinary approach governing the total technical and managerial effort required to transform a set of customer needs, expectations, and constraints into a solution and to support that solution throughout its life.”. The life cycle stages of systems engineering vary depending on the system being built but, in general, include system requirements definition, system design, sub-system development, system integration, system testing, system installation, system evolution, and system decommissioning. Many practical guidelines have been produced in the past to aid people in performing the activities of each phase. For example, system design can be broken into smaller tasks of identification of subsystems, assignment of system requirements to subsystems, specification of subsystem functionality, definition of sub-system interfaces, and so forth.
-</ns2:description>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System"/>
-    <ns2:title xml:lang="en">Systems Engineering</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
-    <ns2:title xml:lang="en">Evening</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Second_Semester">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-    <ns2:title xml:lang="en">Second Semester</ns2:title>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Comments">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Developer_Human_Factors"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 To most people, programming is coding. These people do not realize that programming also includes writing comments and that comments are an integral part of programming. True, comments are not used by the computer and certainly do not constitute final instructions for the computer, but they improve the readability of the programs by explaining the meaning and logic of the statements or sections of code. It should be remembered that programs are not only meant for computers, they are also read, written, and modified by humans.  The types of comments include repeat of the code, explanation of the code, marker of the code, summary of the code, description of the code’s intent, and information that cannot possibly be expressed by the code itself. Some comments are good, some are not. The good ones are those that explain the intent of the code and justify why this code looks the way it does. The bad ones are repeat of the code and stating irrelevant information. The best comments are selfdocumenting code. If the code is written in such a clear and precise manner that its meaning is selfproclaimed, then no comment is needed.  But this is easier said than done. Most programs are not self-explanatory and are often hard to read and understand if no comments are given.
-</ns2:description>
-    <ns2:title xml:lang="en">Comments</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Optional">
-    <ns2:title xml:lang="en">Optional</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents"/>
-    <ns2:title xml:lang="en">Multidisciplinary</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Multidisciplinary Projects, that is, there is the participation of other courses.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Design_a_Solution_Search_Strategy">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:title xml:lang="en">Design a Solution Search Strategy</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Once the problem analysis is complete, we can focus on structuring a search strategy to find the solution. In order to find the “best” solution (here, “best” could mean different things to different people, such as faster, cheaper, more usable, different capabilities, etc.), we need to eliminate paths that do not lead to viable solutions, design tasks in a way that provides the most guidance in searching for a solution, and use various attributes of the final solution state to guide our choices in the problem solving process.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Activities">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Courses in the technical or business management area, foreign language courses, extension projects with the community Institutional Program of Extension Scholarships (PIBEX), Continuous Action Extension Projects (PEAC), participation in Engineering Week.
-</ns2:description>
-    <ns2:title xml:lang="en">Extension Activities</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fourth_Semester">
-    <ns2:title xml:lang="en">Fourth Semester</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Emergent_System_Properties">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-A system is more than simply the sum of its parts.  Thus, the properties of a system are not simply the sum of the properties of its components. Instead, a system often exhibits properties that are properties of the system as a whole.  These properties are called emergent properties because they develop only after the integration of constituent parts in the system.  Emergent system properties can be either functional or nonfunctional. Functional properties describe the things that a system does. For example, an aircraft’s functional properties include flotation on air, carrying people or cargo, and use as a weapon of mass destruction. Nonfunctional properties describe how the system behaves in its operational environment. These can include such qualities as consistency, capacity, weight, security, etc.
-</ns2:description>
-    <ns2:title xml:lang="en">Emergent System Properties</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Teaching_Activities">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Monitoring of course subjects, technical course teacher, etc.
-</ns2:description>
-    <ns2:title xml:lang="en">Teaching Activities</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
-    <ns2:title xml:lang="en">Course</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fifth_Semester">
-    <ns2:title xml:lang="en">Fifth Semester</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Seventh_Semester">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-    <ns2:title xml:lang="en">Seventh Semester</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Formulating_the_Real_Problem">
-    <ns2:title xml:lang="en">Formulating the Real Problem</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Gerard Voland writes, “It is important to recognize that a specific problem should be formulated if one is to develop a specific solution”. This formulation is called the problem statement, which explicitly specifies what both the problem and the desired outcome are. Although there is no universal way of stating a problem, in general a problem should be expressed in such a way as to facilitate the development of solutions. Some general techniques to help one formulate the real problem include statement-restatement, determining the source and the cause, revising the statement, analyzing present and desired state, and using the fresh eye approach.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Hierarchy">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction"/>
-    <ns2:title xml:lang="en">Hierarchy</ns2:title>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-When we use abstraction in our problem formulation and solution, we may use different abstractions at different times in other words, we work on different levels of abstraction as the situation calls. Most of the time, these different levels of abstraction are organized in a hierarchy. There are many ways to structure a particular hierarchy and the criteria used in determining the specific content of each layer in the hierarchy varies depending on the individuals performing the work. Sometimes, a hierarchy of abstraction is sequential, which means that each layer has one and only one predecessor (lower) layer and one and only one successor (upper) layer except the upmost layer (which has no successor) and the bottommost layer (which has no predecessor). Sometimes, however, the hierarchy is organized in a tree-like structure, which means each layer can have more than one predecessor layer but only one successor layer. Occasionally, a hierarchy can have a manyto-many structure, in which each layer can have multiple predecessors and successors.  At no time, shall there be any loop in a hierarchy.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors">
-    <ns2:title xml:lang="en">Basic User Human Factors</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Software is developed to meet human desires or needs. Thus, all software design and development must take into consideration human-user factors such as how people use software, how people view software, and what humans expect from software. There are numerous factors in the human-machine interaction, and ISO 9241 document series define all the detailed standards of such interactions.  But the basic human-user factors considered here include input/output, the handling of error messages, and the robustness of the software in general.
-</ns2:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Area">
-    <ns2:title xml:lang="en">Knowledge Area</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-A body of knowledge or Knowledge area is the complete set of concepts, terms and activities that make up a professional domain, as defined by the relevant learned society or professional association. It is a type of knowledge representation by any knowledge organization. A BOK/KA is the accepted ontology for a specific domain. A BOK/KA is more than simply a collection of terms; a professional reading list; a library; a website or a collection of websites; a description of professional functions; or even a collection of information.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Domain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification">
-    <ns2:title xml:lang="en">Classification</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Alternate_Abstraction">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Sometimes it is useful to have multiple alternate abstractions for the same problem so that one can keep different perspectives in mind. For example, we can have a class diagram, a state chart, and a sequence diagram for the same software at the same level of abstraction. These alternate abstractions do not form a hierarchy but rather complement each other in helping understanding the problem and its solution. Though beneficial, it is as times difficult to keep alternate abstractions in sync.
-</ns2:description>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:title xml:lang="en">Alternate Abstraction</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
-    <ns2:title xml:lang="en">Course Domain</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Campus">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
-    <ns2:title xml:lang="en">Academic Campus</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/FGA">
-    <ns1:belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Campus"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faculty of Engineering of Gama - FGA</ns2:description>
-    <ns2:title xml:lang="en">Faculty of Engineering of Gama</ns2:title>
+</ns3:description>
+    <ns3:title xml:lang="en">Comments</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Developer_Human_Factors"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Basic_Content">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation in Computing).
 
 Example: Scientific and Technological Methodology, Communication and Expression, Graphic Expression, Mathematics, Physics, Production, Innovation, Administration, Economics, Environmental Sciences, Humanities, Social Sciences, Citizenship.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
-    <ns2:title xml:lang="en">Core Basic Content</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Specific_Content">
-    <ns2:title xml:lang="en">Core Specific Content</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process.
-
-Example: Specific disciplines for software engineering
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
-    <ns2:title xml:lang="en">Academic Institution</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure">
-    <ns2:title xml:lang="en">Curricular Structure</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Social">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Participation in programs or NGOs related to social action, exercise of citizenship and defense of the environment.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
-    <ns2:title xml:lang="en">Activities of Social Action, Citizenship and Environment</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Levels_of_Abstraction">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-When abstracting, we concentrate on one “level” of the big picture at a time with confidence that we can then connect effectively with levels above and below. Although we focus on one level, abstraction does not mean knowing nothing about the neighboring levels. Abstraction levels do not necessarily correspond to discrete components in reality or in the problem domain, but to welldefined standard interfaces such as programming APIs. The advantages that standard interfaces provide include portability, easier software/hardware integration and wider usage.
-</ns2:description>
-    <ns2:title xml:lang="en">Levels of Abstraction</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents">
-    <ns2:title xml:lang="en">Curriculum Contents</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Structure">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Developer_Human_Factors"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Well-structured programs are easier to understand and modify.  If a program is poorly structured, then no amount of explanation or comments is sufficient to make it understandable. The ways to organize a program are numerous and range from the proper use of white space, indentation, and parentheses to nice arrangements of groupings, blank lines, and braces. Whatever style one chooses, it should be consistent across the entire program.
-</ns2:description>
-    <ns2:title xml:lang="en">Structure</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Using_Programs">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The uniqueness of computer software gives problem solving a flavor that is distinct from general engineering problem solving. To solve a problem using computers, we must answer the following questions. How do we figure out what to tell the computer to do? How do we convert the problem statement into an algorithm? How do we convert the algorithm into machine instructions? The first task in solving a problem using a computer is to determine what to tell the computer to do. There may be many ways to tell the story, but all should take the perspective of a computer such that the computer can eventually solve the problem. In general, a problem should be expressed in such a way as to facilitate the development of algorithms and data structures for solving it.  The result of the first task is a problem statement. The next step is to convert the problem statement into algorithms that solve the problem. Once an algorithm is found, the final step converts the algorithm into machine instructions that form the final solution: software that solves the problem.  Abstractly speaking, problem solving using a computer can be considered as a process of problem transformation in other words, the step-bystep transformation of a problem statement into a problem solution.  To the discipline of software engineering, the ultimate objective of problem solving is to transform a problem expressed in natural language into electrons running around a circuit.
-</ns2:description>
-    <ns2:title xml:lang="en">Problem Solving Using Programs</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester">
-    <ns2:title xml:lang="en">Semester</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial">
-    <ns2:title xml:lang="en">Semi Serial System</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-The semi-serial system is an academic structure that combines characteristics of the serial system and the credit system.
-
-This system allows great flexibility in the construction of a study plan by the students, but creates a difficulty of managing vacancies. In the semi-serial system, the flexibility of the credit system is contemplated, but the formative trajectory is oriented around a reference flow chart, by means of preference of places: the student who fully fulfills the disciplines for a semester have their job preferably processed in the subjects of the following semester.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/User_Input_and_Output">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Input and output are the interfaces between users and software.  Software is useless without input and output. Humans design software to process some input and produce desirable output.  All software engineers must consider input and output as an integral part of the software product they engineer or develop.  Issues considered for input include (but are not limited to): What input is required? How is the input passed from users to computers? What is the most convenient way for users to enter input? What format does the computer require of the input data? The designer should request the minimum data from human input, only when the data is not already stored in the system.  The designer should format and edit the data at the time of entry to reduce errors arising from incorrect or malicious data entry. For output, we need to consider what the users wish to see: In what format would users like to see output? What is the most pleasing way to display output? If the party interacting with the software isn’t human but another software or computer or control system, then we need to consider the input/output type and format that the software should produce to ensure proper data exchange between systems. There are many rules of thumb for developers to follow to produce good input/output for a software.
-</ns2:description>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors"/>
-    <ns2:title xml:lang="en">User Input and Output</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
-    <ns2:title xml:lang="en">Course Period</ns2:title>
+</ns3:description>
+    <ns3:title xml:lang="en">Core Basic Content</ns3:title>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Morning">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
-    <ns2:title xml:lang="en">Morning</ns2:title>
+    <ns3:title xml:lang="en">Morning</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Alternate_Abstraction">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Sometimes it is useful to have multiple alternate abstractions for the same problem so that one can keep different perspectives in mind. For example, we can have a class diagram, a state chart, and a sequence diagram for the same software at the same level of abstraction. These alternate abstractions do not form a hierarchy but rather complement each other in helping understanding the problem and its solution. Though beneficial, it is as times difficult to keep alternate abstractions in sync.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction"/>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:title xml:lang="en">Alternate Abstraction</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Levels_of_Abstraction">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+When abstracting, we concentrate on one “level” of the big picture at a time with confidence that we can then connect effectively with levels above and below. Although we focus on one level, abstraction does not mean knowing nothing about the neighboring levels. Abstraction levels do not necessarily correspond to discrete components in reality or in the problem domain, but to welldefined standard interfaces such as programming APIs. The advantages that standard interfaces provide include portability, easier software/hardware integration and wider usage.
+</ns3:description>
+    <ns3:title xml:lang="en">Levels of Abstraction</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Emergent_System_Properties">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:title xml:lang="en">Emergent System Properties</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+A system is more than simply the sum of its parts.  Thus, the properties of a system are not simply the sum of the properties of its components. Instead, a system often exhibits properties that are properties of the system as a whole.  These properties are called emergent properties because they develop only after the integration of constituent parts in the system.  Emergent system properties can be either functional or nonfunctional. Functional properties describe the things that a system does. For example, an aircraft’s functional properties include flotation on air, carrying people or cargo, and use as a weapon of mass destruction. Nonfunctional properties describe how the system behaves in its operational environment. These can include such qualities as consistency, capacity, weight, security, etc.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Design_a_Solution_Search_Strategy">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Once the problem analysis is complete, we can focus on structuring a search strategy to find the solution. In order to find the “best” solution (here, “best” could mean different things to different people, such as faster, cheaper, more usable, different capabilities, etc.), we need to eliminate paths that do not lead to viable solutions, design tasks in a way that provides the most guidance in searching for a solution, and use various attributes of the final solution state to guide our choices in the problem solving process.
+</ns3:description>
+    <ns3:title xml:lang="en">Design a Solution Search Strategy</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Brasilia - UnB</ns3:description>
+    <ns2:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Student_Representations"/>
+    <ns2:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Activities"/>
+    <ns2:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Mobility_and_Exchange_Activities"/>
+    <ns2:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Professional_Practice_Activities"/>
+    <ns2:hasCourse rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Software_Engineering"/>
+    <ns2:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Teaching_Activities"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution"/>
+    <ns2:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Social"/>
+    <ns2:hasExtensionActivitie rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Research_Activities"/>
+    <ns3:title xml:lang="en">University of Brasilia</ns3:title>
+    <ns2:hasCampus rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/FGA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Multidisciplinary Projects, that is, there is the participation of other courses.
+</ns3:description>
+    <ns3:title xml:lang="en">Multidisciplinary</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Formulating_the_Real_Problem">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Gerard Voland writes, “It is important to recognize that a specific problem should be formulated if one is to develop a specific solution”. This formulation is called the problem statement, which explicitly specifies what both the problem and the desired outcome are. Although there is no universal way of stating a problem, in general a problem should be expressed in such a way as to facilitate the development of solutions. Some general techniques to help one formulate the real problem include statement-restatement, determining the source and the cause, revising the statement, analyzing present and desired state, and using the fresh eye approach.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
+    <ns3:title xml:lang="en">Formulating the Real Problem</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The concepts, notions, and terminology introduced here form an underlying basis for understanding the role and scope of problem solving techniques.
+</ns3:description>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
+    <ns3:title xml:lang="en">Problem Solving Techniques</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Social">
+    <ns3:title xml:lang="en">Activities of Social Action, Citizenship and Environment</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Participation in programs or NGOs related to social action, exercise of citizenship and defense of the environment.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Content">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Disciplines with basic vocational content that allow to reach the basic elements of the professional profile of the egress.
+
+Example: Programming Logic, Algorithms and Data Structure, Digital Circuits, Computing, Programming Language, Database.
+</ns3:description>
+    <ns3:title xml:lang="en">Core Professional Content</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
+    <ns3:title xml:lang="en">Algorithms and Complexity</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Programs are not random pieces of code: they are meticulously written to perform user-expected actions. The guide one uses to compose programs are algorithms, which organize various functions into a series of steps and take into consideration the application domain, the solution strategy, and the data structures being used. An algorithm can be very simple or very complex.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain">
+    <ns3:title xml:lang="en">Discipline Domain</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Institution">
+    <ns3:title xml:lang="en">Academic Institution</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Fundamentals">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
+    <ns3:title xml:lang="en">Programming Fundamentals</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Programming is composed of the methodologies or activities for creating computer programs that perform a desired function. It is an indispensible part in software construction. In general, programming can be considered as the process of designing, writing, testing, debugging, and maintaining the source code.  This source code is written in a programming language. The process of writing source code often requires expertise in many different subject areas including knowledge of the application domain, appropriate data structures, specialized algorithms, various language constructs, good programming techniques, and software engineering.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Professional_Practice_Activities">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Participation in the Executive Board of the Junior Engineering Company (EJEL), participation in projects carried out by EJEL, extracurricular internships in the technical area, technological development projects in companies.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+    <ns3:title xml:lang="en">Professional Practice Activities</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Teaching_Activities">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Monitoring of course subjects, technical course teacher, etc.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+    <ns3:title xml:lang="en">Teaching Activities</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/The_Programming_Process">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Programming involves design, writing, testing, debugging, and maintenance.  Design is the conception or invention of a scheme for turning a customer requirement for computer software into operational software. It is the activity that links application requirements to coding and debugging. Writing is the actual coding of the design in an appropriate programming language.  Testing is the activity to verify that the code one writes actually does what it is supposed to do. Debugging is the activity to find and fix bugs (faults) in the source code (or design). Maintenance is the activity to update, correct, and enhance existing programs.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Fundamentals"/>
+    <ns3:title xml:lang="en">The Programming Process</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+    <ns3:title xml:lang="en">Classification</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The students can study subjects at any time, observing the prerequisites.
+</ns3:description>
+    <ns3:title xml:lang="en">Credit System</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Error_Messages">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:title xml:lang="en">Error Messages</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+It is understandable that most software contains faults and fails from time to time. But users should be notified if there is anything that impedes the smooth execution of the program.  Nothing is more frustrating than an unexpected termination or behavioral deviation of software without any warning or explanation. To be user friendly, the software should report all error conditions to the users or upper-level applications so that some measure can be taken to rectify the situation or to exit gracefully. There are several guidelines that define what constitutes a good error message: error messages should be clear, to the point, and timely. First, error messages should clearly explain what is happening so that users know what is going on in the software.  Second, error messages should pinpoint the cause of the error, if at all possible, so that proper actions can be taken. Third, error messages should be displayed right when the error condition occurs. According to Jakob Nielsen, “Good error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution”. Fourth, error messages should not overload the users with too much information and cause them to ignore the messages all together. However, messages relating to security access errors should not provide extra information that would help unauthorized persons break in.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Eighth_Semester">
+    <ns3:title xml:lang="en">Eighth Semester</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Activities">
+    <ns3:title xml:lang="en">Extension Activities</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Courses in the technical or business management area, foreign language courses, extension projects with the community Institutional Program of Extension Scholarships (PIBEX), Continuous Action Extension Projects (PEAC), participation in Engineering Week.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial">
+    <ns3:title xml:lang="en">Semi Serial System</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The semi-serial system is an academic structure that combines characteristics of the serial system and the credit system.
+
+This system allows great flexibility in the construction of a study plan by the students, but creates a difficulty of managing vacancies. In the semi-serial system, the flexibility of the credit system is contemplated, but the formative trajectory is oriented around a reference flow chart, by means of preference of places: the student who fully fulfills the disciplines for a semester have their job preferably processed in the subjects of the following semester.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
+    <ns3:title xml:lang="en">Abstraction</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Abstraction is an indispensible technique associated with problem solving. It refers to both the process and result of generalization by reducing the information of a concept, a problem, or an observable phenomenon so that one can focus on the “big picture.” One of the most important skills in any engineering undertaking is framing the levels of abstraction appropriately.  “Through abstraction,” according to Voland, “we view the problem and its possible solution paths from a higher level of conceptual understanding.  As a result, we may become better prepared to recognize possible relationships between different aspects of the problem and thereby generate more creative design solutions”. This is particularly true in computer science in general (such as hardware vs.  software) and in software engineering in particular (data structure vs. data flow, and so forth).
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Ian Sommerville writes, “a system is a purposeful collection of interrelated components that work together to achieve some objective”.  A system can be very simple and include only a few components, like an ink pen, or rather complex, like an aircraft. Depending on whether humans are part of the system, systems can be divided into technical computer-based systems and sociotechnical systems.  A technical computer-based system functions without human involvement, such as televisions, mobile phones, thermostat, and some software; a sociotechnical system will not function without human involvement.  Examples of such system include manned space vehicles, chips embedded inside a human, and so forth.
+</ns3:description>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
+    <ns3:title xml:lang="en">Basic Concept of a System</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithmic_Analysis_Strategies">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The analysis strategies of algorithms include basic counting analysis, in which one actually counts the number of steps an algorithm takes to complete its task; asymptotic analysis, in which one only considers the order of magnitude of the number of steps an algorithm takes to complete its task; probabilistic analysis, in which one makes use of probabilities in analyzing the average performance of an algorithm; amortized analysis, in which one uses the methods of aggregation, potential, and accounting to analyze the worst performance of an algorithm on a sequence of operations; and competitive analysis, in which one uses methods such as potential and accounting to analyze the relative performance of an algorithm to the optimal algorithm. For complex problems and algorithms, one may need to use a combination of the aforementioned analysis strategies.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:title xml:lang="en">Algorithmic Analysis Strategies</ns3:title>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Encapsulation">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction"/>
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    <ns3:title xml:lang="en">Encapsulation</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 Encapsulation is a mechanism used to implement abstraction.  When we are dealing with one level of abstraction, the information concerning the levels below and above that level is encapsulated. This information can be the concept, problem, or observable phenomenon; or it may be the permissible operations on these relevant entities. Encapsulation usually comes with some degree of information hiding in which some or all of the underlying details are hidden from the level above the interface provided by the abstraction. To an object, information hiding means we don’t need to know the details of how the object is represented or how the operations on those objects are implemented.
-</ns2:description>
-    <ns2:title xml:lang="en">Encapsulation</ns2:title>
+</ns3:description>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core content of pedagogical project</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents"/>
+    <ns3:title xml:lang="en">Core Content</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fourth_Semester">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+    <ns3:title xml:lang="en">Fourth Semester</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Systems_Engineering">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+“Systems engineering is the interdisciplinary approach governing the total technical and managerial effort required to transform a set of customer needs, expectations, and constraints into a solution and to support that solution throughout its life.”. The life cycle stages of systems engineering vary depending on the system being built but, in general, include system requirements definition, system design, sub-system development, system integration, system testing, system installation, system evolution, and system decommissioning. Many practical guidelines have been produced in the past to aid people in performing the activities of each phase. For example, system design can be broken into smaller tasks of identification of subsystems, assignment of system requirements to subsystems, specification of subsystem functionality, definition of sub-system interfaces, and so forth.
+</ns3:description>
+    <ns3:title xml:lang="en">Systems Engineering</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Second_Semester">
+    <ns3:title xml:lang="en">Second Semester</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+    <ns3:title xml:lang="en">Course Period</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithmic_Design_Strategies">
+    <ns3:title xml:lang="en">Algorithmic Design Strategies</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The design of algorithms generally follows one of the following strategies: brute force, divide and conquer, dynamic programming, and greedy selection.  The brute force strategy is actually a no-strategy. It exhaustively tries every possible way to tackle a problem. If a problem has a solution, this strategy is guaranteed to find it; however, the time expense may be too high.  The divide and conquer strategy improves on the brute force strategy by dividing a big problem into smaller, homogeneous problems. It solves the big problem by recursively solving the smaller problems and combing the solutions to the smaller problems to form the solution to the big problem.  The underlying assumption for divide and conquer is that smaller problems are easier to solve. The dynamic programming strategy improves on the divide and conquer strategy by recognizing that some of the sub-problems produced by division may be the same and thus avoids solving the same problems again and again.
+</ns3:description>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Ninth_Semester">
+    <ns3:title xml:lang="en">Ninth Semester</ns3:title>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
-    <ns2:title xml:lang="en">Ninth Semester</ns2:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Software_Engineering">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
+    <ns2:hasStructureCurricular rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial"/>
+    <ns3:title xml:lang="en">Software Engineering</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Software Engineering is an area of computing focused on the specification, development, maintenance and creation of software systems, applying technologies and practices of project management and other disciplines, aiming at organization, productivity and quality. Currently, these technologies and practices encompass programming languages, database, tools, platforms, libraries, standards, processes and the quality of software issue.
+</ns3:description>
+    <ns2:hasPeriod rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time"/>
+    <ns2:belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Serial_System">
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 Students follow pre-determined lists of disciplines per semester or school year.
-</ns2:description>
+</ns3:description>
+    <ns3:title xml:lang="en">Serial System</ns3:title>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
-    <ns2:title xml:lang="en">Serial System</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required">
-    <ns2:title xml:lang="en">Required</ns2:title>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain">
-    <ns2:title xml:lang="en">Academic Domain</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Definition_of_Problem_Solving">
-    <ns3:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Problem solving refers to the thinking and activities conducted to answer or derive a solution to a problem. There are many ways to approach a problem, and each way employs different tools and uses different processes. These different ways of approaching problems gradually expand and define themselves and finally give rise to different disciplines. For example, software engineering focuses on solving problems using computers and software. While different problems warrant different solutions and may require different tools and processes, the methodology and techniques used in solving problems do follow some guidelines and can often be generalized as problem solving techniques. For example, a general guideline for solving a generic engineering problem is to use the three-step process given below: Formulate the real problem; Analyze the problem; Design a solution search strategy.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
-    <ns2:title xml:lang="en">Definition of Problem Solving</ns2:title>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Student_Representations">
-    <ns2:title xml:lang="en">Activities of Student Representations</ns2:title>
-    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-Effective participation in the Academic Center and Engineering Academic Directory, student representation in collegiate bodies.
-</ns2:description>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
-    <ns2:title xml:lang="en">Discipline</ns2:title>
+    <ns3:title xml:lang="en">Discipline</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Specific_Content">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process.
+
+Example: Specific disciplines for software engineering
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Content"/>
+    <ns3:title xml:lang="en">Core Specific Content</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Campus">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
+    <ns3:title xml:lang="en">Academic Campus</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Overview_of_Algorithms">
+    <ns3:title xml:lang="en">Overview of Algorithms</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Abstractly speaking, algorithms guide the operations of computers and consist of a sequence of actions composed to solve a problem. Alternative definitions include but are not limited to: An algorithm is any well-defined computational procedure that takes some value or set of values as input and produces some value or set of values as output; An algorithm is a sequence of computational steps that transform the input into the output; An algorithm is a tool for solving a wellspecified computation problem. Of course, different definitions are favored by different people. Though there is no universally accepted definition, some agreement exists that an algorithm needs to be correct, finite (in other words, terminate eventually or one must be able to write it in a finite number of steps), and unambiguous.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Area">
+    <ns3:title xml:lang="en">Knowledge Area</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Domain"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+A body of knowledge or Knowledge area is the complete set of concepts, terms and activities that make up a professional domain, as defined by the relevant learned society or professional association. It is a type of knowledge representation by any knowledge organization. A BOK/KA is the accepted ontology for a specific domain. A BOK/KA is more than simply a collection of terms; a professional reading list; a library; a website or a collection of websites; a description of professional functions; or even a collection of information.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.
+</ns3:description>
+    <ns3:title xml:lang="en">Complementary and Extension Activities</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Student_Representations">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+    <ns3:title xml:lang="en">Activities of Student Representations</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Effective participation in the Academic Center and Engineering Academic Directory, student representation in collegiate bodies.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Analyze_the_Problem">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
+    <ns3:title xml:lang="en">Analyze the Problem</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Once the problem statement is available, the next step is to analyze the problem statement or situation to help structure our search for a solution.  Four types of analysis include situation analysis, in which the most urgent or critical aspects of a situation are identified first; problem analysis, in which the cause of the problem must be determined; decision analysis, in which the action(s) needed to correct the problem or eliminate its cause must be determined; and potential problem analysis, in which the action(s) needed to prevent any reoccurrences of the problem or the development of new problems must be determined.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Paradigms">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Programming is highly creative and thus somewhat personal.  Different people often write different programs for the same requirements. This diversity of programming causes much difficulty in the construction and maintenance of large complex software. Various programming paradigms have been developed over the years to put some standardization into this highly creative and personal activity. When one programs, he or she can use one of several programming paradigms to write the code.  Unstructured Programming: In unstructured programming, a programmer follows his/her hunch to write the code in whatever way he/she likes as long as the function is operational. Often, the practice is to write code to fulfill a specific utility without regard to anything else.  Programs written this way exhibit no particular structure thus the name “unstructured programming.” Unstructured programming is also sometimes called ad hoc programming. Structured/Procedural/ Imperative Programming: A hallmark of structured programming is the use of well-defined control structures, including procedures (and/or functions) with each procedure (or function) performing a specific task. Object-Oriented Programming: While procedural programming organizes programs around procedures, object-oriented programming (OOP) organize a program around objects, which are abstract data structures that combine both data and methods used to access or manipulate the data.
+</ns3:description>
+    <ns3:title xml:lang="en">Programming Paradigms</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Programming_Fundamentals"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Third_Semester">
+    <ns3:title xml:lang="en">Third Semester</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/FGA">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faculty of Engineering of Gama - FGA</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Campus"/>
+    <ns3:title xml:lang="en">Faculty of Engineering of Gama</ns3:title>
+    <ns2:belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithmic_Analysis">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Analysis of algorithms is the theoretical study of computer-program performance and resource usage; to some extent it determines the goodness of an algorithm.  Such analysis usually abstracts away the particular details of a specific computer and focuses on the asymptotic, machine-independent analysis. There are three basic types of analysis.  In worst-case analysis, one determines the maximum time or resources required by the algorithm on any input of size n. In average-case analysis, one determines the expected time or resources required by the algorithm over all inputs of size n; in performing average-case analysis, one often needs to make assumptions on the statistical distribution of inputs. The third type of analysis is the best-case analysis, in which one determines the minimum time or resources required by the algorithm on any input of size n.  Among the three types of analysis, average-case analysis is the most relevant but also the most difficult to perform.
+</ns3:description>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
+    <ns3:title xml:lang="en">Algorithmic Analysis</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+    <ns3:title xml:lang="en">Course</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Definition_of_Problem_Solving">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
+    <ns3:title xml:lang="en">Definition of Problem Solving</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Problem solving refers to the thinking and activities conducted to answer or derive a solution to a problem. There are many ways to approach a problem, and each way employs different tools and uses different processes. These different ways of approaching problems gradually expand and define themselves and finally give rise to different disciplines. For example, software engineering focuses on solving problems using computers and software. While different problems warrant different solutions and may require different tools and processes, the methodology and techniques used in solving problems do follow some guidelines and can often be generalized as problem solving techniques. For example, a general guideline for solving a generic engineering problem is to use the three-step process given below: Formulate the real problem; Analyze the problem; Design a solution search strategy.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Using_Programs">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Problem_Solving_Techniques"/>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:title xml:lang="en">Problem Solving Using Programs</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The uniqueness of computer software gives problem solving a flavor that is distinct from general engineering problem solving. To solve a problem using computers, we must answer the following questions. How do we figure out what to tell the computer to do? How do we convert the problem statement into an algorithm? How do we convert the algorithm into machine instructions? The first task in solving a problem using a computer is to determine what to tell the computer to do. There may be many ways to tell the story, but all should take the perspective of a computer such that the computer can eventually solve the problem. In general, a problem should be expressed in such a way as to facilitate the development of algorithms and data structures for solving it.  The result of the first task is a problem statement. The next step is to convert the problem statement into algorithms that solve the problem. Once an algorithm is found, the final step converts the algorithm into machine instructions that form the final solution: software that solves the problem.  Abstractly speaking, problem solving using a computer can be considered as a process of problem transformation in other words, the step-bystep transformation of a problem statement into a problem solution.  To the discipline of software engineering, the ultimate objective of problem solving is to transform a problem expressed in natural language into electrons running around a circuit.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Structure">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Developer_Human_Factors"/>
+    <ns3:title xml:lang="en">Structure</ns3:title>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Well-structured programs are easier to understand and modify.  If a program is poorly structured, then no amount of explanation or comments is sufficient to make it understandable. The ways to organize a program are numerous and range from the proper use of white space, indentation, and parentheses to nice arrangements of groupings, blank lines, and braces. Whatever style one chooses, it should be consistent across the entire program.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
+    <ns3:title xml:lang="en">Basic User Human Factors</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Software is developed to meet human desires or needs. Thus, all software design and development must take into consideration human-user factors such as how people use software, how people view software, and what humans expect from software. There are numerous factors in the human-machine interaction, and ISO 9241 document series define all the detailed standards of such interactions.  But the basic human-user factors considered here include input/output, the handling of error messages, and the robustness of the software in general.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester">
+    <ns3:title xml:lang="en">Semester</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/User_Input_and_Output">
+    <ns3:title xml:lang="en">User Input and Output</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors"/>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Input and output are the interfaces between users and software.  Software is useless without input and output. Humans design software to process some input and produce desirable output.  All software engineers must consider input and output as an integral part of the software product they engineer or develop.  Issues considered for input include (but are not limited to): What input is required? How is the input passed from users to computers? What is the most convenient way for users to enter input? What format does the computer require of the input data? The designer should request the minimum data from human input, only when the data is not already stored in the system.  The designer should format and edit the data at the time of entry to reduce errors arising from incorrect or malicious data entry. For output, we need to consider what the users wish to see: In what format would users like to see output? What is the most pleasing way to display output? If the party interacting with the software isn’t human but another software or computer or control system, then we need to consider the input/output type and format that the software should produce to ensure proper data exchange between systems. There are many rules of thumb for developers to follow to produce good input/output for a software.
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Attributes_of_Algorithms">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The attributes of algorithms are many and often include modularity, correctness, maintainability, functionality, robustness, user-friendliness (i.e. easy to be understood by people), programmer time, simplicity, and extensibility. A commonly emphasized attribute is “performance” or “efficiency” by which we mean both time and resource-usage efficiency while generally emphasizing the time axis.  To some degree, efficiency determines if an algorithm is feasible or impractical. For example, an algorithm that takes one hundred years to terminate is virtually useless and is even considered incorrect.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Algorithms_and_Complexity"/>
+    <ns3:title xml:lang="en">Attributes of Algorithms</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fifth_Semester">
+    <ns3:title xml:lang="en">Fifth Semester</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure">
+    <ns3:title xml:lang="en">Curricular Structure</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Overview_of_a_Computer_System">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Concept_of_a_System"/>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Among all the systems, one that is obviously relevant to the software engineering community is the computer system. A computer is a machine that executes programs or software. It consists of a purposeful collection of mechanical, electrical, and electronic components with each component performing a preset function. Jointly, these components are able to execute the instructions that are given by the program. Abstractly speaking, a computer receives some input, stores and manipulates some data, and provides some output. The most distinct feature of a computer is its ability to store and execute sequences of instructions called programs. An interesting phenomenon concerning the computer is the universal equivalence in functionality.  According to Turing, all computers with a certain minimum capability are equivalent in their ability to perform computation tasks. In other words, given enough time and memory, all computers ranging from a netbook to a supercomputer are capable of computing exactly the same things, irrespective of speed, size, cost, or anything else. Most computer systems have a structure that is known as the “von Neumann model,” which consists of five components: a memory for storing instructions and data, a central processing unit for performing arithmetic and logical operations, a control unit for sequencing and interpreting instructions, input for getting external information into the memory, and output for producing results for the user.
+</ns3:description>
+    <ns3:title xml:lang="en">Overview of a Computer System</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Software_Robustness">
+    <ns3:title xml:lang="en">Software Robustness</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Software robustness refers to the ability of software to tolerate erroneous inputs. Software is said to be robust if it continues to function even when erroneous inputs are given.  Thus, it is unacceptable for software to simply crash when encountering an input problem as this may cause unexpected consequences, such as the loss of valuable data. Software that exhibits such behavior is considered to lack robustness.  Nielsen gives a simpler description of software robustness: “The software should have a low error rate, so that users make few errors during the use of the system and so that if they do make errors they can easily recover from them. Further, catastrophic errors must not occur”. There are many ways to evaluate the robustness of software and just as many ways to make software more robust. For example, to improve robustness, one should always check the validity of the inputs and return values before progressing further; one should always throw an exception when something unexpected occurs, and one should never quit a program without first giving users/applications a chance to correct the condition.
+</ns3:description>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_User_Human_Factors"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/First_Semester">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+    <ns3:title xml:lang="en">First Semester</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain">
+    <ns3:title xml:lang="en">Academic Domain</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required">
+    <ns3:title xml:lang="en">Required</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Optional">
+    <ns3:title xml:lang="en">Optional</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Mobility_and_Exchange_Activities">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Permanent exchange with national and international institutions and companies.
+</ns3:description>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+    <ns3:title xml:lang="en">Mobility and Exchange Activities</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Seventh_Semester">
+    <ns3:title xml:lang="en">Seventh Semester</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Area"/>
+    <ns3:title xml:lang="en">Computing Foundations</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The scope of the Computing Foundations knowledge area (KA) encompasses the development and operational environment in which software evolves and executes.  Because no software can exist in a vacuum or run without a computer, the core of such an environment is the computer and its various components.  Knowledge about the computer and its underlying principles of hardware and software serves as a framework on which software engineering is anchored.  Thus, all software engineers must have good understanding of the Computing Foundations KA. It is generally accepted that software engineering builds on top of computer science.  For example, Software Engineering 2004: Curriculum Guidelines for Undergraduate Degree Programs in Software Engineering clearly states, One particularly important aspect is that software engineering builds on computer science and mathematics (italics added).
+</ns3:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents">
+    <ns3:title xml:lang="en">Curriculum Contents</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain">
+    <ns3:title xml:lang="en">Course Domain</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Academic_Domain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module">
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University's campuses.
+</ns3:description>
+    <ns3:title xml:lang="en">Free Module</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum_Contents"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Tenth_Semester">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+    <ns3:title xml:lang="en">Tenth Semester</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time">
+    <ns3:title xml:lang="en">Full Time</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Research_Activities">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Participation in research centers or projects of scientific initiation Institutional Program of Scientific Initiation Grants (PIBIC), publication of works, participation in seminars and scientific initiation events related to graduation.
+</ns3:description>
+    <ns3:title xml:lang="en">Research Activities</ns3:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Nocturnal">
+    <ns3:title xml:lang="en">Nocturnal</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Basic_Developer_Human_Factors">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Computing_Foundations"/>
+    <ns3:title xml:lang="en">Basic Developer Human Factors</ns3:title>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Developer human factors refer to the considerations of human factors taken when developing software. Software is developed by humans, read by humans, and maintained by humans. If anything is wrong, humans are responsible for correcting those wrongs. Thus, it is essential to write software in a way that is easily understandable by humans or, at the very least, by other software developers. A program that is easy to read and understand exhibits readability.  The means to ensure that software meet this objective are numerous and range from proper architecture at the macro level to the particular coding style and variable usage at the micro level. But the two prominent factors are structure (or program layouts) and comments(documentation).
+</ns3:description>
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical">
+    <ns3:title xml:lang="en">Required</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Knowledge/Hierarchy">
+    <ns1:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Subtopic"/>
+    <ns3:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+When we use abstraction in our problem formulation and solution, we may use different abstractions at different times in other words, we work on different levels of abstraction as the situation calls. Most of the time, these different levels of abstraction are organized in a hierarchy. There are many ways to structure a particular hierarchy and the criteria used in determining the specific content of each layer in the hierarchy varies depending on the individuals performing the work. Sometimes, a hierarchy of abstraction is sequential, which means that each layer has one and only one predecessor (lower) layer and one and only one successor (upper) layer except the upmost layer (which has no successor) and the bottommost layer (which has no predecessor). Sometimes, however, the hierarchy is organized in a tree-like structure, which means each layer can have more than one predecessor layer but only one successor layer. Occasionally, a hierarchy can have a manyto-many structure, in which each layer can have multiple predecessors and successors.  At no time, shall there be any loop in a hierarchy.
+</ns3:description>
+    <ns3:title xml:lang="en">Hierarchy</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Knowledge/Abstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical">
+    <ns3:title xml:lang="en">Theoretical</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Classification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening">
+    <ns3:title xml:lang="en">Evening</ns3:title>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Sixth_Semester">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+    <ns3:title xml:lang="en">Sixth Semester</ns3:title>
   </rdf:Description>
 </rdf:RDF>
