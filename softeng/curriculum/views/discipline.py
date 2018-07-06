@@ -143,13 +143,8 @@ class DisciplineCreateView(FormView):
                 dc:description "%s"
             } WHERE {}
         """ % (
-            uri,
-            classification,
-            flow,
-            core,
-            title,
-            code,
-            description
+            uri, classification, flow, core,
+            title, code, description
         )
 
         if self.discipline_exists(title):

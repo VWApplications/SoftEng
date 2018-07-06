@@ -1,0 +1,2261 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2018/Software_Engineering"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="es" IRI="http://www.semanticweb.org/ontologies/2018/engenhaira_de_software/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/spec/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="Software_Engineering" IRI="http://www.semanticweb.org/ontologies/2018/Software_Engineering/"/>
+    <Prefix name="engenharia_de_software" IRI="http://www.semanticweb.org/ontologies/2018/engenharia_de_software/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.5</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Victor Hugo Arnaud Deon
+Weiller Fernandes Pereira</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pedagogical Project Course</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pedagogical Project Course</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="/isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Morning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Teaching_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Institution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Knowledge_Domain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Fourth_Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Mobility_and_Exchange_Activities"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasExtensionActivitie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Multidisciplinary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Levels_of_Abstraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasStructureCurricular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isContentOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Semi_Serial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Course_Domain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isClassificationOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/UnB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isPeriodOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ninth_Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Knowledge_Area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Content"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/inverseOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:subject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/knowledgeObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/discipline_code"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isStructureCurricularOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/University_Domain"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:provenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCourse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/performance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPreRequisite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Curriculum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Hierarchy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSubtopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Third_Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Discipline_Type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Computing_Foundations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Eighth_Semester"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isPreRequisiteOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Evening"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Period"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FGA"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Core_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Second_Semester"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isInTheFlowOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasContent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Alternate_Abstractions"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Practical_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Curricular_Structure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/theoretical_credits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Extension_Activities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Encapsulation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Campus"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/habilitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Core_Specific_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/extension_credits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Seventh_Semester"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:alternative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Serial_System"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:available"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Research_Activities"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Fifth_Semester"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/practical_credits"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/goals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Discipline_Classification"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Nocturnal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCampus"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Credit_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sixth_Semester"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasClassification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Optional_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Software_Engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Activities_of_Student_Representations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Discipline_Domain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Professional_Practice_Activities"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/First_Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Theoretical_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Core_Professional_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPeriod"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Abstraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Free_Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Semester"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/professional_profile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Tenth_Semester"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Core_Basic_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Required_Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Full_Time"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Activities_of_Student_Representations"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Campus"/>
+        <Class IRI="/University_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Campus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/belongsTo"/>
+            <Class IRI="/Institution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Campus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCourse"/>
+            <Class IRI="/Course"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+        <Class IRI="/University_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/belongsTo"/>
+            <Class IRI="/Institution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Content"/>
+        <Class IRI="/Knowledge_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Content"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <Class IRI="/Topic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Core_Basic_Discipline"/>
+        <Class IRI="/Core_Discipline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Core_Discipline"/>
+        <Class IRI="/Curriculum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Core_Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasDiscipline"/>
+            <Class IRI="/Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Core_Professional_Discipline"/>
+        <Class IRI="/Core_Discipline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Core_Specific_Discipline"/>
+        <Class IRI="/Core_Discipline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <Class IRI="/Course_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasDiscipline"/>
+            <Class IRI="/Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Evening"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Full_Time"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Morning"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Nocturnal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <Class IRI="/Credit_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <Class IRI="/Semi_Serial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <Class IRI="/Serial_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <ObjectUnionOf>
+                <Class IRI="/Evening"/>
+                <Class IRI="/Full_Time"/>
+                <Class IRI="/Morning"/>
+                <Class IRI="/Nocturnal"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <ObjectUnionOf>
+                <Class IRI="/Credit_System"/>
+                <Class IRI="/Semi_Serial"/>
+                <Class IRI="/Serial_System"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Period"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <Class IRI="/Curricular_Structure"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Course_Domain"/>
+        <Class IRI="/University_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Credit_System"/>
+        <Class IRI="/Curricular_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Curricular_Structure"/>
+        <Class IRI="/Course_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Curricular_Structure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isStructureCurricularOf"/>
+            <Class IRI="/Course"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Curriculum"/>
+        <Class IRI="/Discipline_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <Class IRI="/Discipline_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasClassification"/>
+            <Class IRI="/Practical_Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasClassification"/>
+            <Class IRI="/Theoretical_Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasContent"/>
+            <Class IRI="/Content"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasType"/>
+            <Class IRI="/Optional_Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasType"/>
+            <Class IRI="/Required_Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Eighth_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Fifth_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/First_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Fourth_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Ninth_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Second_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Seventh_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Sixth_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Tenth_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Third_Semester"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <Class IRI="/Core_Basic_Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <Class IRI="/Core_Professional_Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <Class IRI="/Core_Specific_Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <Class IRI="/Free_Module"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <Class IRI="/Multidisciplinary"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasClassification"/>
+            <ObjectUnionOf>
+                <Class IRI="/Practical_Discipline"/>
+                <Class IRI="/Theoretical_Discipline"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasType"/>
+            <ObjectUnionOf>
+                <Class IRI="/Optional_Discipline"/>
+                <Class IRI="/Required_Discipline"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <ObjectUnionOf>
+                <Class IRI="/Eighth_Semester"/>
+                <Class IRI="/Fifth_Semester"/>
+                <Class IRI="/First_Semester"/>
+                <Class IRI="/Fourth_Semester"/>
+                <Class IRI="/Ninth_Semester"/>
+                <Class IRI="/Second_Semester"/>
+                <Class IRI="/Seventh_Semester"/>
+                <Class IRI="/Sixth_Semester"/>
+                <Class IRI="/Tenth_Semester"/>
+                <Class IRI="/Third_Semester"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <ObjectUnionOf>
+                <Class IRI="/Core_Basic_Discipline"/>
+                <Class IRI="/Core_Professional_Discipline"/>
+                <Class IRI="/Core_Specific_Discipline"/>
+                <Class IRI="/Free_Module"/>
+                <Class IRI="/Multidisciplinary"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasType"/>
+            <Class IRI="/Discipline_Type"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Semester"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline_Classification"/>
+        <Class IRI="/Discipline_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline_Classification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isClassificationOf"/>
+            <Class IRI="/Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline_Domain"/>
+        <Class IRI="/Course_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline_Type"/>
+        <Class IRI="/Discipline_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Discipline_Type"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isTypeOf"/>
+            <Class IRI="/Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Eighth_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Evening"/>
+        <Class IRI="/Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Extension_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fifth_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/First_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Fourth_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Free_Module"/>
+        <Class IRI="/Curriculum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Free_Module"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasDiscipline"/>
+            <Class IRI="/Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Full_Time"/>
+        <Class IRI="/Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Full_Time"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Evening"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Full_Time"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Morning"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Full_Time"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <ObjectUnionOf>
+                <Class IRI="/Evening"/>
+                <Class IRI="/Morning"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <Class IRI="/University_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasCampus"/>
+            <Class IRI="/Campus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasExtensionActivitie"/>
+            <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasExtensionActivitie"/>
+            <Class IRI="/Activities_of_Student_Representations"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasExtensionActivitie"/>
+            <Class IRI="/Extension_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasExtensionActivitie"/>
+            <Class IRI="/Mobility_and_Exchange_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasExtensionActivitie"/>
+            <Class IRI="/Professional_Practice_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasExtensionActivitie"/>
+            <Class IRI="/Research_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Institution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasExtensionActivitie"/>
+            <Class IRI="/Teaching_Activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Knowledge_Area"/>
+        <Class IRI="/Knowledge_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Knowledge_Area"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasTopic"/>
+            <Class IRI="/Topic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Mobility_and_Exchange_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Morning"/>
+        <Class IRI="/Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Multidisciplinary"/>
+        <Class IRI="/Curriculum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Multidisciplinary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasDiscipline"/>
+            <Class IRI="/Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ninth_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Nocturnal"/>
+        <Class IRI="/Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Optional_Discipline"/>
+        <Class IRI="/Discipline_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Period"/>
+        <Class IRI="/Course_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Period"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPeriodOf"/>
+            <Class IRI="/Course"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Practical_Discipline"/>
+        <Class IRI="/Discipline_Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Professional_Practice_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Required_Discipline"/>
+        <Class IRI="/Discipline_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Research_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Second_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Semester"/>
+        <Class IRI="/Discipline_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Semester"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasDiscipline"/>
+            <Class IRI="/Discipline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Semi_Serial"/>
+        <Class IRI="/Curricular_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Semi_Serial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <Class IRI="/Credit_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Semi_Serial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <Class IRI="/Serial_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Semi_Serial"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <ObjectUnionOf>
+                <Class IRI="/Credit_System"/>
+                <Class IRI="/Serial_System"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Serial_System"/>
+        <Class IRI="/Curricular_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Seventh_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sixth_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Teaching_Activities"/>
+        <Class IRI="/Complementary_and_Extension_Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Tenth_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Theoretical_Discipline"/>
+        <Class IRI="/Discipline_Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Third_Semester"/>
+        <Class IRI="/Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Topic"/>
+        <Class IRI="/Knowledge_Domain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Topic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSubtopic"/>
+            <Class IRI="/Content"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Topic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isPartOf"/>
+            <Class IRI="/Knowledge_Area"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="/Topic"/>
+        <NamedIndividual IRI="/Abstraction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Discipline"/>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/belongsTo"/>
+            <Class IRI="/Core_Professional_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasClassification"/>
+            <Class IRI="/Practical_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasClassification"/>
+            <Class IRI="/Theoretical_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasType"/>
+            <Class IRI="/Required_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/inverseOf"/>
+            <Class IRI="/First_Semester"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Content"/>
+        <NamedIndividual IRI="/Alternate_Abstractions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Knowledge_Area"/>
+        <NamedIndividual IRI="/Computing_Foundations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Content"/>
+        <NamedIndividual IRI="/Encapsulation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Campus"/>
+        <NamedIndividual IRI="/FGA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Content"/>
+        <NamedIndividual IRI="/Hierarchy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Content"/>
+        <NamedIndividual IRI="/Levels_of_Abstraction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Discipline"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/belongsTo"/>
+            <Class IRI="/Core_Professional_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasClassification"/>
+            <Class IRI="/Practical_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasClassification"/>
+            <Class IRI="/Theoretical_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasType"/>
+            <Class IRI="/Required_Discipline"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isInTheFlowOf"/>
+            <Class IRI="/Third_Semester"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Course"/>
+        <NamedIndividual IRI="/Software_Engineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasPeriod"/>
+            <Class IRI="/Full_Time"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Software_Engineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasStructureCurricular"/>
+            <Class IRI="/Semi_Serial"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="/Software_Engineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Institution"/>
+        <NamedIndividual IRI="/UnB"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSubtopic"/>
+        <NamedIndividual IRI="/Abstraction"/>
+        <NamedIndividual IRI="/Alternate_Abstractions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSubtopic"/>
+        <NamedIndividual IRI="/Abstraction"/>
+        <NamedIndividual IRI="/Encapsulation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSubtopic"/>
+        <NamedIndividual IRI="/Abstraction"/>
+        <NamedIndividual IRI="/Hierarchy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSubtopic"/>
+        <NamedIndividual IRI="/Abstraction"/>
+        <NamedIndividual IRI="/Levels_of_Abstraction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isPartOf"/>
+        <NamedIndividual IRI="/Abstraction"/>
+        <NamedIndividual IRI="/Computing_Foundations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasContent"/>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+        <NamedIndividual IRI="/Hierarchy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isPreRequisiteOf"/>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isPartOf"/>
+        <NamedIndividual IRI="/Alternate_Abstractions"/>
+        <NamedIndividual IRI="/Abstraction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasTopic"/>
+        <NamedIndividual IRI="/Computing_Foundations"/>
+        <NamedIndividual IRI="/Abstraction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isContentOf"/>
+        <NamedIndividual IRI="/Encapsulation"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isPartOf"/>
+        <NamedIndividual IRI="/Encapsulation"/>
+        <NamedIndividual IRI="/Abstraction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/belongsTo"/>
+        <NamedIndividual IRI="/FGA"/>
+        <NamedIndividual IRI="/UnB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasCourse"/>
+        <NamedIndividual IRI="/FGA"/>
+        <NamedIndividual IRI="/Software_Engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isPartOf"/>
+        <NamedIndividual IRI="/Hierarchy"/>
+        <NamedIndividual IRI="/Abstraction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isPartOf"/>
+        <NamedIndividual IRI="/Levels_of_Abstraction"/>
+        <NamedIndividual IRI="/Abstraction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasContent"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+        <NamedIndividual IRI="/Encapsulation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasContent"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+        <NamedIndividual IRI="/Hierarchy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasPreRequisite"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDiscipline"/>
+        <NamedIndividual IRI="/Software_Engineering"/>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDiscipline"/>
+        <NamedIndividual IRI="/Software_Engineering"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasCampus"/>
+        <NamedIndividual IRI="/UnB"/>
+        <NamedIndividual IRI="/FGA"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/discipline_code"/>
+        <NamedIndividual IRI="/Algoritmos_e_Programacao_de_Computadores"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">113476</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/discipline_code"/>
+        <NamedIndividual IRI="/Orientacao_a_Objetos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">195341</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/belongsTo"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasCampus"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasClassification"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasContent"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasCourse"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasDiscipline"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasExtensionActivitie"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasPeriod"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasPreRequisite"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasStructureCurricular"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasSubtopic"/>
+        <ObjectProperty IRI="/knowledgeObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasTopic"/>
+        <ObjectProperty IRI="/knowledgeObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasType"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/inverseOf"/>
+        <ObjectProperty IRI="/academicObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isClassificationOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isContentOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isInTheFlowOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isPartOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isPeriodOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isPreRequisiteOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isStructureCurricularOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isTypeOf"/>
+        <ObjectProperty IRI="/inverseOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/knowledgeObjectProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/belongsTo"/>
+        <ObjectProperty IRI="/hasCampus"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/belongsTo"/>
+        <ObjectProperty IRI="/hasCourse"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/belongsTo"/>
+        <ObjectProperty IRI="/hasDiscipline"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/belongsTo"/>
+        <ObjectProperty IRI="/hasExtensionActivitie"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasClassification"/>
+        <ObjectProperty IRI="/isClassificationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasContent"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasPeriod"/>
+        <ObjectProperty IRI="/isPeriodOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasPreRequisite"/>
+        <ObjectProperty IRI="/isPreRequisiteOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasStructureCurricular"/>
+        <ObjectProperty IRI="/isStructureCurricularOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasSubtopic"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasTopic"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasType"/>
+        <ObjectProperty IRI="/isTypeOf"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:contributor</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma entidade responsável por fazer contribuições para o recurso
+
+Exemplos de um Colaborador incluem uma pessoa, uma organização ou um serviço. Normalmente, o nome de um Colaborador deve ser usado para indicar a entidade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:contributor</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:contributor</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Contribuidor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma entidade principalmente responsável por fazer o recurso.
+
+Exemplos de um Criador incluem uma pessoa, uma organização ou um serviço. Normalmente, o nome de um criador deve ser usado para indicar a entidade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:creator</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Criador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:date</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Um ponto ou período de tempo associado a um evento no ciclo de vida do recurso.
+
+A data pode ser usada para expressar informações temporais em qualquer nível de granularidade. A melhor prática recomendada é usar um esquema de codificação, como o perfil W3CDTF da ISO 8601 [W3CDTF].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:date</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:date</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma descrição do recurso.
+
+A descrição pode incluir, mas não está limitada a: um resumo, um sumário, uma representação gráfica ou um texto livre do recurso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:description</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Descrição</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:format</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">O formato de arquivo, meio físico ou dimensões do recurso.
+
+Exemplos de dimensões incluem tamanho e duração. A melhor prática recomendada é usar um vocabulário controlado, como a lista de tipos de mídia da Internet [MIME].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:format</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:format</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Formato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma referência inequívoca ao recurso dentro de um determinado contexto.
+
+A melhor prática recomendada é identificar o recurso por meio de uma string em conformidade com um sistema de identificação formal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:identifier</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identificador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:language</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma linguagem do recurso.
+
+A melhor prática recomendada é usar um vocabulário controlado como o RFC 4646 [RFC4646].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:language</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:language</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Linguagem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:publisher</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma entidade responsável por disponibilizar o recurso.
+
+Exemplos de um Publicador incluem uma pessoa, uma organização ou um serviço. Normalmente, o nome de um editor deve ser usado para indicar a entidade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:publisher</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:publisher</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Publicador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:relation</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Um recurso relacionado.
+
+A melhor prática recomendada é identificar o recurso relacionado por meio de uma string em conformidade com um sistema de identificação formal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:relation</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:relation</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:rights</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Informações sobre direitos mantidos e sobre o recurso.
+
+Normalmente, as informações sobre direitos incluem uma declaração sobre vários direitos de propriedade associados ao recurso, incluindo direitos de propriedade intelectual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:rights</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:rights</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Direitos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Um recurso relacionado do qual o recurso descrito é derivado.
+
+O recurso descrito pode ser derivado do recurso relacionado no todo ou em parte. A melhor prática recomendada é identificar o recurso relacionado por meio de uma string em conformidade com um sistema de identificação formal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:source</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recurso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">O tópico do recurso.
+
+Normalmente, o assunto será representado usando palavras-chave, frases-chave ou códigos de classificação. A melhor prática recomendada é usar um vocabulário controlado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:subject</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Assunto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Um nome dado ao recurso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:title</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Título</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dc:type</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A natureza ou o gênero do recurso.
+
+A melhor prática recomendada é usar um vocabulário controlado, como o Vocabulário de Tipo DCMI [DCMITYPE]. Para descrever o formato de arquivo, o meio físico ou as dimensões do recurso, use o formato (dc:format)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dc:type</AbbreviatedIRI>
+        <AbbreviatedIRI>dc:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dc:type</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:alternative</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Um nome alternativo para o recurso.
+
+A distinção entre títulos e títulos alternativos é específica do aplicativo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:alternative</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:alternative</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alternativo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:available</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data em que o recurso ficará disponível
+
+Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:available</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:available</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disponível</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Um documento legal que dá permissão oficial para fazer algo com o recurso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Licença</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma declaração de quaisquer alterações na propriedade e custódia do recurso desde a sua criação que sejam significativas por sua autenticidade, integridade e interpretação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <Literal xml:lang="pt" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Versionamento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Abstraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abstraction is an indispensible technique associated with problem solving. It refers to both the process and result of generalization by reducing the information of a concept, a problem, or an observable phenomenon so that one can focus on the “big picture.” One of the most important skills in any engineering undertaking is framing the levels of abstraction appropriately. “Through abstraction,” according to Voland, “we view the problem and its possible solution paths from a higher level of conceptual understanding. As a result, we may become better prepared to recognize possible relationships between different aspects of the problem and thereby generate more creative design solutions”. This is particularly true in computer science in general (such as hardware vs. software) and in software
+engineering in particular (data structure vs. data flow, and so forth).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Abstraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abstraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Activities_of_Social_Action_Citizenship_and_Environment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Participation in programs or NGOs related to social action, exercise of citizenship and defense of the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Activities_of_Social_Action_Citizenship_and_Environment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activities of Social Action, Citizenship and Environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Activities_of_Student_Representations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Effective participation in the Academic Center and Engineering Academic Directory, student representation in collegiate bodies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Activities_of_Student_Representations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activities of student representations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Algoritmos_e_Programacao_de_Computadores</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Algoritmos e Programação de Computadores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Alternate_Abstractions</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sometimes it is useful to have multiple alternate abstractions for the same problem so that one can keep different perspectives in mind. For example, we can have a class diagram, a state chart, and a sequence diagram for the same software at the same level of abstraction. These alternate abstractions do not form a hierarchy but rather complement each other in helping understanding the problem and its solution. Though beneficial, it is as times difficult to keep alternate abstractions
+in sync.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Alternate_Abstractions</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alternate Abstractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Campus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Academic Campus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Complementary_and_Extension_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Complementary_and_Extension_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Complementary and Extension Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Computing_Foundations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The scope of the Computing Foundations knowledge area (KA) encompasses the development and operational environment in which software evolves and executes. Because no software can exist in a vacuum or run without a computer, the core of such an environment is the computer and its various components. Knowledge about the computer and its underlying principles of hardware and software serves as a framework on which software engineering is anchored. Thus, all software engineers must have good understanding of the Computing Foundations KA. It is generally accepted that software engineering builds on top of computer science. For example, “Software Engineering 2004: Curriculum Guidelines for Undergraduate Degree Programs in Software Engineering” clearly states, “One particularly important aspect is that software engineering builds on computer science and mathematics” (italics added).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Computing_Foundations</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Computing Foundations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Content</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Basic_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation in Computing).
+
+Content Core: Scientific and Technological Methodology, Communication and Expression, Graphic Expression, Mathematics, Physics, Production, Innovation, Administration, Economics, Environmental Sciences, Humanities, Social Sciences, Citizenship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Basic_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Basic Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core content of pedagogical project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Professional_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disciplines with basic vocational content that allow to reach the basic elements of the professional profile of the egress.
+
+Content Core: Programming Logic, Algorithms and Data Structure, Digital Circuits, Computing, Programming Language, Database.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Professional_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Professional Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Core_Specific_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process
+
+Content Core: Specific disciplines for software engineering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Core_Specific_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Core Specific Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Course</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Credit_System</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The students can study subjects at any time, observing the prerequisites.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Credit_System</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Credit System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Curriculum</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Curriculum contents to specific course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Curriculum</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Curriculum Contents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discipline designate a particular branch of knowledge.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Discipline_Classification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The course is composed of disciplines, classified in the required and optional types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Discipline_Classification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discipline Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Eighth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Eighth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Encapsulation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Encapsulation is a mechanism used to implement abstraction. When we are dealing with one level of abstraction, the information concerning the levels below and above that level is encapsulated. This information can be the concept, problem, or observable phenomenon; or it may be the permissible operations on these relevant entities. Encapsulation usually comes with some degree of information hiding in which some or all of the underlying details are hidden from the level above the interface provided by the abstraction. To an object, information hiding means we don’t need to know the details of how the object is represented or how the operations on those objects are implemented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Encapsulation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Encapsulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Evening</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Evening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Extension_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Courses in the technical or business management area, foreign language courses, extension projects with the community Institutional Program of Extension Scholarships (PIBEX), Continuous Action Extension Projects (PEAC), participation in Engineering Week;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Extension_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extension Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/FGA</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FGA - Faculdade de Engenharias do Gama</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Fifth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fifth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/First_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">First Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Fourth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fourth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Free_Module</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of ​​greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University&apos;s campuses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Free_Module</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Free Module</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Full_Time</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Full Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Hierarchy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">When we use abstraction in our problem formulation and solution, we may use different abstractions at different times in other words, we work on different levels of abstraction as the situation calls. Most of the time, these different levels of abstraction are organized in a hierarchy. There are many ways to structure a particular hierarchy and the criteria used in determining the specific content of each layer in the hierarchy varies depending on the individuals performing the work. Sometimes, a hierarchy of abstraction is sequential, which means that each layer has one and only one predecessor (lower) layer and one and only one successor (upper) layer except the upmost layer (which has no successor) and the bottommost layer (which has no predecessor). Sometimes, however, the hierarchy is organized in a tree-like structure, which means each layer can have more than one predecessor layer but only one successor layer. Occasionally, a hierarchy can have a manyto-many structure, in which each layer can have multiple predecessors and successors. At no time, shall there be any loop in a hierarchy. A hierarchy often forms naturally in task decomposition. Often, a task analysis can be decomposed
+in a hierarchical fashion, starting with the larger tasks and goals of the organization and breaking each of them down into smaller subtasks that can again be further subdivided This continuous division of tasks into smaller ones would produce a
+hierarchical structure of tasks-subtasks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Hierarchy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hierarchy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Institution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Institution is an organ of multidisciplinary higher education and training of professional staff of higher level, research, extension and mastery and cultivation of human knowledge.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Institution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Institution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Knowledge_Area</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A body of knowledge or Knowlwdge area is the complete set of concepts, terms and activities that make up a professional domain, as defined by the relevant learned society or professional association. It is a type of knowledge representation by any knowledge organization. A BOK/KA is the accepted ontology for a specific domain. A BOK/KA is more than simply a collection of terms; a professional reading list; a library; a website or a collection of websites; a description of professional functions; or even a collection of information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Knowledge_Area</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Knowledge Area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Levels_of_Abstraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">When abstracting, we concentrate on one “level” of the big picture at a time with confidence that we can then connect effectively with levels above and below. Although we focus on one level, abstraction does not mean knowing nothing about the neighboring levels. Abstraction levels do not necessarily correspond to discrete components in reality or in the problem domain, but to welldefined standard interfaces such as programming APIs. The advantages that standard interfaces provide include portability, easier software/hardware integration and wider usage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Levels_of_Abstraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Levels of Abstraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Mobility_and_Exchange_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Permanent exchange with national and international institutions and companies;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Mobility_and_Exchange_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mobility and Exchange Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Morning</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Morning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Multidisciplinary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Multidisciplinary Projects, that is, there is the participation of other courses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Multidisciplinary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Multidisciplinary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Ninth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ninth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Nocturnal</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nocturnal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Optional_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optional Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Orientacao_a_Objetos</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Orientação a Objetos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Period</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Practical_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Professional_Practice_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Participation in the Executive Board of the Junior Engineering Company (EJEL), participation in projects carried out by EJEL, extracurricular internships in the technical area, technological development projects in companies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Professional_Practice_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professional Practice Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Required_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Required Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Research_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Participation in research centers or projects of scientific initiation Institutional Program of Scientific Initiation Grants (PIBIC), publication of works, participation in seminars and scientific initiation events related to graduation;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Research_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Research Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Second_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Second Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Period of time in which a course is assigned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Semi_Serial</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The semi-serial system is an academic structure that combines characteristics of the serial system and the credit system.
+
+This system allows great flexibility in the construction of a study plan by the students, but creates a difficulty of managing vacancies. In the semi-serial system, the flexibility of the credit system is contemplated, but the formative trajectory is oriented around a reference flow chart, by means of preference of places: the student who fully fulfills the disciplines for a semester have their job preferably processed in the subjects of the following semester.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Semi_Serial</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Semi Serial System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Serial_System</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Students follow pre-determined lists of disciplines per semester or school year.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Serial_System</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Serial System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Seventh_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Seventh Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Sixth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sixth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Software_Engineering</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Engineering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/Teaching_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Monitoring of course subjects, technical course teacher, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Teaching_Activities</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Teaching Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Tenth_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tenth Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Theoretical_Discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Theoretical Discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Third_Semester</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Third Semester</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/Topic</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/UnB</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UnB - Universidade de Brasília</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/discipline_code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discipline code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>/extension_credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extension activities, generally carried out externally; credits not counted in the total hours of the course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/extension_credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extension Credits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/goals</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Goals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/habilitation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Habilitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/performance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/practical_credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Credits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/professional_profile</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professional Profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>/theoretical_credits</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Theoretical Credits</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
