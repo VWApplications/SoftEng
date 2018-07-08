@@ -17,7 +17,7 @@ class Multidisciplinary(object):
 
         self.title = result['title']['value']
         self.description = result['description']['value']
-        # self.disciplines = self.get_disciplines()
+        self.disciplines = self.get_disciplines()
         self.slug = slugify(self.title)
 
     def get_information(self):

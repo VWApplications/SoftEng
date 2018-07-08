@@ -1,6 +1,6 @@
 from rdflib import Graph
-from .knowledge import Knowledge
-from .academic import AcademicDomain
+from knowledge import Knowledge
+from academic import AcademicDomain
 
 
 def create_rdf():

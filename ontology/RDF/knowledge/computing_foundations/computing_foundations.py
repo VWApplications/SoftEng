@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal, XSD
-from RDF.data_property import title, description
-from RDF.object_property import subClassOf
-from RDF.prefix import knowledge
+from resource.data_property import title, description
+from resource.object_property import subClassOf
+from resource.prefix import knowledge
 from .abstraction import Abstraction
 from .algorithms_and_complexity import AlgorithmsAndComplexity
 from .basic_concept_of_a_system import BasicConceptOfASystem

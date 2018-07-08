@@ -3,11 +3,17 @@
 # Author   : Victor Arnaud
 # Date     : 01/06/2018
 
+all: install migrations migrate rdf sesame
+
 SERVER = 0.0.0.0:8000
 
 run:
 	# Run the development server
 	python3 softeng/manage.py runserver ${SERVER}
+
+install:
+	# Install python dependencies
+	pip install -r softeng/requirements.txt
 
 migrations:
 	# Create all migrations from models
@@ -20,10 +26,6 @@ migrate:
 superuser:
 	# Create a superuser on system
 	python3 softeng/manage.py createsuperuser
-
-shell:
-	# Run interactive shell of project
-	python3 softeng/manage.py shell_plus
 
 staticfiles:
 	# Generate the staticfiles

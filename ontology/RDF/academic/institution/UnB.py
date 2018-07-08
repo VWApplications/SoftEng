@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal, XSD
-from RDF.data_property import title, description
-from RDF.prefix import pp
-from RDF.object_property import (
+from resource.data_property import title, description
+from resource.prefix import pp
+from resource.object_property import (
     subClassOf, hasCampus, hasCourse,
     hasExtensionActivitie
 )

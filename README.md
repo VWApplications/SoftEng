@@ -2,40 +2,72 @@
 
 Ontologia do curso de Engenharia de Software
 
-#### Para acessar a aplicação:
+#### Como acessar a aplicação localmente:
+
+1. De um clone do repositório da aplicação ```https://github.com/VictorArnaud/SoftEng.git```
+
+2. Instale as dependencias para rodar o python3 e pip3
 
 ```
-python3 softeng/manage.py runserver 0.0.0.0:8000
-Navegador: http://0.0.0.0:8000/
+sudo apt-get update
+sudo apt-get install -y python3-dev sqlite python3-pip libpq-dev
 ```
 
-#### Para acessar o banco de triplas:
+3. Criar o ambiente virtual de desenvolvimento (virtualenvwrapper)
 
 ```
-sudo docker-compose up -d
+sudo pip3 install --upgrade pip
+sudo pip3 install virtualenvwrapper
+```
+
+4. No arquivo .bashrc do link insira:
+
+```
+WORKON_HOME=~/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+```
+
+* Para criar um ambiente virtual: ```mkvirtualenv <venv_name>```
+
+* Para entrar no ambiente virtual: ```workon <venv_name>```
+
+* Para sair do ambiente virtual: ```deactivate```
+
+5. Instalar o software e o banco de triplas
+
+```
+make
+```
+
+6. Crie o repositorio do banco de triplas
+
+```
 Navegador: http://localhost:8001/openrdf-workbench/
 ```
 
-#### Tutorial de uso
-
-1. Primeiro suba a aplicação e o banco de triplas como mencionado acima
-
-2. Crie um novo repositorio chamado **softeng** e aperte next duas vezes no banco de triplas
+* Dentro do banco de triplas no navegador crie um novo repositorio chamado **softeng** e aperte next duas vezes no banco de triplas
 
 ![img1](https://user-images.githubusercontent.com/14116020/41176876-6dcba296-6b38-11e8-988f-e9e5a2bd3329.png)
 
-3. Execute o comando para popular o banco de triplas
+* Execute o comando para popular o banco de triplas
 
 ```
 make populate
 ```
 
-4. Execute o comando ```make query``` para testar se o banco foi populado
+7. Rode a aplicação
 
-5. Execute suas queries e armazene suas queries dentro do banco de queries da aplicação.
 
 ```
-Executar query: http://0.0.0.0:8000/
-Criar e listar queries: http://0.0.0.0:8000/queries/
-Editar e deletar queries: http://0.0.0.0:8000/queires/<query_id>/details/
+make run
+Navegador: http://0.0.0.0:8000/
+```
+
+#### API
+
+```
+Executar query: http://0.0.0.0:8000/api/
+Criar e listar queries: http://0.0.0.0:8000/api/queries/
+Editar e deletar queries: http://0.0.0.0:8000/api/queries/<query_id>/details/
 ```

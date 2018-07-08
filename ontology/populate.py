@@ -1,8 +1,5 @@
-from RDF.ontology import create_rdf
 import urllib
 import httplib2
-
-create_rdf()
 
 repository = 'softeng'
 context = "http://www.semanticweb.org/ontologies/2018/Software_Engineering/"

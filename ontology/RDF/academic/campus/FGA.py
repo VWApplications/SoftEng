@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal, XSD
-from RDF.data_property import title, description
-from RDF.object_property import subClassOf, belongsTo
-from RDF.prefix import pp
+from resource.data_property import title, description
+from resource.object_property import subClassOf, belongsTo
+from resource.prefix import pp
 
 
 class FGA(object):

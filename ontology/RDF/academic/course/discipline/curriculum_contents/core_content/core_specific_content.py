@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal, XSD
-from RDF.data_property import title, description
-from RDF.object_property import subClassOf
-from RDF.prefix import pp
+from resource.data_property import title, description
+from resource.object_property import subClassOf
+from resource.prefix import pp
 
 text = """
 Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process.

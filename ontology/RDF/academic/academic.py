@@ -3,8 +3,8 @@ from .campus import AcademicCampus
 from .institution import AcademicInstitution
 from .extension import ComplementaryAndExtensionActivities
 from .course import CourseDomain
-from RDF.data_property import title
-from RDF.prefix import pp
+from resource.data_property import title
+from resource.prefix import pp
 
 
 class AcademicDomain(object):

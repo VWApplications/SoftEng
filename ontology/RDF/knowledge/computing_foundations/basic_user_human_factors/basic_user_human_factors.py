@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal, XSD
-from RDF.data_property import title, description
-from RDF.object_property import subClassOf, typeOf
-from RDF.prefix import knowledge
+from resource.data_property import title, description
+from resource.object_property import subClassOf, typeOf
+from resource.prefix import knowledge
 from .error_messages import ErrorMessages
 from .software_robustness import SoftwareRobustness
 from .user_input_and_output import UserInputAndOutput

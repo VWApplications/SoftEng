@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal
-from RDF.data_property import title
-from RDF.object_property import subClassOf
-from RDF.prefix import pp
+from resource.data_property import title
+from resource.object_property import subClassOf
+from resource.prefix import pp
 from .optional import Optional
 from .practical import Practical
 from .required import Required

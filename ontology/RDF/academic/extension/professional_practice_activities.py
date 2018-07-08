@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal, XSD
-from RDF.data_property import title, description
-from RDF.object_property import subClassOf
-from RDF.prefix import pp
+from resource.data_property import title, description
+from resource.object_property import subClassOf
+from resource.prefix import pp
 
 text = """
 Participation in the Executive Board of the Junior Engineering Company (EJEL), participation in projects carried out by EJEL, extracurricular internships in the technical area, technological development projects in companies.

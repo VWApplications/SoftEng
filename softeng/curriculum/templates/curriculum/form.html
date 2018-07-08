@@ -149,7 +149,11 @@
             </option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        {% if discipline %}
+          <button type="submit" class="btn btn-primary">Update</button>
+        {% else %}
+          <button type="submit" class="btn btn-primary">Create</button>
+        {% endif %}
       </form>
     </div>
   </div>

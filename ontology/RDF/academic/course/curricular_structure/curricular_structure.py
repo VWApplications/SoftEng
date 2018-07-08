@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal
-from RDF.data_property import title
-from RDF.object_property import subClassOf
-from RDF.prefix import pp
+from resource.data_property import title
+from resource.object_property import subClassOf
+from resource.prefix import pp
 from .credit_system import CreditSystem
 from .semi_serial import SemiSerial
 from .serial_system import SerialSystem

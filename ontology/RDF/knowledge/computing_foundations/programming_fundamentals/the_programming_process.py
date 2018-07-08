@@ -1,7 +1,7 @@
 from rdflib import URIRef, Literal, XSD
-from RDF.data_property import title, description
-from RDF.object_property import subClassOf, typeOf
-from RDF.prefix import knowledge
+from resource.data_property import title, description
+from resource.object_property import subClassOf, typeOf
+from resource.prefix import knowledge
 
 text = """
 Programming involves design, writing, testing, debugging, and maintenance.  Design is the conception or invention of a scheme for turning a customer requirement for computer software into operational software. It is the activity that links application requirements to coding and debugging. Writing is the actual coding of the design in an appropriate programming language.  Testing is the activity to verify that the code one writes actually does what it is supposed to do. Debugging is the activity to find and fix bugs (faults) in the source code (or design). Maintenance is the activity to update, correct, and enhance existing programs.
