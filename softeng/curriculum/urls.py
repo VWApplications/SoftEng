@@ -28,6 +28,12 @@ urlpatterns = [
         discipline.DisciplineRemoveView.as_view(),
         name="discipline-remove"
     ),
+    # disciplines/<slug>/update/
+    path(
+        "disciplines/<slug:discipline>/update/",
+        discipline.DisciplineUpdateView.as_view(),
+        name="discipline-update"
+    ),
     # disciplines/<slug>/<subtopic>/details/
     path(
         "disciplines/<slug:slug>/<slug:subtopic>/remove/",

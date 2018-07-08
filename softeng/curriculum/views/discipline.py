@@ -267,6 +267,129 @@ class DisciplineRemoveView(ObjectRedirectView):
         return super(DisciplineRemoveView, self).action(request, *args, **kwargs)
 
 
+class DisciplineUpdateView(FormView):
+    """
+    Update a specific discipline.
+    """
+
+    template_name = "curriculum/form.html"
+    form_class = DisciplineForm
+    success_url = reverse_lazy('curriculum:discipline-list')
+
+    def get_object(self):
+        """
+        Get the specific discipline.
+        """
+
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
+
+        slug = self.kwargs.get('discipline', '')
+
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return discipline
+
+        return None
+
+    def get_context_data(self, **kwargs):
+        """
+        Get discipline to specific semestes.
+        """
+
+        context = super(DisciplineUpdateView, self).get_context_data(**kwargs)
+
+        context['discipline'] = self.get_object()
+
+        return context
+
+    def remove_discipline(self):
+        """
+        Remove the discipline triples from triple store.
+        """
+
+        discipline = self.get_object()
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            DELETE {
+                <%s> rdfs:subClassOf pp:Discipline ;
+                pp:belongsTo pp:Software_Engineering ;
+                pp:hasType pp:%s ;
+                pp:isInTheFlowOf pp:%s ;
+                pp:isPartOf pp:%s ;
+                dc:title "%s" ;
+                pp:code "%s" ;
+                dc:description "%s"
+            } WHERE {}
+        """ % (
+            discipline.uri,
+            create_uri(discipline.classification),
+            create_uri(discipline.semester),
+            create_uri(discipline.core_content),
+            discipline.title,
+            discipline.code,
+            discipline.description
+        )
+
+        response = Query.update(query)
+
+        return response
+
+    def form_valid(self, form):
+        """
+        Receive the form already validated to create a discipline.
+        """
+
+        response = self.remove_discipline()
+
+        title = form.cleaned_data['title']
+        uri = create_uri(title)
+        code = form.cleaned_data['code']
+        description = form.cleaned_data['description']
+        classification = create_uri(form.cleaned_data['classification'])
+        flow = create_uri(form.cleaned_data['flow'])
+        core = create_uri(form.cleaned_data['core'])
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            INSERT {
+                pp:%s rdfs:subClassOf pp:Discipline ;
+                pp:belongsTo pp:Software_Engineering ;
+                pp:hasType pp:%s ;
+                pp:isInTheFlowOf pp:%s ;
+                pp:isPartOf pp:%s ;
+                dc:title "%s" ;
+                pp:code "%s" ;
+                dc:description "%s"
+            } WHERE {}
+        """ % (
+            uri, classification, flow, core,
+            title, code, description
+        )
+
+        if response == 204:
+            response = Query.update(query)
+
+        if response == 204:
+            messages.success(
+                self.request,
+                "Discipline updated successfully"
+            )
+        else:
+            messages.success(
+                self.request,
+                "There was a server error"
+            )
+
+        return super(DisciplineUpdateView, self).form_valid(form)
+
+
 class RemoveContentView(ObjectRedirectView):
     """
     Remove a content from discipline.

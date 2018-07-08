@@ -109,4 +109,4 @@ staticfiles
 
 # Migrations and DB
 db.sqlite3
-ontology/RDF/catalog-v001.xml
+ontology/Protege/catalog-v001.xml

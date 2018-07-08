@@ -4,7 +4,11 @@
 {% block base %}
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
-      Create Discipline
+      {% if discipline %}
+        Update {{discipline.title }}
+      {% else %}
+        Create Discipline
+      {% endif %}
     </div>
     <div class="card-body">
       <form action="#" method="POST" novalidate>
@@ -17,6 +21,7 @@
             class="form-control"
             id="{{form.title.id_for_label}}"
             name="{{form.title.name}}"
+            value="{{discipline.title}}"
           />
         </div>
         <div class="form-group">
@@ -26,6 +31,7 @@
             class="form-control"
             id="{{form.code.id_for_label}}"
             name="{{form.code.name}}"
+            value="{{discipline.code}}"
           />
         </div>
         <div class="form-group">
@@ -35,8 +41,7 @@
             rows="5"
             class="form-control"
             id="{{form.description.id_for_label}}"
-            name="{{form.description.name}}">
-          </textarea>
+            name="{{form.description.name}}">{{discipline.description}}</textarea>
         </div>
         <div class="form-group">
           <label for="{{form.classification.id_for_label}}">Classification:</label>
@@ -44,26 +49,13 @@
             class="form-control"
             id="{{form.classification.id_for_label}}"
             name="{{form.classification.name}}">
-            <option value="Required">Required</option>
-            <option value="Optional">Optional</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="{{form.flow.id_for_label}}">Flow:</label>
-          <select
-            class="form-control"
-            id="{{form.flow.id_for_label}}"
-            name="{{form.flow.name}}">
-            <option value="First_Semester">First Semester</option>
-            <option value="Second_Semester">Second Semester</option>
-            <option value="Third_Semester">Third Semester</option>
-            <option value="Fourth_Semester">Fourth Semester</option>
-            <option value="Fifth_Semester">Fifth Semester</option>
-            <option value="Sixth_Semester">Sixth Semester</option>
-            <option value="Seventh_Semester">Seventh Semester</option>
-            <option value="Eighth_Semester">Eighth Semester</option>
-            <option value="Ninth_Semester">Ninth Semester</option>
-            <option value="Tenth_Semester">Tenth Semester</option>
+            {% if discipline.classification == 'Optional' %}
+              <option value="Required">Required</option>
+              <option value="Optional" selected="">Optional</option>
+            {% else %}
+              <option value="Required">Required</option>
+              <option value="Optional">Optional</option>
+            {% endif %}
           </select>
         </div>
         <div class="form-group">
@@ -72,11 +64,89 @@
             class="form-control"
             id="{{form.core.id_for_label}}"
             name="{{form.core.name}}">
-            <option value="Core_Basic_Content">Core Basic Content</option>
-            <option value="Core_Professional_Content">Core Professional Content</option>
-            <option value="Core_Specific_Content">Core Specific Content</option>
-            <option value="Free_Module">Free Module</option>
-            <option value="Multidisciplinary">Multidisciplinary</option>
+            <option
+              value="Core_Basic_Content"
+              {% if discipline.core_content == 'Core Basic Content' %}selected=""{% endif %}>
+              Core Basic Content
+            </option>
+            <option
+              value="Core_Professional_Content"
+              {% if discipline.core_content == 'Core Professional Content' %}selected=""{% endif %}>
+              Core Professional Content
+            </option>
+            <option
+              value="Core_Specific_Content"
+              {% if discipline.core_content == 'Core Specific Content' %}selected=""{% endif %}>
+              Core Specific Content
+            </option>
+            <option
+              value="Free_Module"
+              {% if discipline.core_content == 'Free Module' %}selected=""{% endif %}>
+              Free Module
+            </option>
+            <option
+              value="Multidisciplinary"
+              {% if discipline.core_content == 'Multidisciplinary' %}selected=""{% endif %}>
+              Multidisciplinary
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="{{form.flow.id_for_label}}">Flow:</label>
+          <select
+            class="form-control"
+            id="{{form.flow.id_for_label}}"
+            name="{{form.flow.name}}">
+            <option
+              value="First_Semester"
+              {% if discipline.semester == 'First Semester' %}selected=""{% endif %}>
+              First Semester
+            </option>
+            <option
+              value="Second_Semester"
+              {% if discipline.semester == 'Second Semester' %}selected=""{% endif %}>
+              Second Semester
+            </option>
+            <option
+              value="Third_Semester"
+              {% if discipline.semester == 'Third Semester' %}selected=""{% endif %}>
+              Third Semester
+            </option>
+            <option
+              value="Fourth_Semester"
+              {% if discipline.semester == 'Fourth Semester' %}selected=""{% endif %}>
+              Fourth Semester
+            </option>
+            <option
+              value="Fifth_Semester"
+              {% if discipline.semester == 'Fifth Semester' %}selected=""{% endif %}>
+              Fifth Semester
+            </option>
+            <option
+              value="Sixth_Semester"
+              {% if discipline.semester == 'Sixth Semester' %}selected=""{% endif %}>
+              Sixth Semester
+            </option>
+            <option
+              value="Seventh_Semester"
+              {% if discipline.semester == 'Seventh Semester' %}selected=""{% endif %}>
+              Seventh Semester
+            </option>
+            <option
+              value="Eighth_Semester"
+              {% if discipline.semester == 'Eighth Semester' %}selected=""{% endif %}>
+              Eighth Semester
+            </option>
+            <option
+              value="Ninth_Semester"
+              {% if discipline.semester == 'Ninth Semester' %}selected=""{% endif %}>
+              Ninth Semester
+            </option>
+            <option
+              value="Tenth_Semester"
+              {% if discipline.semester == 'Tenth Semester' %}selected=""{% endif %}>
+              Tenth Semester
+            </option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

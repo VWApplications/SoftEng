@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project">
-    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2018/Software_Engineering"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="es" IRI="http://www.semanticweb.org/ontologies/2018/engenhaira_de_software/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -143,9 +143,6 @@ Weiller Fernandes Pereira</Literal>
         <ObjectProperty IRI="/hasCourse"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="/performance"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/hasPreRequisite"/>
     </Declaration>
     <Declaration>
@@ -200,10 +197,10 @@ Weiller Fernandes Pereira</Literal>
         <ObjectProperty IRI="/isInTheFlowOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasContent"/>
+        <NamedIndividual IRI="/Alternate_Abstractions"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Alternate_Abstractions"/>
+        <ObjectProperty IRI="/hasContent"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:relation"/>
@@ -233,9 +230,6 @@ Weiller Fernandes Pereira</Literal>
         <Class IRI="/Campus"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="/habilitation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Core_Specific_Discipline"/>
     </Declaration>
     <Declaration>
@@ -251,10 +245,10 @@ Weiller Fernandes Pereira</Literal>
         <Class IRI="/Serial_System"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:available"/>
+        <Class IRI="/Research_Activities"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Research_Activities"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:available"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -264,9 +258,6 @@ Weiller Fernandes Pereira</Literal>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/practical_credits"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="/goals"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Discipline"/>
@@ -308,10 +299,10 @@ Weiller Fernandes Pereira</Literal>
         <AnnotationProperty abbreviatedIRI="dc:format"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Software_Engineering"/>
+        <Class IRI="/Activities_of_Student_Representations"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Activities_of_Student_Representations"/>
+        <NamedIndividual IRI="/Software_Engineering"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Discipline_Domain"/>
@@ -332,10 +323,10 @@ Weiller Fernandes Pereira</Literal>
         <Class IRI="/Core_Professional_Discipline"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasPeriod"/>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <ObjectProperty IRI="/hasPeriod"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Complementary_and_Extension_Activities"/>
@@ -356,9 +347,6 @@ Weiller Fernandes Pereira</Literal>
         <Class IRI="/Semester"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="/professional_profile"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Tenth_Semester"/>
     </Declaration>
     <Declaration>
@@ -368,10 +356,10 @@ Weiller Fernandes Pereira</Literal>
         <Class IRI="/Core_Basic_Discipline"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Required_Discipline"/>
+        <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Activities_of_Social_Action_Citizenship_and_Environment"/>
+        <Class IRI="/Required_Discipline"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Full_Time"/>
@@ -2225,28 +2213,8 @@ This system allows great flexibility in the construction of a study plan by the 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/goals</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Goals</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/habilitation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Habilitation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/performance</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
         <IRI>/practical_credits</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Practical Credits</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <IRI>/professional_profile</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Professional Profile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:title"/>

@@ -5,19 +5,26 @@
   <div class="card card-container">
     <div class="card-header bg-dark text-white">
       <div class="row">
-        <div class="col-sm-10">
+        <div class="col-sm-9">
           <h4>{{discipline.title}}</h4>
         </div>
-        <div class="col-sm-2">
-          <form
-            action="{% url 'curriculum:discipline-remove' discipline=discipline.slug %}"
-            method="POST">
-            {% csrf_token %}
+        <div class="col-sm-3">
+          <div class="btn-group float-right">
+            <a href="{% url 'curriculum:discipline-update' discipline=discipline.slug %}"
+               class="btn btn-primary btn-sm"
+               role="button">
+               Update
+            </a>
+            <form
+              action="{% url 'curriculum:discipline-remove' discipline=discipline.slug %}"
+              method="POST">
+              {% csrf_token %}
 
-            <button type="submit" class="btn btn-danger btn-sm">
-              Remove Discipline
-            </button>
-          </form>
+              <button type="submit" class="btn btn-danger btn-sm">
+                Remove Discipline
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
