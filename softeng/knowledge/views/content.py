@@ -24,7 +24,27 @@ class InsertContentListView(ListView):
         discipline = Disciplines()
         disciplines = discipline.get_disciplines('rdfs:subClassOf', 'pp:Discipline')
 
-        return disciplines
+        disciplines_content = []
+        for discipline in disciplines:
+            success = self.verify_contents(discipline)
+            if success:
+                disciplines_content.append(discipline)
+
+        return disciplines_content
+
+    def verify_contents(self, discipline):
+        """
+        Verify if discipline already has the specific content.
+        """
+
+        contents = Disciplines.get_contents(discipline.uri)
+        slug = self.kwargs.get('subtopic', '')
+
+        for content in contents:
+            if content.slug == slug:
+                return False
+
+        return True
 
     def get_context_data(self, **kwargs):
         """

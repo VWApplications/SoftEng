@@ -149,7 +149,6 @@ class Disciplines(object):
 
         contents = []
         for content in result:
-            print(content)
             subtopic = Subtopic(
                 uri=content['content_uri']['value'],
                 title=content['title']['value'],

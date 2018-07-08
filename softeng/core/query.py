@@ -49,8 +49,6 @@ class Query(object):
                 urllib.parse.urlencode(params)
             )
 
-        print("POST SPARQL query to %s" % endpoint)
-
         params = {'update': query}
 
         headers = {

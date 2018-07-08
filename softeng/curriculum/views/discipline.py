@@ -204,6 +204,7 @@ class DisciplineRemoveView(ObjectRedirectView):
         """
         Remove all subtopics from discipline.
         """
+
         discipline = self.get_object()
 
         subtopics = Disciplines.get_contents(discipline.uri)
@@ -217,6 +218,32 @@ class DisciplineRemoveView(ObjectRedirectView):
 
                 Query.update(query)
 
+    def remove_requireds(self):
+        """
+        Remove all requireds discipline from discipline.
+        """
+
+        discipline = self.get_object()
+
+        requireds = Disciplines.get_requireds(discipline.uri)
+
+        if requireds:
+            for required in requireds:
+                query = """
+                    PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+                    DELETE {
+                        <%s> pp:hasRequired <%s> .
+                        <%s> pp:isRequiredOf <%s>
+                    } WHERE {}
+                """ % (
+                    discipline.uri,
+                    required.uri,
+                    required.uri,
+                    discipline.uri
+                )
+
+                Query.update(query)
+
     def action(self, request, *args, **kwargs):
         """
         Remove the discipline triples from triple store.
@@ -225,6 +252,7 @@ class DisciplineRemoveView(ObjectRedirectView):
         discipline = self.get_object()
 
         self.remove_subtopics()
+        self.remove_requireds()
 
         query = """
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
@@ -697,7 +725,6 @@ class RemoveRequiredDisciplineView(ObjectRedirectView):
 
         discipline = self.get_object()
         required = self.get_required()
-        print(required)
 
         query = """
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>

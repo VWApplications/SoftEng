@@ -17,3 +17,6 @@ class Subtopic(object):
         self.description = description
         self.topic = slugify(topic)
         self.knowledge = slugify(knowledge)
+
+    def __str__(self):
+        return self.slug
