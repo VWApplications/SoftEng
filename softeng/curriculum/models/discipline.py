@@ -76,7 +76,7 @@ class Disciplines(object):
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?is_required_of
+            SELECT DISTINCT ?is_required_of_uri ?is_required_of
             WHERE {
               <%s> pp:isRequiredOf ?is_required_of_uri .
               ?is_required_of_uri dc:title ?is_required_of
@@ -87,7 +87,10 @@ class Disciplines(object):
 
         disciplines = []
         for discipline in result:
-            discipline = Discipline(discipline['is_required_of']['value'])
+            discipline = Discipline(
+                title=discipline['is_required_of']['value'],
+                uri=discipline['is_required_of_uri']['value']
+            )
             disciplines.append(discipline)
 
         return disciplines
@@ -102,7 +105,7 @@ class Disciplines(object):
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?required
+            SELECT DISTINCT ?required_uri ?required
             WHERE {
               <%s> pp:hasRequired ?required_uri .
               ?required_uri dc:title ?required
@@ -113,7 +116,10 @@ class Disciplines(object):
 
         disciplines = []
         for discipline in result:
-            discipline = Discipline(discipline['required']['value'])
+            discipline = Discipline(
+                uri=discipline['required_uri']['value'],
+                title=discipline['required']['value']
+            )
             disciplines.append(discipline)
 
         return disciplines
@@ -180,3 +186,6 @@ class Discipline(object):
         self.classification = classification
         self.semester = semester
         self.core_content = core_content
+
+    def __str__(self):
+        return self.slug

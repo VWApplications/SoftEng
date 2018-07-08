@@ -13,7 +13,7 @@
             <a href="{% url 'curriculum:discipline-update' discipline=discipline.slug %}"
                class="btn btn-primary btn-sm"
                role="button">
-               Update
+               Update Discipline
             </a>
             <form
               action="{% url 'curriculum:discipline-remove' discipline=discipline.slug %}"
@@ -58,12 +58,33 @@
             </tr>
           {% endif %}
           <tr>
-            <th>Required Disciplines:</th>
+            <th>
+              <a href="{% url 'curriculum:discipline-required-list' discipline=discipline.slug %}">
+                Required Disciplines:
+              </a>
+            </th>
             <td>
               {% for required in requireds %}
-                <a href="{% url 'curriculum:discipline-detail' slug=required.slug %}">
-                  <p>{{required.title}}</p>
-                </a>
+                <div class="row">
+                  <div class="col-sm-10">
+                    <a href="{% url 'curriculum:discipline-detail' slug=required.slug %}">
+                      {{required.title}}
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <form
+                      action="{% url 'curriculum:discipline-required-remove' discipline.slug required.slug %}"
+                      method="POST">
+                      {% csrf_token %}
+
+                      <button type="submit"
+                        data-toggle="tooltip" title="Remove required discipline."
+                        class="btn btn-danger btn-sm rounded-circle float-right remove-button">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
               {% empty %}
                 <p>This discipline has not required disciplines.</p>
               {% endfor %}
@@ -92,7 +113,11 @@
             </td>
           </tr>
           <tr>
-            <th>Program:</th>
+            <th>
+              <a href="{% url 'knowledge:swebok-list' %}">
+                Program:
+              </a>
+            </th>
             <td>
               {% for subtopic in program %}
                 <div class="row">

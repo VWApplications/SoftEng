@@ -16,23 +16,41 @@ urlpatterns = [
         discipline.DisciplineCreateView.as_view(),
         name='discipline-create'
     ),
-    # disciplines/<slug>/details/
+    # disciplines/<discipline>/details/
     path(
         "disciplines/<slug:slug>/details/",
         discipline.DisciplineDetailView.as_view(),
         name="discipline-detail"
     ),
-    # disciplines/<slug>/remove/
+    # disciplines/<discipline>/remove/
     path(
         "disciplines/<slug:discipline>/remove/",
         discipline.DisciplineRemoveView.as_view(),
         name="discipline-remove"
     ),
-    # disciplines/<slug>/update/
+    # disciplines/<discipline>/update/
     path(
         "disciplines/<slug:discipline>/update/",
         discipline.DisciplineUpdateView.as_view(),
         name="discipline-update"
+    ),
+    # disciplines/<discipline>/insert-required/
+    path(
+        "disciplines/<slug:discipline>/insert-required/",
+        discipline.InsertRequiredDisciplineListView.as_view(),
+        name="discipline-required-list"
+    ),
+    # disciplines/<discipline>/insert-required/<required>/
+    path(
+        "disciplines/<slug:discipline>/insert-required/<slug:required>/",
+        discipline.InsertRequiredDisciplineView.as_view(),
+        name="discipline-required-insert"
+    ),
+    # disciplines/<discipline>/remove-required/<required>/
+    path(
+        "disciplines/<slug:discipline>/remove-required/<slug:required>/",
+        discipline.RemoveRequiredDisciplineView.as_view(),
+        name="discipline-required-remove"
     ),
     # disciplines/<slug>/<subtopic>/details/
     path(

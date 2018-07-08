@@ -470,3 +470,259 @@ class RemoveContentView(ObjectRedirectView):
             )
 
         return super(RemoveContentView, self).action(request, *args, **kwargs)
+
+
+class InsertRequiredDisciplineListView(ListView):
+    """
+    Insert required discipline list
+    """
+
+    template_name = "curriculum/insert_required.html"
+    context_object_name = "disciplines"
+    paginate_by = 20
+
+    def get_object(self):
+        """
+        Get the specific discipline.
+        """
+
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
+
+        slug = self.kwargs.get('discipline', '')
+
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return discipline
+
+        return None
+
+    def get_context_data(self, **kwargs):
+        """
+        Get discipline to specific semestes.
+        """
+
+        context = super(InsertRequiredDisciplineListView, self).get_context_data(**kwargs)
+
+        context['discipline'] = self.get_object()
+
+        return context
+
+    def get_queryset(self):
+        """
+        Get all disciplines
+        """
+
+        disciplines = Disciplines().get_disciplines('rdfs:subClassOf', 'pp:Discipline')
+
+        slug = self.kwargs.get('discipline', '')
+
+        required_disciplines = []
+        for discipline in disciplines:
+            if discipline.slug != slug:
+                success = self.verify_requireds(discipline)
+                if success:
+                    required_disciplines.append(discipline)
+
+        return required_disciplines
+
+    def verify_requireds(self, discipline):
+        """
+        Verify if discipline in the list is required of specific discipline.
+        """
+
+        # is Required Of
+        disciplines = Disciplines.get_requireds(discipline.uri)
+
+        slug = self.kwargs.get('discipline', '')
+
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return False
+
+        requireds = Disciplines.get_requireds(self.get_object().uri)
+
+        for required in requireds:
+            if required.slug == discipline.slug:
+                return False
+
+        return True
+
+
+class InsertRequiredDisciplineView(ObjectRedirectView):
+    """
+    Insert specific required discipline into a specific discipline.
+    """
+
+    template_name = "knowledge/insert_required.html"
+    context_object_name = "discipline"
+
+    def get_object(self):
+        """
+        Get the specific discipline.
+        """
+
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
+
+        slug = self.kwargs.get('discipline', '')
+
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return discipline
+
+        return None
+
+    def get_required(self):
+        """
+        Get the specific required discipline.
+        """
+
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
+
+        slug = self.kwargs.get('required', '')
+
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return discipline
+
+        return None
+
+    def get_success_url(self):
+        """
+        Create a success url to redirect.
+        """
+
+        discipline = self.get_object()
+
+        success_url = reverse_lazy(
+            'curriculum:discipline-required-list',
+            kwargs={'discipline': discipline.slug}
+        )
+
+        return success_url
+
+    def action(self, request, *args, **kwargs):
+        """
+        Insert required discipline into discipline.
+        """
+
+        discipline = self.get_object()
+        required = self.get_required()
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            INSERT {
+                <%s> pp:hasRequired <%s> .
+                <%s> pp:isRequiredOf <%s>
+            } WHERE {}
+        """ % (
+            discipline.uri,
+            required.uri,
+            required.uri,
+            discipline.uri
+        )
+
+        response = Query.update(query)
+
+        if response == 204:
+            messages.success(
+                self.request,
+                "Required discipline inserted successfully"
+            )
+        else:
+            messages.success(
+                self.request,
+                "There was a server error"
+            )
+
+        return super(InsertRequiredDisciplineView, self).action(request, *args, **kwargs)
+
+
+class RemoveRequiredDisciplineView(ObjectRedirectView):
+    """
+    Remove a content from discipline.
+    """
+
+    template_name = "curriculum/details.html"
+
+    def get_object(self):
+        """
+        Get the specific discipline
+        """
+
+        disciplines = Disciplines().get_disciplines("rdfs:subClassOf", "pp:Discipline")
+
+        slug = self.kwargs.get('discipline', '')
+
+        for discipline in disciplines:
+            if discipline.slug == slug:
+                return discipline
+
+        return None
+
+    def get_required(self):
+        """
+        Get the specific required discipline.
+        """
+
+        discipline = self.get_object()
+
+        requireds = Disciplines.get_requireds(discipline.uri)
+
+        slug = self.kwargs.get('required', '')
+
+        for required in requireds:
+            if required.slug == slug:
+                return required
+
+        return None
+
+    def get_success_url(self):
+        """
+        Get success url.
+        """
+
+        discipline = self.get_object()
+
+        success_url = reverse_lazy(
+            'curriculum:discipline-detail',
+            kwargs={'slug': discipline.slug}
+        )
+
+        return success_url
+
+    def action(self, request, *args, **kwargs):
+        """
+        Remove the triple from triple store.
+        """
+
+        discipline = self.get_object()
+        required = self.get_required()
+        print(required)
+
+        query = """
+            PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
+            DELETE {
+                <%s> pp:hasRequired <%s> .
+                <%s> pp:isRequiredOf <%s>
+            } WHERE {}
+        """ % (
+            discipline.uri,
+            required.uri,
+            required.uri,
+            discipline.uri
+        )
+
+        response = Query.update(query)
+
+        if response == 204:
+            messages.success(
+                self.request,
+                "Required discipline removed successfully"
+            )
+        else:
+            messages.success(
+                self.request,
+                "There was a server error"
+            )
+
+        return super(RemoveRequiredDisciplineView, self).action(request, *args, **kwargs)
