@@ -20,7 +20,7 @@ query = """
     }
 """
 
-graph.parse("ontology/RDF/ontology.rdf", format="xml")
+graph.parse("ontology/Protege/ontology.rdf", format="xml")
 results = graph.query(query)
 
 SUBJECT = 0
@@ -43,4 +43,4 @@ for result in results:
     graph.add((result[SUBJECT], dc_title, result[TITLE]))
     graph.add((result[SUBJECT], dc_description, result[DESCRIPTION]))
 
-graph.serialize("ontology/RDF/softeng.rdf")
+graph.serialize("ontology/Protege/softeng.rdf")

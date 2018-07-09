@@ -12,3 +12,7 @@ def create_rdf():
     Knowledge(graph)
     AcademicDomain(graph)
     graph.serialize("ontology/RDF/softeng.rdf")
+
+
+if __name__ == '__main__':
+    create_rdf()

@@ -1,0 +1,1699 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project"
+     xml:base="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project"
+     xmlns:Pedagogical_Project="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:es="http://www.semanticweb.org/ontologies/2018/engenhaira_de_software/"
+     xmlns:engenharia_de_software="http://www.semanticweb.org/ontologies/2018/engenharia_de_software/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:Software_Engineering="http://www.semanticweb.org/ontologies/2018/Software_Engineering/"
+     xmlns:foaf="http://xmlns.com/foaf/spec/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project">
+        <owl:versionInfo xml:lang="pt">1.5</owl:versionInfo>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Victor Hugo Arnaud Deon
+Weiller Fernandes Pereira</dc:creator>
+        <dc:title xml:lang="en">Pedagogical Project Course</dc:title>
+        <rdfs:label xml:lang="en">Pedagogical Project Course</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:comment xml:lang="pt">Uma entidade responsável por fazer contribuições para o recurso
+
+Exemplos de um Colaborador incluem uma pessoa, uma organização ou um serviço. Normalmente, o nome de um Colaborador deve ser usado para indicar a entidade.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Contribuidor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:comment xml:lang="pt">Uma entidade principalmente responsável por fazer o recurso.
+
+Exemplos de um Criador incluem uma pessoa, uma organização ou um serviço. Normalmente, o nome de um criador deve ser usado para indicar a entidade.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Criador</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <rdfs:comment xml:lang="pt">Um ponto ou período de tempo associado a um evento no ciclo de vida do recurso.
+
+A data pode ser usada para expressar informações temporais em qualquer nível de granularidade. A melhor prática recomendada é usar um esquema de codificação, como o perfil W3CDTF da ISO 8601 [W3CDTF].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Data</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:comment xml:lang="pt">Uma descrição do recurso.
+
+A descrição pode incluir, mas não está limitada a: um resumo, um sumário, uma representação gráfica ou um texto livre do recurso.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Descrição</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format">
+        <rdfs:comment xml:lang="pt">O formato de arquivo, meio físico ou dimensões do recurso.
+
+Exemplos de dimensões incluem tamanho e duração. A melhor prática recomendada é usar um vocabulário controlado, como a lista de tipos de mídia da Internet [MIME].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Formato</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <rdfs:comment xml:lang="pt">Uma referência inequívoca ao recurso dentro de um determinado contexto.
+
+A melhor prática recomendada é identificar o recurso por meio de uma string em conformidade com um sistema de identificação formal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Identificador</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language">
+        <rdfs:comment xml:lang="pt">Uma linguagem do recurso.
+
+A melhor prática recomendada é usar um vocabulário controlado como o RFC 4646 [RFC4646].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Linguagem</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
+        <rdfs:comment xml:lang="pt">Uma entidade responsável por disponibilizar o recurso.
+
+Exemplos de um Publicador incluem uma pessoa, uma organização ou um serviço. Normalmente, o nome de um editor deve ser usado para indicar a entidade.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Publicador</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
+        <rdfs:comment xml:lang="pt">Um recurso relacionado.
+
+A melhor prática recomendada é identificar o recurso relacionado por meio de uma string em conformidade com um sistema de identificação formal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Relação</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <rdfs:comment xml:lang="pt">Informações sobre direitos mantidos e sobre o recurso.
+
+Normalmente, as informações sobre direitos incluem uma declaração sobre vários direitos de propriedade associados ao recurso, incluindo direitos de propriedade intelectual.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Direitos</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:comment xml:lang="pt">Um recurso relacionado do qual o recurso descrito é derivado.
+
+O recurso descrito pode ser derivado do recurso relacionado no todo ou em parte. A melhor prática recomendada é identificar o recurso relacionado por meio de uma string em conformidade com um sistema de identificação formal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Recurso</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <rdfs:comment xml:lang="pt">O tópico do recurso.
+
+Normalmente, o assunto será representado usando palavras-chave, frases-chave ou códigos de classificação. A melhor prática recomendada é usar um vocabulário controlado.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Assunto</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:comment xml:lang="pt">Um nome dado ao recurso.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Título</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
+        <rdfs:comment xml:lang="pt">A natureza ou o gênero do recurso.
+
+A melhor prática recomendada é usar um vocabulário controlado, como o Vocabulário de Tipo DCMI [DCMITYPE]. Para descrever o formato de arquivo, o meio físico ou as dimensões do recurso, use o formato (dc:format)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="pt">Tipo</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative">
+        <rdfs:comment xml:lang="pt">Um nome alternativo para o recurso.
+
+A distinção entre títulos e títulos alternativos é específica do aplicativo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="pt">Alternativo</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/available">
+        <rdfs:comment xml:lang="pt">Data em que o recurso ficará disponível
+
+Data (geralmente um intervalo) em que o recurso se tornou ou ficará disponível.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="pt">Disponível</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:comment xml:lang="pt">Um documento legal que dá permissão oficial para fazer algo com o recurso.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="pt">Licença</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/provenance -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/provenance">
+        <rdfs:comment xml:lang="pt">Uma declaração de quaisquer alterações na propriedade e custódia do recurso desde a sua criação que sejam significativas por sua autenticidade, integridade e interpretação.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="pt">Versionamento</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCampus"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCampus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCampus">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isClassificationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasContent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPreRequisite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasSubtopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasSubtopic">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/knowledgeObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasTopic">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/knowledgeObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/academicObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isClassificationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isClassificationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isContentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isContentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPreRequisiteOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/knowledgeObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/knowledgeObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/discipline_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/discipline_code">
+        <dc:title>Discipline code</dc:title>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/extension_credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/extension_credits">
+        <dc:description xml:lang="en">Extension activities, generally carried out externally; credits not counted in the total hours of the course</dc:description>
+        <dc:title xml:lang="en">Extension Credits</dc:title>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/practical_credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/practical_credits">
+        <dc:title xml:lang="en">Practical Credits</dc:title>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/theoretical_credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/theoretical_credits">
+        <dc:title xml:lang="en">Theoretical Credits</dc:title>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Social_Action_Citizenship_and_Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Social_Action_Citizenship_and_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Participation in programs or NGOs related to social action, exercise of citizenship and defense of the environment.</dc:description>
+        <dc:title xml:lang="en">Activities of Social Action, Citizenship and Environment</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Student_Representations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Student_Representations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Effective participation in the Academic Center and Engineering Academic Directory, student representation in collegiate bodies.</dc:description>
+        <dc:title xml:lang="en">Activities of student representations</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Campus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Campus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/University_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Institution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCourse"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Academic Campus</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/University_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Institution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">In addition to the subjects of free choice of the student, it also contemplates the completion of complementary and extension activities such as: scientific initiation, multidisciplinary projects, participation in events, participation in a junior company, etc. All these programs provide for paid scholarships; proof of participation as a volunteer, in addition to credits in free module.</dc:description>
+        <dc:title xml:lang="en">Complementary and Extension Activities</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Content</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Basic_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Basic_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Discipline"/>
+        <dc:description xml:lang="en">Required by opinion CNE / CES 136 of 2012 (Curricular Guidelines for Graduation in Computing).
+
+Content Core: Scientific and Technological Methodology, Communication and Expression, Graphic Expression, Mathematics, Physics, Production, Innovation, Administration, Economics, Environmental Sciences, Humanities, Social Sciences, Citizenship</dc:description>
+        <dc:title xml:lang="en">Core Basic Content</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Core content of pedagogical project</dc:description>
+        <dc:title xml:lang="en">Core Content</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Discipline"/>
+        <dc:description xml:lang="en">Disciplines with basic vocational content that allow to reach the basic elements of the professional profile of the egress.
+
+Content Core: Programming Logic, Algorithms and Data Structure, Digital Circuits, Computing, Programming Language, Database.</dc:description>
+        <dc:title xml:lang="en">Core Professional Content</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Specific_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Specific_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Discipline"/>
+        <dc:description xml:lang="en">Courses addressing the fundamentals and specific topics of Software Engineering, as well as other specific contents aimed at the development of specific or complementary skills and abilities in the area of programming, product and software process
+
+Content Core: Specific disciplines for software engineering</dc:description>
+        <dc:title xml:lang="en">Core Specific Content</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Morning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Nocturnal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Serial_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Morning"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Nocturnal"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Serial_System"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Course</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/University_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
+        <dc:description xml:lang="en">The students can study subjects at any time, observing the prerequisites.</dc:description>
+        <dc:title xml:lang="en">Credit System</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isStructureCurricularOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+        <dc:description xml:lang="en">Curriculum contents to specific course</dc:description>
+        <dc:title xml:lang="en">Curriculum Contents</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasContent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Optional_Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required_Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Eighth_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fifth_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/First_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fourth_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Ninth_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Second_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Seventh_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Sixth_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Tenth_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Third_Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Basic_Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Specific_Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Discipline"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Discipline"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Optional_Discipline"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required_Discipline"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Eighth_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fifth_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/First_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fourth_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Ninth_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Second_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Seventh_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Sixth_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Tenth_Semester"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Third_Semester"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Basic_Discipline"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Discipline"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Specific_Discipline"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Discipline designate a particular branch of knowledge.</dc:description>
+        <dc:title xml:lang="en">Discipline</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isClassificationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">The course is composed of disciplines, classified in the required and optional types</dc:description>
+        <dc:title xml:lang="en">Discipline Type</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isTypeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Eighth_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Eighth_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Eighth Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+        <dc:title xml:lang="en">Evening</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Courses in the technical or business management area, foreign language courses, extension projects with the community Institutional Program of Extension Scholarships (PIBEX), Continuous Action Extension Projects (PEAC), participation in Engineering Week;</dc:description>
+        <dc:title xml:lang="en">Extension Activities</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fifth_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fifth_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Fifth Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/First_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/First_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">First Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fourth_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Fourth_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Fourth Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Free_Module">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">The disciplines that constitute complementary training and free training enable the student to be co-responsible for the construction of his / her curriculum, with training in his or her area of ​​greatest interest, and not only a generalized theoretical and practical training. Free training, disciplines categorized as free module, consists of activities / disciplines developed by the student based on their personal interests, which are not part of the activities of the basic cycle, nor of the professional, complementary / optional or integrative. They can be taken at any of the University&apos;s campuses.</dc:description>
+        <dc:title xml:lang="en">Free Module</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Morning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Evening"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Morning"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Full Time</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Institution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/University_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasCampus"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Campus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Social_Action_Citizenship_and_Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Activities_of_Student_Representations"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Extension_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Mobility_and_Exchange_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Professional_Practice_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Research_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasExtensionActivitie"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Teaching_Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Institution is an organ of multidisciplinary higher education and training of professional staff of higher level, research, extension and mastery and cultivation of human knowledge.</dc:description>
+        <dc:title xml:lang="en">Institution</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasTopic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">A body of knowledge or Knowlwdge area is the complete set of concepts, terms and activities that make up a professional domain, as defined by the relevant learned society or professional association. It is a type of knowledge representation by any knowledge organization. A BOK/KA is the accepted ontology for a specific domain. A BOK/KA is more than simply a collection of terms; a professional reading list; a library; a website or a collection of websites; a description of professional functions; or even a collection of information.</dc:description>
+        <dc:title xml:lang="en">Knowledge Area</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Mobility_and_Exchange_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Mobility_and_Exchange_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Permanent exchange with national and international institutions and companies;</dc:description>
+        <dc:title xml:lang="en">Mobility and Exchange Activities</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Morning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Morning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+        <dc:title xml:lang="en">Morning</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Multidisciplinary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curriculum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Multidisciplinary Projects, that is, there is the participation of other courses.</dc:description>
+        <dc:title xml:lang="en">Multidisciplinary</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Ninth_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Ninth_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Ninth Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Nocturnal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Nocturnal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period"/>
+        <dc:title xml:lang="en">Nocturnal</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Optional_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Optional_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Type"/>
+        <dc:title xml:lang="en">Optional Discipline</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Period">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPeriodOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Period</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Classification"/>
+        <dc:title xml:lang="en">Practical Discipline</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Professional_Practice_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Professional_Practice_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Participation in the Executive Board of the Junior Engineering Company (EJEL), participation in projects carried out by EJEL, extracurricular internships in the technical area, technological development projects in companies.</dc:description>
+        <dc:title xml:lang="en">Professional Practice Activities</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Type"/>
+        <dc:title xml:lang="en">Required Discipline</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Research_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Research_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Participation in research centers or projects of scientific initiation Institutional Program of Scientific Initiation Grants (PIBIC), publication of works, participation in seminars and scientific initiation events related to graduation;</dc:description>
+        <dc:title xml:lang="en">Research Activities</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Second_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Second_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Second Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasDiscipline"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Period of time in which a course is assigned</dc:description>
+        <dc:title xml:lang="en">Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Serial_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Credit_System"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Serial_System"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">The semi-serial system is an academic structure that combines characteristics of the serial system and the credit system.
+
+This system allows great flexibility in the construction of a study plan by the students, but creates a difficulty of managing vacancies. In the semi-serial system, the flexibility of the credit system is contemplated, but the formative trajectory is oriented around a reference flow chart, by means of preference of places: the student who fully fulfills the disciplines for a semester have their job preferably processed in the subjects of the following semester.</dc:description>
+        <dc:title xml:lang="en">Semi Serial System</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Serial_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Serial_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Curricular_Structure"/>
+        <dc:description xml:lang="en">Students follow pre-determined lists of disciplines per semester or school year.</dc:description>
+        <dc:title xml:lang="en">Serial System</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Seventh_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Seventh_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Seventh Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Sixth_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Sixth_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Sixth Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Teaching_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Teaching_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Complementary_and_Extension_Activities"/>
+        <dc:description xml:lang="en">Monitoring of course subjects, technical course teacher, etc.</dc:description>
+        <dc:title xml:lang="en">Teaching Activities</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Tenth_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Tenth_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Tenth Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Discipline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline_Classification"/>
+        <dc:title xml:lang="en">Theoretical Discipline</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Third_Semester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Third_Semester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semester"/>
+        <dc:title xml:lang="en">Third Semester</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Topic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Domain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasSubtopic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Area"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Topic</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/University_Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/University_Domain"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Abstraction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Abstraction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Topic"/>
+        <Pedagogical_Project:hasSubtopic rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Alternate_Abstractions"/>
+        <Pedagogical_Project:hasSubtopic rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Encapsulation"/>
+        <Pedagogical_Project:hasSubtopic rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Hierarchy"/>
+        <Pedagogical_Project:hasSubtopic rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Levels_of_Abstraction"/>
+        <Pedagogical_Project:isPartOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Computing_Foundations"/>
+        <dc:description xml:lang="en">Abstraction is an indispensible technique associated with problem solving. It refers to both the process and result of generalization by reducing the information of a concept, a problem, or an observable phenomenon so that one can focus on the “big picture.” One of the most important skills in any engineering undertaking is framing the levels of abstraction appropriately. “Through abstraction,” according to Voland, “we view the problem and its possible solution paths from a higher level of conceptual understanding. As a result, we may become better prepared to recognize possible relationships between different aspects of the problem and thereby generate more creative design solutions”. This is particularly true in computer science in general (such as hardware vs. software) and in software
+engineering in particular (data structure vs. data flow, and so forth).</dc:description>
+        <dc:title xml:lang="en">Abstraction</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Algoritmos_e_Programacao_de_Computadores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Algoritmos_e_Programacao_de_Computadores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/inverseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/First_Semester"/>
+            </owl:Restriction>
+        </rdf:type>
+        <Pedagogical_Project:hasContent rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Hierarchy"/>
+        <Pedagogical_Project:isPreRequisiteOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Orientacao_a_Objetos"/>
+        <Pedagogical_Project:discipline_code rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">113476</Pedagogical_Project:discipline_code>
+        <dc:title xml:lang="en">Algoritmos e Programação de Computadores</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Alternate_Abstractions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Alternate_Abstractions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content"/>
+        <Pedagogical_Project:isPartOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Abstraction"/>
+        <dc:description xml:lang="en">Sometimes it is useful to have multiple alternate abstractions for the same problem so that one can keep different perspectives in mind. For example, we can have a class diagram, a state chart, and a sequence diagram for the same software at the same level of abstraction. These alternate abstractions do not form a hierarchy but rather complement each other in helping understanding the problem and its solution. Though beneficial, it is as times difficult to keep alternate abstractions
+in sync.</dc:description>
+        <dc:title xml:lang="en">Alternate Abstractions</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Computing_Foundations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Computing_Foundations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Knowledge_Area"/>
+        <Pedagogical_Project:hasTopic rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Abstraction"/>
+        <dc:description xml:lang="en">The scope of the Computing Foundations knowledge area (KA) encompasses the development and operational environment in which software evolves and executes. Because no software can exist in a vacuum or run without a computer, the core of such an environment is the computer and its various components. Knowledge about the computer and its underlying principles of hardware and software serves as a framework on which software engineering is anchored. Thus, all software engineers must have good understanding of the Computing Foundations KA. It is generally accepted that software engineering builds on top of computer science. For example, “Software Engineering 2004: Curriculum Guidelines for Undergraduate Degree Programs in Software Engineering” clearly states, “One particularly important aspect is that software engineering builds on computer science and mathematics” (italics added).</dc:description>
+        <dc:title xml:lang="en">Computing Foundations</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Encapsulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Encapsulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content"/>
+        <Pedagogical_Project:isContentOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Orientacao_a_Objetos"/>
+        <Pedagogical_Project:isPartOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Abstraction"/>
+        <dc:description xml:lang="en">Encapsulation is a mechanism used to implement abstraction. When we are dealing with one level of abstraction, the information concerning the levels below and above that level is encapsulated. This information can be the concept, problem, or observable phenomenon; or it may be the permissible operations on these relevant entities. Encapsulation usually comes with some degree of information hiding in which some or all of the underlying details are hidden from the level above the interface provided by the abstraction. To an object, information hiding means we don’t need to know the details of how the object is represented or how the operations on those objects are implemented.</dc:description>
+        <dc:title xml:lang="en">Encapsulation</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/FGA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/FGA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Campus"/>
+        <Pedagogical_Project:belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB"/>
+        <Pedagogical_Project:hasCourse rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Software_Engineering"/>
+        <dc:title xml:lang="en">FGA - Faculdade de Engenharias do Gama</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Hierarchy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Hierarchy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content"/>
+        <Pedagogical_Project:isPartOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Abstraction"/>
+        <dc:description xml:lang="en">When we use abstraction in our problem formulation and solution, we may use different abstractions at different times in other words, we work on different levels of abstraction as the situation calls. Most of the time, these different levels of abstraction are organized in a hierarchy. There are many ways to structure a particular hierarchy and the criteria used in determining the specific content of each layer in the hierarchy varies depending on the individuals performing the work. Sometimes, a hierarchy of abstraction is sequential, which means that each layer has one and only one predecessor (lower) layer and one and only one successor (upper) layer except the upmost layer (which has no successor) and the bottommost layer (which has no predecessor). Sometimes, however, the hierarchy is organized in a tree-like structure, which means each layer can have more than one predecessor layer but only one successor layer. Occasionally, a hierarchy can have a manyto-many structure, in which each layer can have multiple predecessors and successors. At no time, shall there be any loop in a hierarchy. A hierarchy often forms naturally in task decomposition. Often, a task analysis can be decomposed
+in a hierarchical fashion, starting with the larger tasks and goals of the organization and breaking each of them down into smaller subtasks that can again be further subdivided This continuous division of tasks into smaller ones would produce a
+hierarchical structure of tasks-subtasks.</dc:description>
+        <dc:title xml:lang="en">Hierarchy</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Levels_of_Abstraction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Levels_of_Abstraction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Content"/>
+        <Pedagogical_Project:isPartOf rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Abstraction"/>
+        <dc:description xml:lang="en">When abstracting, we concentrate on one “level” of the big picture at a time with confidence that we can then connect effectively with levels above and below. Although we focus on one level, abstraction does not mean knowing nothing about the neighboring levels. Abstraction levels do not necessarily correspond to discrete components in reality or in the problem domain, but to welldefined standard interfaces such as programming APIs. The advantages that standard interfaces provide include portability, easier software/hardware integration and wider usage.</dc:description>
+        <dc:title xml:lang="en">Levels of Abstraction</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Orientacao_a_Objetos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Orientacao_a_Objetos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Discipline"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Core_Professional_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Practical_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Theoretical_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Required_Discipline"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/isInTheFlowOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Third_Semester"/>
+            </owl:Restriction>
+        </rdf:type>
+        <Pedagogical_Project:hasContent rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Encapsulation"/>
+        <Pedagogical_Project:hasContent rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Hierarchy"/>
+        <Pedagogical_Project:hasPreRequisite rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Algoritmos_e_Programacao_de_Computadores"/>
+        <Pedagogical_Project:discipline_code rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">195341</Pedagogical_Project:discipline_code>
+        <dc:title xml:lang="en">Orientação a Objetos</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Software_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Software_Engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Full_Time"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/hasStructureCurricular"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Semi_Serial"/>
+            </owl:Restriction>
+        </rdf:type>
+        <Pedagogical_Project:hasDiscipline rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Algoritmos_e_Programacao_de_Computadores"/>
+        <Pedagogical_Project:hasDiscipline rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Orientacao_a_Objetos"/>
+        <dc:title xml:lang="en">Software Engineering</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/UnB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/Institution"/>
+        <Pedagogical_Project:hasCampus rdf:resource="http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/FGA"/>
+        <dc:title xml:lang="en">UnB - Universidade de Brasília</dc:title>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
