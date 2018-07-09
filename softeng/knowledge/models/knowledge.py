@@ -1,55 +1,172 @@
 from django.template.defaultfilters import slugify
 from core import Query, Sesame
-from .computing_foundations import ComputingFoundations
 
 
-class Knowledge(object):
+class Knowledges(object):
     """
     Knowledge area
     """
 
-    COMPUTING_FOUNDATIONS = 0
-
-    def __init__(self):
+    @classmethod
+    def get_knowledges(self):
         """
-        Create a knowledge area.
-        """
-
-        result = self.get_information()
-
-        self.uri = "http://www.semanticweb.org/ontologies/2018/Knowledge/Knowledge_Area"
-        self.title = result['title']['value']
-        self.description = result['description']['value']
-        self.slug = slugify(self.title)
-
-    def get_information(self):
-        """
-        Get the information from triple store
+        Get all knowledges area.
         """
 
         query = """
             PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?title ?description
+            SELECT DISTINCT ?knowledge ?title ?description
             WHERE {
-              knowledge:Knowledge_Area dc:title ?title ;
-              dc:description ?description
+              ?knowledge rdfs:subClassOf knowledge:Knowledge_Area .
+              ?knowledge dc:title ?title .
+              ?knowledge dc:description ?description
             }
         """
 
-        result = Query.run(Sesame.endpoint, query)
+        results = Query.run(Sesame.endpoint, query)
 
-        return result[0]
+        knowledges = []
+        for result in results:
+            knowledge = Knowledge(
+                uri=result['knowledge']['value'],
+                title=result['title']['value'],
+                description=result['description']['value']
+            )
+            knowledges.append(knowledge)
 
-    def get_instance(self, instance=None):
+        return knowledges
+
+
+class Knowledge(object):
+    """
+    Knowledge Area
+    """
+
+    def __init__(self, uri, title, description=None):
         """
-        Get core content.
+        Constructor
         """
 
-        if instance == self.COMPUTING_FOUNDATIONS:
-            return ComputingFoundations()
-        else:
-            return [
-                ComputingFoundations(),
-            ]
+        self.uri = uri
+        self.title = title
+        self.slug = slugify(title)
+        self.description = description
+        self.topics = self.get_topics()
+
+    def __str__(self):
+        """
+        To string method
+        """
+
+        return self.slug
+
+    def get_topics(self):
+        """
+        Get all topics of specific knowledge.
+        """
+
+        query = """
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            SELECT DISTINCT ?topic ?title ?description
+            WHERE {
+              ?topic rdfs:subClassOf <%s> .
+              ?topic dc:title ?title .
+              ?topic dc:description ?description .
+            }
+        """ % self.uri
+
+        results = Query.run(Sesame.endpoint, query)
+
+        topics = []
+        for result in results:
+            topic = Topic(
+                uri=result['topic']['value'],
+                title=result['title']['value'],
+                description=result['description']['value'],
+                knowledge=self
+            )
+            topics.append(topic)
+
+        return topics
+
+
+class Topic(object):
+    """
+    Topic
+    """
+
+    def __init__(self, uri, title, description=None, knowledge=None):
+        """
+        Constructor
+        """
+
+        self.uri = uri
+        self.title = title
+        self.slug = slugify(title)
+        self.description = description
+        self.knowledge = knowledge
+        self.subtopics = self.get_subtopics()
+
+    def __str__(self):
+        """
+        To string method
+        """
+
+        return self.slug
+
+    def get_subtopics(self):
+        """
+        Get all subtopics of specific topic.
+        """
+
+        query = """
+            PREFIX knowledge: <http://www.semanticweb.org/ontologies/2018/Knowledge/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+            SELECT DISTINCT ?subtopic ?title ?description
+            WHERE {
+              ?subtopic rdfs:subClassOf <%s> .
+              ?subtopic dc:title ?title .
+              ?subtopic dc:description ?description .
+            }
+        """ % self.uri
+
+        results = Query.run(Sesame.endpoint, query)
+
+        subtopics = []
+        for result in results:
+            subtopic = Subtopic(
+                uri=result['subtopic']['value'],
+                title=result['title']['value'],
+                description=result['description']['value'],
+                knowledge=self.knowledge,
+                topic=self
+            )
+            subtopics.append(subtopic)
+
+        return subtopics
+
+
+class Subtopic(object):
+    """
+    Create a subtopic
+    """
+
+    def __init__(self, uri, title, topic, knowledge, description=None):
+        """
+        Constructor
+        """
+
+        self.uri = uri
+        self.title = title
+        self.slug = slugify(title)
+        self.description = description
+        self.knowledge = knowledge
+        self.topic = topic
+
+    def __str__(self):
+        return self.slug

@@ -4,7 +4,7 @@ from core.generics import ObjectRedirectView
 from django.urls import reverse_lazy
 from django.contrib import messages
 from curriculum.models import Disciplines
-from knowledge.models import Knowledge
+from knowledge.models import Knowledges
 
 
 class InsertContentListView(ListView):
@@ -62,8 +62,7 @@ class InsertContentListView(ListView):
         Get the specific knowledge.
         """
 
-        knowledge = Knowledge()
-        knowledges = knowledge.get_instance()
+        knowledges = Knowledges.get_knowledges()
 
         knowledge_slug = self.kwargs.get('knowledge', '')
 
@@ -82,7 +81,7 @@ class InsertContentListView(ListView):
 
         topic_slug = self.kwargs.get('topic', '')
 
-        for topic in knowledge.get_topic():
+        for topic in knowledge.topics:
             if topic_slug == topic.slug:
                 return topic
 
@@ -96,7 +95,7 @@ class InsertContentListView(ListView):
         topic = self.get_topic()
         subtopic_slug = self.kwargs.get('subtopic', '')
 
-        for subtopic in topic.get_subtopic():
+        for subtopic in topic.subtopics:
             if subtopic.slug == subtopic_slug:
                 return subtopic
 
@@ -130,8 +129,7 @@ class InsertContentView(ObjectRedirectView):
         Get the specific knowledge.
         """
 
-        knowledge = Knowledge()
-        knowledges = knowledge.get_instance()
+        knowledges = Knowledges.get_knowledges()
 
         knowledge_slug = self.kwargs.get('knowledge', '')
 
@@ -150,7 +148,7 @@ class InsertContentView(ObjectRedirectView):
 
         topic_slug = self.kwargs.get('topic', '')
 
-        for topic in knowledge.get_topic():
+        for topic in knowledge.topics:
             if topic_slug == topic.slug:
                 return topic
 
@@ -164,7 +162,7 @@ class InsertContentView(ObjectRedirectView):
         topic = self.get_topic()
         subtopic_slug = self.kwargs.get('subtopic', '')
 
-        for subtopic in topic.get_subtopic():
+        for subtopic in topic.subtopics:
             if subtopic.slug == subtopic_slug:
                 return subtopic
 

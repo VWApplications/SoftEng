@@ -1,7 +1,7 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import redirect
 from django.contrib import messages
-from knowledge.models import Knowledge
+from knowledge.models import Knowledges
 
 
 class SwebokListView(ListView):
@@ -17,8 +17,7 @@ class SwebokListView(ListView):
         Get all knowledges
         """
 
-        knowledge = Knowledge()
-        knowledges = knowledge.get_instance()
+        knowledges = Knowledges.get_knowledges()
 
         return knowledges
 
@@ -46,8 +45,7 @@ class SwebokDetailView(DetailView):
         Get the specific knowledge.
         """
 
-        knowledge = Knowledge()
-        knowledges = knowledge.get_instance()
+        knowledges = Knowledges.get_knowledges()
         knowledge_slug = self.kwargs.get('knowledge', '')
 
         for knowledge in knowledges:
@@ -63,7 +61,7 @@ class SwebokDetailView(DetailView):
 
         topic_slug = self.kwargs.get('topic', '')
 
-        for topic in knowledge.get_topic():
+        for topic in knowledge.topics:
             if topic_slug == topic.slug:
                 return topic
 

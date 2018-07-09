@@ -20,7 +20,7 @@
                 <b>Topics</b>
               </div>
               <div class="card-body">
-                {% for topic in knowledge.get_topic %}
+                {% for topic in knowledge.topics %}
                   <a href="{% url 'knowledge:swebok-detail' knowledge=knowledge.slug topic=topic.slug %}"
                      class="list-group-item list-group-item-action">
                      {{topic.title}}

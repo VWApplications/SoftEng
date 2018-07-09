@@ -1,5 +1,5 @@
 from core import Query, Sesame
-from knowledge.models import Subtopic
+from knowledge.models import Knowledge, Topic, Subtopic
 from django.template.defaultfilters import slugify
 
 
@@ -134,7 +134,9 @@ class Disciplines(object):
             PREFIX pp: <http://www.semanticweb.org/ontologies/2018/Pedagogical_Project/>
             PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-            SELECT DISTINCT ?content_uri ?title ?topic ?knowledge
+            SELECT DISTINCT ?content_uri ?title
+            ?topic_uri ?topic
+            ?knowledge_uri ?knowledge
             WHERE {
               <%s> pp:hasContent ?content_uri .
               ?content_uri dc:title ?title .
@@ -149,11 +151,19 @@ class Disciplines(object):
 
         contents = []
         for content in result:
+            knowledge = Knowledge(
+                uri=content['knowledge_uri']['value'],
+                title=content['knowledge']['value']
+            )
+            topic = Topic(
+                uri=content['topic_uri']['value'],
+                title=content['topic']['value']
+            )
             subtopic = Subtopic(
                 uri=content['content_uri']['value'],
                 title=content['title']['value'],
-                topic=content['topic']['value'],
-                knowledge=content['knowledge']['value']
+                topic=topic,
+                knowledge=knowledge
             )
             contents.append(subtopic)
 

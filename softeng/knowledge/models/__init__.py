@@ -1,2 +1,1 @@
-from .knowledge import Knowledge
-from .subtopic import Subtopic
+from .knowledge import Knowledges, Knowledge, Topic, Subtopic
